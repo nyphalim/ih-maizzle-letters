@@ -1,0 +1,63 @@
+---
+title: "Поделитесь своим мнением, помогите другим с выбором"
+preheader: "Оставьте отзыв и продолжайте учиться"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/main.html">
+  <block name="template">
+    <table class="w-full font-sans">
+      <tr>
+        <td align="center" class="bg-gray-100">
+          <table class="w-600 sm:w-full">
+            <component src="src/components/header.html"></component>
+            <tr>
+              <td align="center" class="sm:px-24 ">
+                <table class="w-full">
+                  <tr>
+                    <td class="bg-white text-gray-800 text-base text-left p-48 sm:p-24 leading-24 rounded">
+                      <table class="w-full">
+                        <tr>
+                          <td class="w-10/12 sm:w-9/12">
+                            <p>Приветствую, @{{Имя контакта}}!</p>
+                            <p class="text-black font-semibold m-0 mb-24">Это Лариса из «ИнфоХит». Я отвечаю за то, чтобы наш проект становился лучше.</p>
+                          </td>
+                          <td class="w-2/12 sm:w-3/12"><component src="src/components/writer.html"></component></td>
+                        </tr>
+                      </table>
+                      <p class="m-0 mb-24">Спасибо, что купили @{{Тип курса (винительный падеж)}} «@{{Название курса}}». Надеюсь, вы успели пройти обучение и остались довольны.</p>
+                      <p class="m-0 mb-24">Буду рада, если вы оставите отзыв на @{{Тип курса (винительный падеж)}}. Так вы поможете другим людям принять решение.</p>
+                      <div class="leading-full">
+                        <table>
+                          <tr>
+                            <th class="bg-green-500 text-center hover:bg-green-600 rounded" style="mso-padding-alt: 12px 48px;">
+                              <a href="@{{Ссылка на детальную курса}}" class="block font-semibold text-white text-base leading-full py-16 px-24 no-underline">Оставить отзыв &rarr;</a>
+                            </th>
+                          </tr>
+                        </table>
+                      </div>
+                      <table class="w-full">
+                        <tr>
+                          <td class="py-32">
+                            <div class="bg-gray-200 h-px leading-px">&zwnj;</div>
+                          </td>
+                        </tr>
+                      </table>
+                      <p class="m-0 mb-16">Желаем успехов,<br>
+                        Лариса и команда «ИнфоХит»
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="h-32 sm:h-24"></td>
+                  </tr>
+                  <component src="src/components/footer.html"></component>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </block>
+</extends>

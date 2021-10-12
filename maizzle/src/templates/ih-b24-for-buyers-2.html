@@ -1,0 +1,70 @@
+---
+title: "Продолжайте учиться на ИнфоХит"
+preheader: "Подборка курсов специально для вас и скидка 10%"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/main.html">
+  <block name="template">
+    <table class="w-full font-sans">
+      <tr>
+        <td align="center" class="bg-gray-100">
+          <table class="w-600 sm:w-full">
+            <component src="src/components/header.html"></component>
+            <tr>
+              <td align="center" class="sm:px-24 ">
+                <table class="w-full">
+                  <tr>
+                    <td class="bg-white text-gray-800 text-base text-left p-48 sm:p-24 leading-24 rounded">
+                      <p>Приветствуем, @{{Имя контакта}}!</p>
+                      <p class="text-black font-semibold m-0 mb-24">Готовы продолжить обучение?<br>Если да, то у нас есть другие курсы этого автора.</p>
+                      <p class="m-0 mb-24">Скидка 10% на все курсы с меткой «Учитесь на ИнфоХит»</p>
+                      <p class="m-0 mb-24 text-lg border-dashed border-2 border-yellow-400 text-center py-7 rounded"><small>Промокод:</small><br>SL-OTO5Q-G8Y0O27</p>
+                      <h2 class="mt-32 mb-24 text-xl leading-24">Другие курсы автора</h2>
+                      <if condition="page.env === 'local'">
+                        <fetch url="https://jsonplaceholder.typicode.com/users">
+                          <each loop="user in response">
+                              <table class="w-full">
+                                <tr>
+                                  <td class="w-full pb-32 sm:w-full sm:inline-block">
+                                    <a href="https://example.com" class="text-base text-blue-500 hover:text-blue-400 no-underline">
+                                      <table class="w-full">
+                                        <tr>
+                                          <td class="w-4/12 align-top"><img src="https://via.placeholder.com/150/E1E1E1/FFFFFF" alt=""></td>
+                                          <td class="p-12 pt-0 sm:p-0 sm:pl-12 rounded">
+                                              <h2 class="m-0 mb-10 text-black text-lg leading-24">{{ user.name }}</h2>
+                                              <p class="m-0 mb-10 text-sm text-gray-700">{{ user.company.catchPhrase }}</p>
+                                              <p class="m-0 mb-10 text-sm text-gray-500">{{ user.name }}</p>
+                                              <p>Read more &rarr;</p>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </a>
+                                  </td>
+                                </tr>
+                              </table>
+                          </each>
+                        </fetch>
+                      </if>
+                      <else>
+                        @{{Другие курсы HTML}}
+                      </else>
+
+                      <p class="m-0 mb-16">Желаем успехов,<br>
+                        Команда «ИнфоХит»
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="h-32 sm:h-24"></td>
+                  </tr>
+                  <component src="src/components/footer.html"></component>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </block>
+</extends>
