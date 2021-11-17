@@ -21,20 +21,20 @@ bodyClass: bg-gray-100
 
                       <h2 class="mt-32 mb-24 text-xl leading-24">Подборка курсов по теме</h2>
                       <if condition="page.env === 'local'">
-                        <fetch url="https://jsonplaceholder.typicode.com/users">
-                          <each loop="user in response">
+                        <fetch url="https://info-hit.ru/include/tools/courses-json/?coursesArr=169320,80717,273137&token=u4JTEnMNt4gdsfdfsdf345nkhjk3dfgfh556776dfdghjkluiutyrtym">
+                          <each loop="item in response">
                             <table class="w-full">
                               <tr>
                                 <td class="w-full pb-32 sm:w-full sm:inline-block">
-                                  <a href="https://example.com" class="text-base text-blue-500 hover:text-blue-400 no-underline">
+                                  <a href="{{ item.URL }}" target="_blank" class="text-base text-blue-500 hover:text-blue-400 no-underline">
                                     <table class="w-full">
                                       <tr>
-                                        <td class="w-4/12 align-top"><img src="https://via.placeholder.com/150/E1E1E1/FFFFFF" alt=""></td>
+                                        <td class="w-4/12 align-top"><img src="https://info-hit.ru/{{ item.PICTURE }}" alt=""></td>
                                         <td class="p-12 pt-0 sm:p-0 sm:pl-12 rounded">
-                                          <h2 class="m-0 mb-10 text-black text-lg leading-24">{{ user.name }}</h2>
-                                          <p class="m-0 mb-10 text-sm text-gray-700">{{ user.company.catchPhrase }}</p>
-                                          <p class="m-0 mb-10 text-sm text-gray-500">{{ user.name }}</p>
-                                          <p>Read more &rarr;</p>
+                                          <p class="m-0 mb-10 text-sm text-gray-500">{{ item.RIGHTHOLDER }}</p>
+                                          <h2 class="m-0 mb-10 text-black text-lg leading-24">{{ item.TYPE }} — {{ item.NAME }}</h2>
+                                          <p class="m-0 mb-10 text-sm text-gray-700">{{ item.DESC }}</p>
+                                          <p>Подробнее &rarr;</p>
                                         </td>
                                       </tr>
                                     </table>
@@ -47,7 +47,7 @@ bodyClass: bg-gray-100
                       </if>
                       <else>
                         @{{Другие курсы HTML}}
-                        <fetch url="https://jsonplaceholder.typicode.com/users">
+                        <fetch url="https://info-hit.ru/include/tools/courses-json/?coursesArr=80717&token=u4JTEnMNt4gdsfdfsdf345nkhjk3dfgfh556776dfdghjkluiutyrtym">
                           <each loop="user in response">
                             <table class="w-full">
                               <tr>
