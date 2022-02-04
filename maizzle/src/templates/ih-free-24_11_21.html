@@ -1,0 +1,94 @@
+---
+title: "Хотите больше? Подборка курсов за подписку специально для вас"
+preheader: "Семейная психология, продвижение партнерских программ, технологии для укрепления памяти и здоровья, курсы самопознания."
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+
+    <component src="src/components/img-block.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/ih_free_24-11-2021.png",
+    "link" : "https://info-hit.ru/catalog/filter/kursy_besplatno/"
+    }'></component>
+
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+
+        <component src="src/components/writer-table.html" locals='{
+        "text_first" : "Приветствую!",
+        "text_last" : "Это Лариса из «ИнфоХит». Подготовила для вас подборку курсов за подписку."
+        }'></component>
+
+        <p class="mb-48">Уже сегодня вы можете узнать КАК: работать с партнёрками курсов, стать ближе своему ребенку, лучше понять себя, укрепить здоровье и память.</p>
+
+        <fetch url="https://info-hit.ru/include/tools/courses-json/?coursesArr=268060,257915,179303,221311&token=u4JTEnMNt4gdsfdfsdf345nkhjk3dfgfh556776dfdghjkluiutyrtym">
+          <each loop="item in response.slice(0, 2)">
+            <table class="w-full">
+              <tr>
+                <td class="w-full pb-24 sm:w-full sm:inline-block">
+                  <a href="{{ item.URL }}" target="_blank" class="text-base text-blue-500 hover:text-blue-400 no-underline">
+                    <table class="w-full">
+                      <tr>
+                        <td class="w-4/12 align-top"><img src="https://info-hit.ru/{{ item.PICTURE }}" alt=""></td>
+                        <td class="p-12 pt-0 sm:p-0 sm:pl-12 rounded">
+                          <p class="m-0 mb-10 text-sm text-gray-500">{{ item.RIGHTHOLDER }}</p>
+                          <h2 class="m-0 mb-10 text-black text-lg leading-24">{{ item.TYPE }} — {{ item.NAME }}</h2>
+                          <p class="m-0 mb-10 text-sm text-gray-700 leading-20">{{ item.DESC }}</p>
+                          <p class="text-base text-blue-600 underline">Подробнее &rarr;</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </a>
+                </td>
+              </tr>
+            </table>
+          </each>
+        </fetch>
+
+      </td>
+    </tr>
+
+    <component src="src/components/img-block.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/ih_free_24_11_2021-2.png",
+    "link" : "https://clck.ru/Yrug7"
+    }'></component>
+    <tr>
+      <td class="bg-white h-32 sm:h-24"></td>
+    </tr>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 py-24 sm:p-24 leading-24 rounded">
+
+        <fetch url="https://info-hit.ru/include/tools/courses-json/?coursesArr=267844,250126,272034,37393&token=u4JTEnMNt4gdsfdfsdf345nkhjk3dfgfh556776dfdghjkluiutyrtym">
+          <each loop="item in response.slice(2)">
+            <table class="w-full">
+              <tr>
+                <td class="w-full pb-24 sm:w-full sm:inline-block">
+                  <a href="{{ item.URL }}" target="_blank" class="text-base text-blue-500 hover:text-blue-400 no-underline">
+                    <table class="w-full">
+                      <tr>
+                        <td class="w-4/12 align-top"><img src="https://info-hit.ru/{{ item.PICTURE }}" alt=""></td>
+                        <td class="p-12 pt-0 sm:p-0 sm:pl-12 rounded">
+                          <p class="m-0 mb-10 text-sm text-gray-500">{{ item.RIGHTHOLDER }}</p>
+                          <h2 class="m-0 mb-10 text-black text-lg leading-24">{{ item.TYPE }} — {{ item.NAME }}</h2>
+                          <p class="m-0 mb-10 text-sm text-gray-700 leading-20">{{ item.DESC }}</p>
+                          <p class="text-base text-blue-600 underline">Подробнее &rarr;</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </a>
+                </td>
+              </tr>
+            </table>
+          </each>
+        </fetch>
+
+      </td>
+    </tr>
+
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>

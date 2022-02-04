@@ -1,0 +1,56 @@
+---
+title: "Только для вас! Лучшие бесплатные курсы 2021 года"
+preheader: "Всё самое лучшее в одном письме. Обучение психосоматике, копирайтингу, старту бизнеса на WB и старту в Диджитал-профессиях."
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+
+    <component src="src/components/img-block.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/ny-2022-all.png",
+    "link" : "https://info-hit.ru/catalog/filter/kursy_besplatno/"
+    }'></component>
+
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+
+        <component src="src/components/writer-table.html" locals='{
+        "text_first" : "Приветствую!",
+        "text_last" : "Это Лариса из «ИнфоХит». Подготовила для вас новогоднюю подборку курсов за подписку."
+        }'></component>
+
+        <p class="mb-48">Уже в 2022-м вы можете узнать КАК: найти для себя профессию в Диджитал, построить бизнес на WB, написать бестселлер за 90 дней, укрепить тело и дух с занятиями йогой.</p>
+        <fetch url="https://info-hit.ru/include/tools/courses-json/?coursesArr=222317,263355,207462,245671,77290,216283,261843,274170&token=u4JTEnMNt4gdsfdfsdf345nkhjk3dfgfh556776dfdghjkluiutyrtym">
+          <each loop="item in response">
+            <table class="w-full">
+              <tr>
+                <td class="w-full pb-12 sm:w-full sm:inline-block">
+                  <a href="{{ item.URL }}" target="_blank" class="text-base text-blue-500 hover:text-blue-400 no-underline">
+                    <table class="w-full">
+                      <tr>
+                        <td class="w-4/12 align-top"><img src="https://info-hit.ru/{{ item.PICTURE }}" alt=""></td>
+                        <td class="p-12 pt-0 sm:p-0 sm:pl-12 rounded">
+                          <p class="m-0 mb-10 text-sm text-gray-500">{{ item.RIGHTHOLDER }}</p>
+                          <h2 class="m-0 mb-10 text-black text-lg leading-24">{{ item.TYPE }} — {{ item.NAME }}</h2>
+                          <p class="m-0 mb-10 text-sm text-gray-700">{{ item.DESC }}</p>
+                          <p>Подробнее &rarr;</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </a>
+                </td>
+              </tr>
+            </table>
+          </each>
+        </fetch>
+
+      </td>
+    </tr>
+
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
