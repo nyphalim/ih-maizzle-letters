@@ -1,0 +1,30 @@
+---
+title: "Вы не оставили заявку на ИнфоХит"
+preheader: "Перейдите по ссылке, чтобы оставить заявку на размещение ваших курсов."
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p>Здравствуйте!</p>
+        <p><strong>Вы прошли регистрацию в каталоге ИнфоХит как автор, но не заполнили заявку на модерацию.</strong></p>
+        <p class="mb-36">Если нужна помощь или возникли вопросы, то вы можете обратиться к любому из <a href="https://info-hit.ru/about/contacts/" target="_blank">наших менеджеров</a>.</p>
+        <p>Перейдите по ссылке, чтобы оставить заявку на размещение ваших курсов прямо сейчас.</p>
+        <component src="src/components/button.html" locals='{
+        "link" : "https://info-hit.ru/account/author/form/",
+        "text" : "Заполнить заявку",
+        "color" : "bg-green-500",
+        "hover_color" : "bg-green-600"
+        }'></component>
+
+        <p class="text-base mb-36 mt-36">Желаем успехов вашему бизнесу!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>

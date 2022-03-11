@@ -1,0 +1,35 @@
+---
+title: "Нужна ли вам помощь в размещении на ИнфоХит"
+preheader: "Перейдите по ссылке, чтобы оставить заявку на размещение ваших курсов."
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-48 leading-24 rounded">
+        <p>Добрый день!</p>
+        <component src="src/components/about-author.html" locals='{
+        "name" : "Анна Шумилова",
+        "photo" : "https://info-hit.ru/upload/resize_cache/main/64f/215_215_2/DSC03624.jpg"
+        }'>
+          <div class="text-base">
+            <p>Меня зовут Анна, я менеджер каталога курсов «ИнфоХит».</p>
+          </div>
+        </component>
+        <p>Несколько дней назад вы зарегистрировались в нашем каталоге, но не оставили заявку на размещение. Решила узнать, нужна ли вам помощь в подготовке материалов?</p>
+        <p class="mt-36"><strong>Ответьте на это письмо или перейдите по ссылке, чтобы заполнить форму на сайте.</strong></p>
+        <component src="src/components/button.html" locals='{
+        "link" : "https://info-hit.ru/account/author/form/",
+        "text" : "Заполнить заявку",
+        "color" : "bg-green-500",
+        "hover_color" : "bg-green-600"
+        }'></component>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
