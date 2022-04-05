@@ -1,0 +1,49 @@
+---
+title: "Мы знаем, что вам нелегко. Помогаем избавиться от стресса!"
+preheader: "События в мире не дают расслабиться, а новостные ленты только добавляют тревоги."
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <component src="src/components/about-author.html" locals='{
+        "name" : "Яна Колокольчикова",
+        "photo" : "https://info-hit.ru/include/images/letter/yanaK.png"
+        }'>
+          <div class="text-base leading-24">
+            <p>Добрый день!</p>
+            <p class="font-semibold text-base leading-24">Меня зовут, Яна.<br>Я — редактор образовательного маркетплейса «ИнфоХит».</p>
+          </div>
+        </component>
+        <p>Люблю учиться и узнавать новое, и буду рассказывать вам о новых курсах на нашей платформе.
+          Развивайте свои профессиональные и личностные навыки вместе с нами!</p>
+        <p>События в мире не дают расслабиться, а новостные ленты только добавляют тревоги. Сегодня каждый пытается избавиться от лишнего стресса. Важно, чтобы это было безопасно для себя и окружающих.</p>
+        <p class="font-semibold text-base">Поэтому мы сделали для вас подборку эффективных антистресс-курсов!</p>
+        <component src="src/components/button.html" locals='{
+        "link" : "https://info-hit.ru/catalog/psikhologicheskaya-pomoshch/",
+        "text" : "Смотреть подборку",
+        "color" : "bg-green-500",
+        "hover_color" : "bg-green-600"
+        }'></component>
+        <p class="mt-32">В каталоге вы найдете аудио-медитации, видео-лекции, книги и курсы повышения стрессоустойчивости.</p>
+        <p>А в <a target="_blank" href="https://info-hit.ru/blog/main/">нашем блоге</a> можно почитать статьи о том, как справляться с негативными эмоциями и не допускать выгорания на работе и в семейной жизни.</p>
+        <p>В это непростое время лучшая инвестиция — ментальное здоровье. Оставайтесь в гармонии с собой и миром!
+        </p>
+        <table class="w-full">
+          <tr>
+            <td class="py-16">
+              <div class="bg-gray-200 h-px leading-px">&zwnj;</div>
+            </td>
+          </tr>
+        </table>
+        <p class="text-base mb-36 mt-16">Ваш надежный проводник в онлайн-образовании,<br>«Инфохит».</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
