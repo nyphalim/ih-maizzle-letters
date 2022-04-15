@@ -1,0 +1,70 @@
+---
+title: "Ссылка на оплату"
+preheader: "Ваш заказ №#ORDER_ID# на ИнфоХит"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <tr>
+      <td align="center">
+        <table class="w-600 sm:w-full">
+          <tr>
+            <td align="center" class="px-48 pb-32 sm:pb-24 sm:px-0">
+              <table class="w-full bg-white">
+                <tr>
+                  <td class="px-24 py-32 text-gray-800">
+                    <p class="m-0 mb-24 font-bold">Здравствуйте, #NAME#.</p>
+                    <p class="m-0 mb-24">Вы начали оформлять заказ на ИнфоХит, но в последний момент что-то вам помешало. И вы не оплатили его.</p>
+                    <p class="m-0 mb-24">Мы решили напомнить вам о заказе. Взгляните:</p>
+                    <table class="w-full mb-16">
+                      <tr>
+                        <th colspan="2">
+                          <p class="block m-0 mb-24 text-left font-bold">Заказ №5647 от 22.03.2022</p>
+                        </th>
+                      </tr>
+                      <tr>
+                        <td class="w-52 pr-10 align-top">
+                          <a href="#DETAIL_PAGE_URL#" class="block no-underline align-top">
+                            <img src="images/maizzle.png" />
+                          </a>
+                        </td>
+                        <td>
+                          <a href="#DETAIL_PAGE_URL#" class="block mb-8 text-black no-underline">Доступ к полному функционалу партнерского каталога на 1 год</a>
+                          <span class="block mb-20 font-bold text-lg text-green-500">1 490 р.</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">
+                          <p class="m-0 mb-14 text-right text-lg font-bold">Итого: 1 490 р.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">
+                          <component src="src/components/button.html" locals='{
+                            "link" : "{{Ссылка для оплаты}}",
+                            "text" : "Перейти к оплате",
+                            "color" : "bg-green-500",
+                            "hover_color": "bg-green-600"
+                            }'></component>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">
+                          <a href="#" class="inline-block py-16 text-gray-400 no-underline">Отменить заказ</a>
+                        </td>
+                      </tr>
+                    </table>
+                    <p class="m-0 mb-24">Если у вас возникли проблемы с оплатой, напишите нам:<br /><a class="no-underline text-green-500" href="mailto:info@info-hit.ru">info@info-hit.ru</a></p>
+                    <p class="m-0 mb-24">Хорошего дня!<br />Ваш ИнфоХит.</p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <component src="src/components/footer.html"></component>
+        </table>
+      </td>
+    </tr>
+  </block>
+</extends>
