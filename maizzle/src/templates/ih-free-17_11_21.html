@@ -15,10 +15,15 @@ bodyClass: bg-gray-100
     <tr>
       <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
 
-        <component src="src/components/writer-table.html" locals='{
-        "text_first" : "Приветствую!",
-        "text_last" : "Это Лариса из «ИнфоХит». Подготовила для вас подборку курсов за подписку."
-        }'></component>
+        <component src="src/components/about-author.html" locals='{
+        "name" : "Лариса Куранова",
+        "photo" : "https://info-hit.ru/upload/main/ee5/iIraJS1kALg_1.jpg"
+        }'>
+          <div class="text-base leading-24">
+            <p>Приветствую!</p>
+            <p class="font-semibold text-base leading-24">Это Лариса из «ИнфоХит». Подготовила для вас подборку курсов за подписку.</p>
+          </div>
+        </component>
 
         <p class="mb-48">Уже сегодня вы можете научиться говорить четко и красиво, познакомиться с основами рекламы в YouTube и асанами йоги для укрепления здоровья.</p>
 

@@ -16,15 +16,17 @@ bodyClass: bg-gray-100
                 <table class="w-full">
                   <tr>
                     <td class="bg-white text-gray-800 text-base text-left p-48 sm:p-24 leading-24 rounded">
-                      <table class="w-full">
-                        <tr>
-                          <td class="w-10/12 sm:w-9/12">
-                            <p>Приветствую, @{{Имя контакта}}!</p>
-                            <p class="text-black font-semibold m-0 mb-24">Это Лариса из «ИнфоХит». Я отвечаю за то, чтобы наш проект становился лучше.</p>
-                          </td>
-                          <td class="w-2/12 sm:w-3/12"><component src="src/components/writer.html"></component></td>
-                        </tr>
-                      </table>
+
+                      <component src="src/components/about-author.html" locals='{
+                        "name" : "Яна Колокольчикова",
+                        "photo" : "https://info-hit.ru/include/images/letter/yanaK.png"
+                        }'>
+                        <div class="text-base leading-24">
+                          <p>Приветствую, [Имя контакта]!</p>
+                          <p class="font-semibold text-base leading-24">Это Яна из «ИнфоХит». Я отвечаю за то, чтобы наш проект становился лучше.</p>
+                        </div>
+                      </component>
+
                       <p class="m-0 mb-24">Спасибо, что купили @{{Тип курса (винительный падеж)}} «@{{Название курса}}». Надеюсь, вы успели пройти обучение и остались довольны.</p>
                       <p class="m-0 mb-24">Буду рада, если вы оставите отзыв на @{{Тип курса (винительный падеж)}}. Так вы поможете другим людям принять решение.</p>
                       <div class="leading-full">
