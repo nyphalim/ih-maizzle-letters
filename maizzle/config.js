@@ -21,5 +21,19 @@ module.exports = {
         destination: 'images',
       },
     },
+    browsersync: {
+      port: 3002,
+      ui: {
+        port: 3003,
+      },
+      // set one server
+      // startPath: '/builder/',
+      // server: {
+      //   baseDir: 'build_local',
+      //   routes: {
+      //     '/builder/': './build_local/',
+      //   },
+      // },
+    },
   },
 }
