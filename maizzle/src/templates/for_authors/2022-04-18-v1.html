@@ -1,0 +1,43 @@
+---
+title: "До 100 000 ₽ на рекламу авторам онлайн-курсов!"
+preheader: "Осталось 13 дней, чтобы воспользоваться акцией."
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p><strong>Добрый день!</strong></p>
+        <p class="text-base bg-green-100 py-16 px-24">Мы ценим каждого партнера. И спешим поделиться с вами классной новостью!</p>
+        <p><strong>«Яндекс.Директ» до 30 апреля принимает заявки </strong>на рекламу от авторов онлайн-курсов. Платформа предоставляет рекламный бюджет и техническую поддержку.</p>
+        <p class="mb-0"><strong>Вы получите:</strong></p>
+        <ul class="mt-0">
+          <li>до 100 000 ₽ на рекламу своих курсов;</li>
+          <li>бесплатную настройку.</li>
+        </ul>
+        <p>Условие одно — вы еще не размещали рекламу со своего аккаунта в «Яндекс.Директе». </p>
+        <p><strong>Осталось 13 дней</strong>, чтобы воспользоваться акцией! 
+          Заполнить заявку можно до 30 апреля включительно. 
+          </p>
+          <component src="src/components/button.html" locals='{
+            "link" : "https://yandex.ru/promo/direct/online-courses/free-service",
+            "text" : "Заполнить заявку",
+            "color" : "bg-green-500",
+            "hover_color" : "bg-green-600"
+            }'></component>
+        <p class="mt-36">А еще Вы можете заказать рекламу в «ИнфоХит», чтобы привлечь дополнительный трафик! 
+          Поднимите свои страницы в ТОП на две–четыре недели или воспользуйтесь комплексным предложением. 
+          Мы разместим ваши баннеры в шапке сайта, добавим ваши страницы в свои рассылки и поднимем вас в ТОП каталогов. </p>
+      
+        <p><a href="https://info-hit.ru/about/go-to-top/">Заказать рекламу в «ИнфоХит»</a></p>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">Ваш надежный партнер — «ИнфоХит».</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
