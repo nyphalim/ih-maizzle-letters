@@ -1,0 +1,88 @@
+---
+title: "«ИнфоХит» — это удобно"
+preheader: "Что ждет вас в личном кабинете автора"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/trigger-hello-author/trigger-hello-author-2.jpg"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p><strong>Добрый день!</strong></p>
+        <p>В&nbsp;<a target="_blank" href="https://info-hit.ru/account/author/">личном кабинете автора</a> на&nbsp;«ИнфоХит» мы&nbsp;собрали всю информацию, которая может вам понадобиться.</p>
+
+        <p class="mt-24"><strong>На&nbsp;главной странице&nbsp;ЛК отображаются основные блоки:</strong></p>
+
+        <ol>
+          <li class="mb-16">
+            Ссылка на&nbsp;<strong>вашу персональную страницу</strong> на&nbsp;«ИнфоХит».
+          </li>
+          <li class="mb-16">
+            <strong>Трафик и&nbsp;конверсии.</strong> Здесь доступна статистика посещений и&nbsp;активности на&nbsp;ваших страницах.
+          </li>
+          <li class="mb-16">
+            <strong>Контакты менеджера.</strong> Всегда под рукой контакты личного менеджера. Он&nbsp;поможет настроить партнерскую программу, запустить рекламу и&nbsp;проконсультирует по&nbsp;другим вопросам.
+          </li>
+          <li class="mb-16">
+            <strong>Способ сотрудничества.</strong> Основная информация по&nbsp;вашей партнерке: дата начала, сервис, уровень, направления и&nbsp;размер комиссионных. Отсюда можно перейти на&nbsp;страницу партнерской программы с&nbsp;более подробными данными.
+          </li>
+          <li class="mb-16">
+            <strong>Баланс.</strong> Здесь можно посмотреть и&nbsp;оплатить комиссионные по&nbsp;партнерской программе.
+          </li>
+          <li class="mb-16">
+            <strong>Ваши отзывы.</strong> Быстрый доступ к&nbsp;комментариям учеников о&nbsp;вас и&nbsp;ваших курсах.
+          </li>
+          <li class="mb-16">
+            <strong>Виджет отзывов.</strong> Посмотрите, как могут отображаться отзывы о&nbsp;вашей школе на&nbsp;«ИнфоХит». Забирайте ссылку и&nbsp;используйте виджет на&nbsp;своем сайте!
+          </li>
+          <li class="mb-16">
+            <strong>Новости.</strong> Следите за&nbsp;новостями в&nbsp;ЛК, чтобы быть в&nbsp;курсе новых возможностей продвижения, акциях и&nbsp;бонусах.
+          </li>
+          <li class="mb-16">
+            <strong>Реферальная программа.</strong> Вы&nbsp;можете получать дополнительную комиссию за&nbsp;привлечение новых экспертов и&nbsp;учеников на&nbsp;«ИнфоХит». Размещайте ссылки на&nbsp;своих страницах и&nbsp;обеспечьте себе пассивный доход.
+          </li>
+          <li class="mb-16">
+            <strong>Специалисты.</strong> Быстро и&nbsp;просто найдите исполнителя на&nbsp;проект или постоянную работу. Или разместите свой заказ в&nbsp;этом разделе: бухучет, кураторство, реклама, дизайн&nbsp;— десятки профессионалов во&nbsp;всех направлениях, которые актуальны для создателей образовательного контента.
+          </li>
+        </ol>
+
+        <p class="mt-36"><strong>В&nbsp;меню слева расположены:</strong></p>
+
+        <ul>
+          <li class="mb-10">
+            чат с&nbsp;менеджером;
+          </li>
+          <li class="mb-10">
+            ответы на&nbsp;часто задаваемые вопросы;
+          </li>
+          <li class="mb-10">
+            все ваши обучающие материалы и&nbsp;документы;
+          </li>
+          <li class="mb-10">
+            полезные сервисы для онлайн-школ;
+          </li>
+          <li class="mb-10">
+            а&nbsp;еще данные о&nbsp;партнерах, рекламе и&nbsp;настройки.
+          </li>
+        </ul>
+        <p class="text-base bg-yellow-100 py-16 px-24 mt-36">Пользуйтесь всеми возможностями личного кабинета! </p>
+
+        <component src="src/components/button.html" locals='{
+        "link" : "https://info-hit.ru/account/author/",
+        "text" : "Перейти в ЛК",
+        "color" : "bg-yellow-500",
+        "hover_color" : "bg-yellow-600"
+        }'></component>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">Ваш надежный партнер,<br>«ИнфоХит»!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
