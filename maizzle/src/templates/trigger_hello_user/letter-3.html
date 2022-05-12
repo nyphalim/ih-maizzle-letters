@@ -1,0 +1,49 @@
+---
+title: "Курс на «ИнфоХит» оказался интересным и полезным — расскажите всем!"
+preheader: "Как отзывы учеников делают мир онлайн-образования лучше"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/trigger-hello-user/trigger-hello-user-3.jpg"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p><strong>Добрый день!</strong></p>
+        <p>Вы&nbsp;уже нашли для себя подходящий курс или посмотрели вебинар на&nbsp;«ИнфоХит»&nbsp;— поделитесь впечатлениями. Обратная связь от&nbsp;учеников важна не&nbsp;только авторам образовательного контента, но&nbsp;и&nbsp;другим пользователям. </p>
+
+        <p class="mt-36"><strong>Польза отзывов для учеников:</strong></p>
+        <ul>
+          <li class="mb-10">больше информации об&nbsp;авторе, школе или курсе;</li>
+          <li class="mb-10">проще составить мнение и&nbsp;сделать выбор;</li>
+          <li>легче увидеть все плюсы и&nbsp;минусы.</li>
+        </ul>
+
+        <p class="mt-36"><strong>Польза отзывов для автор и&nbsp;школ:</strong></p>
+        <ul>
+          <li class="mb-10">увидеть недочеты в&nbsp;работе и&nbsp;устранить&nbsp;их;</li>
+          <li class="mb-10">собрать предложения и&nbsp;пожелания клиентов;</li>
+          <li>понять потребности аудитории и&nbsp;подстроить продукт под них.</li>
+        </ul>
+
+        <p class="text-base bg-green-100 py-16 px-24"><strong>Ваши отзывы помогают</strong> экспертам делать лучшие образовательные программы, а&nbsp;ученикам выбирать подходящие курсы! </p>
+
+        <component src="src/components/button.html" locals='{
+        "link" : "https://info-hit.ru",
+        "text" : "Оставить отзыв",
+        "color" : "bg-green-500",
+        "hover_color" : "bg-green-600"
+        }'></component>
+
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">С уважением,<br>команда «ИнфоХит»!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>

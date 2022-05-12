@@ -1,0 +1,64 @@
+---
+title: "Как справиться со стрессом, все успевать и научиться копить?"
+preheader: "Новые статьи в блоге «ИнфоХит» каждую неделю!"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/trigger-hello-user/trigger-hello-user-2.jpg?v=2"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p><strong>Добрый день!</strong></p>
+        <p>Маркетплейс образовательных онлайн-курсов «ИнфоХит»&nbsp;— это не&nbsp;только каталог обучающих материалов. </p>
+
+        <p>В&nbsp;<a href="https://info-hit.ru/blog/main/">блоге</a> мы&nbsp;собираем для вас только проверенные советы и&nbsp;инструкции. Наши статьи помогут вам выбрать новую профессию, освоить тайм-менеджмент и&nbsp;научиться копить. </p>
+
+        <h2 class="mt-36 mb-32">Свежее в&nbsp;блоге «ИнфоХит»</h2>
+
+        <fetch url="https://info-hit.ru/include/tools/courses-json/?coursesArr=222317,263355,207462&token=u4JTEnMNt4gdsfdfsdf345nkhjk3dfgfh556776dfdghjkluiutyrtym">
+          <each loop="item in response">
+            <table class="w-full">
+              <tr>
+                <td class="w-full pb-12 sm:w-full sm:inline-block">
+                  <a href="{{ item.URL }}" target="_blank" class="text-base text-blue-500 hover:text-blue-400 no-underline">
+                    <table class="w-full">
+                      <tr>
+                        <td class="w-4/12 align-top"><img src="https://info-hit.ru/{{ item.PICTURE }}" alt=""></td>
+                        <td class="p-12 pt-0 sm:p-0 sm:pl-12 rounded">
+                          <h3 class="m-0 mb-10 text-black text-lg leading-24">{{ item.TYPE }} — {{ item.NAME }}</h3>
+                          <p class="m-0 mb-10 text-sm text-gray-700">{{ item.DESC }}</p>
+                          <p>Читать на сайте &rarr;</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </a>
+                </td>
+              </tr>
+            </table>
+          </each>
+        </fetch>
+
+        <p>Новые материалы выходят каждую неделю!</p>
+
+        <component src="src/components/button.html" locals='{
+        "link" : "https://vk.com/infohitru",
+        "text" : "Блог ИнфоХит",
+        "color" : "bg-green-500",
+        "hover_color" : "bg-green-600"
+        }'></component>
+
+        <p class="mt-24"><strong>Следите за обновлениями на «ИнфоХит» в&nbsp;нашей <a href="https://vk.com/infohitru" target="_blank">группе&nbsp;ВКонтакте</a>.</strong></p>
+
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">С уважением,<br>команда «ИнфоХит»!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
