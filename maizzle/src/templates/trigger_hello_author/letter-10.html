@@ -1,0 +1,41 @@
+---
+title: "Специалисты для ваших задач уже на «ИнфоХит»"
+preheader: "Собрали профессионалов в одном месте!"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/trigger-hello-author/trigger-hello-author-10.jpg"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p><strong>Добрый день!</strong></p>
+
+        <p>Вы&nbsp;просили&nbsp;— мы&nbsp;сделали.</p>
+        <p>Запустили <a target="_blank" href="https://info-hit.ru/specialists/">«ИнфоХит.Специалисты»</a>&nbsp;— новый раздел, где вы&nbsp;можете найти специалиста для своей онлайн-школы. Бухгалтеры, маркетологи, кураторы, таргетологи&nbsp;— десятки профессионалов готовы выполнить проектную задачу или постоянно работать в&nbsp;вашей онлайн-школе. </p>
+        <p>Подготовить оферту для сайта, настроить партнерку или создать лендинг. Вы&nbsp;найдете исполнителя для любой задачи на&nbsp;<a target="_blank" href="https://info-hit.ru/specialists/">«ИнфоХит.Специалисты»</a>.</p>
+        <p>Уже сейчас вы&nbsp;можете перейти в&nbsp;личный кабинет, чтобы разместить свой первый заказ или вакансию. И&nbsp;получить отклик от&nbsp;кандидатов.</p>
+
+        <component src="src/components/button.html" locals='{
+        "link" : "https://info-hit.ru/account/author/vacs/",
+        "text" : "Перейти в ЛК",
+        "color" : "bg-yellow-500",
+        "hover_color" : "bg-yellow-600"
+        }'></component>
+
+        <p>Если вы&nbsp;обучаете специалистов для онлайн-школ, приглашайте их&nbsp;создавать профили на&nbsp;«<a target="_blank" href="https://info-hit.ru/about/specialists/">ИнфоХит</a>». Это эффективный способ найти работу! </p>
+        <p>А&nbsp;еще, чтобы подыскать профессионала, есть <a class="inline-block" target="_blank" href="https://t.me/infohit_rabota">чат «ИнфоХит.Специалисты» в&nbsp;телеграме</a>, где вы&nbsp;также можете разместить заказ или вакансию. </p>
+        <p>Успехов в&nbsp;работе!</p>
+
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">Ваш надежный партнер,<br>«ИнфоХит»!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
