@@ -6,7 +6,7 @@ bodyClass: bg-gray-100
 
 <extends src="src/layouts/ih-main.html">
   <block name="template">
-    <fetch url="https://info-hit.ru/include/tools/blog-json/?arElements=280807,282712,282313&token=u4JTEnMNt4gdsfdfsdf345nkhjk3dfgfh556776dfdghjkluiutyrtym&v=4"></fetch>
+    <fetch url="https://info-hit.ru/include/tools/blog-json/?arElements=280807,282712,282313&token=u4JTEnMNt4gdsfdfsdf345nkhjk3dfgfh556776dfdghjkluiutyrtym&v=4">
       <component src="src/components/img-block-without-link.html" locals='{
       "src" : "https://info-hit.ru/include/images/letter/trigger-hello-author/trigger-hello-author-5.jpg"
       }'></component>
@@ -27,7 +27,7 @@ bodyClass: bg-gray-100
               Кого-то стандартные вопросы заводят в тупик и он неловко молчит рассказываем в новой статье.
             </li>
           </ol>
-          
+
           <each loop="item in response.slice(0, 1)">
             <component src="src/components/blog.html" locals='{
             "URL" : "{{ item.URL }}",
@@ -41,7 +41,7 @@ bodyClass: bg-gray-100
           <p class="mt-36"><strong>Как избежать выгорания на работе, и что делать, если оно уже настигло</strong></p>
           <p>Любимая работа перестала приносить удовлетворение, каждая новая задача вызывает ужас, а утром вы испытываете стресс от того, что начался новый рабочий день — это признаки профессионального выгорания.</p>
           <p>Читайте материал, как вернуть желание и энергетические ресурсы, где взять силы, чтобы снова работать в удовольствие.</p>
-          
+
           <each loop="item in response.slice(1, 2)">
             <component src="src/components/blog.html" locals='{
             "URL" : "{{ item.URL }}",
@@ -51,13 +51,13 @@ bodyClass: bg-gray-100
             "COLOR" : "yellow"
             }'></component>
           </each>
-          
+
           <p class="mt-36"><strong>Что делать, чтобы не зависеть от обстоятельств и иметь востребованную профессию на удаленке</strong></p>
-      
+
           <p>Знакомые чаще стали рассказывать, как их сократили или уволили из-за нестабильной ситуации в компании, а подтверждение этих слов можно прочитать в новостной ленте.</p>
-          <p class="text-base bg-green-100 py-16 px-24 my-24">Не переживайте и не поддавайтесь общей панике. <br>Выход есть! </p>
+          <p>Не переживайте и не поддавайтесь общей панике. <br>Выход есть!</p>
           <p>С развитием дистанционной работы появилось много возможностей перейти в онлайн с любой профессией.</p>
-            
+
           <p>Читайте статью, как с вашей или новой специальностью работать на удаленке, зарабатывать столько же, еще и прилично экономить. </p>
           <each loop="item in response.slice(2, 3)">
             <component src="src/components/blog.html" locals='{
