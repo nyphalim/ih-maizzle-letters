@@ -1,0 +1,90 @@
+---
+title: "Масштабируем онлайн-школу, меняем работу, все про кулинарию, косметологию, таро"
+preheader: "Научитесь создавать востребованные онлайн-курсы, без стресса менять надоевшую работу, готовить, как шеф-повар, ухаживать за кожей и заглядывать в будущее"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <fetch url="https://info-hit.ru/include/tools/blog-json/?arElements=283711,283634,283946,283986,284019&token=u4JTEnMNt4gdsfdfsdf345nkhjk3dfgfh556776dfdghjkluiutyrtym&v=4">
+      <component src="src/components/img-block-without-link.html" locals='{
+      "src" : "https://info-hit.ru/include/images/letter/2022-06-28-blog-items02.jpg"
+      }'></component>
+      <tr>
+        <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+          <p><strong>Добрый день!</strong></p>
+          <p>Для блога «ИнфоХит» мы&nbsp;регулярно пишем статьи и&nbsp;обзоры на&nbsp;самые актуальные темы.</p>
+          <p>Знакомьтесь с&nbsp;подборкой новых материалов!</p>
+          <h3 class="mt-36 sm:mt-24">Создаем востребованные онлайн-курсы и&nbsp;увеличиваем прибыль в&nbsp;2022 году</h3>
+          <p>Команда «ИнфоХит» собрала тренды онлайн-образования в&nbsp;2022&nbsp;году:</p>
+          <ul>
+            <li class="mb-12">востребованные курсы;</li>
+            <li class="mb-12">актуальные площадки;</li>
+            <li class="mb-12">эффективные методы продвижения.</li>
+          </ul>
+          <p>Читайте статью, трансформируйте ваш онлайн-проект, учитывая запросы аудитории и&nbsp;увеличьте заработок!</p>
+          <each loop="item in response.slice(0, 1)">
+            <component src="src/components/blog.html" locals='{
+            "URL" : "{{ item.URL }}",
+            "PICTURE" : "{{ item.PICTURE }}",
+            "NAME" : "{{ item.NAME }}",
+            "DESC" : "{{ item.DESC }}",
+            "COLOR" : "purple"
+            }'></component>
+          </each>
+          <h3 class="mt-36 sm:mt-24">Меняем работу, которая не&nbsp;устраивает, и&nbsp;легко находим себя в&nbsp;новой профессии или компании</h3>
+          <p>В&nbsp;статье рассказываем, как подготовиться к&nbsp;увольнению, если мечтаете сменить компанию и&nbsp;какие шаги сделать, чтобы легко освоить новую профессию.</p>
+          <each loop="item in response.slice(1, 2)">
+            <component src="src/components/blog.html" locals='{
+            "URL" : "{{ item.URL }}",
+            "PICTURE" : "{{ item.PICTURE }}",
+            "NAME" : "{{ item.NAME }}",
+            "DESC" : "{{ item.DESC }}",
+            "COLOR" : "green"
+            }'></component>
+          </each>
+          <h3 class="mt-36 sm:mt-24">Мечтаете о&nbsp;ресторане дома&nbsp;— научитесь готовить, как шеф-повар</h3>
+          <p>Не&nbsp;обязательно постоянно ходить в&nbsp;рестораны и&nbsp;переплачивать за&nbsp;обслуживание, чтобы насладиться едой. После специальных курсов, легко сможете готовить кулинарные шедевры и&nbsp;прилично экономить, а&nbsp;домочадцы и&nbsp;гости будут в&nbsp;восторге.</p>
+          <each loop="item in response.slice(2, 3)">
+            <component src="src/components/blog.html" locals='{
+            "URL" : "{{ item.URL }}",
+            "PICTURE" : "{{ item.PICTURE }}",
+            "NAME" : "{{ item.NAME }}",
+            "DESC" : "{{ item.DESC }}",
+            "COLOR" : "blue"
+            }'></component>
+          </each>
+          <h3 class="mt-36 sm:mt-24">Профессиональный косметолог у&nbsp;вас в&nbsp;ванной</h3>
+          <p>На&nbsp;онлайн-курсах для косметологов новички научатся профессиональному уходу дома, смогут делать себе чистки, маски, омолаживающие процедуры в&nbsp;удобное время и&nbsp;без лишних затрат. Пройдите курсы и&nbsp;узнайте все о&nbsp;профессиональном уходе для самостоятельного использования или для заработка!</p>
+          <each loop="item in response.slice(3, 4)">
+            <component src="src/components/blog.html" locals='{
+            "URL" : "{{ item.URL }}",
+            "PICTURE" : "{{ item.PICTURE }}",
+            "NAME" : "{{ item.NAME }}",
+            "DESC" : "{{ item.DESC }}",
+            "COLOR" : "yellow"
+            }'></component>
+          </each>
+          <h3 class="mt-36 sm:mt-24">Загляните в&nbsp;будущее</h3>
+          <p>Научитесь оценивать ситуации вокруг, понимать происходящие изменения и&nbsp;видеть возможности развития в&nbsp;разных ситуациях на&nbsp;онлайн-курсах таро. Делайте правильный выбор, замечайте ваши ошибки и&nbsp;идите верным путем.</p>
+          <each loop="item in response.slice(4, 5)">
+            <component src="src/components/blog.html" locals='{
+            "URL" : "{{ item.URL }}",
+            "PICTURE" : "{{ item.PICTURE }}",
+            "NAME" : "{{ item.NAME }}",
+            "DESC" : "{{ item.DESC }}",
+            "COLOR" : "purple"
+            }'></component>
+          </each>
+          <p class="mb-0">Найдите свой идеальный курс!</p>
+          <component src="src/components/gray-line.html"></component>
+          <p class="text-base mb-36">С&nbsp;уважением,<br>команда «ИнфоХит»!</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="h-32 sm:h-24"></td>
+      </tr>
+      <component src="src/components/footer.html"></component>
+    </fetch>
+  </block>
+</extends>

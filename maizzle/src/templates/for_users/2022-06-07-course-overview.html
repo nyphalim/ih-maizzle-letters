@@ -1,0 +1,95 @@
+---
+title: "Обзоры курсов по тематикам — новая рубрика в «ИнфоХит»"
+preheader: "Представляем вам новый раздел обзоров курсов. Выбрать подходящий курс теперь стало еще проще!"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <fetch url="https://info-hit.ru/include/tools/blog-json/?arElements=282956,282970,283343,283739,283752&token=u4JTEnMNt4gdsfdfsdf345nkhjk3dfgfh556776dfdghjkluiutyrtym&v=16">
+      <component src="src/components/img-block-without-link.html" locals='{
+      "src" : "https://info-hit.ru/include/images/letter/2022-06-16-overwiev-course.jpg"
+      }'></component>
+      <tr>
+        <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+          <p><strong>Добрый день!</strong></p>
+          <p>Образовательная онлайн-площадка «ИнфоХит» предлагает более 5&nbsp;тысяч обучающих курсов. Чтобы не&nbsp;запутаться в&nbsp;таком количестве и&nbsp;найти подходящую программу мы&nbsp;создали обзоры курсов.</p>
+          <p class="mb-0"><strong>С&nbsp;ними вы&nbsp;можете:</strong></p>
+        <ul>
+          <li class="mb-12">узнать все особенности курсов по&nbsp;теме на&nbsp;одной странице;</li>
+          <li class="mb-12">сравнить предложения разных школ и&nbsp;авторов;</li>
+          <li class="mb-12">получить информацию о&nbsp;бонусах;</li>
+          <li class="mb-12">сделать правильный выбор.</li>
+        </ul>
+        <h3 class="mt-48 sm:mt-36">Начните говорить на&nbsp;английском, как носитель</h3>
+        <p>Забудьте о&nbsp;сложностях в&nbsp;произношении английских слов, ошибках при постановке артиклей, предлогов и&nbsp;расстановке членов предложения!</p>
+          <p>Подборка специальных курсов для проработки частых проблем учеников в&nbsp;процессе изучения английского языка. Закройте пробелы в&nbsp;знаниях и&nbsp;говорите на&nbsp;английском, как носитель.</p>
+          <each loop="item in response.slice(0, 1)">
+            <component src="src/components/blog.html" locals='{
+            "URL" : "{{ item.URL }}",
+            "PICTURE" : "{{ item.PICTURE }}",
+            "NAME" : "{{ item.NAME }}",
+            "DESC" : "{{ item.DESC }}",
+            "COLOR" : "yellow"
+            }'></component>
+          </each>
+          <h3 class="mt-48 sm:mt-36">Создавайте продающие страницы для бизнеса</h3>
+          <p>Масштабируйте бизнес, найдите заказчиков, продвигайтесь, доводите клиентов до&nbsp;покупки с&nbsp;помощью лендинга.</p>
+          <p>На&nbsp;специальных курсах научитесь самостоятельно создавать одностраничный сайт для своего бизнеса.</p>
+          <each loop="item in response.slice(1, 2)">
+            <component src="src/components/blog.html" locals='{
+            "URL" : "{{ item.URL }}",
+            "PICTURE" : "{{ item.PICTURE }}",
+            "NAME" : "{{ item.NAME }}",
+            "DESC" : "{{ item.DESC }}",
+            "COLOR" : "purple"
+            }'></component>
+          </each>
+          <h3 class="mt-48 sm:mt-36">Фишки работы с&nbsp;камерой телефона или фотоаппарата</h3>
+          <p>Делайте снимки, как профессиональный фотограф, сохраняйте на&nbsp;память только красивые кадры, а&nbsp;не&nbsp;то, что вышло.</p>
+          <p>Ознакомьтесь с&nbsp;подборкой курсов про фотографии и&nbsp;узнайте все о&nbsp;работе с&nbsp;камерой, освещением, ретушью.</p>
+          <each loop="item in response.slice(2, 3)">
+            <component src="src/components/blog.html" locals='{
+            "URL" : "{{ item.URL }}",
+            "PICTURE" : "{{ item.PICTURE }}",
+            "NAME" : "{{ item.NAME }}",
+            "DESC" : "{{ item.DESC }}",
+            "COLOR" : "green"
+            }'></component>
+          </each>
+          <h3 class="mt-48 sm:mt-36">Вырастите доброго, умного пса</h3>
+          <p>У&nbsp;многих есть собаки, но&nbsp;не&nbsp;у&nbsp;всех они смышленые, дружелюбные и&nbsp;верные.</p>
+          <p>Узнайте на&nbsp;специальных курсах, как справиться с&nbsp;частыми проблемами, которые возникают у&nbsp;хозяев собак с&nbsp;малого возраста, и&nbsp;решите их&nbsp;без вреда животному.</p>
+          <each loop="item in response.slice(3, 4)">
+            <component src="src/components/blog.html" locals='{
+            "URL" : "{{ item.URL }}",
+            "PICTURE" : "{{ item.PICTURE }}",
+            "NAME" : "{{ item.NAME }}",
+            "DESC" : "{{ item.DESC }}",
+            "COLOR" : "blue"
+            }'></component>
+          </each>
+          <h3 class="mt-48 sm:mt-36">Научитесь составлять рацион, как нутрициолог</h3>
+          <p>Все проблемы и&nbsp;болезни организма идут изнутри.</p>
+          <p>В&nbsp;новой статье узнаете о&nbsp;правилах составления здорового рациона, избавитесь от&nbsp;вредных пищевых привычек.</p>
+          <each loop="item in response.slice(4, 5)">
+            <component src="src/components/blog.html" locals='{
+            "URL" : "{{ item.URL }}",
+            "PICTURE" : "{{ item.PICTURE }}",
+            "NAME" : "{{ item.NAME }}",
+            "DESC" : "{{ item.DESC }}",
+            "COLOR" : "yellow"
+            }'></component>
+          </each>
+          <p>Найдите свой идеальный курс!</p>
+          <component src="src/components/gray-line.html"></component>
+          <p class="text-base mb-36">С&nbsp;уважением,<br>команда «ИнфоХит»!</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="h-32 sm:h-24"></td>
+      </tr>
+      <component src="src/components/footer.html"></component>
+    </fetch>
+  </block>
+</extends>

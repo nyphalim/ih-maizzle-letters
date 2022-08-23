@@ -1,0 +1,76 @@
+---
+title: "Развивайтесь на пенсии, учите детей онлайн, не ошибайтесь на собеседованиях — новые статьи в блоге «ИнфоХит»!"
+preheader: "Почему не берут на работу, эффективные онлайн-курсы детям, как зарабатывать на пенсии в удовольствие"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <fetch url="https://info-hit.ru/include/tools/blog-json/?arElements=282793,282794,282803&token=u4JTEnMNt4gdsfdfsdf345nkhjk3dfgfh556776dfdghjkluiutyrtym&v=4">
+      <component src="src/components/img-block-without-link.html" locals='{
+      "src" : "https://info-hit.ru/include/images/letter/2022-05-25-review-item.jpg"
+      }'></component>
+      <tr>
+        <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+          <p>В&nbsp;блоге «ИнфоХит» регулярно появляются статьи на&nbsp;самые актуальные темы.</p>
+          <p>Знакомьтесь с&nbsp;новой подборкой материалов!</p>
+          <h3 class="mt-48 sm:mt-36">Как сохранить интерес к&nbsp;жизни на&nbsp;пенсии</h3>
+          <p>Куча свободного времени и&nbsp;отсутствие интересных занятий могут плохо сказаться на&nbsp;здоровье и&nbsp;психологическом состоянии пожилых людей. Рутина приводит к&nbsp;отсутствию жизненной энергии, замыканию и&nbsp;ощущению одиночества.</p>
+          <p>Пенсионеры хотят поддерживать активную позицию, сохранять остроту ума, обучаться новому и&nbsp;при этом иметь дополнительный доход.</p>
+          <p>В&nbsp;статье рассказываем обо всех вариантах заработка и&nbsp;развития для пожилых. Где обучаться, и&nbsp;какими бесплатными государственными программами можно воспользоваться.</p>
+          <each loop="item in response.slice(0, 1)">
+            <component src="src/components/blog.html" locals='{
+            "URL" : "{{ item.URL }}",
+            "PICTURE" : "{{ item.PICTURE }}",
+            "NAME" : "{{ item.NAME }}",
+            "DESC" : "{{ item.DESC }}",
+            "COLOR" : "purple"
+            }'></component>
+          </each>
+          <h3 class="mt-48 sm:mt-36">Как выбрать подходящие онлайн-курсы для детей</h3>
+          <p>Онлайн-обучение плотно вошло в&nbsp;современную жизнь. Дистанционно учатся люди всех возрастов. Но&nbsp;у&nbsp;детей часто возникают сложности с&nbsp;самодисциплиной. Им&nbsp;трудно самостоятельно наладить режим, сидеть возле экрана и&nbsp;не&nbsp;отвлекаться.</p>
+          <p>Чтобы обучение приносило результат, подберите правильный формат, ориентируясь на&nbsp;психологию и&nbsp;возраст ребенка. Читайте новый материал и&nbsp;узнайте, как выбрать подходящий онлайн-курс для вашего ребенка.</p>
+          <each loop="item in response.slice(1, 2)">
+            <component src="src/components/blog.html" locals='{
+            "URL" : "{{ item.URL }}",
+            "PICTURE" : "{{ item.PICTURE }}",
+            "NAME" : "{{ item.NAME }}",
+            "DESC" : "{{ item.DESC }}",
+            "COLOR" : "green"
+            }'></component>
+          </each>
+          <h3 class="mt-48 sm:mt-36">Причины, которые мешают устроиться на&nbsp;работу</h3>
+          <p>Часто кандидаты откликаются на&nbsp;вакансии, справляются со&nbsp;всеми тестовыми заданиями, идут на&nbsp;собеседования, но&nbsp;на&nbsp;каждом интервью получают отказ. Кажется, словно рекрутеры сговорились.</p>
+          <p>В&nbsp;новой статье разобрали самые частые причины, которые отталкивают работодателей.</p>
+          <each loop="item in response.slice(2, 3)">
+            <component src="src/components/blog.html" locals='{
+            "URL" : "{{ item.URL }}",
+            "PICTURE" : "{{ item.PICTURE }}",
+            "NAME" : "{{ item.NAME }}",
+            "DESC" : "{{ item.DESC }}",
+            "COLOR" : "blue"
+            }'></component>
+          </each>
+          <component src="src/components/gray-line.html"></component>
+          <h3 class="mt-24 sm:mt-24">Перевернем ваши представления о&nbsp;ремонте</h3>
+          <p><strong>02&nbsp;июня в&nbsp;19:00</strong> и&nbsp;<strong>04&nbsp;июня в&nbsp;12:00</strong> по&nbsp;мск наш эксперт Наталья Зиминова проведет онлайн-встречу <strong>«Как сделать premium-ремонт по&nbsp;цене эконом».</strong></p>
+          <p class="text-base bg-pink-200 py-16 px-24"><strong>Бонус при регистрации</strong>&nbsp;— чек-лист «10&nbsp;лайфхаков, как сэкономить на&nbsp;ремонте кухни».</p>
+          <p>Вы&nbsp;узнаете, как можно реализовывать свои мечты в&nbsp;ремонте за&nbsp;разумные деньги.</p>
+          <p class="mb-24"><strong>Узнать подробности и&nbsp;получить подарок ↓↓↓</strong></p>
+          <component src="src/components/button.html" locals='{
+            "link" : "https://zimart-school.ru/mk3105?utm_source=infohit",
+            "text" : "Зарегистрироваться",
+            "color" : "bg-pink-500",
+            "hover_color" : "bg-pink-600"
+            }'></component>
+          <component src="src/components/gray-line.html"></component>
+          <p class="text-base mb-36">С&nbsp;уважением,<br>команда «ИнфоХит»!</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="h-32 sm:h-24"></td>
+      </tr>
+      <component src="src/components/footer.html"></component>
+    </fetch>
+  </block>
+</extends>
