@@ -1,0 +1,43 @@
+---
+title: "Подборка бесплатных материалов на «ИнфоХит»"
+preheader: "Лучшие курсы специально для вас!"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/main.html">
+  <block name="template">
+    <table class="w-full font-sans">
+      <tr>
+        <td align="center" class="bg-gray-100">
+          <table class="w-600 sm:w-full">
+            <component src="src/components/header.html"></component>
+            <tr>
+              <td align="center" class="sm:px-24 ">
+                <table class="w-full">
+                  <tr>
+                    <td class="bg-white text-gray-800 text-base text-left p-48 sm:p-24 leading-24 rounded">
+                    <p class="text-2xl"><strong>Добрый день!</strong></p>
+                      <p class="m-0 mb-24">Вы&nbsp;интересовались темой [название темы]. Если вы&nbsp;еще в&nbsp;поисках идеального курса, мы&nbsp;собрали лучшие из&nbsp;тех, которыми остались довольны другие ученики.</p>
+                      <p class="m-0 mb-24">Выбирайте бесплатный продукт, чтобы лучше изучить онлайн-школу, автора или курс. Смотрите вебинары и&nbsp;мастер-классы, знакомьтесь с&nbsp;отзывами других учеников и&nbsp;продолжайте развиваться в&nbsp;интересном вам направлении!</p>
+                      <h3 class="mt-36 sm:mt-36">Подборка популярных курсов</h3>
+                      <p>[Таблица с бесплатными материалами по выбранной теме]</p>
+                      <component src="src/components/gray-line.html"></component>
+
+                      <p class="m-0 mb-16">С уважением,<br>
+                        команда ИнфоХит
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="h-32 sm:h-24"></td>
+                  </tr>
+                  <component src="src/components/footer.html"></component>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </block>
+</extends>

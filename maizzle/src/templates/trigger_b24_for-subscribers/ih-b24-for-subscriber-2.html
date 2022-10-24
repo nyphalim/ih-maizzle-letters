@@ -1,0 +1,128 @@
+---
+title: "Недавно вы посетили бесплатный вебинар на ИнфоХит — поделитесь впечатлениями!"
+preheader: "Расскажите всем, что выбирать на ИнфоХит и получите бонус"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/main.html">
+  <block name="template">
+    <table class="w-full font-sans">
+      <tr>
+        <td align="center" class="bg-gray-100">
+          <table class="w-600 sm:w-full">
+            <component src="src/components/header.html"></component>
+            <tr>
+              <td align="center" class="sm:px-24 ">
+                <table class="w-full">
+                  <tr>
+                    <td class="bg-white text-gray-800 text-base text-left px-48 py-24 sm:p-14 leading-24 rounded-2xl">
+
+                      <component src="src/components/about-author.html" locals='{
+                        "name" : "Яна Колокольчикова",
+                        "photo" : "https://info-hit.ru/include/images/letter/yanaK.png"
+                        }'>
+                        <div class="text-base leading-24">
+                          <p class="text-2xl"><strong>Добрый день, [Имя контакта]!</strong></p>
+                          <p class="font-semibold text-base leading-24">Это [Имя] из ИнфоХит.</p>
+                        </div>
+                      </component>
+                      <p class="m-0 mb-24">Вы&nbsp;уже изучили бесплатные материалы @{{Имя Фамилия автора}}? Расскажите, что вам больше всего понравилось, и&nbsp;получите до&nbsp;400 бонусов на&nbsp;покупку других образовательных продуктов на&nbsp;ИнфоХит! Используйте их&nbsp;при покупке курсов с&nbsp;пометкой «Учись на&nbsp;ИнфоХит».</p>
+                      <p class="m-0 mb-24">Для этого расскажите в&nbsp;своих соцсетях&nbsp;— Одноклассниках или Вконтакте о&nbsp;том, что интересного вы&nbsp;нашли на&nbsp;ИнфоХит. Напишите пост/небольшой текст о&nbsp;том, что именно вам понравилось: подача материала, преподаватель, структура курса или удобство пользования. Чему вы&nbsp;научились и&nbsp;как применили новые знания в&nbsp;жизни или работе. Добавьте хэштег <strong>#учусьнаинфохит</strong>. Извлекайте пользу сами и&nbsp;делитесь с&nbsp;друзьями.</p>
+                      <p>Всего два шага отделяют вас от&nbsp;заветных бонусов:</p>
+                      <p class="mb-28"><strong>Шаг 1</strong><br>
+                        Напишите отзыв. За&nbsp;один уникальный отзыв на&nbsp;одной площадке можно получить 200&nbsp;бонусов. Вы&nbsp;можете разместить от&nbsp;одного до&nbsp;двух уникальных отзывов на&nbsp;разных площадках и&nbsp;заработать от&nbsp;200 до&nbsp;400&nbsp;бонусов.
+                      </p>
+                      <p class="mb-28"><strong>Шаг 2</strong><br>
+                        Напишите менеджеру <a href="mailto:anna@info-hit.ru"><strong>anna@info-hit.ru</a></strong> c&nbsp;указанием ссылки на&nbsp;отзыв.
+                        После проверки отзыва, бонус будет зачислен на&nbsp;баланс. Его можно потратить на&nbsp;все курсы с&nbsp;меткой «Учитесь на&nbsp;ИнфоХит».
+                      </p>
+                      <p><strong>Важно!</strong></p>
+                        <ul>
+                          <li>Отзывы нужно писать с&nbsp;личных аккаунтов.</li>
+                          <li>Не&nbsp;принимаем отзывы из&nbsp;одного предложения и&nbsp;без конкретики. Например, «Круто, классный курс!» или «Спасибо, все отлично!»</li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="h-24 sm:h-16"></td>
+                    </tr>
+                
+                    <tr>
+                      <td class="h-24 sm:h-16"></td>
+                    </tr>
+                    <tr>
+                      <td class="bg-white text-gray-800 text-base text-left px-48 py-24 sm:p-14 leading-24 rounded-2xl">
+                      <h3 class="mt-36 sm:mt-36">Чему обучиться на&nbsp;ИнфоХит</h3>
+                      <p>Специально для вас мы&nbsp;подготовили подборку образовательных продуктов, на&nbsp;которые вы&nbsp;можете потратить бонусы. Просто используйте их&nbsp;при оплате! <strong>1&nbsp;бонус = 1&nbsp;₽</strong>.</p>
+                      <if condition="page.env === 'local'">
+                        <fetch url="https://info-hit.ru/include/tools/courses-json/?coursesArr=169320,80717,273137&token=u4JTEnMNt4gdsfdfsdf345nkhjk3dfgfh556776dfdghjkluiutyrtym">
+                          <each loop="item in response">
+                            <table class="w-full">
+                              <tr>
+                                <td class="w-full pb-12 sm:w-full sm:inline-block">
+                                  <a href="{{ item.URL }}" target="_blank" class="text-base text-blue-500 hover:text-blue-400 no-underline">
+                                    <table class="w-full">
+                                      <tr>
+                                        <td class="w-4/12 align-top"><img src="https://info-hit.ru/{{ item.PICTURE }}" alt=""></td>
+                                        <td class="p-12 pt-0 sm:p-0 sm:pl-12 rounded">
+                                          <p class="m-0 mb-10 text-sm text-gray-500">{{ item.RIGHTHOLDER }}</p>
+                                          <h2 class="m-0 mb-10 text-black text-lg leading-24">{{ item.TYPE }} — {{ item.NAME }}</h2>
+                                          <p class="m-0 mb-10 text-sm text-gray-700">{{ item.DESC }}</p>
+                                          <p>Подробнее &rarr;</p>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </a>
+                                </td>
+                              </tr>
+                            </table>
+                          </each>
+                        </fetch>
+                      </if>
+                      <else>
+                        @{{Другие курсы HTML}}
+                        <fetch url="https://info-hit.ru/include/tools/courses-json/?coursesArr=80717&token=u4JTEnMNt4gdsfdfsdf345nkhjk3dfgfh556776dfdghjkluiutyrtym">
+                          <each loop="user in response">
+                            <table class="w-full">
+                              <tr>
+                                <td class="w-full pb-32 sm:w-full sm:inline-block">
+                                  <a href="https://example.com" class="text-base text-blue-500 hover:text-blue-400 no-underline">
+                                    <table class="w-full">
+                                      <tr>
+                                        <td class="w-4/12 align-top"><img src="https://via.placeholder.com/150/E1E1E1/FFFFFF" alt=""></td>
+                                        <td class="p-12 pt-0 sm:p-0 sm:pl-12 rounded">
+                                          <h2 class="m-0 mb-10 text-black text-lg leading-24">{{ user.name }}</h2>
+                                          <p class="m-0 mb-10 text-sm text-gray-700">{{ user.company.catchPhrase }}</p>
+                                          <p class="m-0 mb-10 text-sm text-gray-500">{{ user.name }}</p>
+                                          <p>Read more &rarr;</p>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </a>
+                                </td>
+                              </tr>
+                            </table>
+                          </each>
+                        </fetch>
+                      </else>
+                      <p>Если у&nbsp;вас возникли вопросы, напишите нам: <a href="mailto:info@info-hit.ru"><strong>info@info-hit.ru</a></strong></p>
+                      <component src="src/components/gray-line.html"></component>
+
+                      <p class="m-0 mb-16">С уважением,<br>
+                        [Имя] из ИнфоХит
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="h-32 sm:h-24"></td>
+                  </tr>
+                  <component src="src/components/footer.html"></component>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </block>
+</extends>

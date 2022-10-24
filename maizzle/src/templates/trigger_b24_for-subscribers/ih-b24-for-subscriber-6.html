@@ -1,0 +1,104 @@
+---
+title: "Скидка 10% внутри!"
+preheader: "И подборка самых популярных курсов ИнфоХит"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/main.html">
+  <block name="template">
+    <table class="w-full font-sans">
+      <tr>
+        <td align="center" class="bg-gray-100">
+          <table class="w-600 sm:w-full">
+            <component src="src/components/header.html"></component>
+            <tr>
+              <td align="center" class="sm:px-24 ">
+                <table class="w-full">
+                  <tr>
+                    <td class="bg-white text-gray-800 text-base text-left p-48 sm:p-24 leading-24 rounded">
+
+                      <component src="src/components/about-author.html" locals='{
+                        "name" : "Яна Колокольчикова",
+                        "photo" : "https://info-hit.ru/include/images/letter/yanaK.png"
+                        }'>
+                        <div class="text-base leading-24">
+                          <p class="text-2xl"><strong>Добрый день, [Имя контакта]!</strong></p>
+                          <p class="font-semibold text-base leading-24">Это [Имя] из ИнфоХит.</p>
+                        </div>
+                      </component>
+                      <p class="m-0 mb-24">Продолжайте учиться и&nbsp;развиваться с&nbsp;нами! В&nbsp;каталоге онлайн-курсов 5000+ обучающих программ, курсов, вебинаров и&nbsp;мастер-классов. Чтобы вам было проще выбрать нужную тему мы&nbsp;сделали удобные фильтры.</p>
+                      <p class="m-0 mb-24">Сортируйте онлайн-программы по&nbsp;категориям, уровню сложности и&nbsp;варианту оплаты. А&nbsp;еще можно перейти в&nbsp;раздел «Покупка на&nbsp;ИнфоХит» и&nbsp;купить курс со&nbsp;скидкой 10%!</p>
+                      <p>Примените этот промокод при оплате курса из&nbsp;этой категории, чтобы сэкономить.</p>
+                      <p class="m-0 mb-24 text-lg border-dashed border-2 border-yellow-400 text-center py-7 rounded"><small>Промокод:</small><br>SL-OTO5Q-G8Y0O27</p>
+                      <p class="m-0 mb-24">Сделали для вас подборку самых популярных материалов, которые вы&nbsp;можете приобрести со&nbsp;скидкой&nbsp;10% прямо сейчас!</p>
+                      <if condition="page.env === 'local'">
+                        <fetch url="https://info-hit.ru/include/tools/courses-json/?coursesArr=169320,80717,273137&token=u4JTEnMNt4gdsfdfsdf345nkhjk3dfgfh556776dfdghjkluiutyrtym">
+                          <each loop="item in response">
+                            <table class="w-full">
+                              <tr>
+                                <td class="w-full pb-12 sm:w-full sm:inline-block">
+                                  <a href="{{ item.URL }}" target="_blank" class="text-base text-blue-500 hover:text-blue-400 no-underline">
+                                    <table class="w-full">
+                                      <tr>
+                                        <td class="w-4/12 align-top"><img src="https://info-hit.ru/{{ item.PICTURE }}" alt=""></td>
+                                        <td class="p-12 pt-0 sm:p-0 sm:pl-12 rounded">
+                                          <p class="m-0 mb-10 text-sm text-gray-500">{{ item.RIGHTHOLDER }}</p>
+                                          <h2 class="m-0 mb-10 text-black text-lg leading-24">{{ item.TYPE }} — {{ item.NAME }}</h2>
+                                          <p class="m-0 mb-10 text-sm text-gray-700">{{ item.DESC }}</p>
+                                          <p>Подробнее &rarr;</p>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </a>
+                                </td>
+                              </tr>
+                            </table>
+                          </each>
+                        </fetch>
+                      </if>
+                      <else>
+                        @{{Другие курсы HTML}}
+                        <fetch url="https://info-hit.ru/include/tools/courses-json/?coursesArr=80717&token=u4JTEnMNt4gdsfdfsdf345nkhjk3dfgfh556776dfdghjkluiutyrtym">
+                          <each loop="user in response">
+                            <table class="w-full">
+                              <tr>
+                                <td class="w-full pb-32 sm:w-full sm:inline-block">
+                                  <a href="https://example.com" class="text-base text-blue-500 hover:text-blue-400 no-underline">
+                                    <table class="w-full">
+                                      <tr>
+                                        <td class="w-4/12 align-top"><img src="https://via.placeholder.com/150/E1E1E1/FFFFFF" alt=""></td>
+                                        <td class="p-12 pt-0 sm:p-0 sm:pl-12 rounded">
+                                          <h2 class="m-0 mb-10 text-black text-lg leading-24">{{ user.name }}</h2>
+                                          <p class="m-0 mb-10 text-sm text-gray-700">{{ user.company.catchPhrase }}</p>
+                                          <p class="m-0 mb-10 text-sm text-gray-500">{{ user.name }}</p>
+                                          <p>Read more &rarr;</p>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </a>
+                                </td>
+                              </tr>
+                            </table>
+                          </each>
+                        </fetch>
+                      </else>
+                      <component src="src/components/gray-line.html"></component>
+
+                      <p class="m-0 mb-16">С уважением,<br>
+                        [Имя], ИнфоХит
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="h-32 sm:h-24"></td>
+                  </tr>
+                  <component src="src/components/footer.html"></component>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </block>
+</extends>

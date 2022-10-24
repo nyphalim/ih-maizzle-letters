@@ -1,0 +1,67 @@
+---
+title: "Скоро День знаний. Вы готовы?"
+preheader: "Проверьте свой профиль на «ИнфоХит»!"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/2022-08-24-knowledge-days.jpg"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p><strong>Добрый день!</strong></p>
+        <p>Скоро 1&nbsp;сентября, а&nbsp;значит, начнется новый учебный год!</p>
+        <p>В&nbsp;вашем профиле на&nbsp;«ИнфоХит» все готово для встречи с&nbsp;учениками?</p>
+
+        <p class="mb-28"><strong>Шаг 1. Обновите контакты.</strong><br>
+          Добавьте все активные контакты: официальный сайт, соцсети, мессенджеры. Мы&nbsp;убрали ссылки на&nbsp;Instagram и&nbsp;Facebook, но&nbsp;зато сделали новое поле для Telegram.
+        </p>
+
+        <p class="mb-28"><strong>Шаг 2. Добавьте качественные фото.</strong><br>
+          Просто пришлите их&nbsp;своему персональному менеджеру в&nbsp;«ИнфоХит». А&nbsp;еще можно записать видео-приветствие или короткий рассказ о&nbsp;себе!
+        </p>
+
+        <p class="mb-28"><strong>Шаг 3. Проверьте наличие бесплатного материала.</strong><br>
+          Убедитесь, что в&nbsp;профиле размещена ваша актуальная автоворонка.
+        </p>
+
+        <p class="mb-28"><strong>Шаг 4. Разместите все курсы.</strong><br>
+          Просмотрите свои материалы на&nbsp;площадке: удалите устаревшие и&nbsp;добавьте новые.
+        </p>
+
+        <p class="mb-28"><strong>Шаг 5. Проверьте отзывы в&nbsp;профиле.</strong><br>
+          Свежие положительные отзывы, говорят, что автор работает и&nbsp;его продукт пользуется спросом. А&nbsp;ваша готовность вести диалог покажет, что вы&nbsp;продолжаете дело, и&nbsp;цените мнение учеников.
+        </p>
+
+        <p class="mb-28"><strong>Шаг 6. Заполните свой профиль.</strong><br>
+          Если рейтинг заполнения менее&nbsp;85%, напишите своему менеджеру. Он&nbsp;поможет добавить информацию, которой не&nbsp;хватает. Уровень рейтинга отображается на&nbsp;вашей персональной странице.
+        </p>
+
+        <p class="mb-5"><strong>Шаг 7. Проверьте ваш доступ к&nbsp;<a href="https://info-hit.ru/account/author/" target="_blank">Личному кабинету</a> на&nbsp;«ИнфоХит».</strong></p>
+          <p>В Личном кабинете вы можете:</p>
+        <ol>
+          <li class="mb-10"><a href="https://info-hit.ru/account/author/traffic/" target="_blank">получать статистику</a> по&nbsp;трафику и&nbsp;конверсиям;</li>
+          <li class="mb-10">использовать наши виджеты;</li>
+          <li class="mb-10"><a href="https://info-hit.ru/account/author/balance/payment-commissions/" target="_blank">выплачивать комиссионные;</a></li>
+          <li class="mb-24">заказывать рекламу на&nbsp;портале.</li>
+        </ol>
+        <p class="text-base bg-purple-100 py-16 px-24">Чтобы получить доступ к&nbsp;личному кабинету, напишите своему персональному менеджеру в&nbsp;«ИнфоХит»!</p>
+
+        <p>Для удобства мы&nbsp;сделали небольшую <a href="https://docs.google.com/forms/d/1e7K70TuddIKw6wek-xrEei6zeXqQSjkrpsvV5yWX6gs/edit" target="_blank">анкету</a>, чтобы быстрее внести изменения на&nbsp;вашу страницу.</p>
+        <component src="src/components/button.html" locals='{
+        "link" : "https://docs.google.com/forms/d/1e7K70TuddIKw6wek-xrEei6zeXqQSjkrpsvV5yWX6gs/edit",
+        "text" : "Заполнить анкету",
+        "color" : "bg-green-500",
+        "hover_color" : "bg-green-600"
+        }'></component>
+        <p class="text-base mb-36 mt-36">Ваш надежный партнер,<br>«ИнфоХит».</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
