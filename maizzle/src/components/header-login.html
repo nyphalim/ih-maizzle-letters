@@ -1,0 +1,25 @@
+<tr>
+  <td class="px-48 py-32 sm:py-32 sm:px-24">
+    <table>
+      <tr>
+        <td class="w-2/5">
+          <a href="https://info-hit.ru">
+            <img class="" src="https://info-hit.ru/include/images/letter/logo-subscribe.png" alt="ИнфоХит">
+          </a>
+        </td>
+        <td class="text-right">
+          <if condition="page.env === 'local'">
+            <a class="no-underline align-middle" href="https://info-hit.ru/account/user/" target="_blank">
+              <span class="text-xl text-black font-bold inline-block bg-yellow-200 p-5 mr-12">100 ₽</span>
+              <img class="rounded-full h-52 w-52" src="https://info-hit.ru/upload/resize_cache/main/87e/70_70_2/VZN8gFUP9zM.jpg" alt="Аватар">
+              <span class="overflow-hidden max-w-96 inline-block whitespace-nowrap text-black relative">nyphalim@gmail.com<span class="absolute top-0 right-0 h-20 w-24 bg-gradient-to-r from-transparent to-gray-100"></span></span>
+            </a>
+          </if>
+          <else>
+            #LOGIN_BLOCK#
+          </else>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
