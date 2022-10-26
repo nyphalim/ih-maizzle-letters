@@ -22,9 +22,9 @@ module.exports = {
       },
     },
     browsersync: {
-      port: 3002,
+      port: 3051,
       ui: {
-        port: 3003,
+        port: 3052,
       },
       // set one server
       // startPath: '/builder/',

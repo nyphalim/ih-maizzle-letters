@@ -7,6 +7,7 @@
   },
   "dependencies": {
     "@maizzle/cli": "^1.5.1",
-    "@maizzle/framework": "^3.7.3"
+    "@maizzle/framework": "^3.7.3",
+    "tailwindcss": "^3.2.1"
   }
 }
