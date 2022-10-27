@@ -35,5 +35,12 @@ module.exports = {
       //   },
       // },
     },
+    posthtml: {
+      fetch: {
+        got: {}, // pass options to the `got` package
+        preserveTag: true, // default false
+        expressions: {}, // configure expressions in fetch context
+      }
+    }
   },
 }
