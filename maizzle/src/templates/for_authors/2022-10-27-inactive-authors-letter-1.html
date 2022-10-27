@@ -1,0 +1,47 @@
+---
+title: "Размещайте курсы в каталоге ИнфоХит и получайте новых учеников"
+preheader: "Пополните ряды успешных авторов и онлайн-школ"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <fetch url="https://info-hit.ru/include/tools/courses-json/?coursesArr=282228,283563,284735,263621,250749&token=u4JTEnMNt4gdsfdfsdf345nkhjk3dfgfh556776dfdghjkluiutyrtym&v=4">
+      <component src="src/components/img-block-without-link.html" locals='{
+      "src" : "https://info-hit.ru/include/images/letter/2022-10-25-inactive-authors.jpg"
+      }'></component>
+      <tr>
+        <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+          <component src="src/components/about-author.html" locals='{
+            "name" : "Римма Максимова",
+            "photo" : "https://info-hit.ru/upload/resize_cache/main/068/gg3f0ni52ve8vzpixnhw5p20w6bv1ubr/160_160_2/Bez-nazvaniya.png"
+            }'>
+              <div class="text-base leading-24">
+                <p>Добрый день!</p>
+                <p class="font-semibold text-base leading-24">Это Римма, менеджер в&nbsp;каталоге онлайн-курсов и&nbsp;школ ИнфоХит.</p>
+              </div>
+            </component>
+        <p>Когда-то вы&nbsp;регистрировались на&nbsp;платформе <a href="https://info-hit.ru/?r1=mail&r2=27-10-2022" target="_blank">ИнфоХит</a>. К&nbsp;сожалению, наше сотрудничество не&nbsp;состоялось.</p>
+        <p>ИнфоХит&nbsp;— прекрасная возможность увеличить продажи своих курсов и&nbsp;тренингов. Присоединяйтесь к&nbsp;команде лидеров! Skillbox, «Яндекс.Практикум», «Нетология» и&nbsp;другие уже разместили свои образовательные продукты на&nbsp;ИнфоХит.</p>
+        <p>По&nbsp;данным статистики сайта ИнфоХит за&nbsp;последний год&nbsp;— ваша потенциальная аудитория &gt; 1&nbsp;500&nbsp;000&nbsp;учеников.</p>
+        <p><strong>Что вам даст размещение на&nbsp;ИнфоХит:</strong></p>
+        <ul>
+          <li class="mb-12">обеспечите себя дополнительными позициями в&nbsp;ТОП-е выдачи Yandex и&nbsp;Google, получите больше органического трафика;</li>
+          <li class="mb-12">сможете работать с&nbsp;мнениями учеников, получите еще больше положительного контента через страницы с&nbsp;отзывами;</li>
+          <li class="mb-12">получите дополнительный способ конвертировать «сомневающихся» в&nbsp;учеников.</li>
+        </ul>
+        <p>Осталось только договориться о&nbsp;формате сотрудничества и&nbsp;отправить актуальную информацию для вашего профиля.</p>
+        <p>Всего два простых шага до&nbsp;новых учеников!</p>
+        <p>Чтобы внести изменения, сообщите удобный канал для связи. Я&nbsp;напишу вам, запрошу информацию для обновления профиля и&nbsp;с&nbsp;удовольствием отвечу на&nbsp;ваши вопросы!</p>
+        <p>Пожалуйста напишите ваш ник в&nbsp;Telegram, если пользуетесь этим мессенджером.</p>
+        <p>Или пишите сразу мне <a href="https://t.me/Rimma_Infohit" target="_blank">@Rimma_Infohit</a>.</p>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36"><strong>Хорошего дня,<br>Римма из ИнфоХит.</strong></p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
