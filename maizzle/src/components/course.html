@@ -1,7 +1,7 @@
 <table class="w-full">
   <tr>
     <td class="w-full pb-32 sm:w-full sm:inline-block">
-      <a href="{{ link }}" target="_blank" class="text-base text-blue-500 hover:text-blue-400 no-underline">
+      <a href="{{ link.replace(/&amp;/g, '&') }}" target="_blank" class="text-base text-blue-500 hover:text-blue-400 no-underline">
         <table class="w-full">
           <tr>
             <td class="w-4/12 align-top"><img src="{{ picture }}" alt=""></td>
