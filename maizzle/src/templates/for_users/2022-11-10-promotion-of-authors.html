@@ -1,0 +1,106 @@
+---
+title: "Ух ты! Бесплатное обучение на ИнфоХит!"
+preheader: "Выбирайте занятие по душе и учитесь с удовольствием"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <fetch url="https://info-hit.ru/include/tools/courses-json/?coursesArr=280270,277453,282167,290324&token=u4JTEnMNt4gdsfdfsdf345nkhjk3dfgfh556776dfdghjkluiutyrtym&v=4">
+      <component src="src/components/img-block-without-link.html" locals='{
+      "src" : "https://info-hit.ru/include/images/letter/2022-11-10-free-courses.jpg"
+      }'></component>
+      <tr>
+        <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+          <component src="src/components/about-author.html" locals='{
+            "name" : "Яна Колокольчикова",
+            "photo" : "https://info-hit.ru/include/images/letter/yanaK.png"
+            }'>
+              <div class="text-base leading-24">
+                <p>Добрый день!</p>
+                <p class="font-semibold text-base leading-24">Это Яна из&nbsp;«ИнфоХит». Подготовила для вас подборку бесплатных курсов популярных авторов.</p>
+              </div>
+            </component>
+          <p class="mb-24">Прокачайте свои знания и&nbsp;навыки в&nbsp;Figma, конструкторе сайтов на&nbsp;Tilda, кондитерском деле и&nbsp;криптоинвестициях. Научитесь работать с&nbsp;картами таро, чтобы управлять различными ситуациями и&nbsp;решать проблемы.</p>
+          <p>В&nbsp;программе&nbsp;— только самые интересные и&nbsp;популярные направления. Убедитесь в&nbsp;этом сами.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="h-24 sm:h-16"></td>
+      </tr>
+      <tr>
+        <td class="bg-white text-gray-800 text-base text-left px-48 py-24 sm:p-14 leading-24 rounded-2xl">
+          <h3 class="mt-24 sm:mt-24">Что вас ждет в&nbsp;ноябре</h3>
+          <p class="mb-24">Все, что нужно для эффективного обучения: полезная теория от&nbsp;ведущих экспертов, плодотворная практика и&nbsp;классные бонусы.</p>
+          <each loop="item in response.slice(0, 1)">
+            <component src="src/components/course.html" locals='{
+              "author" : "{{ item.RIGHTHOLDER }}",
+              "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+              "subtitle" : "{{ item.DESC }}",
+              "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+              "link" : "{{ item.DETAIL_PAGE_URL }}"
+              }'>
+            </component>
+          </each>
+          <each loop="item in response.slice(1, 2)">
+            <component src="src/components/course.html" locals='{
+              "author" : "{{ item.RIGHTHOLDER }}",
+              "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+              "subtitle" : "{{ item.DESC }}",
+              "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+              "link" : "{{ item.DETAIL_PAGE_URL }}"
+              }'>
+            </component>
+          </each>
+          <each loop="item in response.slice(2, 3)">
+            <component src="src/components/course.html" locals='{
+              "author" : "{{ item.RIGHTHOLDER }}",
+              "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+              "subtitle" : "{{ item.DESC }}",
+              "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+              "link" : "{{ item.DETAIL_PAGE_URL }}"
+              }'>
+            </component>
+          <each loop="item in response.slice(3, 4)">
+            <component src="src/components/course.html" locals='{
+              "author" : "{{ item.RIGHTHOLDER }}",
+              "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+              "subtitle" : "{{ item.DESC }}",
+              "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+              "link" : "{{ item.DETAIL_PAGE_URL }}"
+              }'>
+            </component>
+          </each>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="h-24 sm:h-16"></td>
+      </tr>
+      <tr>
+        <td class="bg-white text-gray-800 text-base text-left px-48 py-24 sm:p-14 leading-24 rounded-2xl">
+          <h3 class="mt-24 sm:mt-24">Приглашаем на&nbsp;мастер-класс</h3>
+          <p>Познайте тайны карт таро и&nbsp;получите новую профессию!</p>
+          <p>Сфера таро стала популярной и&nbsp;продолжает набирать обороты. К&nbsp;ней обращаются за&nbsp;помощью в&nbsp;сложные периоды.</p>
+          <p>Как правильно работать с&nbsp;картами таро, узнаете на&nbsp;бесплатном мастер-классе Василия Попова «Искусство таро».</p>  
+          <p class="text-base bg-yellow-100 py-16 px-24">Даты проведения: <nobr>22–24</nobr> ноября 19:00&nbsp;мск.</p>
+          <p>Еще Василий подготовил бонусное видео «5&nbsp;ошибок таролога, или почему твои расклады не&nbsp;работают». Оно поможет в&nbsp;вашей практике и&nbsp;облегчит чтение даже самых каверзных раскладов.</p>
+          <p>Познайте тайны древних жрецов на&nbsp;бесплатном мастер-классе.</p>
+          <component src="src/components/button.html" locals='{
+            "link" : "https://info-hit.ru/away.php?to=link&id=131",
+            "text" : "Узнать подробности",
+            "color" : "bg-blue-500",
+            "hover_color" : "bg-blue-600"
+            }'></component>
+          <component src="src/components/gray-line.html"></component>
+          <p class="text-base mb-36">С&nbsp;уважением,<br>команда «ИнфоХит»!</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="h-32 sm:h-24"></td>
+      </tr>
+      <component src="src/components/footer.html"></component>
+    </fetch>
+  </block>
+</extends>

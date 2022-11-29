@@ -1,0 +1,40 @@
+---
+title: "Недавно вы начали изучать материалы на ИнфоХит — поделитесь впечатлениями!"
+preheader: "Помогите другим пользователям принять решение"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+      <component src="src/components/img-block-without-link.html" locals='{
+      "src" : "https://info-hit.ru/include/images/letter/"
+      }'></component>
+      <tr>
+        <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+          <p><strong>Добрый день, [Имя контакта]!</strong></p>
+          <p>Как вам обучающие материалы, которые вы&nbsp;нашли на&nbsp;ИнфоХит? Расскажите, что вам больше всего понравилось, и&nbsp;получите 200 бонусов на&nbsp;покупку образовательных продуктов! Используйте их&nbsp;при оплате курсов с&nbsp;пометкой «<a href="https://info-hit.ru/catalog/filter/sale-y/?r1=mail&r2=courses-on-ih" target="_blank">Покупка на&nbsp;ИнфоХит</a>».</p>
+          <p>Для получения бонусов:</p>
+          <p><strong> 1. Оставьте отзыв на&nbsp;странице материала.</strong></p>
+          <p>Напишите небольшой текст о&nbsp;том, что именно вам понравилось: подача материала, преподаватель, структура курса или удобство пользования.</p>
+          <ul>
+            <li class="mb-16">Автор&nbsp;[Имя автора]— Оставить отзыв</li>
+            <li class="mb-16">Курс&nbsp;[Название курса]— Оставить отзыв</li>
+            <li class="mb-16">Курс&nbsp;[Название курса]— Оставить отзыв&nbsp</li>
+          </ul>
+          <p><i>Не принимаем отзывы из&nbsp;одного предложения и&nbsp;без конкретики. Например, «Круто, классный курс!» или «Спасибо, все отлично!».</i></p>
+          <p><strong> 2. Сообщите менеджеру.</strong></p>
+          <p>Напишите менеджеру <a href="mailto:subscribe@info-hit.ru"><strong>subscribe@info-hit.ru</strong></a> c&nbsp;указанием ссылки на&nbsp;отзыв. После проверки отзыва, бонус будет зачислен на&nbsp;баланс*. Его можно потратить на&nbsp;все курсы с&nbsp;меткой «Покупка на&nbsp;ИнфоХит».</p>
+          <p>Мы&nbsp;уже подготовили для вас подборку образовательных продуктов, на&nbsp;которые вы&nbsp;можете потратить бонусы. Просто используйте их&nbsp;при оплате! <strong>1&nbsp;бонус = 1&nbsp;₽</strong>.</p>
+          [Подборка]
+          <p class="mb-0">* За&nbsp;каждый уникальный отзыв вы&nbsp;получите 200&nbsp;бонусов. В&nbsp;месяц можно размещать не&nbsp;более 5&nbsp;отзывов.</p>
+          <component src="src/components/gray-line.html"></component>
+          <p class="text-base mb-36">С&nbsp;уважением,<br>команда «ИнфоХит»!</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="h-32 sm:h-24"></td>
+      </tr>
+      <component src="src/components/footer.html"></component>
+    </fetch>
+  </block>
+</extends>
