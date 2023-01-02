@@ -1,0 +1,83 @@
+---
+title: "Настоящая новогодняя магия"
+preheader: "Ловите подборку волшебных курсов"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <fetch url="https://info-hit.ru/include/tools/courses-json/?coursesArr=288315,166348,165676&token=u4JTEnMNt4gdsfdfsdf345nkhjk3dfgfh556776dfdghjkluiutyrtym&v=4">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/2023-01-02-ny-letter-3.jpg"
+    }'></component>
+
+      <component src="src/components/round-block-mt.html">
+        <p><strong>С&nbsp;Новым Годом!</strong></p>
+        <p>Желаем в&nbsp;этом году новых успехов и&nbsp;достижений, идей и&nbsp;желаний, возможностей и&nbsp;стремлений.</p>
+        <p>А&nbsp;чтобы все задуманное осуществилось&nbsp;— ловите подборку классных курсов!</p>
+        <p><i>Достигайте поставленных целей</i></p>
+        <p><strong><a href="https://info-hit.ru/away.php?to=link&id=223" target="_blank">Мастер-класс «Как стать реальным достигатором» →</a></strong></p>
+        <p><strong><a href="https://info-hit.ru/course-tselepolaganie-i-tseledostizhenie/" target="_blank">Курс «Целеполагание и&nbsp;целедостижение» →</a></strong></p>
+        <p><strong><a href="https://info-hit.ru/away.php?to=link&id=224" target="_blank">Тренинг «Достижение целей» →</a></strong></p>
+        <p><i>Начните вкусно готовить</i></p>
+        <p><strong><a href="https://info-hit.ru/away.php?to=link&id=225" target="_blank">Вебинар «Необычные блюда за&nbsp;15&nbsp;минут» →</a></strong></p>
+        <p><strong><a href="https://info-hit.ru/away.php?to=link&id=226" target="_blank">Курс «Macarons&nbsp;2.0» →</a></strong></p>
+        <p><i>Освойте популярную прибыльную профессию и&nbsp;начните зарабатывать</i></p>
+        <p><strong><a href="https://info-hit.ru/away.php?to=link&id=227" target="_blank">Тренинг «Специалист по&nbsp;интернет-рекламе» →</a></strong></p>
+        <p><strong><a href="https://info-hit.ru/away.php?to=link&id=228" target="_blank">Курс «Профессиональный коучинг» →</a></strong></p>
+      </component>
+
+      <tr>
+        <td class="h-24 sm:h-16"></td>
+      </tr>
+      <tr>
+        <td class="bg-white text-gray-800 text-base text-left px-48 py-24 sm:p-14 leading-24 rounded-2xl">
+        <h3>Новогодняя распродажа продолжается</h3>
+        <p>В&nbsp;специальном разделе каталога <a href="https://info-hit.ru/catalog/filter/discount-y/" target="_blank">«Новогодний SALE»</a> мы&nbsp;разместили лучшие предложения от&nbsp;авторов и&nbsp;экспертов. Ловите подборку новогодних скидок на&nbsp;курсы с&nbsp;покупкой на&nbsp;ИнфоХит:</p>
+        <each loop="item in response.slice(0, 1)">
+          <component src="src/components/course.html" locals='{
+            "author" : "{{ item.RIGHTHOLDER }}",
+            "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+            "subtitle" : "{{ item.DESC }}",
+            "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+            "link" : "{{ item.DETAIL_PAGE_URL }}"
+            }'>
+          </component>
+        </each>
+        <each loop="item in response.slice(1, 2)">
+          <component src="src/components/course.html" locals='{
+            "author" : "{{ item.RIGHTHOLDER }}",
+            "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+            "subtitle" : "{{ item.DESC }}",
+            "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+            "link" : "{{ item.DETAIL_PAGE_URL }}"
+            }'>
+          </component>
+        </each>
+        <each loop="item in response.slice(2, 3)">
+          <component src="src/components/course.html" locals='{
+            "author" : "{{ item.RIGHTHOLDER }}",
+            "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+            "subtitle" : "{{ item.DESC }}",
+            "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+            "link" : "{{ item.DETAIL_PAGE_URL }}"
+            }'>
+          </component>
+        </each>
+          <table class="w-full">
+            <tr>
+              <td class="py-16">
+                <div class="bg-gray-200 h-px leading-px">&zwnj;</div>
+              </td>
+            </tr>
+          </table>
+          <p class="text-base mb-36">Хороших праздников,<br>команда ИнфоХит</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="h-32 sm:h-24"></td>
+      </tr>
+      <component src="src/components/footer.html"></component>
+    </fetch>
+  </block>
+</extends>
