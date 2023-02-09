@@ -7,25 +7,17 @@ bodyClass: bg-gray-100
 <extends src="src/layouts/ih-main.html">
   <block name="template">
     <fetch url="https://info-hit.ru/include/tools/courses-json/?coursesArr=287917,268808,287983,292456&token=u4JTEnMNt4gdsfdfsdf345nkhjk3dfgfh556776dfdghjkluiutyrtym&v=4">
-      <component src="src/components/img-block-without-link.html" locals='{
+      <component src="src/components/img-block-without-link-round.html" locals='{
       "src" : "https://info-hit.ru/include/images/letter/2023-02-09-free-courses.jpg"
       }'></component>
-      <tr>
-        <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
-          <component src="src/components/about-author.html" locals='{
-            "name" : "Яна Колокольчикова",
-            "photo" : "https://info-hit.ru/include/images/letter/yanaK.png"
-            }'>
-              <div class="text-base leading-24">
-                <p>Добрый день!</p>
-                <p class="font-semibold text-base leading-24">Это Яна из&nbsp;«ИнфоХит». Подготовила для вас подборку бесплатных курсов популярных авторов.</p>
-              </div>
-            </component>
-          <p class="mb-24">Освоите методику создания вовлекающих видеороликов. Избавьтесь от&nbsp;болезней, денежных блоков и&nbsp;плохих привычек с&nbsp;помощью практики рейки. Научитесь принимать критику, работать с&nbsp;коллективом и&nbsp;эффективно достигать своих целей.</p>
-          <p>Если давно мечтаете зарабатывать на&nbsp;маркетплейсах&nbsp;— запишитесь на&nbsp;курс Олега Карнауха. Он&nbsp;расскажет, как стать востребованным специалистом по&nbsp;продвижению на&nbsp;Ozon и&nbsp;Wildberries.</p>
-          <p>В&nbsp;программе&nbsp;— только самые интересные и&nbsp;популярные направления. Убедитесь в&nbsp;этом сами.</p>
-        </td>
-      </tr>
+        
+      <component src="src/components/round-block-mt.html">
+        <p><strong>Добрый день!</strong></p>
+        <p class="font-semibold text-base leading-24">Подготовили для вас подборку бесплатных курсов популярных авторов.</p>
+        <p class="mb-24">Освоите методику создания вовлекающих видеороликов. Избавьтесь от&nbsp;болезней, денежных блоков и&nbsp;плохих привычек с&nbsp;помощью практики рейки. Научитесь принимать критику, работать с&nbsp;коллективом и&nbsp;эффективно достигать своих целей.</p>
+        <p>Если давно мечтаете зарабатывать на&nbsp;маркетплейсах&nbsp;— запишитесь на&nbsp;курс Олега Карнауха. Он&nbsp;расскажет, как стать востребованным специалистом по&nbsp;продвижению на&nbsp;Ozon и&nbsp;Wildberries.</p>
+        <p>В&nbsp;программе&nbsp;— только самые интересные и&nbsp;популярные направления. Убедитесь в&nbsp;этом сами.</p>
+        </component>
 
       <tr>
         <td class="h-24 sm:h-16"></td>
