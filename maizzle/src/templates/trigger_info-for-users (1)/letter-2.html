@@ -1,0 +1,93 @@
+---
+title: "Лучшие курсы, комментарии экспертов, советы и лайфхаки"
+preheader: "Читайте блог ИнфоХит!"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main-login.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/trigger-info-user/trigger-info-user-2.jpg"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-14 pb-24 leading-24 rounded-b-2xl">
+        <p><strong>Добрый день, #USER_NAME#!</strong></p>
+        <p class="m-0 mb-24">Как справиться со стрессом, какие курсы выбрать для ребенка и зачем учиться взрослому — узнайте все это и многое другое в блоге ИнфоХит. Каждую неделю вас ждут материалы на актуальную тему, подборки онлайн-курсов, советы и лайфхаки.</p>
+
+        <h2>С блогом ИнфоХит вы можете:</h2>
+        <ul>
+          <li class="mb-8">выбрать подходящий онлайн-курс;</li>
+          <li class="mb-8">поближе познакомиться с онлайн-школой или автором;</li>
+          <li class="mb-8">провести время с пользой и узнать новое;</li>
+          <li>пообщаться с единомышленниками в комментариях.</li>
+        </ul>
+
+        <h2 class="mt-36 mb-32">Свежее в&nbsp;блоге ИнфоХит</h2>
+
+        <if condition="page.env === 'local'">
+          <fetch url="https://info-hit.ru/include/tools/blog-json/?arElements=298771,297126&token=u4JTEnMNt4gdsfdfsdf345nkhjk3dfgfh556776dfdghjkluiutyrtym">
+            <each loop="item in response">
+              <table class="w-full">
+                <tr>
+                  <td class="w-full pb-12 sm:w-full sm:inline-block">
+                    <a href="{{ item.URL }}" target="_blank" class="text-base text-blue-500 hover:text-blue-400 no-underline">
+                      <table class="w-full">
+                        <tr>
+                          <td class="w-4/12 align-top pr-8"><img class="rounded-2xl" src="https://info-hit.ru/{{ item.PICTURE }}" alt=""></td>
+                          <td class="p-12 pt-0 sm:p-0 sm:pl-12 rounded">
+                            <h3 class="m-0 mb-10 text-black text-lg leading-24">{{ item.NAME }}</h3>
+                            <p class="m-0 mb-10 text-sm text-gray-700 leading-20">{{ item.DESC }}</p>
+                            <p>Читать на сайте &rarr;</p>
+                          </td>
+                        </tr>
+                      </table>
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </each>
+          </fetch>
+        </if>
+        <else>
+          #BLOG_LIST#
+        </else>
+
+        <div class="m-0 mb-24 text-base border-dashed border-2 border-yellow-400 rounded-2xl py-16 px-24">
+          <p class="mt-0"><strong>Следите за обновлениями на сайте, в рассылке и соцсетях.</strong></p>
+          <component src="src/components/button.html" locals='{
+        "link" : "https://info-hit.ru/blog/main/",
+        "text" : "Читать блог",
+        "color" : "bg-yellow-500",
+        "hover_color" : "bg-yellow-600"
+        }'></component>
+
+          <div class="h-16"></div>
+
+          <component src="src/components/button.html" locals='{
+        "link" : "https://t.me/infohitru",
+        "text" : "Телеграм канал",
+        "color" : "bg-purple-500",
+        "hover_color" : "bg-purple-600"
+        }'></component>
+
+          <div class="h-16"></div>
+
+          <component src="src/components/button.html" locals='{
+        "link" : "https://vk.com/infohitru",
+        "text" : "Группа ВКонтакте",
+        "color" : "bg-blue-500",
+        "hover_color" : "bg-blue-600"
+        }'></component>
+        </div>
+
+        <p class="m-0 mb-16">С уважением,<br>
+          команда ИнфоХит!
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>

@@ -1,0 +1,144 @@
+---
+title: "Оставь отзыв о курсе или школе — Получите бонусы"
+preheader: "Помогите другим пользователям принять решение"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main-login.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/b24-trigger-user/b24-trigger-user-3.jpg"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-14 pb-24 leading-24 rounded-b-2xl">
+        <component src="src/components/about-author.html" locals='{
+                        "name" : "Яна Колокольчикова",
+                        "photo" : "https://info-hit.ru/include/images/letter/yanaK.png"
+                        }'>
+          <div class="text-base leading-24">
+            <p>Приветствую, #USER_NAME#!</p>
+            <p class="font-semibold text-base leading-24">Это Яна из «ИнфоХит». Я отвечаю за то, чтобы наш проект становился лучше.</p>
+          </div>
+        </component>
+        <p class="m-0 mb-24">Как вам курс, который вы приобрели на ИнфоХит? Расскажите, что вам больше всего понравилось, и получите <strong class="bg-yellow-200 px-5 inline-block">300 бонусных рублей</strong> на покупку других образовательных продуктов! Используйте их при оплате курсов с меткой «Обучение&nbsp;на&nbsp;ИнфоХит».</p>
+
+        <h2 class="mt-32 mb-32">Материалы, которые вы начали изучать:</h2>
+        <if condition="page.env === 'local'">
+          <table class="w-full mb-36 text-base">
+            <tr>
+              <td class="w-1/12 align-top">
+                <img class="rounded" src="https://info-hit.ru/upload/resize_cache/iblock/2e8/5kyl62j1mqd1tb1quh121ffmk1tny0js/150_150_2/pexels_tima_miroshnichenko_7567486.jpg" alt="">
+              </td>
+              <td class="p-12 py-0 sm:p-0 sm:pl-12">
+                <h2 class="m-0 mb-8 text-black text-lg leading-24">Курс — Реактивный старт на фондовом рынке</h2>
+                <p class="m-0 mb-0 text-sm text-gray-500">Клуб «Территория инвестирования»</p>
+                <p class="mt-8 mb-10"><strong class="bg-yellow-200 text-black px-5">+300&nbsp;бонусов</strong></p>
+                <component src="src/components/button.html" locals='{
+                "link" : "https://t.me/infohitru",
+                "text" : "Оставить отзыв",
+                "color" : "bg-green-500",
+                "hover_color" : "bg-green-600"
+                }'></component>
+              </td>
+            </tr>
+          </table>
+          <table class="w-full mb-36 text-base">
+            <tr>
+              <td class="w-1/12 align-top">
+                <img class="rounded" src="https://info-hit.ru/upload/resize_cache/iblock/72d/7ifveg94nn9gm27eabopp5ehcq7xn15q/200_200_1/klub_territoriya_investirovaniya.jpg" alt="">
+              </td>
+              <td class="p-12 py-0 sm:p-0 sm:pl-12">
+                <h2 class="m-0 text-black text-lg leading-24">Клуб «Территория инвестирования»</h2>
+                <p class="mt-8 mb-10"><strong class="bg-yellow-200 text-black px-5">+300&nbsp;бонусов</strong></p>
+                <component src="src/components/button.html" locals='{
+                "link" : "https://t.me/infohitru",
+                "text" : "Оставить отзыв",
+                "color" : "bg-green-500",
+                "hover_color" : "bg-green-600"
+                }'></component>
+              </td>
+            </tr>
+          </table>
+          <table class="w-full mb-36 text-base">
+            <tr>
+              <td class="w-1/12 align-top">
+                <img class="rounded-full" src="https://info-hit.ru/upload/resize_cache/iblock/ce1/0hyulvcx3xk5v0w4evhi1s5nbitn4pdu/220_220_2/merkulov_andrey.png" alt="">
+              </td>
+              <td class="p-12 py-0 sm:p-0 sm:pl-12">
+                <h2 class="m-0 text-black text-lg leading-24">Андрей Меркулов</h2>
+                <p class="mt-8 mb-10"><strong class="bg-yellow-200 text-black px-5">+300&nbsp;бонусов</strong></p>
+                <component src="src/components/button.html" locals='{
+                "link" : "https://t.me/infohitru",
+                "text" : "Оставить отзыв",
+                "color" : "bg-green-500",
+                "hover_color" : "bg-green-600"
+                }'></component>
+              </td>
+            </tr>
+          </table>
+        </if>
+        <else>
+          #SUBSCRIBE_LIST_FOR_REVIEWS#
+        </else>
+
+        <h2 class="mt-32">Для получения бонусов:</h2>
+        <table class="w-full">
+          <tr>
+            <td class="w-1/12 align-top">
+              <strong class="text-2xl block text-center leading-44 w-44 h-44 bg-yellow-400 mb-10 rounded-full">1</strong>
+            </td>
+            <td class="p-12 py-0 sm:p-0 sm:pl-12">
+              <p class="mb-28 mt-0">
+                <strong>Оставьте отзыв на странице материала.</strong><br>Напишите небольшой текст о том, что именно вам понравилось: подача материала, преподаватель, структура курса и т.д.
+              </p>
+            </td>
+          </tr>
+        </table>
+
+        <table class="w-full">
+          <tr>
+            <td class="w-1/12 align-top">
+              <strong class="text-2xl block text-center leading-44 w-44 h-44 bg-yellow-400 mb-10 rounded-full">2</strong>
+            </td>
+            <td class="p-12 py-0 sm:p-0 sm:pl-12">
+              <p class="mb-28 mt-0">
+                <strong>Сообщите менеджеру.</strong><br>Напишите на <a href="mailto:client@info-hit.ru">client@info-hit.ru</a> c указанием ссылки на отзыв.
+                После проверки отзыва, бонус будет зачислен на ваш баланс. Его можно потратить на все курсы с меткой «Обучение на&nbsp;ИнфоХит».
+              </p>
+            </td>
+          </tr>
+        </table>
+
+        <p class="text-red-800 text-xl"><strong>Важно!</strong></p>
+        <ul>
+          <li class="mb-12">За каждый уникальный отзыв вы получите 300 бонусов (1&nbsp;бонус = 1&nbsp;₽).</li>
+          <li class="mb-12">Вы также можете оставить отзывы на другие школы и&nbsp;курсы, которые проходили.</li>
+          <li class="mb-12">Ограничение: начисляем не более 1500 бонусов в месяц.</li>
+          <li class="mb-12">Не&nbsp;принимаем отзывы из&nbsp;одного предложения и&nbsp;без конкретики. Например, «Круто, классный сайт!» или «Спасибо, все отлично!»</li>
+        </ul>
+
+        <div class="text-base bg-blue-100 py-16 px-24 mb-36 mt-36 rounded-2xl">
+          <p class="mt-0">
+            <strong>Подборка образовательных продуктов</strong>, на которые вы&nbsp;можете потратить бонусы.
+          </p>
+          <component src="src/components/button.html" locals='{
+          "link" : "https://info-hit.ru/catalog/filter/sale-y/",
+          "text" : "Смотреть курсы",
+          "color" : "bg-blue-500",
+          "hover_color" : "bg-blue-600"
+          }'></component>
+        </div>
+        <p>Если у&nbsp;вас возникли вопросы, напишите нам: <a href="mailto:info@info-hit.ru"><strong>info@info-hit.ru</strong></a></p>
+        <component src="src/components/gray-line.html"></component>
+
+        <p class="m-0 mb-16">С уважением,<br>
+          команда ИнфоХит!
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
