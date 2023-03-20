@@ -1,0 +1,61 @@
+---
+title: "Уже завтра главное событие для техспециалистов EdTech"
+preheader: "А вы зарегистрировались?"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/2023-03-16-getc-conference.jpg"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+        <p class="text-base bg-yellow-200 py-16 px-24"><strong>Вы зарегистрировались на&nbsp;Global EdTech Conference? Старт&nbsp;— 21 марта в 17:00.</p>
+        <p>Завтра начинается трехдневный сериал встреч с&nbsp;топовыми специалистами образовательного рынка:</p>
+        <ol class="mt-0 mb-24">
+          <li class="mb-12"><strong>Денис Воронов</strong>&nbsp;— технический специалист и&nbsp;разработчик, более 5&nbsp;лет в&nbsp;сфере EdTech, программист с&nbsp;<nobr>12-летним</nobr> опытом. Сооснователь маркетплейса JetCourse, автор курса «Скаут AXL». Техдиректор академии маркетинга и&nbsp;продюсирования.</li>
+          <li class="mb-12"><strong>Сергей Харьков</strong>&nbsp;— организатор GETConference, основатель «Академии маркетинга и&nbsp;продюсирования» и&nbsp;«Клуба Инфо». Автор онлайн-курсов для продюсеров и&nbsp;экспертов.</li>
+          <li class="mb-12"><strong>Анна Аранович</strong>&nbsp;— full-stack для GetCourse. Специализируется на&nbsp;интеграционных решениях, комплексной верстке и&nbsp;геймификации учебного процесса. Соавтор курса «Дизайн и&nbsp;верстка на&nbsp;GetCourse».</li>
+          <li class="mb-12"><strong>Алексей Стрельцов</strong>&nbsp;— совладелец сервиса Prodamus. Основатель мастер-группы по&nbsp;маркетингу и&nbsp;продажам для онлайн‑школ. Владелец сообщества «Онлайн-среда».</li>
+          <li class="mb-12"><strong>Анна Седунова</strong>&nbsp;— за&nbsp;6&nbsp;лет во&nbsp;фрилансе (после госслужбы) достигла дохода в&nbsp;250 000 ₽ в месяц&nbsp;в&nbsp;качестве админа GetCourse. Открыла свою онлайн-школу, в&nbsp;которой учится более 500 человек на&nbsp;курсах по&nbsp;лендингам, процессам и&nbsp;оформлению GC. Ведет свой блог для специалистов.</li>
+        </ol>
+        <p><strong>Спикеры подробно ответят на&nbsp;вопросы:</strong></p>
+        <ol class="mt-0 mb-24">
+          <li class="mb-12">Как зарабатывать на&nbsp;партнерках.</li>
+          <li class="mb-12">Как продавать техуслуги дорого.</li>
+          <li class="mb-12">Какие новые услуги точно должны быть в&nbsp;прайс-листе техспециалиста.</li>
+          <li class="mb-12">Как создавать скрытые каналы передачи неявных данных.</li>
+          <li class="mb-12">Дизайн интерфейса&nbsp;— это тренд или необходимость?</li>
+          <li class="mb-12">Как строить админку LMS под себя.</li>
+          <li class="mb-12">Какие учебные аспекты геймификации нельзя не&nbsp;знать.</li>
+          <li class="mb-12">Какое будущее светит платформам для онлайн-школ с&nbsp;точки зрения разработчика.</li>
+        </ol>
+        <p>И еще на&nbsp;миллион других вопросов, которые вы&nbsp;зададите в&nbsp;прямом эфире.</p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://info-hit.ru/away.php?to=link&id=308",
+          "text" : "Иду на GETC",
+          "color" : "bg-gray-500",
+          "hover_color" : "bg-gray-600"
+          }'></component>
+        <p>И, конечно, вас ждут бонусы от партнеров мероприятия и&nbsp;спикеров! Обязательно обратите на&nbsp;это внимание при выборе оптимального для вас тарифа.</p>
+        <p class="m-0 mb-24 text-base border-dashed border-2 border-yellow-400 rounded-2xl py-16 px-24">Для&nbsp;участников действует скидка 10% на&nbsp;билет при любом бронировании.</p>
+        <p>Есть тарифы с&nbsp;доступами к&nbsp;записям&nbsp;— большинство участников прошлых конференций пользуются этим для пошагового внедрения всех рекомендаций гуру EdTech.</p>
+        <p>Регистрируйтесь на&nbsp;Global EdTech Conference. Повысьте свой профессиональный уровень!</p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://info-hit.ru/away.php?to=link&id=308",
+          "text" : "Зарегистрироваться",
+          "color" : "bg-gray-500",
+          "hover_color" : "bg-gray-600"
+          }'></component>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">Ваш надежный партнер,<br>ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
