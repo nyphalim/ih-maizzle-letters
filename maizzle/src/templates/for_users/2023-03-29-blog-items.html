@@ -1,0 +1,129 @@
+---
+title: "Подборка интересных программ на ИнфоХит готова"
+preheader: "Открывайте скорее!"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <fetch url="https://info-hit.ru/include/tools/blog-json/?arElements=294480,295152,295478&token=u4JTEnMNt4gdsfdfsdf345nkhjk3dfgfh556776dfdghjkluiutyrtym&v=4">
+      <component src="src/components/img-block-without-link-round.html" locals='{
+      "src" : "https://info-hit.ru/include/images/letter/2023-03-29-blog-items.jpg"
+      }'></component>
+
+      <component src="src/components/round-block-mt.html">
+        <p><strong>Добрый день!</strong></p>
+        <p>Цветущие деревья, игривое солнце и&nbsp;сотни возможностей попробовать себя в&nbsp;новом направлении&nbsp;— все это весна, которая первым делом приходит на&nbsp;ИнфоХит.</p>
+        <p>Подготовили для вас подборку материалов на&nbsp;разные темы. Новые эмоции, знания и&nbsp;впечатления ждут вас на&nbsp;онлайн-занятиях. Выберите, что вам больше всего интересно, регистрируйтесь на&nbsp;курсы и&nbsp;наслаждайтесь каждым днем весны!</p>
+        <p>Еще больше полезного материала найдете на&nbsp;<a target="_blank" href="https://info-hit.ru/" target="_blank">ИнфоХит.</a></p>
+      </component>
+
+      <tr>
+        <td class="h-24 sm:h-16"></td>
+      </tr>
+      <tr>
+        <td class="bg-white text-gray-800 text-base text-left px-48 py-24 sm:p-14 leading-24 rounded-2xl">
+          <h3>Автор недели</h3>
+          <component src="src/components/about-author-left.html" locals='{
+            "name" : "Никита Раздорский",
+            "photo" : "https://info-hit.ru/upload/resize_cache/iblock/c88/ht4o8y6dbz25c83fgibhbem609gv3v13/220_220_2/razdorskiy_nikita.jpg"
+            }'>
+            <p class="mt-0">Никита Раздорский&nbsp;— эксперт с&nbsp;уникальным подходом в&nbsp;изучении дизайна человека и&nbsp;генных ключей. На&nbsp;занятиях знакомит учеников с&nbsp;их&nbsp;личными характеристиками, которые помогут жить успешно, без стресса, трудностей и&nbsp;сопротивлений своим начинаниям.</p>
+          </component>
+            <p class="mt-10"><strong>Полученные знания на&nbsp;курсах Никиты помогут:</strong></p>
+            <ul class="mt-0 mb-24">
+              <li class="mb-16">улучшить финансовое состояние;</li>
+              <li class="mb-16">прийти к&nbsp;эмоциональной гармонии;</li>
+              <li class="mb-16">решить психосоматические проблемы;</li>
+              <li class="mb-16">достичь поставленных целей.</li>
+            </ul>
+            <p class="text-base bg-blue-200 py-16 px-24">Обучение построено на&nbsp;конкретных практиках и&nbsp;советах для применения здесь и&nbsp;сейчас, в&nbsp;реальной жизни.</p>
+            <p>Начните меня свою жизнь&nbsp;— раскройте свою силу и&nbsp;индивидуальность!</p>
+            <component src="src/components/button.html" locals='{
+            "link" : "https://info-hit.ru/author-razdorskiy-nikita/",
+            "text" : "Хочу меняться",
+            "color" : "bg-blue-500",
+            "hover_color" : "bg-blue-600"
+            }'></component>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="h-24 sm:h-16"></td>
+      </tr>
+      <tr>
+        <td class="bg-white text-gray-800 text-base text-left px-48 py-24 sm:p-14 leading-24 rounded-2xl">
+          <h3 class="mt-24 sm:mt-24">Переходите на&nbsp;сторону правильного питания</h3>
+          <p>Правильное, здоровое питание не&nbsp;означает скучное меню и&nbsp;отказ от&nbsp;вкусных блюд. Как раз наоборот! Получать необходимые питательные вещества можно только при сбалансированном и&nbsp;разнообразном рационе. Как составить меню, которое будет удовлетворять потребностям организма и&nbsp;соответствовать вашим вкусовым предпочтениям, читайте в&nbsp;статье.</p>
+          <each loop="item in response.slice(0, 1)">
+            <component src="src/components/blog.html" locals='{
+            "URL" : "{{ item.URL }}",
+            "PICTURE" : "{{ item.PICTURE }}",
+            "NAME" : "{{ item.NAME }}",
+            "DESC" : "{{ item.DESC }}",
+            "COLOR" : "blue"
+            }'></component>
+          </each>
+          <h3 class="mt-24 sm:mt-24">Как стать популярным блогером</h3>
+          <p>Блогерство уже не&nbsp;просто развлечение. Эту деятельность приравнивают к&nbsp;полноценной профессии. Самые богатые блогеры входят в&nbsp;список Forbes, их&nbsp;смотрят миллионы зрителей. Попробовать себя в&nbsp;этой сфере могут и&nbsp;взрослые и&nbsp;дети. В&nbsp;статье раскрыли все карты и&nbsp;рассказали, как стать популярным блогером и&nbsp;зарабатывать на&nbsp;этом деньги.</p>
+          <each loop="item in response.slice(1, 2)">
+            <component src="src/components/blog.html" locals='{
+            "URL" : "{{ item.URL }}",
+            "PICTURE" : "{{ item.PICTURE }}",
+            "NAME" : "{{ item.NAME }}",
+            "DESC" : "{{ item.DESC }}",
+            "COLOR" : "purple"
+            }'></component>
+          </each>
+          <h3 class="mt-24 sm:mt-24">Главные причины выучить английский</h3>
+          <p>Задаетесь вопросом&nbsp;— «зачем учить английский язык»? Тогда эта статья для вас. Подготовили семь причин, которые доказывают, что современному россиянину любого возраста необходимо знать его хотя&nbsp;бы на&nbsp;уровне не&nbsp;ниже среднего. А&nbsp;еще подобрали способы, которые помогут выучить язык легко и&nbsp;непринужденно.</p>
+          <each loop="item in response.slice(2, 3)">
+            <component src="src/components/blog.html" locals='{
+            "URL" : "{{ item.URL }}",
+            "PICTURE" : "{{ item.PICTURE }}",
+            "NAME" : "{{ item.NAME }}",
+            "DESC" : "{{ item.DESC }}",
+            "COLOR" : "green"
+            }'></component>
+          </each>
+        </td>
+      </tr>
+
+      <tr>
+          <td class="h-24 sm:h-16"></td>
+      </tr>
+      <tr>
+          <td class="bg-white text-gray-800 text-base text-left px-48 py-24 sm:p-14 leading-24 rounded-2xl">
+            <h3>Курс недели</h3>
+            <p>На&nbsp;маркетплейсе можно не&nbsp;только покупать, но&nbsp;и&nbsp;зарабатывать. Как это сделать, расскажет на&nbsp;своем курсе Юлия Назаркова.</p>
+            <p>За&nbsp;полтора месяца обучения узнаете, как стать менеджером маркетплейсов и&nbsp;обеспечить себя удаленной работой.</p>
+            <p class="m-0 mb-24 text-base border-dashed border-2 border-green-400 rounded-2xl py-16 px-24">Количество поставщиков растет с&nbsp;каждым днем, каждому в&nbsp;штат нужен специалист и&nbsp;часто не&nbsp;один.</p>
+            <p>Поэтому профессия менеджера маркетплейсов востребована и&nbsp;еще долго не&nbsp;потеряет свою актуальность.</p>
+            <p><strong>На&nbsp;онлайн-курсе научитесь:</strong></p>
+            <ul class="mt-0 mb-24">
+              <li class="mb-16">работать на&nbsp;Wildberries, Ozon и&nbsp;«Яндекс.Маркет»;</li>
+              <li class="mb-16">искать поставщиков в&nbsp;России и&nbsp;за&nbsp;рубежом;</li>
+              <li class="mb-16">анализировать рынки для выбора высокодоходных товаров;</li>
+              <li class="mb-16">прорабатывать стратегию продвижения товара;</li>
+              <li class="mb-16">оформлять поставки на&nbsp;склад и&nbsp;контролировать приемку.</li>
+            </ul>
+            <p>Под наставничеством эксперта найдете первых клиентов во&nbsp;время обучения и&nbsp;выйдете на&nbsp;доход от&nbsp;50&nbsp;000&nbsp;₽ в&nbsp;месяц.</p>
+            <p>Начните работать с&nbsp;маркетплейсами и&nbsp;зарабатывать не&nbsp;выходя из&nbsp;дома!</p>
+            <component src="src/components/button.html" locals='{
+            "link" : "https://info-hit.ru/away.php?to=course&cb=41&id=276741",
+            "text" : "Хочу освоить",
+            "color" : "bg-green-500",
+            "hover_color" : "bg-green-600"
+            }'></component>
+            <component src="src/components/gray-line.html"></component>
+            <p class="text-base mb-36">С&nbsp;уважением,<br>ИнфоХит!</p>
+          </td>
+      </tr>
+
+      <tr>
+        <td class="h-32 sm:h-24"></td>
+      </tr>
+      <component src="src/components/footer.html"></component>
+    </fetch>
+  </block>
+</extends>
