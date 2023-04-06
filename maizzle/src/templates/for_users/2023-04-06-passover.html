@@ -1,0 +1,57 @@
+---
+title: "Готовимся к Пасхе с курсами на ИнфоХит!"
+preheader: "Освойте пасхальную выпечку всего за 7 дней"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/2023-04-06-passover.jpg"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p><strong>Добрый день!</strong></p>
+        <p class="text-base bg-green-200 py-16 px-24">Приближается один из&nbsp;главных праздников христиан&nbsp;— Светлая Пасха.</p>
+        <p>Сегодня главные атрибуты этого дня можно приобрести в&nbsp;любом супермаркете&nbsp;— куличи, пасхи и&nbsp;различный декор.</p>
+        <p>А&nbsp;можно освоить техники работы с&nbsp;тестом, изучить проверенные рецепты и&nbsp;порадовать себя и&nbsp;близких потрясающей выпечкой. Заботливо собрали для вас лучшие тематические курсы.</p>
+        <h3 class="mt-36 sm:mt-36">Мини-курс «Готовимся к Пасхе за&nbsp;7 дней»</h3>
+        <p>Мини-курс от&nbsp;владелицы мастерской сладких подарков Веры Черневич&nbsp;— то, что нужно хозяйкам, которым не&nbsp;досталась по&nbsp;наследству бабушкина книга рецептов. За&nbsp;неделю освоите приготовление медового теста для пасхальных пряников, научитесь печь идеальный кулич и&nbsp;сможете украсить его с&nbsp;помощью домашней глазури.</p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://info-hit.ru/away.php?to=course&cb=41&id=244733",
+          "text" : "Хочу освоить",
+          "color" : "bg-blue-500",
+          "hover_color" : "bg-blue-600"
+          }'></component>
+        <h3 class="mt-36 sm:mt-36">Курс «Пасхальная выпечка»</h3>
+        <p>На&nbsp;этом курсе освоите авторский рецепт двухцветного кулича, узнаете, как готовить дрожжевое и&nbsp;бездрожжевое тесто, чтобы печь не&nbsp;только на&nbsp;Пасху. А&nbsp;еще в&nbsp;курсе есть уроки по&nbsp;упаковке куличей для подарка близким или на&nbsp;продажу.</p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://info-hit.ru/course-paskhalnaya-vypechka-mariya-rykova/",
+          "text" : "Хочу узнать",
+          "color" : "bg-purple-500",
+          "hover_color" : "bg-purple-600"
+          }'></component>
+        <h3 class="mt-36 sm:mt-36">Курс «Здоровая пасхальная выпечка»</h3>
+        <p>Еще один мини-курс всего за&nbsp;5&nbsp;дней научит вас готовить вкусные и&nbsp;полезные пасхальные десерты: куличи, пасхи, печенье. Мастер-шеф растительной кухни Анастасия Иванова подготовила пошаговые видео-уроки с&nbsp;рецептами без глютена и&nbsp;яиц. Порадуйте себя и&nbsp;родных необычными сладостями.</p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://info-hit.ru/course-zdorovaya-paskhalnaya-vypechka/",
+          "text" : "Хочу научиться",
+          "color" : "bg-green-500",
+          "hover_color" : "bg-green-600"
+          }'></component>
+        <table class="w-full">
+          <tr>
+            <td class="py-16">
+              <div class="bg-gray-200 h-px leading-px">&zwnj;</div>
+            </td>
+          </tr>
+        </table>
+        <p class="text-base mb-36">С уважением,<br>ваш ИнфоХит.</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
