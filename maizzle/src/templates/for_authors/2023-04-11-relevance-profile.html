@@ -1,0 +1,33 @@
+---
+title: "Что у вас новенького?"
+preheader: "Проверьте актуальность данных в своем профиле"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/2023-04-11-relevance-of-profile.jpg"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+        <p>Время течет без остановки. Возможно, у&nbsp;вас появились новые направления обучения, регалии или отзывы, а&nbsp;мы&nbsp;об&nbsp;этом не&nbsp;знаем.</p>
+        <p class="m-0 mb-24 text-base border-dashed border-2 border-purple-400 rounded-2xl py-16 px-24">Обновите данные в&nbsp;вашем профиле на&nbsp;платформе ИнфоХит и&nbsp;станьте привлекательнее для новых учеников.</p>
+        <p>Напишите на&nbsp;почту <a href="mailto:info@info-hit.ru?subject=Обновить данные в профиле"><strong>info@info-hit.ru</strong></a> о&nbsp;своем желании обновить информацию. Личный менеджер свяжется с&nbsp;вами, уточнит необходимую информацию и&nbsp;внесет изменения в&nbsp;ваш профиль.</p>
+        <component src="src/components/button.html" locals='{
+          "link" : "mailto:info@info-hit.ru?subject=Обновить данные в профиле",
+          "text" : "Обновить данные",
+          "color" : "bg-blue-500",
+          "hover_color" : "bg-blue-600"
+          }'></component>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">Ваш надежный партнер,<br>ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
