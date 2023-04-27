@@ -1,0 +1,130 @@
+---
+title: "Пусть нам кружит голову месяц май…"
+preheader: "От новых знаний на курсах ИнфоХит"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <fetch url="https://info-hit.ru/include/tools/blog-json/?arElements=296150,296768,297182&token=u4JTEnMNt4gdsfdfsdf345nkhjk3dfgfh556776dfdghjkluiutyrtym&v=4">
+      <component src="src/components/img-block-without-link-round.html" locals='{
+      "src" : "https://info-hit.ru/include/images/letter/2023-04-27-blog-items.jpg"
+      }'></component>
+
+      <component src="src/components/round-block-mt.html">
+        <p><strong>Добрый день!</strong></p>
+        <p>Впереди майские праздники&nbsp;— это не&nbsp;только время дачных поездок, шашлыков и&nbsp;огорода. Это выходные, которые можно провести с&nbsp;пользой для себя. Например, дочитать любимую книгу, досмотреть сериал или пройти онлайн-курс, о&nbsp;котором давно мечтали.</p>
+        <p>Подготовили новую подборку материалов на&nbsp;разные темы. Вас ждут советы и&nbsp;рекомендации, как вкусно готовить, реализовать свой потенциал и&nbsp;монетизировать хобби.</p>
+        <p>Родителям школьников и&nbsp;будущих первоклассников будет интересно познакомиться с&nbsp;дистанционной онлайн-школой. Если ребенок часто и&nbsp;долго болеет, у&nbsp;него постоянные тренировки, выступления или гастроли, занятия в&nbsp;«Онлайн-школе №&nbsp;1» помогут не&nbsp;отставать от&nbsp;программы и&nbsp;заниматься в&nbsp;индивидуальном режиме.</p>
+        <p>Еще больше полезного материала найдете на&nbsp;<a target="_blank" href="https://info-hit.ru/">ИнфоХит.</a></p>
+      </component>
+
+      <tr>
+        <td class="h-24 sm:h-16"></td>
+      </tr>
+      <tr>
+        <td class="bg-white text-gray-800 text-base text-left px-48 py-24 sm:p-14 leading-24 rounded-2xl">
+          <h3>Автор месяца</h3>
+          <component src="src/components/about-author-left.html" locals='{
+            "name" : "Светлана Белова",
+            "photo" : "https://info-hit.ru/upload/resize_cache/iblock/305/3l11eikgka55x6jx9wswqwl7927glu5l/220_220_2/belova_svetlana.jpg"
+            }'>
+            <p class="mt-0">Светлана Белова&nbsp;— нумеролог, психолог, кинезиолог, специалист по&nbsp;арт-терапии, МАК, расстановкам, ThetaHealing.</p>
+          </component>
+            <p>Светлана проводит различные тренинги, которые помогают достичь успеха, реализовать потенциал, найти свое предназначение и&nbsp;привести жизнь к&nbsp;гармонии.</p>
+            <p class="mt-10"><strong>Полученные знания на&nbsp;курсах Светланы Беловой помогут:</strong></p>
+            <ul class="mt-0 mb-24">
+              <li class="mb-16">узнать совместимость партнеров по&nbsp;дате рождения;</li>
+              <li class="mb-16">справиться со&nbsp;стрессом и&nbsp;снять эмоциональное напряжение;</li>
+              <li class="mb-16">использовать метафорические карты для психотерапии;</li>
+              <li class="mb-16">применять мандалы в&nbsp;арт-терапии.</li>
+            </ul>
+            <p>В&nbsp;результате обучения выявите источники проблем и&nbsp;определите путь, который приведет вас к&nbsp;гармонии и&nbsp;процветанию.</p>
+            <component src="src/components/button.html" locals='{
+            "link" : "https://info-hit.ru/author-belova-svetlana/",
+            "text" : "Хочу изменить жизнь",
+            "color" : "bg-blue-500",
+            "hover_color" : "bg-blue-600"
+            }'></component>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="h-24 sm:h-16"></td>
+      </tr>
+      <tr>
+        <td class="bg-white text-gray-800 text-base text-left px-48 py-24 sm:p-14 leading-24 rounded-2xl">
+          <h3 class="mt-24 sm:mt-24">Обзор творческих профессий</h3>
+          <p>Современный человек все чаще жалуется на&nbsp;рутинность работы и&nbsp;хочет добавить немного творчества в&nbsp;свою жизнь. Часто он&nbsp;заглядывается на&nbsp;профессии, в&nbsp;которых рисуют, снимают, танцуют или музицируют. В&nbsp;статье рассказали о&nbsp;трендовых креативных специальностях в&nbsp;2023&nbsp;году.</p>
+          <each loop="item in response.slice(0, 1)">
+            <component src="src/components/blog.html" locals='{
+            "URL" : "{{ item.URL }}",
+            "PICTURE" : "{{ item.PICTURE }}",
+            "NAME" : "{{ item.NAME }}",
+            "DESC" : "{{ item.DESC }}",
+            "COLOR" : "blue"
+            }'></component>
+          </each>
+          <h3 class="mt-24 sm:mt-24">Хобби, которое приносит доход</h3>
+          <p>Монетизировать можно практически любое увлечение: главное достичь определенного уровня мастерства, правильно себя преподать и&nbsp;найти рынок сбыта. В&nbsp;статье рассказали, как найти свое хобби и зарабатывать на&nbsp;нем деньги.</p>
+          <each loop="item in response.slice(1, 2)">
+            <component src="src/components/blog.html" locals='{
+            "URL" : "{{ item.URL }}",
+            "PICTURE" : "{{ item.PICTURE }}",
+            "NAME" : "{{ item.NAME }}",
+            "DESC" : "{{ item.DESC }}",
+            "COLOR" : "purple"
+            }'></component>
+          </each>
+          <h3 class="mt-24 sm:mt-24">Готовьте как шеф-повар</h3>
+          <p>Специально для тех, кто хочет выйти на&nbsp;новый кулинарный уровень и&nbsp;научиться готовить не&nbsp;хуже профессионалов, рассказали об&nbsp;основных правилах готовки. Уверены, что любые ресторанные блюда могут стать настоящими шедеврами и&nbsp;в&nbsp;домашних условиях.</p>
+          <each loop="item in response.slice(2, 3)">
+            <component src="src/components/blog.html" locals='{
+            "URL" : "{{ item.URL }}",
+            "PICTURE" : "{{ item.PICTURE }}",
+            "NAME" : "{{ item.NAME }}",
+            "DESC" : "{{ item.DESC }}",
+            "COLOR" : "green"
+            }'></component>
+          </each>
+        </td>
+      </tr>
+
+      <tr>
+          <td class="h-24 sm:h-16"></td>
+      </tr>
+      <tr>
+          <td class="bg-white text-gray-800 text-base text-left px-48 py-24 sm:p-14 leading-24 rounded-2xl">
+            <h3>Курс месяца</h3>
+            <p>Диплом государственного образца: лицензированная онлайн-школа открывает двери!</p>
+            <p>Часто переезжаете или путешествуете? Ваше ребенок профессионально занимается спортом или творчеством, которое требует полного вовлечения и&nbsp;соблюдения жесткого графика?</p>
+            <p class="m-0 mb-24 text-base border-dashed border-2 border-green-400 rounded-2xl py-16 px-24">Онлайн-школа с&nbsp;1&nbsp;по&nbsp;11&nbsp;класс&nbsp;— лицензированная дистанционная школа, которая всегда рядом в&nbsp;любом современном девайсе.</p>
+            <p><strong>Преимущества онлайн-школы для вашего ребенка:</strong></p>
+            <ol class="mt-0 mb-24">
+              <li class="mb-16">Аттестат государственного образца по&nbsp;завершении обучения.</li>
+              <li class="mb-16">Занятия в&nbsp;малых группах.</li>
+              <li class="mb-16">Персональный куратор, который помогает поставить образовательную цель и&nbsp;достичь&nbsp;ее.</li>
+              <li class="mb-16">Репетиторы и&nbsp;курсы подготовки к&nbsp;ОГЭ и&nbsp;ЕГЭ на&nbsp;базе школы.</li>
+              <li class="mb-16">Образовательная программа по&nbsp;стандартам ФГОС.</li>
+              <li class="mb-16">Большой выбор внеклассных занятий.</li>
+              <li class="mb-16">Гибкий график и&nbsp;персональный учебный план.</li>
+            </ol>
+            <p>Оставьте заявку сегодня и&nbsp;получите доступ к&nbsp;неделе бесплатных занятий! Вы&nbsp;сможете познакомиться с&nbsp;платформой, посетить уроки и&nbsp;только после тестового периода принять окончательное решение.</p>
+            <component src="src/components/button.html" locals='{
+            "link" : "https://info-hit.ru/away.php?to=link&id=368",
+            "text" : "Хочу записать ребенка",
+            "color" : "bg-green-500",
+            "hover_color" : "bg-green-600"
+            }'></component>
+            <component src="src/components/gray-line.html"></component>
+            <p class="text-base mb-36">С&nbsp;уважением,<br>ИнфоХит!</p>
+          </td>
+      </tr>
+
+      <tr>
+        <td class="h-32 sm:h-24"></td>
+      </tr>
+      <component src="src/components/footer.html"></component>
+    </fetch>
+  </block>
+</extends>
