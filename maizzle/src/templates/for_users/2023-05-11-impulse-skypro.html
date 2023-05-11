@@ -1,0 +1,57 @@
+---
+title: "Новая классная работа в IT с гарантией!"
+preheader: "Приходите на бесплатную экскурсию в мир IT-профессий от Skypro"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+      <component src="src/components/img-block-without-link.html" locals='{
+      "src" : "https://info-hit.ru/include/images/letter/2023-05-11-impulse-skypro.jpg"
+      }'></component>
+      <tr>
+        <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p><strong>Добрый день!</strong></p>
+        <p>В&nbsp;соцсетях только и&nbsp;разговоров об&nbsp;IT. А&nbsp;что это такое? Сотни тысяч удаленщиков, которые расслабленно попивают коктейль из&nbsp;кокосов на&nbsp;белом песке, да&nbsp;пощелкивают в&nbsp;своих ноутбуках...</p>
+        <p>Они работают в&nbsp;передовых российских и&nbsp;мировых компаниях, рисуют дизайны, пишут код для сайтов и&nbsp;приложений, тестируют новые продукты, анализируют рынки и&nbsp;поведение пользователей и&nbsp;зарабатывают отличные деньги!</p>
+        <p class="text-base bg-purple-200 py-16 px-24">Многие из&nbsp;этих людей пришли в&nbsp;IT с&nbsp;нуля: без технического образования, навыков кодинга и&nbsp;глубоких знаний математики. И&nbsp;у&nbsp;вас получится!</p>
+        <p>Приходите на&nbsp;бесплатный марафон онлайн-университета Skypro и&nbsp;узнайте:</p>
+        <ul class="mt-0 mb-24">
+          <li class="mb-16">какие IT-профессии сейчас востребованы на&nbsp;рынке;</li>
+          <li class="mb-16">подойдет&nbsp;ли вам специальность в&nbsp;сфере информационных технологий;</li>
+          <li class="mb-16">сколько нужно учиться, чтобы получить работу;</li>
+          <li class="mb-16">на&nbsp;какую зарплату можно рассчитывать;</li>
+          <li class="mb-16">как изменится ваша жизнь, если вы&nbsp;перейдете в&nbsp;IT.</li>
+        </ul>
+        <p>Ведущие специалисты в&nbsp;своих профессиях не&nbsp;просто расскажут о&nbsp;них, но&nbsp;и&nbsp;дадут вам попробовать себя в&nbsp;роли аналитиков, дизайнеров и&nbsp;программистов.</p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://info-hit.ru/away.php?to=link&id=386",
+          "text" : "Записаться на бесплатную экскурсию в IT",
+          "color" : "bg-blue-500",
+          "hover_color" : "bg-blue-600"
+          }'></component>
+        <p>А&nbsp;еще для учеников ИнфоХит Skypro дает скидку на&nbsp;обучение&nbsp;— 50%!</p>
+        <p>Получите востребованную профессию с&nbsp;гарантией трудоустройства.</p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://info-hit.ru/away.php?to=link&id=387",
+          "text" : "Учиться в Skypro со скидкой",
+          "color" : "bg-green-500",
+          "hover_color" : "bg-green-600"
+          }'></component>
+          <table class="w-full">
+            <tr>
+              <td class="py-16">
+                <div class="bg-gray-200 h-px leading-px">&zwnj;</div>
+              </td>
+            </tr>
+          </table>
+          <p class="text-base mb-36">Желаем удачи,<br>ИнфоХит</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="h-32 sm:h-24"></td>
+      </tr>
+      <component src="src/components/footer.html"></component>
+    </fetch>
+  </block>
+</extends>
