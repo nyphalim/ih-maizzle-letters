@@ -1,0 +1,47 @@
+---
+title: "Еще одна возможность привлечь трафик"
+preheader: "Новое предложение от ИнфоХит"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/2023-06-12-promocode.jpg"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+        <p>Мы&nbsp;постоянно улучшаем сервис, чтобы сотрудничество с&nbsp;ИнфоХит было удобным для вас и&nbsp;приносило больший доход.</p>
+        <p class="m-0 mb-24 text-base border-dashed border-2 border-purple-500 rounded-2xl py-16 px-24">Если у&nbsp;вас есть промокод на&nbsp;скидку&nbsp;— сообщите нам. Теперь он&nbsp;выводится в&nbsp;блоке регистрации!</p>
+        <p>Создайте промокоды на&nbsp;скидки для своих образовательных продуктов, если еще не&nbsp;сделали этого. Ведь это способ:</p>
+        <ul>
+          <li class="mb-12">выделиться среди конкурентов;</li>
+          <li class="mb-12">привлечь дополнительное внимание учеников;</li>
+          <li class="mb-12">увеличить конверсию;</li>
+          <li class="mb-12">повысить доход;</li>
+          <li class="mb-12">получить активности от&nbsp;ИнфоХит.</li>
+        </ul>
+        <p><img style="border: 2px solid rgb(199, 199, 199)" src="https://info-hit.ru/include/images/letter/2023-06-12-promocode-authors.jpg" alt=""></p>
+        <p>Авторы, которые делают скидки на&nbsp;курсы по&nbsp;промокоду получат дополнительные преимущества:</p>
+        <ul>
+          <li class="mb-12">рассылка подборки курсов с&nbsp;промокодом один раз в&nbsp;месяц по&nbsp;базе учеников ИнфоХит (70&nbsp;000+).</li>
+        </ul>
+        <p>Не&nbsp;упустите возможность привлечь новых учеников!</p>
+        <p>Остались вопросы&nbsp;— задайте их&nbsp;<a href="https://t.me/Rimma_Infohit" target="_blank">менеджеру по&nbsp;работе со&nbsp;школами</a>.</p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://t.me/Rimma_Infohit",
+          "text" : "Подробнее",
+          "color" : "bg-blue-500",
+          "hover_color" : "bg-blue-600"
+          }'></component>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">Ваш надежный партнер,<br>ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
