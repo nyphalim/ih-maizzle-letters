@@ -1,0 +1,40 @@
+---
+title: "Приводите друзей — получайте бонусы и комиссионные"
+preheader: "Реферальная программа для авторов от ИнфоХит"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/2023-06-20-refprograms-authors.jpg"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+        <p>В&nbsp;ИнфоХит действует реферальная программа для авторов. Вы&nbsp;можете привести к&nbsp;нам своего друга или коллегу и&nbsp;получать процент с&nbsp;продажи его курсов.</p>
+        <p><strong>Вот как это работает:</strong></p>
+        <ol>
+          <li class="mb-12">В&nbsp;Личном кабинете автора в&nbsp;разделе «Ваши ссылки» найдите ссылку для привлечения новых авторов и&nbsp;школ.</li>
+            <p><img style="border: 2px solid rgb(150, 199, 234)" src="https://info-hit.ru/include/images/letter/2023-06-20-refprogram.jpg" alt=""></p>
+          <li class="mb-12">Отправьте ее&nbsp;своему коллеге или другу, который развивает бизнес в&nbsp;сфере онлайн-образования. Предложите разместить профиль на&nbsp;ИнфоХит.</li>
+          <li class="mb-12">Если новый автор успешно пройдет модерацию и&nbsp;активирует профиль, вы&nbsp;будете получать&nbsp;5% со&nbsp;всех его продаж. А&nbsp;еще бонусы&nbsp;— активности в&nbsp;социальных сетях или рассылка по&nbsp;базе учеников ИнфоХит.</li>
+          <li class="mb-12">Автор, которого вы&nbsp;приведете тоже получит бонус&nbsp;— скидку&nbsp;20% на&nbsp;активацию профиля на&nbsp;ИнфоХит.</li>
+        </ol>
+        <p>Остались вопросы&nbsp;— задайте их&nbsp;менеджеру <a href="https://t.me/InfoHit_Aleksandra" target="_blank">@InfoHit_Aleksandra</a></p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://t.me/InfoHit_Aleksandra",
+          "text" : "Подробнее",
+          "color" : "bg-green-500",
+          "hover_color" : "bg-green-600"
+          }'></component>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">Ваш надежный партнер,<br>ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
