@@ -1,0 +1,39 @@
+---
+title: "Продающие тексты без навыков копирайтинга — легко!"
+preheader: "Как — читайте в блоге САЛИД"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/2023-06-22-blog-salid.jpg"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+        <p>Наш партнер САЛИД подготовил новые полезные статьи о&nbsp;продвижении реферальных программ.</p>
+        <p>Узнайте, как создавать продающие тексты. Даже если у&nbsp;вас нет опыта копирайтинга, есть много способов делать тексты для рассылок и&nbsp;постов в&nbsp;социальных сетях. Можно использовать тексты с&nbsp;лендингов рекламодателя или запросить материалы у&nbsp;него. Часто для партнеров готовят пакеты с&nbsp;текстами и&nbsp;графикой. Как&nbsp;их использовать, узнаете в&nbsp;статье.</p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://salid.ru/journal/kak-vebmasteru-napisat-prodayushchiy-tekst",
+          "text" : "Хочу узнать",
+          "color" : "bg-blue-500",
+          "hover_color" : "bg-blue-600"
+          }'></component>
+        <p>При создании текстов, заголовков, объявлений важно учитывать специфику отображения в&nbsp;поисковой выдаче. Чтобы люди видели ваши группы в&nbsp;соцсетях и&nbsp;посты в&nbsp;них, нужно проводить seo-оптимизацию всей текстовой информации. Читайте статью и&nbsp;узнаете, как&nbsp;это делать самостоятельно.</p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://salid.ru/journal/kak-klyuchevye-slova-povyshayut-prodazhi",
+          "text" : "Хочу разобраться",
+          "color" : "bg-purple-500",
+          "hover_color" : "bg-purple-600"
+          }'></component>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">Ваш надежный партнер,<br>ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
