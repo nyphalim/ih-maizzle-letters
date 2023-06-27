@@ -1,0 +1,122 @@
+---
+title: "Свежий, как морской бриз…"
+preheader: "Обзор интересных программ на ИнфоХит"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <fetch url="https://info-hit.ru/include/tools/blog-json/?arElements=297463,297772,298173&token=u4JTEnMNt4gdsfdfsdf345nkhjk3dfgfh556776dfdghjkluiutyrtym&v=4">
+      <component src="src/components/img-block-without-link-round.html" locals='{
+      "src" : "https://info-hit.ru/include/images/letter/2023-06-27-blog-items.jpg"
+      }'></component>
+
+      <component src="src/components/round-block-mt.html">
+        <p><strong>Добрый день!</strong></p>
+        <p>Хотим поделиться с&nbsp;вами июньской подборкой материалов на&nbsp;разные темы. Как учить английский интересно, запустить собственное производство одежды или улучшить жизнь с&nbsp;помощью таро. Об&nbsp;этом и&nbsp;не&nbsp;только читайте дальше и&nbsp;решайте, какая тема или темы вам ближе всего. Записывайтесь на&nbsp;курсы и&nbsp;развивайтесь с&nbsp;удовольствием!</p>
+        <p>Еще больше полезного материала найдете на&nbsp;<a target="_blank" href="https://info-hit.ru/">ИнфоХит.</a></p>
+      </component>
+
+      <tr>
+        <td class="h-24 sm:h-16"></td>
+      </tr>
+      <tr>
+        <td class="bg-white text-gray-800 text-base text-left px-48 py-24 sm:p-14 leading-24 rounded-2xl">
+          <h3>Школа месяца</h3>
+          <component src="src/components/about-author-left.html" locals='{
+            "name" : "Академия эзотерики и астрологии «Элара",
+            "photo" : "https://info-hit.ru/upload/resize_cache/iblock/39a/jgheqvuy5apmlksdzcpi5uvrvpky6zgl/200_200_1/akademiya_ezoteriki_i_astrologii_elara.jpg"
+            }'>
+            <p class="mt-0">Академия эзотерики и&nbsp;астрологии «Элара&nbsp;— международный проект в&nbsp;области эзотерики, астрологии и&nbsp;самопознания.</p>
+          </component>
+            <p>Курсы академии «Элара»&nbsp;— это знания, которые помогут человеку стать духовно богатой личностью. Благодаря эзотерическим практикам, жизнь обретет более высокую ценность, чем одна только материальная сторона.</p>
+            <p class="mt-10"><strong>Курсы академии разработаны для тех, кто хочет:</strong></p>
+            <ul class="mt-0 mb-24">
+              <li class="mb-16">предсказывать будущее на&nbsp;картах таро и&nbsp;скандинавских рунах;</li>
+              <li class="mb-16">определять наличие сглазов, приворотов или проклятий, нейтрализовать их&nbsp;и&nbsp;ставить защиту;</li>
+              <li class="mb-16">решать любые жизненные задачи с&nbsp;помощью магии и&nbsp;магических эзотерических техник.</li>
+            </ul>
+            <p>Занятия в&nbsp;онлайн-академии «Элара» для тех, кто интересуется эзотерикой и&nbsp;понимает, что есть вещи, которые неподвластны рациональному разуму. Узнайте, как изменить свою и&nbsp;жизнь других людей.</p>
+            <component src="src/components/button.html" locals='{
+            "link" : "https://info-hit.ru/company-akademiya-ezoteriki-i-astrologii-elara/",
+            "text" : "Хочу изменить жизнь",
+            "color" : "bg-blue-500",
+            "hover_color" : "bg-blue-600"
+            }'></component>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="h-24 sm:h-16"></td>
+      </tr>
+      <tr>
+        <td class="bg-white text-gray-800 text-base text-left px-48 py-24 sm:p-14 leading-24 rounded-2xl">
+          <h3 class="mt-24 sm:mt-24">Английский по&nbsp;сериалам</h3>
+          <p>Мысль об&nbsp;учебниках по&nbsp;грамматике, скучных диалогах и&nbsp;строгих преподавателях совсем не&nbsp;радует. А&nbsp;потом еще и&nbsp;домашнюю работу делать после трудового дня. Иногда все, что хочется&nbsp;— это сесть, включить телевизор и&nbsp;расслабиться. Предлагаем вам объединить приятное и&nbsp;полезное&nbsp;— учите английский по&nbsp;сериалам. Как получить максимальный эффект при таком способе изучения языка, рассказали в&nbsp;статье.</p>
+          <each loop="item in response.slice(0, 1)">
+            <component src="src/components/blog.html" locals='{
+            "URL" : "{{ item.URL }}",
+            "PICTURE" : "{{ item.PICTURE }}",
+            "NAME" : "{{ item.NAME }}",
+            "DESC" : "{{ item.DESC }}",
+            "COLOR" : "blue"
+            }'></component>
+          </each>
+          <h3 class="mt-24 sm:mt-24">Обзор популярных онлайн-школ IT</h3>
+          <p>IT&nbsp;— популярное направление. В&nbsp;нем привлекают возможность освоить востребованную профессию, работать удаленно, с&nbsp;гибким графиком, развиваться в&nbsp;карьере и&nbsp;получать высокую зарплату. Какая школа поможет вам стать айтишником и&nbsp;получить востребованные навыки, рассказали в&nbsp;статье.</p>
+          <each loop="item in response.slice(1, 2)">
+            <component src="src/components/blog.html" locals='{
+            "URL" : "{{ item.URL }}",
+            "PICTURE" : "{{ item.PICTURE }}",
+            "NAME" : "{{ item.NAME }}",
+            "DESC" : "{{ item.DESC }}",
+            "COLOR" : "purple"
+            }'></component>
+          </each>
+          <h3 class="mt-24 sm:mt-24">Станьте художником в&nbsp;два клика</h3>
+          <p>Если вы&nbsp;не&nbsp;обладаете талантом в&nbsp;области изобразительного искусства, воспользуйтесь нейросетями для рисования. Сегодня в&nbsp;открытом доступе вы&nbsp;найдете системы, которые создают впечатляющие арты по&nbsp;текстовым запросам, фото или на&nbsp;основе картинок-референсов. А&nbsp;какие сервисы вам помогут, читайте в&nbsp;обзоре на&nbsp;ИнфоХит.</p>
+          <each loop="item in response.slice(2, 3)">
+            <component src="src/components/blog.html" locals='{
+            "URL" : "{{ item.URL }}",
+            "PICTURE" : "{{ item.PICTURE }}",
+            "NAME" : "{{ item.NAME }}",
+            "DESC" : "{{ item.DESC }}",
+            "COLOR" : "green"
+            }'></component>
+          </each>
+        </td>
+      </tr>
+
+      <tr>
+          <td class="h-24 sm:h-16"></td>
+      </tr>
+      <tr>
+          <td class="bg-white text-gray-800 text-base text-left px-48 py-24 sm:p-14 leading-24 rounded-2xl">
+            <h3>Курс месяца</h3>
+            <p>Сейчас самое время запустить швейное производство одежды. Большинство популярных иностранных брендов свернули работу в&nbsp;России. Рынок открыт для новых предложений и&nbsp;брендов. Люди готовы платить дорого за&nbsp;качественный и&nbsp;индивидуальный продукт. Если вы&nbsp;владеете навыками кроя и&nbsp;шитья, то&nbsp;стоит запустить производство одежды.</p>
+            <p class="m-0 mb-24 text-base border-dashed border-2 border-green-400 rounded-2xl py-16 px-24">Онлайн-курс от&nbsp;профессионального портного и&nbsp;закройщика Ольги Паукште поможет открыть свой бизнес и&nbsp;зарабатывать на&nbsp;любимом деле.</p>
+            <p><strong>Что вы&nbsp;получите на&nbsp;курсе:</strong></p>
+            <ul class="mt-0 mb-24">
+              <li class="mb-16">готовые женские и&nbsp;мужские лекала размеров от&nbsp;XS до&nbsp;4XL (от&nbsp;42&nbsp;до&nbsp;60&nbsp;размера) для раскроя 20&nbsp;базовых изделий;</li>
+              <li class="mb-16">подробные видеоуроки по&nbsp;пошиву двадцати базовых изделий</li>
+              <li class="mb-16">пошаговые занятия, как продавать одежду собственного производства.</li>
+            </ul>
+            <p>Узнайте все тонкости запуска собственного производства и&nbsp;научитесь не&nbsp;только изготавливать изделия из&nbsp;различных видов тканей, но&nbsp;и&nbsp;продавать&nbsp;их.</p>
+            <component src="src/components/button.html" locals='{
+            "link" : "https://info-hit.ru/away.php?to=link&id=443",
+            "text" : "Хочу узнать",
+            "color" : "bg-green-500",
+            "hover_color" : "bg-green-600"
+            }'></component>
+            <component src="src/components/gray-line.html"></component>
+            <p class="text-base mb-36">С&nbsp;уважением,<br>ИнфоХит!</p>
+          </td>
+      </tr>
+
+      <tr>
+        <td class="h-32 sm:h-24"></td>
+      </tr>
+      <component src="src/components/footer.html"></component>
+    </fetch>
+  </block>
+</extends>
