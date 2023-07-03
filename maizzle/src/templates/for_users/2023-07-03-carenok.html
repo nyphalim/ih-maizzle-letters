@@ -1,0 +1,48 @@
+---
+title: "Смотрите инсайт-сериал о целевой аудитории"
+preheader: "Интересное обучение-приключение от Марии Царенок"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/2023-07-03-carenok.jpg"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+        <p>Хотите пройти интересное обучение-приключение?</p>
+        <p class="text-base bg-purple-200 py-16 px-24">Тогда предлагаем вам подписаться и&nbsp;пройти уроки инсайт-сериала <a href="https://info-hit.ru/away.php?to=link&id=453" target="_blank">«Заветная целевая аудитория</a>».</p>
+        <p><i>Почему «инсайт»? И&nbsp;почему «сериал»?</i></p>
+        <p>Потому что цель&nbsp;— ваши важные инсайты о&nbsp;том, кто ваша целевая аудитория, какие проблемы вы&nbsp;помогаете этой аудитории решать, на&nbsp;каком языке с&nbsp;ней разговариваете и&nbsp;где ее&nbsp;искать.</p>
+        <p>А&nbsp;получать свои инсайты будете в&nbsp;серии из&nbsp;7&nbsp;уроков.</p>
+        <p class="m-0 mb-24 text-base border-dashed border-2 border-blue-500 rounded-2xl py-16 px-24">Тема каждого следующего урока&nbsp;— продолжение и&nbsp;углубление предыдущей. То&nbsp;есть, это и&nbsp;есть настоящий сериал.</p>
+        <p><strong>Программа инсайт-сериала:</strong></p>
+        <ol>
+          <li class="mb-12">Почему психология, кулинария, инвестирование&nbsp;— это не&nbsp;ниши. И&nbsp;что такое ниша?</li>
+          <li class="mb-12">За&nbsp;чем приходит к&nbsp;вам ваша ЦА? Уровни ЦА&nbsp;по&nbsp;ориентированности на&nbsp;результат: с&nbsp;какими из&nbsp;них вы&nbsp;работаете?</li>
+          <li class="mb-12">Как узнать проблемы&nbsp;ЦА, если вы&nbsp;еще не&nbsp;провели +100500&nbsp;консультаций?</li>
+          <li class="mb-12">Кто кого выбирает&nbsp;— мы&nbsp;выбираем свою аудиторию или она нас? И&nbsp;по&nbsp;каким критериям происходит этот выбор?</li>
+          <li class="mb-12">Логика, эмоции, инстинкты&nbsp;— что подойдет для вашей ЦА? И&nbsp;цена, как фильтр ЦА.</li>
+          <li class="mb-12">Три&nbsp;неожиданных и&nbsp;почти секретных способа поиска своей ЦА.</li>
+          <li class="mb-12">Практика и&nbsp;еще раз практика.</li>
+        </ol>
+        <p>Смотрите инсайт-сериал на&nbsp;платформе школы «Онлайн-Вектор» Марии Царенок, автора и&nbsp;партнера ИнфоХит.</p>
+        <p>Регистрируйтесь и&nbsp;получайте доступ.</p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://info-hit.ru/away.php?to=link&id=453",
+          "text" : "Зарегистрироваться",
+          "color" : "bg-blue-500",
+          "hover_color" : "bg-blue-600"
+          }'></component>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">С уважением,<br>ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
