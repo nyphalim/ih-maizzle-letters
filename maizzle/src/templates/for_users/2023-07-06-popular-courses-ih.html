@@ -1,0 +1,84 @@
+---
+title: "Эти творческие курсы прошли сотни учеников ИнфоХит"
+preheader: "Попробуйте и вы!"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <fetch url="https://info-hit.ru/include/tools/courses-json/?coursesArr=278828,153339,190336,299116&token=u4JTEnMNt4gdsfdfsdf345nkhjk3dfgfh556776dfdghjkluiutyrtym&v=4">
+      <component src="src/components/img-block-without-link.html" locals='{
+      "src" : "https://info-hit.ru/include/images/letter/2023-07-06-popular-courses-ih.jpg"
+      }'></component>
+      <tr>
+        <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+          <p class="text-xl"><strong>Добрый день!</strong></p>
+          <p>Хотите научиться петь профессионально или освоить вышивку на&nbsp;швейной машинке&nbsp;— приходите на&nbsp;ИнфоХит за&nbsp;проверенными курсами!</p>
+          <p>Собрали для вас популярные творческие курсы, которые покупают на&nbsp;ИнфоХит. На&nbsp;прошлой неделе сотни учеников приобрели их&nbsp;и&nbsp;остались довольны покупкой.</p>
+          <p>А&nbsp;еще на&nbsp;эти программы сейчас действует скидка до&nbsp;53%!</p>
+          <h3 class="mt-24 sm:mt-24">Курс «Песня под гитару»</h3>
+          <p>Последовательные видеоуроки для новичков, которые хотят освоить игру на&nbsp;гитаре. Узнаете, как настроить гитару с&nbsp;помощью тюнера, изучите семь основных аккордов и&nbsp;разные техники извлечения звука.</p>
+          <each loop="item in response.slice(0, 1)">
+            <component src="src/components/course.html" locals='{
+              "author" : "{{ item.RIGHTHOLDER }}",
+              "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+              "subtitle" : "{{ item.DESC }}",
+              "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+              "link" : "{{ item.DETAIL_PAGE_URL }}?r1=mail&r1=27-10-22"
+              }'>
+            </component>
+          </each>
+          <h3 class="mt-24 sm:mt-24">Видеокурс «Точечная роспись тарелочек»</h3>
+          <p>Освоите технологию декоративной росписи тарелок. Автор курса&nbsp;— Елена Федеряшина расскажет об&nbsp;основах творческого дела, научит работать с&nbsp;трафаретом и&nbsp;объяснит, как наносить фон.</p>
+          <each loop="item in response.slice(1, 2)">
+            <component src="src/components/course.html" locals='{
+              "author" : "{{ item.RIGHTHOLDER }}",
+              "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+              "subtitle" : "{{ item.DESC }}",
+              "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+              "link" : "{{ item.URL }}"
+              }'>
+            </component>
+          </each>
+          <h3 class="mt-24 sm:mt-24">Видеокурс «Свободно-ходовая вышивка»</h3>
+          <p>Научитесь декорировать одежду своими руками в&nbsp;домашних условиях. На&nbsp;этом курсе получите базовые знания по&nbsp;техникам объемной вышивки от&nbsp;простого к&nbsp;сложному на&nbsp;швейной машинке.</p>
+          <each loop="item in response.slice(2, 3)">
+            <component src="src/components/course.html" locals='{
+              "author" : "{{ item.RIGHTHOLDER }}",
+              "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+              "subtitle" : "{{ item.DESC }}",
+              "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+              "link" : "{{ item.DETAIL_PAGE_URL }}"
+              }'>
+            </component>
+          </each>
+          <h3 class="mt-24 sm:mt-24">Курс «Вокал с&nbsp;нуля»</h3>
+          <p>Раскройте индивидуальные особенности голоса и&nbsp;начните звучать красиво и&nbsp;интересно с&nbsp;помощью секретных техник и&nbsp;приемов вокального мастерства Марины Лаврищевой. Профессиональная певица расскажет, как научиться петь с&nbsp;нуля и&nbsp;сделать голос сильнее.</p>
+          <each loop="item in response.slice(3, 4)">
+            <component src="src/components/course.html" locals='{
+              "author" : "{{ item.RIGHTHOLDER }}",
+              "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+              "subtitle" : "{{ item.DESC }}",
+              "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+              "link" : "{{ item.DETAIL_PAGE_URL }}"
+              }'>
+            </component>
+          </each>
+          <p>Вы&nbsp;можете сами посмотреть, какие <a href="https://info-hit.ru/catalog/filter/sale-y/" target="_blank">курсы из&nbsp;8000+&nbsp;на ИнфоХит</a> популярны сегодня. Просто выберите сортировку «по&nbsp;популярности» в&nbsp;каталоге и&nbsp;найдите обучающую программу, которая подходит именно вам!</p>
+          <component src="src/components/button.html" locals='{
+            "link" : "https://info-hit.ru/catalog/filter/sale-y/",
+            "text" : "Посмотреть",
+            "color" : "bg-green-500",
+            "hover_color" : "bg-green-600"
+            }'></component>
+          <component src="src/components/gray-line.html"></component>
+          <p class="text-base mb-36">Ваш проводник в мир онлайн-образования,<br>ИнфоХит!</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="h-32 sm:h-24"></td>
+      </tr>
+      <component src="src/components/footer.html"></component>
+    </fetch>
+  </block>
+</extends>
