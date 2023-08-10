@@ -1,0 +1,121 @@
+---
+title: "Не ждали? А мы к вам с полезной подборкой"
+preheader: "Открывайте письмо скорее"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <fetch url="https://info-hit.ru/include/tools/blog-json/?arElements=299075,299191,299886&token=u4JTEnMNt4gdsfdfsdf345nkhjk3dfgfh556776dfdghjkluiutyrtym&v=4">
+      <component src="src/components/img-block-without-link-round.html" locals='{
+      "src" : "https://info-hit.ru/include/images/letter/2023-08-10-blog-items.jpg"
+      }'></component>
+
+      <component src="src/components/round-block-mt.html">
+        <p><strong>Добрый день!</strong></p>
+        <p>Подготовили подборку интересных и&nbsp;полезных материалов на&nbsp;разные темы. Вас ждут советы и&nbsp;рекомендации, как стильно одеваться, сохранить здоровье и&nbsp;развить необходимые навыки для&nbsp;успешной карьеры и&nbsp;счастливой жизни.</p>
+        <p>Еще больше полезного материала найдете на&nbsp;<a target="_blank" href="https://info-hit.ru/">ИнфоХит.</a></p>
+      </component>
+
+      <tr>
+        <td class="h-24 sm:h-16"></td>
+      </tr>
+      <tr>
+        <td class="bg-white text-gray-800 text-base text-left px-48 py-24 sm:p-14 leading-24 rounded-2xl">
+          <h3>Автор месяца</h3>
+          <component src="src/components/about-author-left.html" locals='{
+            "name" : "Данила Сусак",
+            "photo" : "https://info-hit.ru/upload/resize_cache/iblock/ecf/h5h8bxp58g94c9oky98u4g1en0xyky31/220_220_2/susak_danila.jpg"
+            }'>
+            <p class="mt-0">Данила Сусак с&nbsp;28&nbsp;лет страдал от&nbsp;повышенного артериального давления&nbsp;— постоянные головные боли, шум в&nbsp;ушах, слабость в&nbsp;руках и&nbsp;ногах. Врачи прописывали лекарства, которые давали кратковременный эффект и&nbsp;не&nbsp;решили проблему. Тогда мужчина обратился к&nbsp;методам восточной терапии.</p>
+          </component>
+            <p>Сегодня Данила Сусак&nbsp;— чемпион мира по&nbsp;цигун. Автор и&nbsp;основатель оздоровительного центра Ksamata.</p>
+            <p class="mt-10"><strong>Он&nbsp;— тот специалист, который поможет:</strong></p>
+            <ul class="mt-0 mb-24">
+              <li class="mb-16">восстановить и&nbsp;сохранить здоровье спины и&nbsp;суставов;</li>
+              <li class="mb-16">снять напряжение, боли, спазмы;</li>
+              <li class="mb-16">улучшить сон;</li>
+              <li class="mb-16">нормализовать обмен веществ;</li>
+              <li class="mb-16">избавиться от&nbsp;лишнего веса.</li>
+            </ul>
+            <p>И&nbsp;это только малая часть проблем, которые способна решить гимнастика цигун.</p>
+            <p>Хотите оздоровить и&nbsp;омолодить весь организм? Приходите на&nbsp;занятия к&nbsp;Данилу Сусак.</p>
+            <component src="src/components/button.html" locals='{
+            "link" : "https://info-hit.ru/author-susak-danila/",
+            "text" : "Хочу быть здоровым",
+            "color" : "bg-blue-500",
+            "hover_color" : "bg-blue-600"
+            }'></component>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="h-24 sm:h-16"></td>
+      </tr>
+      <tr>
+        <td class="bg-white text-gray-800 text-base text-left px-48 py-24 sm:p-14 leading-24 rounded-2xl">
+          <h3 class="mt-24 sm:mt-24">Как и&nbsp;зачем разбираться в&nbsp;себе</h3>
+          <p>Многие спокойно живут и&nbsp;не&nbsp;задумываются, чего хотя в&nbsp;жизни. Следуют стандартной последовательности: школа, институт, работа, отношения, семья, пенсия. Но&nbsp;рано или поздно так&nbsp;же многих начинает волновать вопрос: а&nbsp;это все делает меня счастливым человеком? И&nbsp;если нет, то&nbsp;чего&nbsp;же я&nbsp;хочу на&nbsp;самом деле? Разобраться в&nbsp;себе непросто, но&nbsp;понять собственное «Я» может каждый человек. Об&nbsp;этом читайте в&nbsp;статье.</p>
+          <each loop="item in response.slice(0, 1)">
+            <component src="src/components/blog.html" locals='{
+            "URL" : "{{ item.URL }}",
+            "PICTURE" : "{{ item.PICTURE }}",
+            "NAME" : "{{ item.NAME }}",
+            "DESC" : "{{ item.DESC }}",
+            "COLOR" : "blue"
+            }'></component>
+          </each>
+          <h3 class="mt-24 sm:mt-24">Все о&nbsp;soft skills</h3>
+          <p>Многие работодатели полагают, что будущее за&nbsp;soft skills. В&nbsp;среде HR-менеджеров популярна шутка о&nbsp;том, что за&nbsp;hard skills сотрудников берут на&nbsp;работу, а&nbsp;за&nbsp;отсутствие soft skills увольняют. Совершенствовать свои гибкие навыки необходимо не&nbsp;только тем, кто хочет построить карьеру, но&nbsp;и&nbsp;тем, кто хочет повысить качество своей жизни. Как развить soft skills, читайте в&nbsp;статье.</p>
+          <each loop="item in response.slice(1, 2)">
+            <component src="src/components/blog.html" locals='{
+            "URL" : "{{ item.URL }}",
+            "PICTURE" : "{{ item.PICTURE }}",
+            "NAME" : "{{ item.NAME }}",
+            "DESC" : "{{ item.DESC }}",
+            "COLOR" : "purple"
+            }'></component>
+          </each>
+          <h3 class="mt-24 sm:mt-24">Как взять время под контроль</h3>
+          <p>Современный человек выполняет десятки разных задач ежедневно: приготовить еду, вынести мусор, отвести детей в&nbsp;школы и&nbsp;сады... Еще столько&nbsp;же держит в&nbsp;голове. Чтобы не&nbsp;сойти с&nbsp;ума и&nbsp;все успеть следует применять принципы тайм-менеджмента&nbsp;— искусства управлением временем. В&nbsp;статье рассказали, что это такое, где можно пройти обучение этому важному навыку и&nbsp;какие онлайн-курсы в&nbsp;этом помогут.</p>
+          <each loop="item in response.slice(2, 3)">
+            <component src="src/components/blog.html" locals='{
+            "URL" : "{{ item.URL }}",
+            "PICTURE" : "{{ item.PICTURE }}",
+            "NAME" : "{{ item.NAME }}",
+            "DESC" : "{{ item.DESC }}",
+            "COLOR" : "green"
+            }'></component>
+          </each>
+        </td>
+      </tr>
+
+      <tr>
+          <td class="h-24 sm:h-16"></td>
+      </tr>
+      <tr>
+          <td class="bg-white text-gray-800 text-base text-left px-48 py-24 sm:p-14 leading-24 rounded-2xl">
+            <h3>Курс месяца</h3>
+            <p>Красота спасет мир...</p>
+            <p>И&nbsp;это правда, если вы&nbsp;знаете, как подчеркнуть свою природную женственность и&nbsp;уникальность.</p>
+            <p>Татьяна Кныш, дипломированный имидж-стилист, уверена, чтобы любить свое отражение в&nbsp;зеркале и&nbsp;получать массу комплиментов достаточно уметь стильно одеваться.</p>
+            <p>Из&nbsp;10&nbsp;— 12&nbsp;вещей каждая женщина сможет собрать более 39&nbsp;комплектов на&nbsp;разные случаи жизни. В&nbsp;кино с&nbsp;подружками, на&nbsp;работу или свидание с&nbsp;любимым человеком.</p>
+            <p>Познакомьтесь с&nbsp;секретами, как выглядеть роскошно при минимальных затратах.</p>
+            <component src="src/components/button.html" locals='{
+            "link" : "https://info-hit.ru/away.php?to=link&id=488",
+            "text" : "Хочу узнать",
+            "color" : "bg-green-500",
+            "hover_color" : "bg-green-600"
+            }'></component>
+            <component src="src/components/gray-line.html"></component>
+            <p class="text-base mb-36">Ваш проводник в мир онлайн-образования,<br>ИнфоХит!</p>
+          </td>
+      </tr>
+
+      <tr>
+        <td class="h-32 sm:h-24"></td>
+      </tr>
+      <component src="src/components/footer.html"></component>
+    </fetch>
+  </block>
+</extends>
