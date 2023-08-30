@@ -1,0 +1,33 @@
+---
+title: "Вы на связи? Боимся вас потерять!"
+preheader: "Проверьте, есть ли у нас ваши актуальные контакты"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/2023-08-30-actual-contact.jpg"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+        <p>Давайте оставаться на&nbsp;связи. Если у&nbsp;вас поменялись электронная почта, номер телефона или сотрудник, который отвечает за&nbsp;коммуникацию, пожалуйста, сообщите нам об&nbsp;этом. Актуальные контактные данные&nbsp;— залог того, что вы&nbsp;будете своевременно узнавать об&nbsp;акциях, специальных предложениях, обновлениях и&nbsp;других новостях.</p>
+        <p>Сообщите нам свои актуальные контакты на&nbsp;почту <a href="mailto:info@info-hit.ru?subject=Обновить контактные данные">info@info-hit.ru</a> или в&nbsp;<a href="https://t.me/ih_school_support_bot" target="_blank">чат техподдержки авторов</a>. Менеджер свяжется с&nbsp;вами.</p>
+        <p>Если вы&nbsp;— менеджер и&nbsp;уже не&nbsp;сотрудничаете с&nbsp;автором курсов, пожалуйста, сообщите нам об&nbsp;этом, чтобы мы&nbsp;убрали ваш e-mail из&nbsp;базы.</p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://t.me/ih_school_support_bot",
+          "text" : "Обновить контактные данные",
+          "color" : "bg-green-500",
+          "hover_color" : "bg-green-600"
+          }'></component> 
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">Ваш надежный партнер,<br>ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
