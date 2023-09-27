@@ -1,0 +1,41 @@
+---
+title: "У нас День рождения!"
+preheader: "Принимаем поздравления"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/2023-09-27-birthday-ih.jpg"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+        <p class="text-base bg-yellow-200 py-16 px-24">«ИнфоХит» празднует День рождения!</p>
+        <p>Вот уже 11&nbsp;лет мы&nbsp;собираем на&nbsp;своей площадке лучшие курсы, мастер-классы и&nbsp;вебинары. Помогаем авторам и&nbsp;школам находить учеников. А&nbsp;тысячам людей прокачивать свои знания и&nbsp;навыки в&nbsp;десятках сфер: здоровье, финансы, психология, бизнес, IT.</p>
+        <p>Спасибо, что доверяете нам продвижение и&nbsp;продажи своего образовательного продукта. Мы&nbsp;верим, что наше партнерство ценно и&nbsp;приносит вашему бизнесу результат.</p>
+        <p>Если вы&nbsp;рады нашему сотрудничеству так&nbsp;же, как и&nbsp;мы, расскажите своей аудитории о&nbsp;крупнейшем маркетплейсе онлайн-курсов «ИнфоХит».</p>
+        <p><strong>Как это сделать:</strong></p>
+        <ol>
+          <li class="mb-12">Выберите подходящий под вашу&nbsp;ЦА <a href="https://docs.google.com/document/d/1fNQxJJLTKG-0Ls0bdpUPEWVOycMvptYLkJbj_h3XZ5c/edit" target="_blank">текст</a>.</li>
+          <li class="mb-12">Разместите в&nbsp;соцсетях выбранный пост об&nbsp;«ИнфоХит».</li>
+          <li class="mb-12">Поставьте партнерскую ссылку и&nbsp;получите дополнительную возможность заработать.</li>
+        </ol>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://docs.google.com/document/d/1fNQxJJLTKG-0Ls0bdpUPEWVOycMvptYLkJbj_h3XZ5c/edit",
+          "text" : "Поздравить «ИнфоХит»",
+          "color" : "bg-green-500",
+          "hover_color" : "bg-green-600"
+          }'></component>
+        <p>Спасибо, что выбираете нас!</p>  
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">Ваш надежный партнер,<br>ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
