@@ -1,0 +1,52 @@
+---
+title: "Пакетом — дешевле"
+preheader: "Полный курс подготовки к ЕГЭ по биологии со скидкой"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <fetch url="https://info-hit.ru/include/tools/courses-json/?coursesArr=307634&token=u4JTEnMNt4gdsfdfsdf345nkhjk3dfgfh556776dfdghjkluiutyrtym&v=4">
+    <component src="src/components/img-block-without-link.html" locals='{
+      "src" : "https://info-hit.ru/include/images/letter/2023-10-03-moiseeva-3.jpg"
+      }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+        <p>Вы&nbsp;уже начали подготовку к&nbsp;ЕГЭ по&nbsp;биологии?</p>
+        <p>Ваш ребенок планирует поступить в&nbsp;медицинский вуз&nbsp;— пора готовиться к&nbsp;ЕГЭ по&nbsp;биологии. Делать это нужно с&nbsp;опытным преподавателем.</p>
+        <p class="text-base bg-green-200 py-16 px-24">Анна Моисеева уже 10&nbsp;лет помогает школьникам сдавать выпускные экзамены на&nbsp;высокий балл и&nbsp;поступать в&nbsp;вуз мечты.</p>
+        <p>Она знает, какие разделы биологии стоит изучать более тщательно, а&nbsp;каким можно уделить меньше внимания. Более 250 выпускников успешно сдали ЕГЭ с&nbsp;ее&nbsp;курсами.</p>
+        <p>А&nbsp;еще разбирает сложные задачи, рассказывает, как строить рассуждение и&nbsp;правильно оформлять свой ответ, чтобы он&nbsp;удовлетворял критериям экзаменаторов.</p>
+        <p>Она собрала полный курс подготовки к&nbsp;ЕГЭ по&nbsp;биологии, который позволит школьнику приобрести только те&nbsp;знания, которые пригодятся ему на&nbsp;экзамене.</p>
+        <each loop="item in response.slice(0, 1)">
+          <component src="src/components/course.html" locals='{
+            "author" : "{{ item.RIGHTHOLDER }}",
+            "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+            "subtitle" : "{{ item.DESC }}",
+            "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+            "link" : "{{ item.URL }}"
+            }'></component>
+        </each>
+        <p class="mt-0">Программа включает все необходимые знания по&nbsp;общей биологии и&nbsp;анатомии. Эти разделы составляют большую часть экзаменационных тестов. А&nbsp;еще есть разбор задач. Анна объяснит, как составители формулируют&nbsp;их, и&nbsp;какой ответ ждут от&nbsp;школьников.</p>
+        <p class="m-0 mb-24 text-base border-dashed border-2 border-gray-600 rounded-2xl py-16 px-24">Уроки по&nbsp;каждому разделу можно купить отдельно, но&nbsp;полный пакет&nbsp;— дешевле на&nbsp;20%.</p>
+        <p>15&nbsp;600&nbsp;₽ вместо <s>19&nbsp;600&nbsp;₽</s>.</p>
+        <p>Подготовьтесь к&nbsp;ЕГЭ по&nbsp;биологии с&nbsp;выгодой!</p>
+        <p>Начните прямо сейчас, чтобы успешно сдать ЕГЭ по&nbsp;биологии!</p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://info-hit.ru/course-podgotovka-k-ege-po-biologyi/",
+          "text" : "Полный курс подготовки к ЕГЭ по биологии",
+          "color" : "bg-green-500",
+          "hover_color" : "bg-green-600"
+          }'></component>
+        <component src="src/components/gray-line.html"></component>
+          <p class="text-base mb-36">С уважением,<br>ИнфоХит и Анна Моисеева!</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="h-32 sm:h-24"></td>
+      </tr>
+      <component src="src/components/footer.html"></component>
+    </fetch>
+  </block>
+</extends>
