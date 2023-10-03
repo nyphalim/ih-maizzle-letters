@@ -1,0 +1,78 @@
+---
+title: "А вы завели будильник — пятница 25 ноября в 00:00?"
+preheader: "Подготовьте свою корзину к Black Friday"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <fetch url="https://info-hit.ru/include/tools/courses-json/?coursesArr=283515,246964,270991&token=u4JTEnMNt4gdsfdfsdf345nkhjk3dfgfh556776dfdghjkluiutyrtym&v=4">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/2022-11-21-for-users-letter-1-bf.jpg"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p><strong>Добрый день!</strong></p>
+        <p>Скоро «черная пятница» на&nbsp;ИнфоХит. Начнется главная распродажа года!</p>
+        <p>И&nbsp;в&nbsp;этот день каждый может купить с&nbsp;большой скидкой&nbsp;то, о&nbsp;чем давно мечтал. Не&nbsp;захламляйте пространство ненужными вещами, а&nbsp;инвестируйте в&nbsp;себя с&nbsp;помощью знаний. Ведь это сделает вас счастливее, чем пара вечеров на&nbsp;шопинге. А&nbsp;еще поможет получить больше отдачи от&nbsp;самореализации.</p>
+        <p>Мы&nbsp;подготовили для вас самые крутые курсы от&nbsp;лучших авторов <strong>со&nbsp;скидками до&nbsp;75%!</strong></p>
+      </td>
+    </tr>
+
+    <tr>
+      <td class="h-24 sm:h-16"></td>
+    </tr>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 py-24 sm:p-14 leading-24 rounded-2xl">
+        <h3 class="mt-24 sm:mt-24">Препятница на&nbsp;ИнфоХит! Главная распродажа года уже началась!</h3>
+        <p class="mb-24">Авторы и&nbsp;онлайн-школы на&nbsp;ИнфоХит уже приготовили скидки и&nbsp;приятные бонусы для своих учеников. Успейте выбрать обучающую программу по&nbsp;выгодной цене!</p>
+        <each loop="item in response.slice(0, 1)">
+          <component src="src/components/course.html" locals='{
+            "author" : "{{ item.RIGHTHOLDER }}",
+            "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+            "subtitle" : "{{ item.DESC }}",
+            "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+            "link" : "{{ item.DETAIL_PAGE_URL }}"
+            }'>
+          </component>
+        <each loop="item in response.slice(1, 2)">
+          <component src="src/components/course.html" locals='{
+            "author" : "{{ item.RIGHTHOLDER }}",
+            "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+            "subtitle" : "{{ item.DESC }}",
+            "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+            "link" : "{{ item.DETAIL_PAGE_URL }}"
+            }'>
+          </component>
+        </each>
+        <each loop="item in response.slice(2, 3)">
+          <component src="src/components/course.html" locals='{
+            "author" : "{{ item.RIGHTHOLDER }}",
+            "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+            "subtitle" : "{{ item.DESC }}",
+            "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+            "link" : "{{ item.DETAIL_PAGE_URL }}"
+            }'>
+          </component>
+        </each>
+        <p>Чтобы найти все специальные предложения главной распродажи года, выберите фильтр <a href="https://info-hit.ru/catalog/filter/discount-y/" target="_blank">«черная пятница»</a> в&nbsp;каталоге курсов на&nbsp;ИнфоХит.</p>
+        <p>Не&nbsp;упустите возможность получить знания со&nbsp;скидкой.</p>
+        <p class="text-base bg-yellow-200 py-16 px-24">Главная распродажа года начнется 25&nbsp;ноября в&nbsp;00:00.</p>
+        <p>Поставьте напоминание, чтобы не&nbsp;пропустить.</p>
+          <table class="w-full">
+            <tr>
+              <td class="py-16">
+                <div class="bg-gray-200 h-px leading-px">&zwnj;</div>
+              </td>
+            </tr>
+          </table>
+          <p class="text-base mb-36">Ваш надежный проводник в онлайн-образовании,<br>ИнфоХит!</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="h-32 sm:h-24"></td>
+      </tr>
+      <component src="src/components/footer.html"></component>
+    </fetch>
+  </block>
+</extends>

@@ -1,0 +1,54 @@
+---
+title: "Добро пожаловать, уважаемый партнер!"
+preheader: "Спасибо за регистрацию в программе ИнфоХит! Как начать зарабатывать вместе с нами — читайте в письме."
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/trigger-hello-partner/trigger-hello-partner-1.jpg"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p>Добрый день!</p>
+        <p>Поздравляем! Вы&nbsp;зарегистрировались в&nbsp;партнерской программе ИнфоХит. </p>
+
+        <p><strong>ИнфоХит&nbsp;— проект об&nbsp;онлайн-обучении, которому доверяют!</strong></p>
+        <p>Каждый месяц наши страницы посещают более 150&nbsp;000 уникальных пользователей. </p>
+        <h3 class="mt-36">Зачем люди приходят на&nbsp;ИнфоХит?</h3>
+        <ul>
+          <li>
+            <p>получить больше информации об&nbsp;авторе/онлайн-школе, чтобы решиться на&nbsp;покупку курса;</p>
+          </li>
+          <li>
+            <p>выбрать курс под свои цели и&nbsp;нужды;</p>
+          </li>
+          <li>
+            <p>поделиться своим опытом обучения, оставить отзыв о&nbsp;работе автора или школы, оценить качество курса;</p>
+          </li>
+          <li>
+            <p>узнать больше о&nbsp;возможностях онлайн-обучения и&nbsp;саморазвития в&nbsp;нашем блоге.</p>
+          </li>
+        </ul>
+
+        <p class="text-base bg-yellow-100 py-16 px-24">Вы&nbsp;можете помочь нам увеличить эту аудиторию и&nbsp;заработать на&nbsp;этом! </p>
+        <p>В&nbsp;следующих письмах мы&nbsp;расскажем, как это сделать. Мы&nbsp;поделимся опытом и&nbsp;расскажем все о&nbsp;тонкостях работы в&nbsp;партнерских программах.</p>
+
+        <p>А&nbsp;еще у&nbsp;нас есть <a target="_blank" href="https://vk.com/infohitpartners">группа Вконтакте</a> специально для партнеров. Подписывайтесь и&nbsp;следите за&nbsp;новостями!</p>
+        <component src="src/components/button.html" locals='{
+        "link" : "https://vk.com/infohitpartners",
+        "text" : "Подписаться в VK",
+        "color" : "bg-purple-500",
+        "hover_color" : "bg-purple-600"
+        }'></component>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">Ваш надежный партнер,<br>ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>

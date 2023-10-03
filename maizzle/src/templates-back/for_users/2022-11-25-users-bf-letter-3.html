@@ -1,0 +1,66 @@
+---
+title: "Все просто: скидка до 75% на курсы"
+preheader: "Старт «черной пятницы» на ИнфоХит"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <fetch url="https://info-hit.ru/include/tools/courses-json/?coursesArr=171751,255379,281254&token=u4JTEnMNt4gdsfdfsdf345nkhjk3dfgfh556776dfdghjkluiutyrtym&v=4">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/2022-11-25-bf-letter-3-users.jpg"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p><strong>Добрый день!</strong></p>
+        <p>«Черная пятница» началась! Все становится лучше с&nbsp;самыми захватывающими курсами на&nbsp;ИнфоХит.</p>
+        <p>Торопитесь выгодно купить обучающие материалы от&nbsp;лучших авторов и&nbsp;школ на&nbsp;ИнфоХит. Мы&nbsp;уже собрали их&nbsp;для вас в&nbsp;<a href="https://info-hit.ru/catalog/filter/discount-y/" target="_blank">специальном разделе каталога</a>.</p>
+        <p>Не&nbsp;нужно сходить с&nbsp;ума и&nbsp;стоять в&nbsp;очереди. Можете спокойно ознакомиться со&nbsp;скидочными программами и&nbsp;найти для себя лучший вариант.</p>
+        <each loop="item in response.slice(0, 1)">
+          <component src="src/components/course.html" locals='{
+            "author" : "{{ item.RIGHTHOLDER }}",
+            "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+            "subtitle" : "{{ item.DESC }}",
+            "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+            "link" : "{{ item.DETAIL_PAGE_URL }}"
+            }'>
+          </component>
+        <each loop="item in response.slice(1, 2)">
+          <component src="src/components/course.html" locals='{
+            "author" : "{{ item.RIGHTHOLDER }}",
+            "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+            "subtitle" : "{{ item.DESC }}",
+            "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+            "link" : "{{ item.DETAIL_PAGE_URL }}"
+            }'>
+          </component>
+        </each>
+        <each loop="item in response.slice(2, 3)">
+          <component src="src/components/course.html" locals='{
+            "author" : "{{ item.RIGHTHOLDER }}",
+            "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+            "subtitle" : "{{ item.DESC }}",
+            "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+            "link" : "{{ item.DETAIL_PAGE_URL }}"
+            }'>
+          </component>
+        </each>
+        <p>Акция действует до&nbsp;конца дня.</p>
+        <p>Не&nbsp;упустите свой шанс!</p>
+          <table class="w-full">
+            <tr>
+              <td class="py-16">
+                <div class="bg-gray-200 h-px leading-px">&zwnj;</div>
+              </td>
+            </tr>
+          </table>
+          <p class="text-base mb-36">С уважением,<br>команда ИнфоХит</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="h-32 sm:h-24"></td>
+      </tr>
+      <component src="src/components/footer.html"></component>
+    </fetch>
+  </block>
+</extends>

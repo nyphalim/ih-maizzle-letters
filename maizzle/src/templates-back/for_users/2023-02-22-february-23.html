@@ -1,0 +1,99 @@
+---
+title: "Лучшим мужчинам — лучшие подарки"
+preheader: "Поздравьте своего защитника вместе с ИнфоХит"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <fetch url="https://info-hit.ru/include/tools/courses-json/?coursesArr=89387,290887,289061,295931,24336,197322&token=u4JTEnMNt4gdsfdfsdf345nkhjk3dfgfh556776dfdghjkluiutyrtym&v=4">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/2023-02-22-february-23.jpg"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p><strong>Добрый день!</strong></p>
+        <p>ИнфоХит от&nbsp;всей души поздравляет всех мужчин с&nbsp;Днем защитника Отечества! Оставайтесь здоровыми, крепкими и&nbsp;полными решимости преодолеть любые трудности. А&nbsp;еще не&nbsp;забывайте учиться новому, даже если это&nbsp;— просто хобби.</p>
+        <each loop="item in response.slice(0, 1)">
+          <component src="src/components/course.html" locals='{
+            "author" : "{{ item.RIGHTHOLDER }}",
+            "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+            "subtitle" : "{{ item.DESC }}",
+            "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+            "link" : "{{ item.DETAIL_PAGE_URL }}"
+            }'>
+          </component>
+        <each loop="item in response.slice(1, 2)">
+          <component src="src/components/course.html" locals='{
+            "author" : "{{ item.RIGHTHOLDER }}",
+            "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+            "subtitle" : "{{ item.DESC }}",
+            "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+            "link" : "{{ item.DETAIL_PAGE_URL }}"
+            }'>
+          </component>
+        </each>
+        <each loop="item in response.slice(2, 3)">
+          <component src="src/components/course.html" locals='{
+            "author" : "{{ item.RIGHTHOLDER }}",
+            "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+            "subtitle" : "{{ item.DESC }}",
+            "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+            "link" : "{{ item.DETAIL_PAGE_URL }}"
+            }'>
+          </component>
+        </each>
+        <each loop="item in response.slice(3, 4)">
+          <component src="src/components/course.html" locals='{
+            "author" : "{{ item.RIGHTHOLDER }}",
+            "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+            "subtitle" : "{{ item.DESC }}",
+            "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+            "link" : "{{ item.DETAIL_PAGE_URL }}"
+            }'>
+          </component>
+        </each>
+        <each loop="item in response.slice(4, 5)">
+          <component src="src/components/course.html" locals='{
+            "author" : "{{ item.RIGHTHOLDER }}",
+            "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+            "subtitle" : "{{ item.DESC }}",
+            "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+            "link" : "{{ item.DETAIL_PAGE_URL }}"
+            }'>
+          </component>
+        </each>
+        <each loop="item in response.slice(5, 6)">
+          <component src="src/components/course.html" locals='{
+            "author" : "{{ item.RIGHTHOLDER }}",
+            "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+            "subtitle" : "{{ item.DESC }}",
+            "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+            "link" : "{{ item.DETAIL_PAGE_URL }}"
+            }'>
+          </component>
+        </each>
+        <p>Любой из&nbsp;курсов вы&nbsp;можете купить в&nbsp;подарок! А&nbsp;еще лучше приобрести <a href="https://info-hit.ru/about/lp/certificates/" target="_blank">Подарочный сертификат ИнфоХит</a>, чтобы ваш защитник сам выбрал курс по&nbsp;душе.</p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://info-hit.ru/about/lp/certificates/",
+          "text" : "Выбрать номинал",
+          "color" : "bg-green-500",
+          "hover_color" : "bg-green-600"
+          }'></component>
+          <table class="w-full">
+            <tr>
+              <td class="py-16">
+                <div class="bg-gray-200 h-px leading-px">&zwnj;</div>
+              </td>
+            </tr>
+          </table>
+          <p class="text-base mb-36">С уважением,<br>команда ИнфоХит</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="h-32 sm:h-24"></td>
+      </tr>
+      <component src="src/components/footer.html"></component>
+    </fetch>
+  </block>
+</extends>

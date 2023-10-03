@@ -1,0 +1,103 @@
+---
+title: "Поздравляем с регистрацией на ИнфоХит!"
+preheader: "Бонус на покупку курсов внутри →"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main-login.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/b24-trigger-user/b24-trigger-user-1.jpg"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-14 pb-0 leading-24 rounded">
+        <p><strong>Добрый день, #USER_NAME#!</strong></p>
+        <p>Поздравляем, вы начали изучать материалы:</p>
+
+        <if condition="page.env === 'local'">
+            <a href="#" target="_blank" class="text-base no-underline mb-24 block">
+              <table class="w-full">
+                <tr>
+                  <td class="w-2/12 align-top">
+                    <img class="rounded" src="https://info-hit.ru/upload/resize_cache/iblock/2e8/5kyl62j1mqd1tb1quh121ffmk1tny0js/150_150_2/pexels_tima_miroshnichenko_7567486.jpg" alt="">
+                  </td>
+                  <td class="p-12 py-0 sm:p-0 sm:pl-12">
+                    <h2 class="m-0 mb-8 text-black text-lg leading-24">Курс — Реактивный старт на фондовом рынке</h2>
+                    <p class="m-0 mb-0 text-sm text-gray-500">Клуб «Территория инвестирования»</p>
+                  </td>
+                </tr>
+              </table>
+            </a>
+            <a href="#" target="_blank" class="text-base no-underline mb-24 block">
+              <table class="w-full">
+                <tr>
+                  <td class="w-2/12 align-top">
+                    <img class="rounded" src="https://info-hit.ru/upload/resize_cache/iblock/72d/7ifveg94nn9gm27eabopp5ehcq7xn15q/200_200_1/klub_territoriya_investirovaniya.jpg" alt="">
+                  </td>
+                  <td class="p-12 py-0 sm:p-0 sm:pl-12">
+                    <h2 class="m-0 text-black text-lg leading-24">Клуб «Территория инвестирования»</h2>
+                  </td>
+                </tr>
+              </table>
+            </a>
+            <a href="#" target="_blank" class="text-base no-underline mb-24 block">
+              <table class="w-full">
+                <tr>
+                  <td class="w-2/12 align-top">
+                    <img class="rounded-full" src="https://info-hit.ru/upload/resize_cache/iblock/ce1/0hyulvcx3xk5v0w4evhi1s5nbitn4pdu/220_220_2/merkulov_andrey.png" alt="">
+                  </td>
+                  <td class="p-12 py-0 sm:p-0 sm:pl-12">
+                    <h2 class="m-0 text-black text-lg leading-24">Андрей Меркулов</h2>
+                  </td>
+                </tr>
+              </table>
+            </a>
+        </if>
+        <else>
+          #SUBSCRIBE_LIST#
+        </else>
+
+        <p class="mt-0">Круто, что вас интересует самообразование, и&nbsp;вы&nbsp;хотите узнавать новое вместе с&nbsp;нами!</p>
+
+        <p>Только что на&nbsp;ваш личный счет в&nbsp;ИнфоХит мы&nbsp;начислили <strong class="bg-yellow-200 px-5">300&nbsp;бонусных рублей!</strong> Вы&nbsp;можете использовать их при оплате курсов из списка «<a href="https://info-hit.ru/catalog/filter/sale-y/" target="_blank">Обучение на&nbsp;ИнфоХит</a>».</p>
+
+        <p class="m-0 mb-24 text-base border-dashed border-2 border-yellow-400 rounded-2xl py-16 px-24">Через 3 дня бонусы превратятся в тыкву. Успейте использовать их!</p>
+
+        <p>Специально для вас мы&nbsp;подготовили подборку образовательных продуктов, которые вы&nbsp;можете прямо сейчас купить дешевле. Просто используйте бонусы при оплате! <strong>1&nbsp;бонус = 1&nbsp;₽</strong>.</p>
+
+        <component src="src/components/button.html" locals='{
+        "link" : "https://info-hit.ru/catalog/filter/sale-y/",
+        "text" : "Смотреть курсы",
+        "color" : "bg-green-500",
+        "hover_color" : "bg-green-600"
+        }'></component>
+
+        <component src="src/components/gray-line.html"></component>
+
+        <p class="text-base bg-blue-100 py-16 px-24">Случается, что письма попадают в&nbsp;спам. Чтобы этого не&nbsp;происходило, добавьте наш почтовый ящик <a class="inline-block" href="mailto:info@info-hit.ru">info@info-hit.ru</a> в&nbsp;адресную книгу.</p>
+
+        <p class="mt-24"><strong>Подпишитесь также на наш Телеграм канал или группу ВКонтакте, чтобы ничего не пропустить.</strong></p>
+
+        <component src="src/components/button.html" locals='{
+        "link" : "https://t.me/infohitru",
+        "text" : "Telegram-канал",
+        "color" : "bg-purple-500",
+        "hover_color" : "bg-purple-600"
+        }'></component>
+        <div class="h-16"></div>
+        <component src="src/components/button.html" locals='{
+        "link" : "https://vk.com/infohitru",
+        "text" : "Группа ВКонтакте",
+        "color" : "bg-blue-500",
+        "hover_color" : "bg-blue-600"
+        }'></component>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">С уважением,<br>команда «ИнфоХит»!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>

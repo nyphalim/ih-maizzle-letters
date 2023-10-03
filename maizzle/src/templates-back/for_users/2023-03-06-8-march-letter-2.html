@@ -1,0 +1,83 @@
+---
+title: "Идеальный подарок к 8 марта! А еще скидка 20%"
+preheader: "Мы уже все придумали. Действуйте!"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <fetch url="https://info-hit.ru/include/tools/courses-json/?coursesArr=62267,242996,118165,174933&token=u4JTEnMNt4gdsfdfsdf345nkhjk3dfgfh556776dfdghjkluiutyrtym&v=4">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/2023-03-06-march-8-letter-2.jpg"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p><strong>Добрый день!</strong></p>
+        <p class="text-base bg-green-200 py-16 px-24">Команда ИнфоХит поздравляет всех милых дам с&nbsp;праздником весны, очарования, красоты и&nbsp;женственности!</p>
+        <p>Лучший подарок на&nbsp;8&nbsp;марта&nbsp;— внимание. ИнфоХит дарит вам скидку&nbsp;20% на&nbsp;все курсы раздела <a href="https://info-hit.ru/catalog/filter/sale-y/" target="_blank">«Покупка на&nbsp;ИнфоХит»</a>.</p>
+        <p><span class="border-dashed border-2 border-blue-400 rounded-lg text-lg px-8 py-5 inline-block">SL-HC9RI-UXK8WY2</span></p>
+        <p>Введите промокод в&nbsp;корзине перед оплатой и&nbsp;купите свой праздничный курс дешевле.</p>
+        <each loop="item in response.slice(0, 1)">
+          <component src="src/components/course.html" locals='{
+            "author" : "{{ item.RIGHTHOLDER }}",
+            "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+            "subtitle" : "{{ item.DESC }}",
+            "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+            "link" : "{{ item.DETAIL_PAGE_URL }}"
+            }'>
+          </component>
+        <each loop="item in response.slice(1, 2)">
+          <component src="src/components/course.html" locals='{
+            "author" : "{{ item.RIGHTHOLDER }}",
+            "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+            "subtitle" : "{{ item.DESC }}",
+            "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+            "link" : "{{ item.DETAIL_PAGE_URL }}"
+            }'>
+          </component>
+        </each>
+        <each loop="item in response.slice(2, 3)">
+          <component src="src/components/course.html" locals='{
+            "author" : "{{ item.RIGHTHOLDER }}",
+            "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+            "subtitle" : "{{ item.DESC }}",
+            "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+            "link" : "{{ item.DETAIL_PAGE_URL }}"
+            }'>
+          </component>
+        </each>
+        <each loop="item in response.slice(3, 4)">
+          <component src="src/components/course.html" locals='{
+            "author" : "{{ item.RIGHTHOLDER }}",
+            "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+            "subtitle" : "{{ item.DESC }}",
+            "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+            "link" : "{{ item.DETAIL_PAGE_URL }}"
+            }'>
+          </component>
+        </each>
+        <p>Еще больше интересных курсов найдете в каталоге ИнфоХит.</p>
+            <component src="src/components/button.html" locals='{
+              "link" : "https://info-hit.ru/catalog/filter/sale-y/",
+              "text" : "Выбрать курс",
+              "color" : "bg-green-500",
+              "hover_color" : "bg-green-600"
+              }'></component>
+        <p>Спасибо, что остаетесь с&nbsp;нами! Мы&nbsp;вас очень ценим и&nbsp;любим!</p>
+          <table class="w-full">
+            <tr>
+              <td class="py-16">
+                <div class="bg-gray-200 h-px leading-px">&zwnj;</div>
+              </td>
+            </tr>
+          </table>
+          <p class="text-base mb-36">С уважением,<br>команда ИнфоХит</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="h-32 sm:h-24"></td>
+      </tr>
+      <component src="src/components/footer.html"></component>
+    </fetch>
+  </block>
+</extends>
