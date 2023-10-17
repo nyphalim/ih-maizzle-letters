@@ -1,0 +1,53 @@
+---
+title: "Пакетом — дешевле! Новая реклама от ИнфоХит"
+preheader: "Выбирайте нужную услугу или выгодный комплекс"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/2023-10-17-authors-sale.jpg"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+        <p>Вы&nbsp;просили&nbsp;— мы&nbsp;сделали. Обновленные пакеты рекламных услуг от&nbsp;ИнфоХит!</p>
+          <p><img style="border: 2px solid rgba(117, 133, 199, 0.638)" src="https://info-hit.ru/include/images/letter/2023-10-17-example.jpg" alt=""></p>
+        <p>Мы&nbsp;собрали самые популярные и&nbsp;востребованные услуги в&nbsp;несколько пакетных предложений, потому что в&nbsp;комплексе они приносят больший эффект. А&nbsp;еще стоят дешевле.</p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://info-hit.ru/about/go-to-top/",
+          "text" : "Посмотреть предложения",
+          "color" : "bg-blue-500",
+          "hover_color" : "bg-blue-600"
+          }'></component>
+        <p><strong>Выбирайте один из&nbsp;трех и&nbsp;получайте больше:</strong></p>
+        <ul>
+          <li class="mb-12">трафика на&nbsp;свои страницы;</li>
+          <li class="mb-12">лояльной аудитории;</li>
+          <li class="mb-12">рефералов в&nbsp;свои воронки.</li>
+        </ul>
+        <p>А&nbsp;если вы&nbsp;хотите рассказать о&nbsp;запуске нового вебинара или продвинуть свою партнерскую программу&nbsp;— есть отдельные услуги:</p>
+        <ul>
+          <li class="mb-12">баннер на&nbsp;ИнфоХит;</li>
+          <li class="mb-12">слайд на&nbsp;главной странице ИнфоХит;</li>
+          <li class="mb-12">экспертная статья в&nbsp;блоге ИнфоХит;</li>
+          <li class="mb-12">рассылка и&nbsp;посты в&nbsp;соцсетях ИнфоХит;</li>
+          <li class="mb-12">партнерский драйв.</li>
+        </ul>
+        <p><a href="https://info-hit.ru/about/go-to-top/" target="_blank">Собрали все предложения на&nbsp;одной странице</a>→</p>
+        <p>Для тех, кто всегда дочитывает наши письма до&nbsp;конца&nbsp;— специальный бонус!</p>
+        <p class="m-0 mb-24 text-base border-dashed border-2 border-purple-500 rounded-2xl py-16 px-24">Оплатите любой рекламный пакет до&nbsp;конца октября и&nbsp;получите слайд на&nbsp;главной странице ИнфоХит в&nbsp;подарок на&nbsp;2&nbsp;недели.</p>
+        <p>Напишите в&nbsp;отдел по&nbsp;работе с&nbsp;авторами, чтобы узнать подробности →</p>
+        <p><a href="mailto:b2b@info-hit.ru"><strong>b2b@info-hit.ru</strong></p>
+        <p><a href="https://t.me/ih_school_support_bot" target="_blank"><strong>@ih_school_support_bot</strong></p>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">Ваш надежный партнер,<br>ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
