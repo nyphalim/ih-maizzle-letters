@@ -1,0 +1,41 @@
+---
+title: "Вам начислен кешбэк от ИнфоХит"
+preheader: "Подробности — в этом письме"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+        <p class="text-base bg-green-200 py-16 px-24"><b>Поздравляем с успешной оплатой курса с кешбэком!</b>
+          Начинайте учиться прямо сейчас. А мы уже работаем над тем, чтобы начислить вам кешбэк как можно скорее.
+        </p>
+
+        <p>ID начисления: #ENTRY_ID#</p>
+        <p>Статус: <span class="text-md bg-blue-200 py-3 px-10 rounded">Новый</span> → <span class="text-md bg-yellow-200 py-3 px-10 rounded">Ожидает начисления</span></p>
+        <p class="text-xs text-gray-500 mb-36">Дата: #DATE_CHANGE#</p>
+
+        <p>Точную сумму кешбэка, который вы получите с этой покупки, можно будет увидеть в разделе «<a target="_blank" href="https://info-hit.ru/account/user/cashback/">Кешбэк</a>» в Личном кабинете ученика ИнфоХит. Она появится там в течение 14 календарных дней. </p>
+        <p>После этого вы сможете вывести кешбэк на баланс Личного кабинета ученика ИнфоХит. Как только сумма на бонусном счете перевалит за 500 ₽, вы сможете вывести деньги на свою банковскую карту. </p>
+        <p>Учитесь с выгодой — учитесь на ИнфоХит!</p>
+
+        <component src="src/components/button.html" locals='{
+          "link" : "https://info-hit.ru/account/user/cashback/",
+          "text" : "Смотреть на сайте",
+          "color" : "bg-green-500",
+          "hover_color" : "bg-green-600"
+          }'></component>
+
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">Ваш проводник в мире онлайн-образования,
+          <br>ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
