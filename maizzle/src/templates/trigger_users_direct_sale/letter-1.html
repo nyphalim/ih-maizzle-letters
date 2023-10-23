@@ -1,0 +1,68 @@
+---
+title: "Учитесь сразу — платите долями"
+preheader: "Удобная рассрочка на ИнфоХит"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main-login.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/2023-10-23-trigger-direct-sale.jpg"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-14 pb-0 leading-24 rounded">
+        <p><strong>Добрый день, #USER_NAME#!</strong></p>
+        <p>Вы&nbsp;посмотрели бесплатные уроки в&nbsp;курсе:</p>
+
+        <if condition="page.env === 'local'">
+            <a href="#" target="_blank" class="text-base no-underline mb-24 block">
+              <table class="w-full">
+                <tr>
+                  <td class="w-2/12 align-top">
+                    <img class="rounded" src="https://info-hit.ru/upload/resize_cache/iblock/72d/7ifveg94nn9gm27eabopp5ehcq7xn15q/200_200_1/klub_territoriya_investirovaniya.jpg" alt="">
+                  </td>
+                  <td class="p-12 py-0 sm:p-0 sm:pl-12">
+                    <h2 class="m-0 text-black text-lg leading-24">Клуб «Территория инвестирования»</h2>
+                  </td>
+                </tr>
+              </table>
+            </a>
+            <a href="#" target="_blank" class="text-base no-underline mb-24 block">
+              <table class="w-full">
+                <tr>
+                  <td class="w-2/12 align-top">
+                    <img class="rounded-full" src="https://info-hit.ru/upload/resize_cache/iblock/ce1/0hyulvcx3xk5v0w4evhi1s5nbitn4pdu/220_220_2/merkulov_andrey.png" alt="">
+                  </td>
+                  <td class="p-12 py-0 sm:p-0 sm:pl-12">
+                    <h2 class="m-0 text-black text-lg leading-24">Андрей Меркулов</h2>
+                  </td>
+                </tr>
+              </table>
+            </a>
+        </if>
+        <else>
+          #SUBSCRIBE_LIST#
+        </else>
+
+        <p class="mt-0">Продолжите обучение прямо сейчас&nbsp;— а&nbsp;платеж поделите на&nbsp;4&nbsp;части.</p>
+
+        <p>Рассрочка оформляется прямо на&nbsp;сайте. Не&nbsp;нужно отправлять никакие документы и&nbsp;ждать одобрения.</p>
+
+        <p>Вы&nbsp;можете оплатить все образовательные продукты с&nbsp;пометкой <a href="https://info-hit.ru/catalog/filter/sale-y/" target="_blank">«Покупка на&nbsp;ИнфоХит»</a> долями.</p>
+
+        <component src="src/components/button.html" locals='{
+        "link" : "https://info-hit.ru/catalog/filter/sale-y/",
+        "text" : "Смотреть курсы",
+        "color" : "bg-blue-500",
+        "hover_color" : "bg-blue-600"
+        }'></component>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">С уважением,<br>команда ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
