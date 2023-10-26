@@ -1,0 +1,48 @@
+---
+title: "Ваша самая лучшая медицинская страховка"
+preheader: "Узнайте, как самостоятельно лечить болезни и сохранить свое здоровье"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+      "src" : "https://info-hit.ru/include/images/letter/2023-10-26-neoglori.jpg"
+      }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+        <p>Самые выдающиеся врачи в&nbsp;истории человечества знали, что мы&nbsp;вырабатываем в&nbsp;организме самое совершенное лекарство, а&nbsp;затем по&nbsp;какой-то причине забываем им&nbsp;воспользоваться. Любая травма или болезнь самопроизвольно излечивается, когда эти внутренние целебные ресурсы работают оптимально.</p>
+        <p>Именно поэтому мы&nbsp;подготовили для вас очень интересный материал о&nbsp;самом простом способе активировать это «внутреннее лекарство».</p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://neoglory.ru/healthsecrets/",
+          "text" : "Подробнее",
+          "color" : "bg-gray-500",
+          "hover_color" : "bg-gray-600"
+          }'></component>
+        <p><strong>Узнаете:</strong></p>
+        <ol>
+          <li class="mb-16">Три ключевых фактора, от&nbsp;которых зависит активность вашей природной способности к&nbsp;самоисцелению.</li>
+          <li class="mb-16">Почему ваша самая лучшая медицинская страховка&nbsp;— это уверенность в&nbsp;том, что все механизмы самоисцеления внутри вас работают в&nbsp;оптимальном режиме.</li>
+          <li class="mb-16">Что такое «внутреннее лекарство», которое может вырабатывать ваш организм, если создать для этого необходимые условия.</li>
+          <li class="mb-16">Почему когда внутреннее лекарство в&nbsp;изобилии, здоровье остается в&nbsp;хорошем состоянии, и&nbsp;нет повода обращаться в&nbsp;больницу.</li>
+          <li class="mb-16">Как вы&nbsp;можете самостоятельно лечить болезни и&nbsp;укреплять вашу жизненную силу бесплатно.</li>
+        </ol>
+        <p>Процесс активирования природного лекарства внутри нас несложный. Фактически, он&nbsp;простой, удобный в&nbsp;использовании и&nbsp;бесплатный.</p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://neoglory.ru/healthsecrets/",
+          "text" : "Хочу узнать больше",
+          "color" : "bg-purple-500",
+          "hover_color" : "bg-purple-600"
+          }'></component>
+        <p><i>*реклама</i></p>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">С уважением,<br>команда ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
