@@ -1,0 +1,69 @@
+---
+title: "Объявляем репетицию «черной пятницы» на ИнфоХит!"
+preheader: "Главная распродажа года начинается"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <fetch url="https://info-hit.ru/include/tools/courses-json/?coursesArr=304012,89568,282835&token=u4JTEnMNt4gdsfdfsdf345nkhjk3dfgfh556776dfdghjkluiutyrtym&v=4">
+      <component src="src/components/img-block-without-link.html" locals='{
+      "src" : "https://info-hit.ru/include/images/letter/2023-11-10-black friday-letter-2.jpg"
+      }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+        <p>Вы&nbsp;уже знаете, на&nbsp;какой курс запишетесь?</p>
+        <p>Какой интересный мастер-класс купите с&nbsp;большой скидкой?</p>
+        <p>«Черная пятница»&nbsp;— это тот самый шанс пройти самые классные курсы от&nbsp;лучших авторов и&nbsp;школ за&nbsp;полцены!<p>
+        <p>Смотрите сколько всего интересного вас ждет! Мы&nbsp;уже собрали курсы по&nbsp;самой классной цене в&nbsp;<a href="https://info-hit.ru/catalog/filter/discount-y/" target="_blank">специальном разделе каталога</a>.</p>
+        <p class="m-0 mb-24 text-base border-dashed border-2 border-yellow-400 rounded-2xl py-16 px-24"><strong>Ранний доступ к&nbsp;«черной пятнице» уже открыт!</strong></p>
+        <p>Успейте выбрать обучающую программу по&nbsp;выгодной цене!</p>
+        <each loop="item in response.slice(0, 1)">
+          <component src="src/components/course.html" locals='{
+            "author" : "{{ item.RIGHTHOLDER }}",
+            "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+            "subtitle" : "{{ item.DESC }}",
+            "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+            "link" : "{{ item.URL }}"
+            }'>
+          </component>
+        </each>
+        <each loop="item in response.slice(1, 2)">
+          <component src="src/components/course.html" locals='{
+            "author" : "{{ item.RIGHTHOLDER }}",
+            "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+            "subtitle" : "{{ item.DESC }}",
+            "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+            "link" : "{{ item.URL }}"
+            }'>
+          </component>
+        </each>
+        <each loop="item in response.slice(2, 3)">
+          <component src="src/components/course.html" locals='{
+            "author" : "{{ item.RIGHTHOLDER }}",
+            "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+            "subtitle" : "{{ item.DESC }}",
+            "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+            "link" : "{{ item.URL }}"
+            }'>
+          </component>
+        <p>А&nbsp;завтра в&nbsp;полночь по&nbsp;Москве перевернется грузовик с&nbsp;небывалыми скидками до&nbsp;75%.</p>
+        <p>Не&nbsp;упустите свой шанс!</p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://info-hit.ru/catalog/filter/discount-y/",
+          "text" : "Забрать курс со скидкой",
+          "color" : "bg-gray-500",
+          "hover_color" : "bg-gray-600"
+          }'></component>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">С уважением,<br>команда ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </fetch>
+</block>
+</extends>
