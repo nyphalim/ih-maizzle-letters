@@ -1,0 +1,41 @@
+---
+title: "«Черная пятница» — скидки для всех!"
+preheader: "Купите услуги по рекламе с выгодой"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/2023-11-13-black-friday-2.jpg"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+        <p>«Черная Пятница» 2023 уже стартовала на&nbsp;ИнфоХит! Благодарим вас за&nbsp;активное участие в&nbsp;распродаже, скидки и&nbsp;промокоды для&nbsp;учеников.</p>
+        <p>Для вас мы&nbsp;тоже подготовили скидки и&nbsp;спецпредложения на&nbsp;рекламные услуги.</p>
+        <ul>
+          <li class="mb-12"><strong>E-mail-рассылка по&nbsp;базе учеников 70&nbsp;000+</strong><br>4500&nbsp;₽ вместо <s>6000&nbsp;₽</li>
+          <li class="mb-12"><strong>Слайд на&nbsp;главной ИнфоХит</strong><br>12&nbsp;000&nbsp;₽ вместо <s>15&nbsp;000&nbsp;₽</s></li>
+          <li class="mb-12"><strong>Баннер на&nbsp;сайте ИнфоХит</strong><br>10&nbsp;000&nbsp;₽ вместо <s>12&nbsp;000&nbsp;₽</s></li>
+          <li class="mb-12"><strong>Статья в&nbsp;блоге ИнфоХит</strong><br>12&nbsp;000&nbsp;₽ вместо <s>15&nbsp;000&nbsp;₽</s></li>
+          <li class="mb-12">продюсерские центры и&nbsp;многое другое.</li>
+        </ul>
+        <p>А&nbsp;еще скидка на&nbsp;самый популярный <strong>пакет рекламных услуг&nbsp;— HIT!</strong> 40&nbsp;000&nbsp;₽ вместо <s>48&nbsp;000&nbsp;₽</s></p>
+        <p>Условия акции уточните у&nbsp;менеджера в&nbsp;телеграм-чате <a href="https://t.me/ih_school_support_bot" target="_blank"><strong>@ih_school_support_bot</strong></a> или <a href="mailto:b2b@info-hit.ru"><strong>b2b@info-hit.ru</strong></a></p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://t.me/ih_school_support_bot",
+          "text" : "Подробнее",
+          "color" : "bg-green-500",
+          "hover_color" : "bg-green-600"
+          }'></component>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">Ваш надежный партнер,<br>ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
