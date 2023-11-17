@@ -1,0 +1,47 @@
+---
+title: "Представляем прибыльную партнерку"
+preheader: "С комиссией до 70%"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/2023-11-17-beatstart.jpg"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+        <p>Каждый начинающий инвестор допускает просчеты. Причина&nbsp;— отсутствие опыта и&nbsp;необходимых в&nbsp;сфере инвестирования навыков.</p>
+        <p class="text-base bg-purple-200 py-16 px-24">Расскажите своей аудитории о&nbsp;курсах платформы «БитСтарт»&nbsp;— проекте о&nbsp;разумном и&nbsp;надежном подходе к&nbsp;инвестированию.</p>
+        <p>На&nbsp;курсах ученики не&nbsp;услышат ничего о&nbsp;трейдинге, спекуляциях на&nbsp;крипторынке и&nbsp;быстрых сделках. Уроки помогут построить собственную стратегию и&nbsp;сформировать портфель акций, который будет регулярно приносить доход.</p>
+        <p><strong>Почему покупают курсы:</strong></p>
+        <ul>
+          <li class="mb-16">пошаговая система обучения, которая поможет принимать взвешенные решения и&nbsp;обеспечит финансовую стабильность;</li>
+          <li class="mb-16">удобная платформа для контроля инвестиций, аналитики рынков и&nbsp;сбора своего первого портфеля;</li>
+          <li class="mb-16">уникальная система оценки компаний и&nbsp;рынков по&nbsp;более чем 150&nbsp;показателям.</li>
+        </ul>
+        <p>Шаг за&nbsp;шагом, простыми словами и&nbsp;постоянной поддержкой команда BeatStart проведет с&nbsp;нуля к&nbsp;идеальному диверсифицированному портфелю акций.</p>
+        <p><strong>Партнерская программа Максима Дьяконова и&nbsp;онлайн-школы «БитСтарт»</strong></p>
+        <ol>
+          <li class="mb-16">Комиссия&nbsp;— 70%</li>
+          <li class="mb-16">Есть бесплатные материалы</li>
+          <li class="mb-16">Возможный доход&nbsp;— 34&nbsp;783&nbsp;₽</li>
+        </ol>
+        <p>Присоединяйтесь к&nbsp;выгодной партнерке в&nbsp;популярном направлении!</p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://info-hit.ru/programs/partnerskaya-programma-onlayn-shkoly-bitstart/",
+          "text" : "Подробнее",
+          "color" : "bg-blue-500",
+          "hover_color" : "bg-blue-600"
+          }'></component>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">Ваш надежный партнер,<br>ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
