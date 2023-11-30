@@ -1,0 +1,46 @@
+---
+title: "Новый практикум по натальной астрологии"
+preheader: "Персональное приглашение для учеников ИнфоХит"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/2023-11-30-lunara.jpg"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+        <p class="text-base bg-purple-300 py-16 px-24">Вы&nbsp;получили персональное приглашение на&nbsp;новый практикум по&nbsp;Натальной Астрологии.</p>
+        <p>Проводим 3&nbsp;дня подряд.</p>
+        <p>Если вы&nbsp;хотите решить свои проблемы с&nbsp;деньгами, отношениями, здоровьем и&nbsp;найти свое предназначение&nbsp;— приходите на&nbsp;практикум по&nbsp;Астрологии.</p>
+        <p><i>Для вас это бесплатно!</i></p>
+        <p>Чтобы активировать свой билет на&nbsp;бесплатное участие, нажмите на&nbsp;ссылку и&nbsp;заполните форму на&nbsp;<a href="https://info-hit.ru/away.php?to=link&id=856" target="_blank">сайте</a>.</p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://info-hit.ru/away.php?to=link&id=856",
+          "text" : "Получить билет",
+          "color" : "bg-blue-500",
+          "hover_color" : "bg-blue-600"
+          }'></component>
+        <p><strong>Самое крутое:</strong> вы&nbsp;получите конкретные действия, то, что нужно делать именно вам, чтобы улучшилась определенная сфера жизни.</p>
+        <p>Никто не&nbsp;скажет о&nbsp;вас лучше, чем ваш личный Гороскоп. Учиться читать его мы&nbsp;и&nbsp;будем на&nbsp;практических занятиях.</p>
+        <p class="m-0 mb-24 text-base border-dashed border-2 border-purple-500 rounded-2xl py-16 px-24">А&nbsp;еще вы&nbsp;получите специальные Астро-методички с&nbsp;дополнительными материалами, бонусами и&nbsp;медитациями.</p>
+        <p>Скорее всего повторное участие будет платным, поэтому регистрируйтесь прямо сейчас, пока есть возможность пройти курс бесплатно.</p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://info-hit.ru/away.php?to=link&id=856",
+          "text" : "Пройти курс бесплатно",
+          "color" : "bg-blue-500",
+          "hover_color" : "bg-blue-600"
+          }'></component>
+        <p><i>*Реклама</i></p>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">С уважением,<br>ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
