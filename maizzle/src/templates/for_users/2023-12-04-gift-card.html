@@ -1,0 +1,40 @@
+---
+title: "Дед Мороз уже приготовил подарки. А вы?"
+preheader: "ИнфоХит поможет не прогадать с подарком!"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/2023-12-04-gift-card.jpg"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Ho-ho-ho!</strong></p>
+        <p class="text-base bg-yellow-300 py-16 px-24">Уже скоро наступит Новый Год!</p>
+        <p>А&nbsp;вы&nbsp;подготовили подарки своим близким и&nbsp;друзьям?</p>
+        <p>Уверены, вы&nbsp;хотите удивить их&nbsp;своим выбором. Сделайте это с&nbsp;помощью подарочного сертификата ИнфоХит!</p>
+        <p>Такой подарок запомнится надолго. Ведь это возможность:</p>
+        <ul>
+          <li class="mb-16">порадовать родных и&nbsp;друзей;</li>
+          <li class="mb-16">не&nbsp;прогадать с&nbsp;презентом;</li>
+          <li class="mb-16">приобрести курс или другой образовательный продукт со&nbsp;скидкой до&nbsp;100%!</li>
+        </ul>
+        <p>Вы&nbsp;всегда сможете найти тот самый курс, о&nbsp;котором давно мечтали. На&nbsp;ИнфоХит 10&nbsp;000+ обучающих материалов на&nbsp;разные темы.</p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://info-hit.ru/about/lp/certificates/",
+          "text" : "Выбрать номинал",
+          "color" : "bg-green-500",
+          "hover_color" : "bg-green-600"
+          }'></component>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">С уважением,<br>ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
