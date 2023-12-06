@@ -52,11 +52,13 @@ bodyClass: bg-gray-100
           #BLOG_LIST#
         </else>
 
+        <component src="src/components/telegram-for-users.html"></component>
+
         <div class="m-0 mb-24 text-base border-dashed border-2 border-yellow-400 rounded-2xl py-16 px-24">
-          <p class="mt-0"><strong>Следите за обновлениями на сайте, в рассылке и соцсетях.</strong></p>
+          <p class="mt-0"><strong>Следите также за обновлениями в журнале и&nbsp;группе&nbsp;ВКонтакте.</strong></p>
           <component src="src/components/button.html" locals='{
         "link" : "https://info-hit.ru/blog/main/",
-        "text" : "Читать блог",
+        "text" : "Читать журнал",
         "color" : "bg-yellow-500",
         "hover_color" : "bg-yellow-600"
         }'></component>
@@ -64,19 +66,10 @@ bodyClass: bg-gray-100
           <div class="h-16"></div>
 
           <component src="src/components/button.html" locals='{
-        "link" : "https://t.me/infohitru",
-        "text" : "Телеграм канал",
-        "color" : "bg-purple-500",
-        "hover_color" : "bg-purple-600"
-        }'></component>
-
-          <div class="h-16"></div>
-
-          <component src="src/components/button.html" locals='{
         "link" : "https://vk.com/infohitru",
         "text" : "Группа ВКонтакте",
-        "color" : "bg-blue-500",
-        "hover_color" : "bg-blue-600"
+        "color" : "bg-purple-500",
+        "hover_color" : "bg-purple-600"
         }'></component>
         </div>
 
