@@ -1,0 +1,76 @@
+---
+title: "До Нового года — 16 дней"
+preheader: "А ИнфоХит уже раздает подарки!"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <fetch url="https://info-hit.ru/include/tools/courses-json/?coursesArr=253216,305434,267147&token=u4JTEnMNt4gdsfdfsdf345nkhjk3dfgfh556776dfdghjkluiutyrtym&v=4">
+      <component src="src/components/img-block-without-link.html" locals='{
+      "src" : "https://info-hit.ru/include/images/letter/2023-12-15-new-year-1.jpg"
+      }'></component>
+      <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p><strong>С&nbsp;наступающим 2023&nbsp;годом!</strong></p>
+        <p>Вы&nbsp;у&nbsp;нас самые старательные и&nbsp;позитивные, самые упорные и&nbsp;целеустремленные!</p>
+        <p>Поэтому получаете подарки уже сейчас&nbsp;— ищите их&nbsp;в&nbsp;специальном разделе каталога <a href="https://info-hit.ru/catalog/filter/discount-y/" target="_blank"><strong>«Новогодний SALE»</strong></a>. Авторы и&nbsp;школы подготовили самые улетные скидки и&nbsp;промокоды для учеников ИнфоХит.</p>
+        <each loop="item in response.slice(0, 1)">
+          <component src="src/components/course.html" locals='{
+            "author" : "{{ item.RIGHTHOLDER }}",
+            "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+            "subtitle" : "{{ item.DESC }}",
+            "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+            "link" : "{{ item.URL }}"
+            }'>
+          </component>
+        </each>
+        <each loop="item in response.slice(1, 2)">
+          <component src="src/components/course.html" locals='{
+            "author" : "{{ item.RIGHTHOLDER }}",
+            "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+            "subtitle" : "{{ item.DESC }}",
+            "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+            "link" : "{{ item.URL }}"
+            }'>
+          </component>
+        </each>
+        <each loop="item in response.slice(2, 3)">
+          <component src="src/components/course.html" locals='{
+            "author" : "{{ item.RIGHTHOLDER }}",
+            "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+            "subtitle" : "{{ item.DESC }}",
+            "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+            "link" : "{{ item.URL }}"
+            }'>
+          </component>
+        <p><i>Спасибо, что вы&nbsp;с&nbsp;нами!</i></p>
+        <p class="mb-36">Не&nbsp;забывайте учиться и&nbsp;совершенствоваться в&nbsp;новом году.</p>
+      </td>
+    </tr>
+
+        <tr>
+        <td class="h-24 sm:h-16"></td>
+      </tr>
+      <tr>
+        <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+          <h3>Участвуйте в&nbsp;новогоднем розыгрыше призов от&nbsp;ИнфоХит 🎄🎁</h3>
+          <p>Получите до&nbsp;10&nbsp;000 бонусов (1&nbsp;бонус = 1&nbsp;рублю).</p>
+          <component src="src/components/button.html" locals='{
+            "link" : "https://info-hit.ru/include/telegram/join/?sid=46187",
+            "text" : "Подробности в Телеграм",
+            "color" : "bg-green-500",
+            "hover_color" : "bg-green-600"
+            }'></component>
+              <component src="src/components/gray-line.html"></component>
+          <p class="text-base mb-36">С&nbsp;любовью,<br>команда ИнфоХит!</p>
+          </td>
+      </tr>
+
+      <tr>
+        <td class="h-32 sm:h-24"></td>
+      </tr>
+      <component src="src/components/footer.html"></component>
+    </fetch>
+  </block>
+</extends>
