@@ -1,0 +1,38 @@
+---
+title: "Специальное предложение от «Института новых технологий» НИПО"
+preheader: "Обучение востребованной профессии со скидкой до 50%"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/2023-12-20-NIPO.jpg"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+        <p>Специальное предложение от&nbsp;«Института новых технологий» НИПО!</p>
+        <p>Мечтаете стать профессионалом в&nbsp;области нутрициологии, косметологии, массажа, диетологии, тарологии и&nbsp;даже работы на&nbsp;маркетплейсе Amazon? У&nbsp;нас есть отличное предложение для вас!</p>
+        <p>Теперь вы&nbsp;можете получить качественное обучение со&nbsp;скидкой до&nbsp;50%. Не&nbsp;упустите этот шанс!</p>
+        <p class="m-0 mb-24 text-base border-dashed border-2 border-yellow-500 rounded-2xl py-16 px-24">Начните свое обучение уже сегодня с&nbsp;доступом к&nbsp;видеоурокам и&nbsp;возможностью обучаться под руководством опытных специалистов.</p>
+        <p>Полученные знания позволят вам помочь клиентам достичь любых целей в&nbsp;области здоровья и&nbsp;благополучия.</p>
+        <p>Времени на&nbsp;акцию осталось совсем мало! Не&nbsp;откладывайте свой успех на&nbsp;потом, запишитесь на&nbsp;курсы прямо сейчас и&nbsp;станьте настоящим экспертом в&nbsp;своей области.</p>
+        <p>Узнайте больше о&nbsp;наших курсах, специальных предложениях и&nbsp;скидках, перейдя по&nbsp;ссылке.</p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://info-hit.ru/away.php?to=link&id=943",
+          "text" : "Выбрать программу",
+          "color" : "bg-gray-500",
+          "hover_color" : "bg-gray-600"
+          }'></component>
+        <p><i>*Реклама</i></p>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">С уважением,<br>ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
