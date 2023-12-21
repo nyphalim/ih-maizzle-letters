@@ -1,0 +1,53 @@
+---
+title: "ИнфоХит помогает с маркировкой рекламы"
+preheader: "Заполните анкету, чтобы получить токены для маркировки курсов и не нарваться на штраф"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/2023-12-21-marking.jpg"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+        <p class="text-base bg-blue-200 py-16 px-24">С&nbsp;1&nbsp;сентября 2023 вступили в&nbsp;силу изменения в&nbsp;ФЗ №&nbsp;38&nbsp;РФ <a href="https://normativ.kontur.ru/document?utm_from=adv-block-articles-1-script-how-to&amp;moduleId=1&amp;documentId=427837&amp;utm_source=ya.ru&amp;utm_medium=referral&amp;utm_startpage=kontur.ru%2Farticles%2F1179&amp;utm_orderpage=kontur.ru%2Farticles%2F1179&amp;utm_referer=ya.ru" target="_blank">«О&nbsp;рекламе»</a> об&nbsp;обязательной маркировке рекламы в&nbsp;интернете.</p>
+        <p>Закон о&nbsp;маркировке рекламы в&nbsp;интернете касается всех участников рекламного процесса, включая рекламодателей, рекламные агентства, платформы и&nbsp;сети, а&nbsp;также создателей контента.</p>
+        <p>Вся реклама в&nbsp;интернете подлежит маркировке. В&nbsp;противном случае, в&nbsp;соответствии со&nbsp;<a href="https://www.consultant.ru/document/cons_doc_LAW_34661/2d50fc1c4013ea9ab20b8b2666c1650b1dc4c982/" target="_blank">ст.&nbsp;14.3 КоАП РФ</a>&nbsp;наступает административная ответственность.</p>
+        <p><strong>Штрафы составляют:</strong></p>
+        <ul>
+          <li class="mb-16">для физ лиц&nbsp;— от&nbsp;10&nbsp;000&nbsp;₽ до&nbsp;30&nbsp;000&nbsp;₽;</li>
+          <li class="mb-16">для должностных&nbsp;— от&nbsp;30&nbsp;000&nbsp;₽ до&nbsp;100&nbsp;000&nbsp;₽;</li>
+          <li class="mb-16">для юридических лиц&nbsp;— от&nbsp;100&nbsp;000&nbsp;₽ до&nbsp;500&nbsp;000&nbsp;₽.</li>
+        </ul>
+        <p>ИнфоХит берет на&nbsp;себя обязанность наносить маркировку на&nbsp;курсы.</p>
+        <p>Ваша обязанность&nbsp;— промаркировать все рекламные материалы, а&nbsp;именно: рекламные посты в&nbsp;группах, статьи на&nbsp;сторонних и&nbsp;собственных сайтах. И&nbsp;мы&nbsp;вам поможем!</p>
+        <p>На&nbsp;первом этапе необходимо внести ваши данные в&nbsp;ОРД (оператор рекламных данных), чтобы выдавать вам токены для маркировки рекламы.</p>
+        <p>Мы&nbsp;подготовили анкету. В&nbsp;ней всего лишь 8&nbsp;вопросов.</p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://forms.gle/vZpCp9Bc3XEhyAQWA",
+          "text" : "Заполнить анкету",
+          "color" : "bg-blue-500",
+          "hover_color" : "bg-blue-600"
+          }'></component>
+        <p>Заполните ее&nbsp;до&nbsp;15&nbsp;января!</p>
+        <p>Если не&nbsp;сделать этого, мы&nbsp;не&nbsp;сможем сделать вывод средств на&nbsp;ваш баланс, а&nbsp;ответственность за&nbsp;маркировку или ее&nbsp;отсутствие в&nbsp;дальнейшем ляжет на&nbsp;вас.</p>
+        <p>Сейчас все креативы нужно маркировать таким текстом:</p>
+        <p><i>Реклама. Информация о&nbsp;рекламодателе на&nbsp;сайте site.ru</i></p>
+        <p>Пример:</p>
+        <ol>
+          <li class="mb-16"><strong>Telegram-каналы, группы в&nbsp;соцсетях:</strong> Реклама. Информация о&nbsp;рекламодателе по&nbsp;ссылкам в&nbsp;посте.</li>
+          <li class="mb-16"><strong>Сайты, статьи, блоги:</strong> Реклама. Информация о&nbsp;рекламодателе по&nbsp;ссылкам в&nbsp;статье.</li>
+        </ol>
+        <p>Важно, чтобы эта фраза была на&nbsp;всех страницах и&nbsp;в&nbsp;постах, где&nbsp;находятся партнерские ссылки. Это можно сделать внизу статьи, но&nbsp;важно, чтобы шрифт, цвет текста позволяли его прочитать.</p>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">Ваш надежный партнер,<br>ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
