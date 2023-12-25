@@ -1,0 +1,53 @@
+---
+title: "Подарки, подарки, подарки"
+preheader: "Олени ИнфоХит летят к вам!"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+      <component src="src/components/img-block-without-link.html" locals='{
+      "src" : "https://info-hit.ru/include/images/letter/2023-12-25-new-year-2.jpg"
+      }'></component>
+      <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p><strong>Добрый день!</strong></p>
+        <p>До&nbsp;главного праздника в&nbsp;году остается все неделя!</p>
+        <p>Уже купили подарки всем друзьям и&nbsp;родным? Если нет&nbsp;— ИнфоХит выручит. Ведь у&nbsp;нас всегда припасены подарочные сертификаты разного номинала. Дарите близким, а&nbsp;они сами выберут, какой курс приобрести!</p>
+        <p><img style="border: 2px solid rgb(255, 255, 255)" src="https://info-hit.ru/include/images/letter/2022-12-19-example-gift-card.jpg" alt=""></p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://info-hit.ru/about/lp/certificates/",
+          "text" : "Выбрать номинал",
+          "color" : "bg-green-500",
+          "hover_color" : "bg-green-600"
+          }'></component>
+        <p>И&nbsp;о&nbsp;себе не&nbsp;забудьте! Купите курс, чтобы начать новый год с&nbsp;новых знаний. Тем более, что в&nbsp;ИнфоХит продолжается <a href="https://info-hit.ru/catalog/filter/discount-y/" target="_blank">Новогодний SALE</a>. Переходите в&nbsp;одноименный раздел каталога и&nbsp;выбирайте курсы со&nbsp;скидкой до&nbsp;90%!</p>
+        <p class="mb-36"><i>С&nbsp;наступающим Новым годом!</i></p>
+      </td>
+    </tr>
+
+        <tr>
+        <td class="h-24 sm:h-16"></td>
+      </tr>
+      <tr>
+        <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+          <h3>Участвуйте в&nbsp;новогоднем розыгрыше призов от&nbsp;ИнфоХит 🎄🎁</h3>
+          <p>Получите до&nbsp;10&nbsp;000 бонусов (1&nbsp;бонус = 1&nbsp;рублю).</p>
+          <component src="src/components/button.html" locals='{
+            "link" : "https://info-hit.ru/include/telegram/join/?sid=46187",
+            "text" : "Подробности в Телеграм",
+            "color" : "bg-green-500",
+            "hover_color" : "bg-green-600"
+            }'></component>
+              <component src="src/components/gray-line.html"></component>
+          <p class="text-base mb-36">С&nbsp;любовью,<br>команда ИнфоХит!</p>
+          </td>
+      </tr>
+
+      <tr>
+        <td class="h-32 sm:h-24"></td>
+      </tr>
+      <component src="src/components/footer.html"></component>
+    </fetch>
+  </block>
+</extends>
