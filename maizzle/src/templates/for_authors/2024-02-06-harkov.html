@@ -1,0 +1,43 @@
+---
+title: "Первая онлайн-конференция о передовых технологиях в сфере онлайн-образования"
+preheader: "15 февраля 2024 года"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/2024-02-06-farsh-harkov.jpeg"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+        <p>А&nbsp;вы&nbsp;слышали, что 15&nbsp;февраля мы&nbsp;все дружно пойдем на&nbsp;<a href="https://premieracademy.ru/farsh?utm_source=infohit&utm_medium=send&utm_campaign=invite" target="_blank">FARSH</a>?</p>
+        <p class="text-base bg-yellow-200 py-16 px-24">Это первая онлайн-конференция о&nbsp;передовых технологиях в&nbsp;сфере онлайн-образования. Здесь соберутся техспециалисты и&nbsp;продюсеры.</p>
+        <p>Почему FARSH?</p>
+        <p>Потому что организаторы оставили в&nbsp;программе только «мясной контент», только продвинутые фишки, никакой мотивации, карьеры и&nbsp;заработка.</p>
+        <p><strong>Топовые EdTech-разработчики поделятся своими секретами:</strong></p>
+        <ul>
+          <li class="mb-12">оформления тренингов и&nbsp;уроков;</li>
+          <li class="mb-12">автоматизации воронок и&nbsp;обучения;</li>
+          <li class="mb-12">использования нейросетей и&nbsp;чат-ботов.</li>
+        </ul>
+        <p>А&nbsp;еще всех участников ждут бонусы от&nbsp;организаторов, спикеров и&nbsp;партнеров онлайн-конференции.</p>
+        <p>Подробную программу&nbsp;— имена спикеров и&nbsp;темы их&nbsp;выступлений смотрите по ссылке ниже.</p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://premieracademy.ru/farsh?utm_source=infohit&utm_medium=send&utm_campaign=invite",
+          "text" : "Зарегистрироваться",
+          "color" : "bg-gray-500",
+          "hover_color" : "bg-gray-600"
+          }'></component>
+        <p><i>*Реклама</i></p>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">Ваш надежный партнер,<br>ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
