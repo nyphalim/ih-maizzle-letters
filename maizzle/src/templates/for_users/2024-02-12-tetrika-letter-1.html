@@ -1,0 +1,43 @@
+---
+title: "Бесплатные занятия с репетитором для школьников!"
+preheader: "Дарим 3 урока по школьным предметам"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/2024-02-12-tetrika-1.jpg"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+        <p>Приглашаем на&nbsp;пробные занятия к&nbsp;нашим друзьям в&nbsp;онлайн-школу «Тетрика»! На&nbsp;индивидуальных занятиях с&nbsp;опытным репетитором вы&nbsp;сможете подтянуть успеваемость по&nbsp;предметам, сделать домашние задания, успешно подготовиться к&nbsp;контрольным, ОГЭ, ЕГЭ, ВПР, выучить английский язык.</p>
+        <p class="text-base bg-green-200 py-16 px-24">Сейчас вам доступны 3&nbsp;бесплатных урока по&nbsp;любым школьным предметам!</p>
+        <p>На&nbsp;первом занятии вас познакомят с&nbsp;онлайн-школой, определяет текущий уровень знаний по&nbsp;предмету, а&nbsp;еще составят индивидуальный план обучения.</p>
+        <p><strong>Что вас ждет в&nbsp;«Тетрике»?</strong></p>
+        <ul>
+          <li class="mb-16">профессиональные преподаватели;</li>
+          <li class="mb-16">интерактивная ИТ-платформа;</li>
+          <li class="mb-16">виртуальная доска;</li>
+          <li class="mb-16">индивидуальный подбор репетиторов;</li>
+          <li class="mb-16">регулярная обратная связь по&nbsp;результатам занятий.</li>
+        </ul>
+        <p>Чтобы получить 3&nbsp;бесплатных урока по&nbsp;любым школьным предметам&nbsp;— оставьте заявку по&nbsp;кнопке ниже.</p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://info-hit.ru/away.php?to=link&id=1136",
+          "text" : "Попробовать бесплатно",
+          "color" : "bg-purple-500",
+          "hover_color" : "bg-purple-600"
+          }'></component>
+        <p><i>*Реклама</i></p>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">С уважением,<br>ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
