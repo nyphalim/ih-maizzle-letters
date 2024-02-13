@@ -1,0 +1,42 @@
+---
+title: "Бесплатный доступ к сервису Livedigital на полгода"
+preheader: "Специальное предложение для партнеров ИнфоХит"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/2024-02-13-livedigital.jpg"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+        <p class="text-base bg-blue-200 py-16 px-24">На&nbsp;ИнфоХит появился новый сервис видеосвязи для онлайн обучения&nbsp;— <a href="https://livedigital.space/?utm_source=infohit&utm_medium=email&utm_campaign=first_letter" target="_blank">Livedigital</a>.</p>
+        <p>Livedigital позиционирует себя как аналог zoom для&nbsp;преподавателей, репетиторов, консультантов, экспертов и&nbsp;других людей, которые проводят онлайн-занятия и&nbsp;консультации.</p>
+        <p><strong>Преимущества Livedigital перед zoom:</strong></p>
+        <ul>
+          <li class="mb-12">запись встречи и&nbsp;хранение прямо в&nbsp;сервисе;</li>
+          <li class="mb-12">возможность делиться записью по&nbsp;ссылке;</li>
+          <li class="mb-12">совместная работа на&nbsp;доске MIRO;</li>
+          <li class="mb-12">аналитика поведения участников в&nbsp;реальном времени.</li>
+        </ul>
+        <p class="m-0 mb-24 text-base border-dashed border-2 border-blue-400 rounded-2xl py-16 px-24">Специально для всех пользователей ИнфоХит команда Livedigital дает бесплатный доступ к&nbsp;сервису на&nbsp;полгода без ограничений по&nbsp;времени встречи и&nbsp;количеству участников.</p>
+        <p>Успейте воспользоваться специальным предложением!</p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://edu.livedigital.space/auth/signup?to=/&utm_source=infohit&utm_medium=email&utm_campaign=first_letter",
+          "text" : "Получить доступ бесплатно",
+          "color" : "bg-blue-500",
+          "hover_color" : "bg-blue-600"
+          }'></component>
+        <p><i>*Реклама</i></p>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">Ваш надежный партнер,<br>ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
