@@ -1,0 +1,36 @@
+---
+title: "Вы можете сделать ИнфоХит лучше и удобнее"
+preheader: "Пройдите 5-минутный опрос, чтобы мы узнали, что изменить на сайте!"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/2024-02-15-survey.jpg"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+        <p>ИнфоХит постоянно улучшает функционал сайта для учеников и&nbsp;для авторов курсов и&nbsp;владельцев онлайн-школ.</p>
+        <p>Работаем над интерфейсами, личным кабинетом, текстами, чтобы&nbsp;на страницы авторов и&nbsp;школ приходили как можно больше учеников.</p>
+        <p><strong>Помогите нам в&nbsp;этой работе!</strong></p>
+        <p>Заполните <a href="https://forms.gle/519YvhJ4ZgBdnQrD7" target="_blank">анкету</a> и&nbsp;расскажите о&nbsp;том, что в&nbsp;ИнфоХит вам нравится, а&nbsp;чего не&nbsp;хватает.</p>
+        <p>Время на&nbsp;заполнение&nbsp;— всего 5&nbsp;минут!</p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://forms.gle/519YvhJ4ZgBdnQrD7",
+          "text" : "Пройти опрос",
+          "color" : "bg-blue-500",
+          "hover_color" : "bg-blue-600"
+          }'></component>
+        <p><i>*Реклама</i></p>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">Ваш надежный партнер,<br>ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
