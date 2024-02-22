@@ -1,0 +1,34 @@
+---
+title: "Весна на пороге — время устроить распродажу!"
+preheader: "Давайте радовать учеников скидками вместе!"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/2024-02-22-mart-sale.jpg"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+        <p>Зима неумолимо подходит к&nbsp;концу! Приближается один из&nbsp;главных праздников весны&nbsp;— 8&nbsp;марта. Вы&nbsp;приготовили скидки и&nbsp;бонусы для своих учеников?</p>
+        <p class="m-0 mb-24 text-base border-dashed border-2 border-purple-400 rounded-2xl py-16 px-24">Мы&nbsp;уже создали в&nbsp;каталоге курсов ИнфоХит специальный раздел с&nbsp;лучшими акциями, чтобы пользователям было удобнее найти горящие предложения весенней распродажи. Активируем его 4&nbsp;марта.</p>
+        <p>Если хотите попасть туда и&nbsp;привлечь дополнительный трафик&nbsp;— напишите менеджеру ИнфоХит или направьте свое предложение о&nbsp;скидке или промокоде ответным письмом. А можете оставить заявку через&nbsp;<a href="https://t.me/ih_school_support_bot" target="_blank"><strong>чат техподдержки авторов</strong></a>.</p>
+        <p>Лучшие предложения мы&nbsp;опубликуем в&nbsp;своих соцсетях и&nbsp;включим в&nbsp;рассылки. Если вы&nbsp;подготовили распродажу образовательных продуктов&nbsp;— мы&nbsp;поможем вам привлечь еще больше трафика.</p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://t.me/ih_school_support_bot",
+          "text" : "Участвовать в распродаже",
+          "color" : "bg-blue-500",
+          "hover_color" : "bg-blue-600"
+          }'></component>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">Ваш надежный партнер,<br>ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>

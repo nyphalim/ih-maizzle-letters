@@ -1,0 +1,95 @@
+---
+title: "Для мужчин — с любовью"
+preheader: "Поздравьте своего защитника вместе с ИнфоХит"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <fetch url="https://info-hit.ru/include/tools/courses-json/?coursesArr=290197,197322,40353,277478,271240&token=u4JTEnMNt4gdsfdfsdf345nkhjk3dfgfh556776dfdghjkluiutyrtym&v=4">
+      <component src="src/components/img-block-without-link.html" locals='{
+      "src" : "https://info-hit.ru/include/images/letter/2024-02-22-mans-day.jpg"
+      }'></component>
+      <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+        <p class="text-base bg-green-200 py-16 px-24">ИнфоХит от&nbsp;всей души поздравляет всех мужчин с&nbsp;Днем защитника Отечества!</p>
+        <p>Мы&nbsp;знаем, что с&nbsp;каждым годом вы&nbsp;становитесь чуточку хитрее и&nbsp;привередливее. Вас уже не&nbsp;удивить носками, вы&nbsp;перестали пользоваться пеной и&nbsp;бритвой, потому что ходите в&nbsp;барбершоп. А&nbsp;гель для душа у&nbsp;вас вообще остался с&nbsp;прошлого года&nbsp;— запасы пополнились благодаря второй половинке, маме и&nbsp;коллегам с&nbsp;работы.</p>
+        <p>У&nbsp;нас есть идея, чем вас порадовать в&nbsp;этот особенный день. Конечно, полезными онлайн-курсами! Какую&nbsp;бы цель вы&nbsp;ни&nbsp;поставили в&nbsp;жизни&nbsp;— советы от&nbsp;профессионалов помогут ее&nbsp;достичь.</p>
+        <p>Ловите нашу праздничную подборку с&nbsp;полезными, интересными и&nbsp;необычными курсами.</p>
+        <each loop="item in response.slice(0, 1)">
+          <component src="src/components/course.html" locals='{
+            "author" : "{{ item.RIGHTHOLDER }}",
+            "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+            "subtitle" : "{{ item.DESC }}",
+            "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+            "link" : "{{ item.URL }}"
+            }'>
+          </component>
+        </each>
+        <each loop="item in response.slice(1, 2)">
+          <component src="src/components/course.html" locals='{
+            "author" : "{{ item.RIGHTHOLDER }}",
+            "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+            "subtitle" : "{{ item.DESC }}",
+            "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+            "link" : "{{ item.URL }}"
+            }'>
+          </component>
+        </each>
+        <each loop="item in response.slice(2, 3)">
+          <component src="src/components/course.html" locals='{
+            "author" : "{{ item.RIGHTHOLDER }}",
+            "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+            "subtitle" : "{{ item.DESC }}",
+            "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+            "link" : "{{ item.URL }}"
+            }'>
+          </component>
+          <each loop="item in response.slice(3, 4)">
+          <component src="src/components/course.html" locals='{
+            "author" : "{{ item.RIGHTHOLDER }}",
+            "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+            "subtitle" : "{{ item.DESC }}",
+            "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+            "link" : "{{ item.URL }}"
+            }'>
+          </component>
+          <each loop="item in response.slice(4, 5)">
+          <component src="src/components/course.html" locals='{
+            "author" : "{{ item.RIGHTHOLDER }}",
+            "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+            "subtitle" : "{{ item.DESC }}",
+            "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+            "link" : "{{ item.URL }}"
+            }'>
+          </component>
+      </td>
+    </tr>
+
+        <tr>
+        <td class="h-24 sm:h-16"></td>
+      </tr>
+      <tr>
+        <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+          <h3>А&nbsp;у&nbsp;нас для вас подарок!</h3>
+          <p>Найдете его 23&nbsp;февраля в&nbsp;телеграмм-канале ИнфоХит.</p>
+          <p>Подписывайтесь и&nbsp;следите за&nbsp;новостями, чтобы ничего не&nbsp;пропустить.</p>
+          <component src="src/components/button.html" locals='{
+            "link" : "https://info-hit.ru/include/telegram/join/?sid=46187",
+            "text" : "Бегу за подарком",
+            "color" : "bg-green-500",
+            "hover_color" : "bg-green-600"
+            }'></component>
+              <component src="src/components/gray-line.html"></component>
+          <p class="text-base mb-36">С&nbsp;любовью,<br>команда ИнфоХит!</p>
+          </td>
+      </tr>
+
+      <tr>
+        <td class="h-32 sm:h-24"></td>
+      </tr>
+      <component src="src/components/footer.html"></component>
+    </fetch>
+  </block>
+</extends>
