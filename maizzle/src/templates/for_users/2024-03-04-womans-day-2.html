@@ -6,7 +6,7 @@ bodyClass: bg-gray-100
 
 <extends src="src/layouts/ih-main.html">
   <block name="template">
-    <fetch url="https://info-hit.ru/include/tools/courses-json/?coursesArr=298650,305465,308455,311898,315012&token=u4JTEnMNt4gdsfdfsdf345nkhjk3dfgfh556776dfdghjkluiutyrtym&v=4">
+    <fetch url="https://info-hit.ru/include/tools/courses-json/?coursesArr=298650,303332,308455,311898,315012&token=u4JTEnMNt4gdsfdfsdf345nkhjk3dfgfh556776dfdghjkluiutyrtym&v=4">
     <component src="src/components/img-block-without-link.html" locals='{
     "src" : "https://info-hit.ru/include/images/letter/2024-03-04-mart-8.jpg"
     }'></component>
@@ -17,11 +17,11 @@ bodyClass: bg-gray-100
         <p>Всего неделю&nbsp;— до&nbsp;10&nbsp;марта мастер-классы, вебинары и&nbsp;курсы в&nbsp;разделе Весенний SALE доступны со&nbsp;скидками до&nbsp;75%!</p>
         <component src="src/components/button.html" locals='{
           "link" : "https://info-hit.ru/catalog/filter/discount-y/",
-          "text" : "Выбрать курс",
-          "color" : "bg-blue-500",
-          "hover_color" : "bg-blue-600"
+          "text" : "КУрсы со скидкой",
+          "color" : "bg-green-500",
+          "hover_color" : "bg-green-600"
           }'></component>
-        <p>Авторизованным ученикам ИнфоХит доступны скидки по&nbsp;секретным промокодам от&nbsp;авторов и&nbsp;кешбэк до&nbsp;10% на&nbsp;карту.</p>
+        <p class="mb-36">Авторизованным ученикам ИнфоХит доступны скидки по&nbsp;секретным промокодам от&nbsp;авторов и&nbsp;кешбэк до&nbsp;10% на&nbsp;карту.</p>
           <each loop="item in response.slice(0, 1)">
             <component src="src/components/course.html" locals='{
               "author" : "{{ item.RIGHTHOLDER }}",
@@ -70,8 +70,14 @@ bodyClass: bg-gray-100
               }'>
             </component>
           <p>А&nbsp;если вы&nbsp;в&nbsp;поисках подарка для любимой мамы, супруги или подруги&nbsp;— выбирайте подходящий номинал сертификата ИнфоХит.</p>
-            <p><img style="border: 2px solid rgb(200, 144, 13)" src="https://info-hit.ru/include/images/letter/gift-card-ih.jpg" alt=""></p>
-          <component src="src/components/gray-line.html"></component>
+            <p><img style="border: 2px solid rgb(255, 255, 255)" src="https://info-hit.ru/include/images/letter/2022-12-19-example-gift-card.jpg" alt=""></p>
+            <component src="src/components/button.html" locals='{
+              "link" : "https://info-hit.ru/about/lp/certificates/",
+              "text" : "Выбрать номинал",
+              "color" : "bg-green-500",
+              "hover_color" : "bg-green-600"
+              }'></component>
+            <component src="src/components/gray-line.html"></component>
           <p class="text-base mb-36">Ваш проводник в мир онлайн-образования,<br>ИнфоХит!</p>
         </td>
       </tr>
