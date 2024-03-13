@@ -1,0 +1,52 @@
+---
+title: "«Оскар-2024» среди курсов ИнфоХит"
+preheader: "Кто забрал главные номинации года"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/2024-03-13-oskar.jpg"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+        <p>Пока вы&nbsp;пристально следили за&nbsp;тем, кто&nbsp;же заберет главные статуэтки «Оскара» в&nbsp;Голливуде, пропустили номинирование самых лучших курсов ИнфоХит.</p>
+        <p>Если вы&nbsp;хотели уже расстроиться&nbsp;— не&nbsp;стоит! Потому что мы&nbsp;готовы прямо сейчас рассказать вам о&nbsp;тех программах, которые выбирают большинство пользователей ИнфоХит.</p>
+        <h3 class="mt-24 sm:mt-24">«Лучший курс»</h3>
+        <p class="mb-12">В&nbsp;этой номинации побеждает <a href="https://info-hit.ru/course-turetskiy-yazyk/" target="_blank">«Турецкий язык»</a>. Эта электронная книга не&nbsp;только практическая программа по&nbsp;основам турецкого языка, но&nbsp;и&nbsp;полноценный справочник по&nbsp;вопросам проживания в&nbsp;стране, переезду и&nbsp;получению вида на&nbsp;жительство.</p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://info-hit.ru/course-turetskiy-yazyk/",
+          "text" : "Купить со скидкой",
+          "color" : "bg-green-500",
+          "hover_color" : "bg-green-600"
+          }'></component>
+        <h3 class="mt-24 sm:mt-24">«Лучший бесплатный интенсив»</h3>
+        <p class="mb-12">Это марафон <a href="https://info-hit.ru/away.php?to=link&id=550" target="_blank">«Идеальная любовница 2.0»</a>. Психолог-сексолог Оксана Бачинская расскажет, как создать здоровые сексуальные отношения на&nbsp;долгие годы.</p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://info-hit.ru/away.php?to=link&id=550",
+          "text" : "Хочу пройти",
+          "color" : "bg-green-500",
+          "hover_color" : "bg-green-600"
+          }'></component>
+        <h3 class="mt-24 sm:mt-24">«ИнфоХит советует»</h3>
+        <p class="mb-12">Или приз зрительских симпатий забирает марафон Федора Сидорова <a href="https://info-hit.ru/away.php?to=link&id=260" target="_blank">«Первые криптоинвестиции»</a>. Три дня практики, за&nbsp;которые узнаете все о&nbsp;криптовалютах и&nbsp;способах инвестирования в&nbsp;них.</p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://info-hit.ru/away.php?to=link&id=260",
+          "text" : "Надо зарегистрироваться",
+          "color" : "bg-green-500",
+          "hover_color" : "bg-green-600"
+          }'></component>
+        <p class="mt-24 sm:mt-12">Какой&nbsp;бы курс вы&nbsp;ни&nbsp;выбрали, всегда получите самое главное&nbsp;— знания, которые делают вашу жизнь лучше!</p>
+        <p>Продолжайте учиться вместе с&nbsp;нами!</p>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">Ваш проводник в мир онлайн-образования,<br>ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
