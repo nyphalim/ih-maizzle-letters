@@ -1,0 +1,28 @@
+---
+title: "Сам себе психолог с курсами на ИнфоХит"
+preheader: "Подборка материалов по самопомощи"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main-login.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+      "src" : "https://info-hit.ru/include/images/letter/b24-trigger-newletter-user-6.jpg"
+      }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+        <p>Стресс, тревога, апатия и&nbsp;выгорание&nbsp;— спутники современной жизни в&nbsp;большом городе. Что&nbsp;же теперь всю жизнь сидеть на&nbsp;лекарствах или ходить к&nbsp;психотерапевту?</p>
+        <p>Или пройти курсы по&nbsp;психологии, управлению тревогой и&nbsp;самопомощи, чтобы научиться справляться с&nbsp;эмоциональными проблемами самостоятельно!</p>
+        <p>Выбирайте&nbsp;то, к&nbsp;чему лежит душа.</p>
+        <p>[Автоматическая подборка из&nbsp;раздела психология]</p>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">С уважением,<br>команда ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
