@@ -1,0 +1,40 @@
+---
+title: "Заберите свой подарок"
+preheader: "Дарим 3 бесплатных урока по школьным предметам"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/2024-03-20-tetrica-4.jpg"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+        <p class="text-base bg-green-200 py-16 px-24">«Тетрика»&nbsp;— это онлайн-школа, где на&nbsp;индивидуальных занятиях с&nbsp;репетитором можно подтянуть успеваемость по&nbsp;предметам, успешно подготовиться к&nbsp;ОГЭ, ЕГЭ, ВПР и&nbsp;выучить английский язык.</p>
+        <p><strong>На&nbsp;бесплатных занятиях репетиторы «Тетрики»:</strong></p>
+        <ul>
+          <li class="mb-16">определят индивидуальный план уроков;</li>
+          <li class="mb-16">расскажут об&nbsp;актуальных темах школьной программы;</li>
+          <li class="mb-16">помогут подтянуть знания по&nbsp;нужным вам предметам.</li>
+        </ul>
+        <p>Учиться с&nbsp;«Тетрикой» легко, интересно и&nbsp;не&nbsp;скучно!</p>
+        <p>Специально для вас мы&nbsp;подготовили подарок. Запишитесь на&nbsp;3&nbsp;бесплатных урока по&nbsp;кнопке ниже прямо сейчас!</p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://info-hit.ru/away.php?to=link&id=1249",
+          "text" : "Забрать подарок",
+          "color" : "bg-purple-500",
+          "hover_color" : "bg-purple-600"
+          }'></component>
+        <p><i>*Реклама</i></p>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">С уважением,<br>ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
