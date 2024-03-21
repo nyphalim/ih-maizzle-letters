@@ -1,0 +1,38 @@
+---
+title: "Как сделать путь клиента к покупке проще"
+preheader: "Очень просто — подключить платежную систему"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/2024-03-21-payment-systems.jpg"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+        <p class="text-base bg-blue-200 py-16 px-24">Прием платежей&nbsp;— один из&nbsp;ключевых процессов в&nbsp;любой онлайн-школе. Важно, чтобы он&nbsp;был простым и&nbsp;понятным. Чем легче это сделать клиенту, тем выше конверсия продаж.</p>
+        <p>ИнфоХит всегда заботится о&nbsp;том, чтобы вы&nbsp;могли работать быстро и&nbsp;легко. Поэтому подготовили для вас обзор с&nbsp;актуальными платежными системами и&nbsp;выгодными предложениями для&nbsp;партнеров ИнфоХит:</p>
+        <ul>
+          <li class="mb-12">Prodamus дарит льготный период использования платежного модуля на&nbsp;3&nbsp;месяца и&nbsp;бесплатный доступ к&nbsp;LMS на&nbsp;1&nbsp;месяц.</li>
+          <li class="mb-12">Get Модуль дает возможность использовать инструменты площадки бесплатно в&nbsp;течение месяца по&nbsp;промокоду «619910».</li>
+          <li class="mb-12">Сервис «Антитренинги» предоставляет бесплатный доступ к&nbsp;профессиональному тарифу на&nbsp;1&nbsp;месяц.</li>
+        </ul>
+        <p>Какие еще платежные системы можно использовать и&nbsp;в&nbsp;чем преимущества и&nbsp;недостатки каждой из&nbsp;них, читайте в&nbsp;<a href="https://info-hit.ru/blog/platezhnye-sistemy-dlya-onlayn-shkol/" target="_blank">статье</a>.</p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://info-hit.ru/blog/platezhnye-sistemy-dlya-onlayn-shkol/",
+          "text" : "Читать на сайте",
+          "color" : "bg-green-500",
+          "hover_color" : "bg-green-600"
+          }'></component>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">Ваш надежный партнер,<br>ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
