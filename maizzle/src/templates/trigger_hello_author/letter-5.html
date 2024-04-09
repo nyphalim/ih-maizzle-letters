@@ -53,6 +53,12 @@ bodyClass: bg-gray-100
         <p>Сегодня страница Михаила находится в&nbsp;топ-5 поисковой выдачи «Яндекса». И&nbsp;это положительно влияет на&nbsp;его репутацию в&nbsp;сети. </p>
         <p class="text-base bg-green-100 py-16 px-24 my-24"><strong>Управляйте своей сетевой репутацией вместе с&nbsp;ИнфоХит!</strong> Мы&nbsp;всегда открыты для сотрудничества. Обратитесь к&nbsp;вашему персональному менеджеру, чтобы подготовить письмо для рассылки или пост для социальных сетей.</p>
         <p>Остались вопросы — напишите в <a target="_blank" href="https://t.me/ih_school_support_bot">чат техподдержки авторов</a>.</p>
+        <if condition="page.env === 'local'">
+          <component src="src/components/telegram-for-authors.html"></component>
+        </if>
+        <else>
+          #TELEGRAM_CHANNEL_FOR_AUTHORS#
+        </else>
         <component src="src/components/gray-line.html"></component>
         <p class="text-base mb-36">Ваш надежный партнер,<br>ИнфоХит!</p>
       </td>
