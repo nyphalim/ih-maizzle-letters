@@ -39,6 +39,12 @@ bodyClass: bg-gray-100
         </p>
         <p>Не упустите возможность привлечь новых учеников!</p>
         <p>Остались вопросы — напишите в <a target="_blank" href="https://t.me/ih_school_support_bot">чат техподдержки авторов</a>.</p>
+        <if condition="page.env === 'local'">
+          <component src="src/components/telegram-for-authors.html"></component>
+        </if>
+        <else>
+          #TELEGRAM_CHANNEL_FOR_AUTHORS#
+        </else>
         <component src="src/components/gray-line.html"></component>
         <p class="text-base mb-36">Ваш надежный партнер,<br>ИнфоХит!</p>
       </td>
