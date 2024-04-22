@@ -1,0 +1,49 @@
+---
+title: "Подарок от «Международной Академии Нутрициологии»"
+preheader: "Доступ к программе профпереподготовки «Практическая нутрициология»"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/2024-04-22-MAN.jpg"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+        <p>Знаете&nbsp;ли вы, чем нутрициолог отличается от&nbsp;врача?</p>
+        <p>Врач лечит уже возникшее заболевание: ставит диагноз, выписывает лекарства.</p>
+        <p>Нутрициолог работает на&nbsp;опережение:</p>
+        <ol>
+          <li class="mb-16">Выявляет дефициты и&nbsp;нарушения в&nbsp;работе органов на&nbsp;ранней стадии.</li>
+          <li class="mb-16">Дает рекомендации по&nbsp;питанию и&nbsp;образу жизни.</li>
+          <li class="mb-16">Профилактирует заболевания.</li>
+        </ol>
+        <p>Хотите узнать еще больше о&nbsp;профессии нутрициолога и&nbsp;получить несколько эффективных методик?</p>
+        <p>«Международная Академия Нутрициологии» приглашает в&nbsp;гости и&nbsp;дарит доступ на&nbsp;пять дней к&nbsp;урокам программы профпереподготовки <a href="https://info-hit.ru/course-prakticheskaya-nutritsiologiya-start/" target="_blank">«Практическая нутрициология»</a>.</p>
+          <p><strong>Что вас ждет:</strong></p>
+          <ul>
+          <li class="mb-16">первый урок&nbsp;— обсудим, чем занимается нутрициолог, разберем его компетенции;</li>
+          <li class="mb-16">второй посвятим распространенному расстройству ЖКТ;</li>
+          <li class="mb-16">третий&nbsp;— о&nbsp;женском цикле, его восстановлении и&nbsp;сохранении репродуктивных функций;</li>
+          <li class="mb-16">четвертый посвящен белкам&nbsp;— важнейшим элементам, из&nbsp;которых состоят все наши органы и&nbsp;ткани.</li>
+        </ul>
+        <p>Забирайте прямо сейчас 5&nbsp;уроков программы!</p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://info-hit.ru/course-prakticheskaya-nutritsiologiya-start/",
+          "text" : "Зарегистрироваться",
+          "color" : "bg-green-500",
+          "hover_color" : "bg-green-600"
+          }'></component>
+          <p><i>*Реклама</i></p>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">С уважением,<br>ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
