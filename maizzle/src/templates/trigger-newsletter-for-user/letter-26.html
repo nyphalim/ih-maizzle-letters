@@ -1,0 +1,36 @@
+---
+title: "Студенту в помощь"
+preheader: "Подборка курсов и учебных материалов от ИнфоХит для студентов и абитуриентов"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main-login.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+      "src" : "https://info-hit.ru/include/images/letter/b24-trigger-newletter-user-26.jpg"
+      }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+        <p>Готовиться к&nbsp;экзаменам проще с&nbsp;нашей подборкой курсов. Среди них вы&nbsp;найдете:</p>
+        <ul>
+          <li class="mb-16">курсы, которые помогут поступить в&nbsp;ВУЗ;</li>
+          <li class="mb-16">занятия для подготовки к&nbsp;экзаменам по&nbsp;математике, экономике, английскому языку и&nbsp;другим предметам.</li>
+        </ul>
+        <p>Учитесь вместе с&nbsp;ИнфоХит и&nbsp;«ни&nbsp;пуха ни&nbsp;пера»!</p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://info-hit.ru/catalog/kursy-dlya-studentov/",
+          "text" : "Выбрать курс",
+          "color" : "bg-blue-500",
+          "hover_color" : "bg-blue-600"
+          }'></component>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">С уважением,<br>команда ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
