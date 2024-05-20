@@ -1,0 +1,47 @@
+---
+title: "Научитесь заботиться о себе"
+preheader: "Как восполнить ресурсы организма и восстановить здоровье, не выходя из дома, рассказываем на курсах ИнфоХит"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main-login.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+      }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+        <p>Подумайте, как часто вы&nbsp;отмечаете у&nbsp;себя следующие симптомы:</p>
+        <ul>
+          <li class="mb-12">не&nbsp;можете заснуть даже после тяжелого дня или просыпаетесь среди ночи,</li>
+          <li class="mb-12">испытываете повышенную тревогу,</li>
+          <li class="mb-12">чувствуете усталость с&nbsp;самого утра,</li>
+          <li class="mb-12">вас беспокоят боли,</li>
+          <li class="mb-12">замечаете признаки преждевременного старения.</li>
+        </ul>
+        <p class="m-0 mb-24 text-base border-dashed border-2 border-yellow-500 rounded-2xl py-16 px-24">Если отметили у&nbsp;себя два и&nbsp;более пункта, советуем обратить внимание на&nbsp;здоровье.</p>
+        <p>Начните свое восстановление вместе с&nbsp;курсами ИнфоХит:</p>
+        <ol>
+          <li class="mb-12">Добавьте физической активности с&nbsp;курсами йоги, пилатеса и&nbsp;восточных практик. Верните гибкость телу, а&nbsp;суставам подвижность, и&nbsp;вы&nbsp;заметите снижение болевых синдромов.</li>
+          <li class="mb-12">Получите желаемую форму с&nbsp;курсами по&nbsp;похудению и&nbsp;стройности.</li>
+          <li class="mb-12">Узнайте как наладить работу сердца и&nbsp;сосудов.</li>
+          <li class="mb-12">Поддержите организм изнутри с&nbsp;курсами по&nbsp;нутрициологии и&nbsp;пищеварению.</li>
+          <li class="mb-12">Обретите спокойствие, работая с&nbsp;дыханием и&nbsp;психосоматикой.</li>
+        </ol>
+        <p>Выбирайте подходящий курс и&nbsp;занимайтесь в&nbsp;удобное время.</p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://info-hit.ru/catalog/zdorove/",
+          "text" : "Выбрать курс",
+          "color" : "bg-green-500",
+          "hover_color" : "bg-green-600"
+          }'></component>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">С уважением,<br>команда ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
