@@ -1,0 +1,37 @@
+---
+title: "Промокоды только для учеников ИнфоХит"
+preheader: "Покупайте курсы дешевле"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/2024-05-23-promo-code.jpg"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+        <p>Учиться на&nbsp;ИнфоХит теперь еще выгоднее!</p>
+        <p class="text-base bg-blue-200 py-16 px-24">Эксперты и&nbsp;школы, которые размещают свои онлайн-курсы на&nbsp;ИнфоХит, предоставляют уникальные промокоды на&nbsp;скидку. Ими могут воспользоваться только зарегистрированные пользователи маркетплейса.</p>
+        <p>Получите выгоду от&nbsp;3% до&nbsp;30%!</p>
+        <p>Все, что нужно сделать, это перейти в&nbsp;каталог курсов ИнфоХит и&nbsp;нажать в&nbsp;меню фильтров кнопку «Есть промокод».</p>
+          <p><img style="border: 2px solid rgb(242, 242, 242)" src="https://info-hit.ru/include/images/letter/2024-05-23-promocode.jpg
+          " alt=""></p>
+        <p>Более тысячи курсов по&nbsp;особенной цене уже ждут вас. Среди них программы профессиональной подготовки, обучение для&nbsp;психологов, программистов, флористов, видеомейкеров и&nbsp;дизайнеров.</p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://info-hit.ru/catalog/filter/have_promocode-y/",
+          "text" : "Выбрать курс с промокодом",
+          "color" : "bg-blue-500",
+          "hover_color" : "bg-blue-600"
+          }'></component>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">Ваш проводник в мире онлайн-образования,<br>ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
