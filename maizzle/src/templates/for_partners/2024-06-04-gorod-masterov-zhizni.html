@@ -1,0 +1,40 @@
+---
+title: "Новая партнерка с высокими комиссионными — до 90%"
+preheader: "Подробности в письме"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/2024-06-04-gorod-m-zh.jpg"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+        <p class="text-base bg-purple-300 py-16 px-24">Мы&nbsp;рады сообщить вам о&nbsp;новой партнерской программе на&nbsp;ИнфоХит&nbsp;— «Город Мастеров Жизни». Вас ждут уникальные условия сотрудничества, которые помогут заработать еще больше!</p>
+        <p><strong>Преимущества партнерской программы:</p>
+        <ol>
+          <li class="mb-16">Высокие комиссионные для партнеров&nbsp;— до&nbsp;90%.</li>
+          <li class="mb-16">Быстрые выплаты за&nbsp;привлеченных клиентов.</li>
+          <li class="mb-16">Постоянная поддержка и&nbsp;помощь от&nbsp;команды тренингового онлайн-центра.</li>
+        </ol>
+        <p>Тема эзотерики и&nbsp;развития личности будет актуальна всегда. Продвигайте курсы «Города Мастеров Жизни» и&nbsp;получайте большие продажи.</p>
+        <p>Присоединяйтесь к&nbsp;партнерской программе прямо сейчас. Вместе мы сможем добиться новых успехов!</p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://info-hit.ru/programs/partnerskaya-programmasvetlany-tsyganovoy-i-shkoly-gorod-masterov-zhizni/",
+          "text" : "Присоединиться",
+          "color" : "bg-blue-500",
+          "hover_color" : "bg-blue-600"
+          }'></component>
+        <p><i>*Реклама</i></p>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">С уважением,<br>команда ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
