@@ -1,0 +1,87 @@
+---
+title: "Что можно получить бесплатно?"
+preheader: "Новые навыки на курсах ИнфоХит"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <fetch url="https://info-hit.ru/include/tools/courses-json/?coursesArr=316912,319252,320913,300261,319113&token=u4JTEnMNt4gdsfdfsdf345nkhjk3dfgfh556776dfdghjkluiutyrtym&v=4">
+      <component src="src/components/img-block-without-link-round.html" locals='{
+      "src" : "https://info-hit.ru/include/images/letter/2024-06-25-free-courses.jpg"
+      }'></component>
+        
+      <component src="src/components/round-block-mt.html">
+        <p><strong>Добрый день!</strong></p>
+        <p>Лето&nbsp;— это не&nbsp;только пора отпусков и&nbsp;отдыха на&nbsp;природе. Это еще и&nbsp;идеальное время для того, чтобы заняться своим образованием и&nbsp;освоить новые навыки. Начните планировать свои окошки в&nbsp;календаре, потому что мы&nbsp;принесли вам подборку бесплатных курсов.</p>
+        </component>
+
+      <tr>
+        <td class="h-24 sm:h-16"></td>
+      </tr>
+      <tr>
+        <td class="bg-white text-gray-800 text-base text-left px-48 py-24 sm:p-14 leading-24 rounded-2xl">
+          <h3 class="mt-24 sm:mt-24">Что ждет вас в&nbsp;подборке</h3>
+          <p class="mb-24">Все, что нужно для продуктивного обучения: полезная теория от&nbsp;ведущих экспертов, плодотворная практика и&nbsp;классные бонусы. А&nbsp;еще новые впечатления, которые подарят заряд положительных эмоций на&nbsp;каждый день.</p>
+          <each loop="item in response.slice(0, 1)">
+            <component src="src/components/course.html" locals='{
+              "author" : "{{ item.RIGHTHOLDER }}",
+              "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+              "subtitle" : "{{ item.DESC }}",
+              "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+              "link" : "{{ item.URL }}"
+              }'>
+            </component>
+          </each>
+          <each loop="item in response.slice(1, 2)">
+            <component src="src/components/course.html" locals='{
+              "author" : "{{ item.RIGHTHOLDER }}",
+              "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+              "subtitle" : "{{ item.DESC }}",
+              "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+              "link" : "{{ item.URL }}"
+              }'>
+            </component>
+          </each>
+          <each loop="item in response.slice(2, 3)">
+            <component src="src/components/course.html" locals='{
+              "author" : "{{ item.RIGHTHOLDER }}",
+              "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+              "subtitle" : "{{ item.DESC }}",
+              "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+              "link" : "{{ item.URL }}"
+              }'>
+            </component>
+          <each loop="item in response.slice(3, 4)">
+            <component src="src/components/course.html" locals='{
+              "author" : "{{ item.RIGHTHOLDER }}",
+              "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+              "subtitle" : "{{ item.DESC }}",
+              "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+              "link" : "{{ item.URL }}"
+              }'>
+            </component>
+          <each loop="item in response.slice(4, 5)">
+            <component src="src/components/course.html" locals='{
+              "author" : "{{ item.RIGHTHOLDER }}",
+              "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+              "subtitle" : "{{ item.DESC }}",
+              "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+              "link" : "{{ item.URL }}"
+              }'>
+            </component>
+            <p>Если не&nbsp;нашли в&nbsp;подборке интересующее направление, не&nbsp;беда! В&nbsp;каталоге ИнфоХит собрано 1000+ бесплатных курсов от&nbsp;популярных авторов и&nbsp;школ. Переходите по&nbsp;кнопке ниже и&nbsp;выбирайте&nbsp;то, что вам по&nbsp;душе.</p>
+            <component src="src/components/button.html" locals='{
+              "link" : "https://info-hit.ru/catalog/filter/free-y/",
+              "text" : "Все бесплатные курсы",
+              "color" : "bg-green-500",
+              "hover_color" : "bg-green-600"
+              }'></component>
+            </td>
+          </tr>
+        <td class="h-32 sm:h-24"></td>
+      </tr>
+      <component src="src/components/footer.html"></component>
+    </fetch>
+  </block>
+</extends>
