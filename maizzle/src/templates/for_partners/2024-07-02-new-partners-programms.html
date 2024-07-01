@@ -1,0 +1,56 @@
+---
+title: "Можно больше не искать"
+preheader: "Смотрите подборку с новыми партнерками на ИнфоХит"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/2024-07-02-new-partners.jpg"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+        <p>Искать или не&nbsp;искать&nbsp;— вот в&nbsp;чем вопрос!</p>
+        <p>И&nbsp;на&nbsp;него легко ответить, если посмотреть нашу подборку. Рассказываем о&nbsp;новых партнерских программах на&nbsp;ИнфоХит.</p>
+        <p>Выбирайте направление, партнерку и&nbsp;начинайте лить трафик</p>
+        <h3>Здоровье</h3>
+        <ul>
+          <li class="mb-10"><a href="https://info-hit.ru/programs/partnerskaya-programma-aleksandra-rusinova-i-onlayn-shkoly-naturopraktiki-zhiva/" target="_blank">Александр Русинов и&nbsp;онлайн-школа натуропрактики «ЖИВА»</a></li>
+          <li class="mb-10"><a href="https://info-hit.ru/programs/partnerskaya-programma-aleny-pletnevoy-i-shkoly-mealmind-sila-v-zdorove/" target="_blank">Алена Плетнева и&nbsp;школа «MealMind: сила в&nbsp;здоровье»</li>
+          <li class="mb-10"><a href="https://info-hit.ru/programs/partnerskaya-programma-vladimira-osipova-i-shkoly-sekrety-vostochnoy-meditsiny/" target="_blank">Владимир Осипов и&nbsp;школа «Секреты Восточной Медицины»</li>
+        </ul>
+        <h3>Подготовка к&nbsp;школе</h3>
+        <ul>
+          <li class="mb-10"><a href="https://info-hit.ru/programs/partnerskaya-programma-ksenii-lazarevoy-i-shkoly-ya-znayu/" target="_blank">Ксения Лазарева и&nbsp;школа «Я&nbsp;Знаю»</a></li>
+        </ul>
+        <h3>Саморазвитие</h3>
+        <ul>
+          <li class="mb-10"><a href="https://info-hit.ru/programs/partnerskaya-programma-galiny-paskalovoy-i-shkoly-psikhologii-neyrosfera/" target="_blank">Галина Паскалова и&nbsp;школа психологии «Нейросфера»</a></li>
+        </ul>
+        <h3>Нейросети</h3>
+        <ul>
+          <li class="mb-10"><a href="https://info-hit.ru/programs/partnerskaya-programma-tsentra-obucheniya-iskusstvennomu-intellektu-ai-centr/" target="_blank">Центр обучения искусственному интеллекту AI-CENTR</a></li>
+        </ul>
+        <h3>Бухгалтерия</h3>
+        <ul>
+          <li class="mb-10"><a href="https://info-hit.ru/programs/partnerskaya-programma-yulii-khristoforovoy/" target="_blank">Юлия Христофорова</a></li>
+        </ul>
+        <p class="m-0 mb-24">Еще больше интересных и прибыльных партнерок найдете в&nbsp;каталоге ИнфоХит.</p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://info-hit.ru/programs/?sort=created&order=desc",
+          "text" : "Перейти в каталог",
+          "color" : "bg-purple-500",
+          "hover_color" : "bg-purple-600"
+          }'></component>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">С уважением,<br>команда ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
