@@ -1,0 +1,41 @@
+---
+title: "МИПО дарит подарки!"
+preheader: "Успейте поучаствовать в летней акции"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/2024-07-16-mipo.jpg"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+        <p class="text-base bg-yellow-200 py-16 px-24">Лето&nbsp;— это время новых возможностей, открытий и&nbsp;личностного роста. Энергия бьет ключом, дни наполнены свободой, а&nbsp;значит, настал идеальный момент для запуска новых обучающих программ. Почему&nbsp;бы не&nbsp;использовать это на&nbsp;благо себе и&nbsp;своему будущему? Предлагаем уникальную акцию&nbsp;— «ЛЕТО ПОДАРКОВ В&nbsp;МИПО»!</p>
+        <p>Это отличный шанс начать&nbsp;то, что давно планировали с&nbsp;выгодой для себя.</p>
+        <p><strong>Акция «ЛЕТО ПОДАРКОВ В&nbsp;МИПО» предоставляет всем:</strong></p>
+        <ul>
+          <li class="mb-10">скидки на&nbsp;все курсы&nbsp;— 10%;</li>
+          <li class="mb-10">подарки*&nbsp;— повышение квалификации при покупке любого курса профессиональной переподготовки.</li>
+        </ul>
+        <p>Расширяйте навыки, приобретайте ценные знания и&nbsp;улучшайте свою карьеру.</p>
+        <p>Становитесь лучше вместе с&nbsp;МИПО!</p>
+        <p>Желаем яркого и&nbsp;успешного лета, наполненного новыми знаниями и&nbsp;возможностями!</p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://info-hit.ru/away.php?to=link&id=1291",
+          "text" : "Выбрать курс",
+          "color" : "bg-green-500",
+          "hover_color" : "bg-green-600"
+          }'></component>
+          <p><i>*Реклама. Специальное предложение действует с 1 по 30 июля 2024 года.</i></p>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">С уважением,<br>ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
