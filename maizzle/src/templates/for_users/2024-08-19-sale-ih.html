@@ -45,6 +45,7 @@ bodyClass: bg-gray-100
               "link" : "{{ item.URL }}"
               }'>
             </component>
+          </each>
           <each loop="item in response.slice(3, 4)">
             <component src="src/components/course.html" locals='{
               "author" : "{{ item.RIGHTHOLDER }}",
@@ -54,6 +55,7 @@ bodyClass: bg-gray-100
               "link" : "{{ item.URL }}"
               }'>
             </component>
+          </each>
           <each loop="item in response.slice(4, 5)">
             <component src="src/components/course.html" locals='{
               "author" : "{{ item.RIGHTHOLDER }}",
@@ -63,6 +65,7 @@ bodyClass: bg-gray-100
               "link" : "{{ item.URL }}"
               }'>
             </component>
+          </each>
           <p>Подарите себе и&nbsp;своим близким ценный подарок&nbsp;— знания, которые будут с&nbsp;вами всегда!</p>
             <component src="src/components/button.html" locals='{
               "link" : "https://info-hit.ru/catalog/filter/discount-y/",
