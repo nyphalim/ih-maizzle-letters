@@ -1,0 +1,32 @@
+---
+title: "Все новинки на ИнфоХит"
+preheader: "Не пропустите новости о курсах, скидках и акциях"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main-login.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+      }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+        <p class="text-base bg-yellow-100 py-16 px-24">На&nbsp;платформе ИнфоХит представлены курсы от&nbsp;более полутора тысяч авторов и&nbsp;школ. И&nbsp;этот список постоянно обновляется.</p>
+        <p>Если вы&nbsp;ищете творческие курсы, уроки по&nbsp;маркетингу, финансам, психологии и&nbsp;другим популярным направлениям, то&nbsp;они есть на&nbsp;нашей площадке.</p>
+        <p>В&nbsp;Телеграме мы&nbsp;публикуем анонсы новинок, обзоры курсов, промокоды, розыгрыши и&nbsp;специальные предложения для учеников. Подписывайтесь <a href="https://info-hit.ru/include/telegram/join/?sid=46215" target="_blank">на&nbsp;телеграм-канал ИнфоХит</a>, чтобы быть в&nbsp;курсе новостей и&nbsp;учиться выгодно.</p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://info-hit.ru/include/telegram/join/?sid=46215",
+          "text" : "Подписаться на телеграм-канал",
+          "color" : "bg-green-500",
+          "hover_color" : "bg-green-600"
+          }'></component>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">С уважением,<br>команда ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>

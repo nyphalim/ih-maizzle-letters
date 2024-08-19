@@ -1,0 +1,37 @@
+---
+title: "Готовим летнюю распродажу на ИнфоХит"
+preheader: "Порадуйте учеников скидками вместе с нами!"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+      "src" : "https://info-hit.ru/include/images/letter/2024-05-14-summer-sale.jpg"
+      }'></component>
+      <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+        <p class="text-base bg-yellow-200 py-16 px-24">1&nbsp;июня&nbsp;— День защиты детей. Все мы&nbsp;хотим для малышей лучшего будущего. Стремимся дать им&nbsp;самые необходимые навыки и&nbsp;знания для успешной и&nbsp;счастливой жизни.</p>
+        <p>Именно к&nbsp;этому дню ИнфоХит приурочил большую летнюю распродажу. Она продлится с&nbsp;1&nbsp;по&nbsp;9&nbsp;июня.</p>
+        <p>Мы&nbsp;уже создали в&nbsp;каталоге курсов ИнфоХит специальный раздел с&nbsp;лучшими акциями, чтобы пользователям было удобнее найти горящие предложения весенней распродажи. Активируем его 1&nbsp;июня.</p>
+        <p>Если хотите попасть туда и&nbsp;привлечь дополнительный трафик&nbsp;— напишите в&nbsp;<a href="https://t.me/ih_school_support_bot" target="_blank"><strong>чат техподдержки авторов</strong></a>, на&nbsp;почту <a href="mailto:b2b@info-hit.ru"><strong>b2b@info-hit.ru</strong></a> или менеджеру ИнфоХит.</p>
+        <p>А&nbsp;еще лучшие предложения мы&nbsp;опубликуем в&nbsp;своих соцсетях и&nbsp;включим в&nbsp;рассылки. Если вы&nbsp;подготовили распродажу образовательных продуктов&nbsp;— мы&nbsp;поможем вам привлечь еще больше трафика.</p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://t.me/ih_school_support_bot",
+          "text" : "Участвовать в распродаже",
+          "color" : "bg-green-500",
+          "hover_color" : "bg-green-600"
+          }'></component>
+        <component src="src/components/gray-line.html"></component>
+        <component src="src/components/telegram-for-authors-autologin.html"></component>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">Ваш надежный партнер,<br>ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>

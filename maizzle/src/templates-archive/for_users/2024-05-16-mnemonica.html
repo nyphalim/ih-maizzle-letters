@@ -1,0 +1,40 @@
+---
+title: "Помните, какой сегодня день?"
+preheader: "Отличный день, чтобы начать тренировать память!"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/2024-05-16-mnemonica.jpg"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+        <p>Хотите быть продуктивными, держать в&nbsp;голове все рабочие задачи, домашние дела и&nbsp;просьбы близких&nbsp;— это возможно!</p>
+        <p class="text-base bg-green-200 py-16 px-24">Мало кто пользуется возможностями своего мозга не&nbsp;то,&nbsp;что&nbsp;на&nbsp;100%, а&nbsp;даже на&nbsp;20%! Улучшить память, внимание, концентрацию можно. И&nbsp;для этого достаточно заниматься 15&nbsp;минут в&nbsp;день.</p>
+        <p><strong>Тренировки подойдут:</strong></p>
+        <ol>
+          <li class="mb-16"><i>Студентам и&nbsp;школьникам.</i> Чтобы лучше и&nbsp;быстрее усваивать учебный материал, повысить успеваемость, а&nbsp;за&nbsp;домашкой проводить меньше времени.</li>
+          <li class="mb-16"><i>Взрослым.</i> Освоить навыки в&nbsp;смежных сферах, стать более продуктивным, а&nbsp;значит, улучшить показатели работы и&nbsp;повысить свою ценность для работодателя.</li>
+          <li class="mb-16"><i>Пожилым людям.</i> Деменция разрушает личность человека и&nbsp;жизни его близких. Чтобы избежать этого, можно тренировать мозг и&nbsp;продолжать пользоваться максимумом его функций в&nbsp;любом возрасте.</li>
+        </ol>
+        <p>Прокачивайте мозг на&nbsp;<nobr>15-минутных</nobr> занятиях школы «Мнемоника»!</p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://info-hit.ru/away.php?to=course&cb=41&id=302433",
+          "text" : "Узнать подробнее",
+          "color" : "bg-blue-500",
+          "hover_color" : "bg-blue-600"
+          }'></component>
+        <p>Ученикам ИнфоХит курс доступен по&nbsp;привлекательной цене. А&nbsp;еще можно получить кешбэк до&nbsp;10% и&nbsp;использовать его для оплаты других курсов или вывести на&nbsp;банковскую карту!</p>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">С уважением,<br>ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>

@@ -1,0 +1,49 @@
+---
+title: "В этом письме собрали новинки"
+preheader: "Открывайте и узнайте, какими партнерками пополнился каталог ИнфоХит"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/2024-08-15-new-offers.jpg"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+        <p>Каталог ИнфоХит регулярно пополняется новыми партнерскими программами с&nbsp;выгодными условиями для веб-мастеров. В&nbsp;подборке найдете офферы по&nbsp;самым популярным направлениям.</p>
+        <h3>Творчество и&nbsp;хобби</h3>
+        <ul>
+          <li class="mb-10"><a href="https://info-hit.ru/programs/partnerskaya-programma-akademii-muzyki-i-zvukozapisi-music-up-academy/" target="_blank">Академии музыки и&nbsp;звукозаписи Music UP&nbsp;Academy</a></li>
+        </ul>
+        <h3>Духовные практики</h3>
+        <ul>
+          <li class="mb-10"><a href="https://info-hit.ru/programs/partnerskaya-programma-vladislava-markella-i-shkoly-akasha-ashraya-academy/" target="_blank">Владислав Маркелл и&nbsp;школа Akasha Ashraya Academy</a></li>
+        </ul>
+        <h3>Иностранные языки</h3>
+        <ul>
+          <li class="mb-10"><a href="https://info-hit.ru/programs/partnerskaya-programma-onlayn-servisa-dlya-izucheniya-angliyskogo-lingualeo/" target="_blank">Онлайн-сервис для изучения английского Lingualeo</a></li>
+        </ul>
+        <h3>Карьера</h3>
+        <ul>
+          <li class="mb-10"><a href="https://info-hit.ru/programs/partnerskaya-programma-moskovskoy-akademii-dizayn-professiy-pentaschool/" target="_blank">Московская академия дизайн-профессий Pentaschool</a></li>
+          <li class="mb-10">Национальный центральный институт развития дополнительного образования <a href="https://info-hit.ru/programs/partnerskaya-programma-natsionalnogo-tsentralnogo-instituta-razvitiya-dopolnitelnogo-obrazovaniya-nts/" target="_blank">НЦРДО</a></li>
+        </ul>
+        <p class="m-0 mb-24">Еще больше интересных и прибыльных партнерок найдете в&nbsp;каталоге ИнфоХит.</p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://info-hit.ru/programs/?sort=created&order=desc",
+          "text" : "Перейти в каталог",
+          "color" : "bg-blue-500",
+          "hover_color" : "bg-blue-600"
+          }'></component>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">С уважением,<br>команда ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>

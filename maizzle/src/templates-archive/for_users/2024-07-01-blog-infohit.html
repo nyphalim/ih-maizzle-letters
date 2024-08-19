@@ -1,0 +1,45 @@
+---
+title: "Где лучшие статьи?"
+preheader: "У нас на сайте!"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/2024-07-01-blog-ih.jpg"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Вот оно какое, наше лето!</strong></p>
+        <p>Такое разное для всех поколений&nbsp;— от&nbsp;грядок с&nbsp;колорадскими жуками и&nbsp;сорняками до&nbsp;веранд с&nbsp;латте и&nbsp;ноутбуком.</p>
+        <p>Но&nbsp;объединяет их&nbsp;одно&nbsp;— желание учиться новому! И&nbsp;мы&nbsp;как раз подготовили подборку с&nbsp;новыми статьями на&nbsp;ИнфоХит.</p>
+        <p><strong>Узнаете о:</strong></p>
+        <ul>
+          <li class="mb-10"><a href="https://info-hit.ru/blog/obzor-top-kursov-po-targetirovannoy-reklame/" target="_blank">таргетированной рекламе</a>&nbsp;— как настраивать и&nbsp;запускать ее&nbsp;с&nbsp;нуля для привлечения клиентов;</li>
+          <li class="mb-10"><a href="https://info-hit.ru/blog/10-samykh-vysokooplachivaemykh-professiy/" target="_blank">высокооплачиваемых профессиях в&nbsp;России и&nbsp;мире 2024</a>;</li>
+          <li class="mb-10"><a href="https://info-hit.ru/blog/osnovnye-printsipy-effektivnogo-upravleniya/" target="_blank">основных принципах эффективного управления</a>;</li>
+          <li class="mb-10"><a href="https://info-hit.ru/blog/kto-takoy-spetsialist-po-zakupkam-44-fz/" target="_blank">специалисте по&nbsp;закупкам 44&nbsp;ФЗ</a>;</li>
+          <li class="mb-10"><a href="https://info-hit.ru/blog/skolko-zarabatyvaet-dizayner/" target="_blank">зарплате дизайнеров в сфере IT в&nbsp;России</a> и&nbsp;лучших онлайн-<a href="https://info-hit.ru/blog/obzor-luchshikh-kursov-po-graficheskomu-dizaynu/" target="_blank">курсах по&nbsp;графическому дизайну</a>;</li>
+          <li class="mb-10">популярных <a href="https://info-hit.ru/blog/luchshie-sayty-dlya-izucheniya-angliyskogo/" target="_blank">сайтах для изучения английского языка</a>;</li>
+          <li class="mb-10"><a href="https://info-hit.ru/blog/s-chego-nachat-it-obuchenie-s-nulya/" target="_blank">карьере в&nbsp;сфере IT</a>&nbsp;— в&nbsp;статье рассказали, с&nbsp;чего начать обучение и&nbsp;как не&nbsp;тратить время впустую.</li>
+        </ul>
+        <p>На&nbsp;этом все!</p>
+        <p>Сохраняйте в&nbsp;закладки браузера ссылки, к&nbsp;которым хотите вернуться позже,&nbsp;— так ничего не&nbsp;потеряете. А&nbsp;мы&nbsp;совсем скоро придем к&nbsp;вам с&nbsp;новый дайджестом.</p>
+        <p>Еще больше интересных статей ищите в&nbsp;блоге ИнфоХит.</p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://info-hit.ru/blog/",
+          "text" : "Блог ИнфоХит",
+          "color" : "bg-green-500",
+          "hover_color" : "bg-green-600"
+          }'></component>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">С уважением,<br>ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>

@@ -1,0 +1,38 @@
+---
+title: "Учитесь, чтобы расти"
+preheader: "Как заявить о себе работодателю: ИнфоХит раскрывает секреты успешной карьеры"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main-login.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+      "src" : "https://info-hit.ru/include/images/letter/b24-trigger-newletter-user-21.jpg"
+      }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+        <p>Что нужно, чтобы найти высокооплачиваемую работу или уверенно двигаться по&nbsp;карьерной лестнице? Сегодня для этого недостаточно красного диплома, резюме на&nbsp;сайте вакансий и&nbsp;отличных профессиональных навыков.</p>
+        <p>Выбрать востребованную специальность для старта карьеры и&nbsp;научится выгодно презентовать себя на&nbsp;рынке труда вы&nbsp;сможете, пройдя курс <a href="https://info-hit.ru/catalog/kursy-po-karernomu-rostu/" target="_blank">из&nbsp;подборки ИнфоХит</a>.</p>
+        <p><strong>В&nbsp;ней вы&nbsp;найдете:</strong></p>
+        <ul>
+          <li class="mb-16">секреты hr-специалистов в&nbsp;составлении резюме и&nbsp;успешном прохождении собеседований;</li>
+          <li class="mb-16">советы по&nbsp;поиску работы и&nbsp;быстрому карьерному росту.</li>
+        </ul>
+        <p>Выбирайте подходящий курс из&nbsp;подборки и&nbsp;занимайтесь тем, что вас вдохновляет.</p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://info-hit.ru/catalog/kursy-po-karernomu-rostu/",
+          "text" : "Выбрать курс",
+          "color" : "bg-purple-500",
+          "hover_color" : "bg-purple-600"
+          }'></component>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">С уважением,<br>команда ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>

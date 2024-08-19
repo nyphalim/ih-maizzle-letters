@@ -1,0 +1,38 @@
+---
+title: "Пройдите курс на ИнфоХит и станьте маркетологом"
+preheader: "Подборка обучающих курсов по востребованной профессии внутри"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main-login.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+      }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+        <p>Маркетолог&nbsp;— одна из&nbsp;самых актуальных профессий на&nbsp;рынке. Специалисты нужны крупным компаниям и&nbsp;ИП. Знание основ маркетинга поможет вам продвигать себя и&nbsp;свой продукт на&nbsp;рынке.</p>
+        <p>#COURSES_LIST_BY_SECTION_IDS#[163]</p>
+        <p>И&nbsp;для знакомства с&nbsp;профессией не&nbsp;обязательно заканчивать вуз. На&nbsp;курсах ИнфоХит вы&nbsp;узнаете:</p>
+        <ul>
+          <li class="mb-12">почему у&nbsp;одних продажи «выстреливают», а&nbsp;к&nbsp;другим клиенты не&nbsp;идут;</li>
+          <li class="mb-12">как определить целевую аудиторию, ее&nbsp;боли и&nbsp;потребности;</li>
+          <li class="mb-12">что такое воронки продаж и&nbsp;как они работают;</li>
+          <li class="mb-12">механизмы привлечения клиентов, которые дают результат.</li>
+        </ul>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://info-hit.ru/catalog/kursy-marketinga/",
+          "text" : "Выбрать курс  по маркетингу",
+          "color" : "bg-purple-500",
+          "hover_color" : "bg-purple-600"
+          }'></component>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">С уважением,<br>команда ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>

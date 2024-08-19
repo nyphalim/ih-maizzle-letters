@@ -1,0 +1,47 @@
+---
+title: "Сделайте свой сайт еще лучше"
+preheader: "С виджетом отзывов ИнфоХит — бесплатно!"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/trigger-hello-author/trigger-hello-author-6.2.jpg"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+        <p class="text-base bg-blue-300 py-16 px-24">Получите еще больше трафика, продаж и&nbsp;доверия к&nbsp;продукту без вложений!</p>
+        <p>Установите виджет отзывов ИнфоХит на&nbsp;свой сайт и&nbsp;получите плюс&nbsp;к:</p>
+        <ol>
+          <li class="mb-16"><strong>Доверию</strong>. Отзывам на&nbsp;сторонних площадках клиенты доверяют больше.</li>
+          <li class="mb-16"><strong>Рейтингу</strong>. Отзывы привлекают внимание посетителей сайта, заставляют задерживаться на&nbsp;нем дольше, а&nbsp;это поднимает сайт в&nbsp;поисковой выдаче.</li>
+          <li class="mb-16"><strong>Трафику</strong>. Отзывы&nbsp;— это дополнительный текст, который часто содержит ключевые слова. Виджет улучшит SEO-параметры ваших страниц.</li>
+          <li class="mb-16"><strong>Продажам</strong>. Большое количество положительных отзывов о&nbsp;продукте&nbsp;— значимый критерий при принятии решения о&nbsp;покупке.</li>
+          <li class="mb-16"><strong>Удобству</strong>. Информация в&nbsp;виджете обновляется автоматически, как только новый отзыв о&nbsp;вас и&nbsp;ваших продуктах появляется на&nbsp;ИнфоХит.</li>
+        </Ol>
+        <p>А&nbsp;главное&nbsp;— вам не&nbsp;нужно больше собирать отзывы из&nbsp;разных источников и&nbsp;думать о&nbsp;том, в&nbsp;каком формате разместить на&nbsp;своем сайте. Готовый виджет уже ждет вас в&nbsp;<a target="_blank" href="https://info-hit.ru/account/author/" target="_blank">личном кабинете ИнфоХит</a>.</p>
+        <p>Остались вопросы — напишите в<a target="_blank" href="https://t.me/ih_school_support_bot"> чат техподдержки авторов.</a></p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://info-hit.ru/account/author/reviews-list-widget/",
+          "text" : "Узнать подробнее",
+          "color" : "bg-green-500",
+          "hover_color" : "bg-green-600"
+          }'></component>
+        <if condition="page.env === 'local'">
+          <component src="src/components/telegram-for-authors.html"></component>
+        </if>
+        <else>
+          #TELEGRAM_CHANNEL_FOR_AUTHORS#
+        </else>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">Ваш надежный партнер,<br>ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
