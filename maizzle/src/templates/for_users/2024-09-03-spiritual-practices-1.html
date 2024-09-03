@@ -1,0 +1,67 @@
+---
+title: "Хотите узнать будущее и рассказать другим"
+preheader: "Лучшие курсы по картам Таро от ИнфоХит"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <fetch url="https://info-hit.ru/include/tools/courses-json/?coursesArr=242577,194170,280577&token=u4JTEnMNt4gdsfdfsdf345nkhjk3dfgfh556776dfdghjkluiutyrtym&v=4">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/2024-09-03-segment-taro-1.jpg"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p><strong>Добрый день!</strong></p>
+        <p class="text-base bg-purple-300 py-16 px-24">Вы&nbsp;когда-нибудь задумывались, что ждет вас в&nbsp;будущем? А&nbsp;может быть, вы&nbsp;хотите научиться расшифровывать не&nbsp;только свою судьбу, но&nbsp;и&nbsp;своих близких? Тогда онлайн-курсы по&nbsp;картам Таро от&nbsp;ИнфоХит&nbsp;— это именно&nbsp;то, что вам нужно!</p>
+        <p>Они помогут вам не&nbsp;только понять основы и&nbsp;тайны карт, но&nbsp;и&nbsp;научат вас уверенно работать с&nbsp;ними. Вы&nbsp;погрузитесь в&nbsp;увлекательный мир Таро, откроете для себя новые горизонты и&nbsp;получите уникальные знания, которые сможете использовать не&nbsp;только для себя, но&nbsp;и&nbsp;для помощи другим.</p>
+        <p><strong>А&nbsp;курсах на&nbsp;ИнфоХит вы&nbsp;найдете:</strong></p>
+        <ul>
+          <li class="mb-10">подробные уроки от&nbsp;опытных тарологов,</li>
+          <li class="mb-10">практические задания и&nbsp;упражнения,</li>
+          <li class="mb-10">поддержку и&nbsp;консультации на&nbsp;протяжении обучения,</li>
+          <li class="mb-10">доступ к&nbsp;закрытому сообществу единомышленников.</li>
+        </ul>
+        <p>Не&nbsp;упустите шанс узнать будущее и&nbsp;стать экспертом в&nbsp;Таро! Записывайтесь на&nbsp;курсы прямо сейчас и&nbsp;делитесь своими знаниями с&nbsp;миром. Каждый из&nbsp;вас может стать проводником в&nbsp;мир предсказаний и&nbsp;мудрости карт.</p>
+        <p class="mb-32">Подобрали для вас лучшие программы с&nbsp;кешбэком до&nbsp;10%.</p>
+          <each loop="item in response.slice(0, 1)">
+            <component src="src/components/course.html" locals='{
+              "author" : "{{ item.RIGHTHOLDER }}",
+              "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+              "subtitle" : "{{ item.DESC }}",
+              "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+              "link" : "{{ item.URL }}"
+              }'>
+            </component>
+          </each>
+          <each loop="item in response.slice(1, 2)">
+            <component src="src/components/course.html" locals='{
+              "author" : "{{ item.RIGHTHOLDER }}",
+              "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+              "subtitle" : "{{ item.DESC }}",
+              "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+              "link" : "{{ item.URL }}"
+              }'>
+            </component>
+          </each>
+          <each loop="item in response.slice(2, 3)">
+            <component src="src/components/course.html" locals='{
+              "author" : "{{ item.RIGHTHOLDER }}",
+              "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+              "subtitle" : "{{ item.DESC }}",
+              "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+              "link" : "{{ item.URL }}"
+              }'>
+            </component>
+          </each>
+            <component src="src/components/gray-line.html"></component>
+          <p class="text-base mb-36">Ваш проводник в мир онлайн-образования,<br>ИнфоХит!</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="h-32 sm:h-24"></td>
+      </tr>
+      <component src="src/components/footer.html"></component>
+    </fetch>
+  </block>
+  </extends>
