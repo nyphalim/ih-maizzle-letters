@@ -1,0 +1,92 @@
+---
+title: "Перевернули календарь, а там дайджест"
+preheader: "Новая полезная подборка только для учеников ИнфоХит"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <fetch url="https://info-hit.ru/include/tools/courses-json/?coursesArr=278265,296851,321316,317023,300270&token=u4JTEnMNt4gdsfdfsdf345nkhjk3dfgfh556776dfdghjkluiutyrtym&v=4">
+      <component src="src/components/img-block-without-link-round.html" locals='{
+      "src" : "https://info-hit.ru/include/images/letter/2024-09-12-free.jpg"
+      }'></component>
+        
+      <component src="src/components/round-block-mt.html">
+        <p><strong>Добрый день!</strong></p>
+          <p>Это новая порция классных материалов, которые мы&nbsp;подготовили за&nbsp;последние несколько недель. В блоге рассказали и&nbsp;о&nbsp;секретах <a href="https://info-hit.ru/blog/sekrety-frantsuzskoy-kukhni/" target="_blank">французской кухни</a>, и&nbsp;о&nbsp;<a href="https://info-hit.ru/blog/vastu-magiya-prostranstva/" target="_blank">магии пространства Васту</a>, и&nbsp;о&nbsp;том, как писать оптимизированные <a href="https://info-hit.ru/blog/kak-pisat-seo-teksty/" target="_blank">seo-тексты</a> в&nbsp;2024&nbsp;году.</p>
+          <p class="mb-24">Приятного чтения!</p>
+        </component>
+
+      <tr>
+        <td class="h-24 sm:h-16"></td>
+      </tr>
+      <tr>
+        <td class="bg-white text-gray-800 text-base text-left px-48 py-24 sm:p-14 leading-24 rounded-2xl">
+          <h3 class="mt-24 sm:mt-24">Популярные курсы августа</h3>
+          <p class="mb-24">Если&nbsp;вы, как и&nbsp;мы, уже перевернули календарь и&nbsp;готовы наполнить жизнь яркими событиями, это письмо точно для вас. Подготовили новую подборку с&nbsp;самыми интересными бесплатными курсами.</p>
+          <each loop="item in response.slice(0, 1)">
+          <component src="src/components/course.html" locals='{
+            "author" : "{{ item.RIGHTHOLDER }}",
+            "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+            "subtitle" : "{{ item.DESC }}",
+            "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+            "link" : "{{ item.URL }}"
+            }'>
+          </component>
+        </each>
+        <each loop="item in response.slice(1, 2)">
+          <component src="src/components/course.html" locals='{
+            "author" : "{{ item.RIGHTHOLDER }}",
+            "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+            "subtitle" : "{{ item.DESC }}",
+            "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+            "link" : "{{ item.URL }}"
+            }'>
+          </component>
+        </each>
+        <each loop="item in response.slice(2, 3)">
+          <component src="src/components/course.html" locals='{
+            "author" : "{{ item.RIGHTHOLDER }}",
+            "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+            "subtitle" : "{{ item.DESC }}",
+            "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+            "link" : "{{ item.URL }}"
+            }'>
+          </component>
+        </each>
+        <each loop="item in response.slice(3, 4)">
+          <component src="src/components/course.html" locals='{
+            "author" : "{{ item.RIGHTHOLDER }}",
+            "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+            "subtitle" : "{{ item.DESC }}",
+            "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+            "link" : "{{ item.URL }}"
+            }'>
+          </component>
+        </each>
+        <each loop="item in response.slice(4, 5)">
+          <component src="src/components/course.html" locals='{
+            "author" : "{{ item.RIGHTHOLDER }}",
+            "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+            "subtitle" : "{{ item.DESC }}",
+            "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+            "link" : "{{ item.URL }}"
+            }'>
+          </component>
+        </each>
+        <p>Не&nbsp;забудьте взять с&nbsp;собой чашечку горячего чая и&nbsp;хорошее настроение. Осень&nbsp;— это не&nbsp;повод грустить, а&nbsp;возможность научиться чему-то новому или начать жизнь с&nbsp;чистого листа. Записывайтесь на&nbsp;понравившийся курс и&nbsp;учитесь с&nbsp;удовольствием!</p>
+        <p>Еще больше бесплатных курсов найдете в&nbsp;каталоге ИнфоХит. Переходите по&nbsp;кнопке ниже и&nbsp;выбирайте&nbsp;то, что вам по&nbsp;душе.</p>
+            <component src="src/components/button.html" locals='{
+              "link" : "https://info-hit.ru/catalog/filter/free-y/",
+              "text" : "Все бесплатные курсы",
+              "color" : "bg-blue-500",
+              "hover_color" : "bg-blue-600"
+              }'></component>
+            </td>
+          </tr>
+        <td class="h-32 sm:h-24"></td>
+      </tr>
+      <component src="src/components/footer.html"></component>
+    </fetch>
+  </block>
+</extends>

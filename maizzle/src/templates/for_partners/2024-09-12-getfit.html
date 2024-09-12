@@ -1,0 +1,56 @@
+---
+title: "На вашу карту зачислены средства"
+preheader: "27% дохода с партнерской программы GetFit"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/2024-09-12-getfit-partners.jpg"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+        <p class="text-base bg-green-200 py-16 px-24">Поздравляем! У&nbsp;вас появилась привилегия стать официальным партнером GetFit.</p>
+        <p>Теперь вы&nbsp;не&nbsp;только можете иметь крепкое здоровье, учиться и&nbsp;зарабатывать деньги на&nbsp;нутрициологии, но&nbsp;и&nbsp;получать стабильный доход от&nbsp;рекомендаций обучения в&nbsp;школе.</p>
+        <p>С&nbsp;первой покупки любого курса на&nbsp;вашу карту будет зачислено&nbsp;27% с&nbsp;продажи обучения по&nbsp;нутрициологии и&nbsp;фитнесу. Вы&nbsp;можете получать неограниченное количество денежных средств. Все в&nbsp;ваших руках!</p>
+        <p><strong>Партнерам предоставляются:</strong></p>
+        <ul>
+          <li class="mb-10">личный бизнес-консультант,</li>
+          <li class="mb-10">доступ к&nbsp;личному кабинету с&nbsp;прозрачной статистикой,</li>
+          <li class="mb-10">готовые маркетинговые материалы для продвижения.</li>
+        </ul>
+        <p class="mb-24">Становитесь партнером GetFit прямо сейчас и&nbsp;начинайте зарабатывать на&nbsp;любимой школе!</p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://info-hit.ru/programs/partnerskaya-programma-onlayn-shkoly-nutritsiologii-i-fitnesa-getfit/",
+          "text" : "Стать партнером",
+          "color" : "bg-green-500",
+          "hover_color" : "bg-green-600"
+          }'></component>
+        <p>Остались вопросы?</p>
+        <p class="mb-24">Вы&nbsp;можете связаться с&nbsp;нашей техподдержкой и&nbsp;узнать все детали сотрудничества, а&nbsp;еще задать любой интересующий вопрос по&nbsp;партнерской программе.</p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://t.me/getfit_partner_help_bot",
+          "text" : "Связаться с техподдержкой",
+          "color" : "bg-green-500",
+          "hover_color" : "bg-green-600"
+          }'></component>
+        <p class="mb-24">Обязательно вступайте в&nbsp;клуб GetFit, где обсуждают все нюансы партнерки и&nbsp;публикуют последние новости программы.</p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://t.me/getfit_partners",
+          "text" : "Вступить в клуб",
+          "color" : "bg-green-500",
+          "hover_color" : "bg-green-600"
+          }'></component>
+        <p><i>*Реклама</i></p>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">С уважением,<br>ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>

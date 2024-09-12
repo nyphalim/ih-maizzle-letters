@@ -1,0 +1,75 @@
+---
+title: "Сегодня — лучший день"
+preheader: "Чтобы купить курс по Таро с кешбэком и скидкой"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <fetch url="https://info-hit.ru/include/tools/courses-json/?coursesArr=220678,194170,280577&token=u4JTEnMNt4gdsfdfsdf345nkhjk3dfgfh556776dfdghjkluiutyrtym&v=4">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/2024-09-12-taro-5.jpg"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p><strong>Добрый день!</strong></p>
+        <p>Для вас замечательная новость&nbsp;— лучший день для того, чтобы сделать первый шаг к&nbsp;освоению магии карт Таро! Только сегодня у&nbsp;вас есть возможность приобрести курсы лучших экспертов со&nbsp;скидками до&nbsp;47% и&nbsp;получить кешбэк на&nbsp;следующий покупку.</p>
+        <p>Вот подборка курсов, которые помогут вам погрузиться в&nbsp;увлекательный мир Таро и&nbsp;получать инсайты из&nbsp;карт:</p>
+        <p><strong>Курс «Классическое Таро»</strong></p>
+        <ul>
+          <li class="mb-10">Скидка: 45%</li>
+          <li class="mb-32">Восемь уроков по&nbsp;теории классических колод Таро. Узнайте, как правильно интерпретировать карты и&nbsp;делать свои первые расклады. Идеально для новичков!</li>
+        </ul>
+          <each loop="item in response.slice(0, 1)">
+            <component src="src/components/course.html" locals='{
+              "author" : "{{ item.RIGHTHOLDER }}",
+              "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+              "subtitle" : "{{ item.DESC }}",
+              "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+              "link" : "{{ item.URL }}"
+              }'>
+            </component>
+          </each>
+          <p><strong>Курс «Таро для души»</strong></p>
+          <ul>
+            <li class="mb-10">Скидка: 30%</li>
+            <li class="mb-32">Станьте мастером в&nbsp;гадании и&nbsp;научитесь интерпретировать карты самостоятельно, а&nbsp;не&nbsp;заучивать значения!</li>
+          </ul>
+          <each loop="item in response.slice(1, 2)">
+            <component src="src/components/course.html" locals='{
+              "author" : "{{ item.RIGHTHOLDER }}",
+              "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+              "subtitle" : "{{ item.DESC }}",
+              "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+              "link" : "{{ item.URL }}"
+              }'>
+            </component>
+          </each>
+          <p><strong>Курс «Таро Манара»</strong></p>
+          <ul>
+            <li class="mb-10">Скидка: 47%</li>
+            <li class="mb-32">Глубокие знания и&nbsp;практические навыки, которые помогут вам применять Таро в&nbsp;повседневной жизни. Потрясающая возможность разобраться в&nbsp;эмоциях, мыслях и&nbsp;отношениях и&nbsp;получить ответы на&nbsp;жизненные вопросы!</li>
+          </ul>
+          <each loop="item in response.slice(2, 3)">
+            <component src="src/components/course.html" locals='{
+              "author" : "{{ item.RIGHTHOLDER }}",
+              "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+              "subtitle" : "{{ item.DESC }}",
+              "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+              "link" : "{{ item.URL }}"
+              }'>
+            </component>
+          </each>
+          <p>Каждый из&nbsp;курсов включает в&nbsp;себя подробные видеоуроки и&nbsp;практические задания. Не&nbsp;упустите шанс изменить свою жизнь к&nbsp;лучшему с&nbsp;помощью Таро!</p>
+          <p>А&nbsp;при покупке курса вы&nbsp;получите кешбэк, который сможете использовать для следующих покупок на&nbsp;ИнфоХит. Это отличная возможность получить дополнительные знания и&nbsp;навыки по&nbsp;выгодной цене!</p>
+            <component src="src/components/gray-line.html"></component>
+          <p class="text-base mb-36">Ваш проводник в мир онлайн-образования,<br>ИнфоХит!</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="h-32 sm:h-24"></td>
+      </tr>
+      <component src="src/components/footer.html"></component>
+    </fetch>
+  </block>
+  </extends>
