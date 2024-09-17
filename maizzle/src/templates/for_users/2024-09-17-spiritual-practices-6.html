@@ -1,0 +1,88 @@
+---
+title: "Ваша карта удачи уже ждет вас"
+preheader: "На бесплатном курсе по Таро"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <fetch url="https://info-hit.ru/include/tools/courses-json/?coursesArr=282714,267326,303176,308098,298506&token=u4JTEnMNt4gdsfdfsdf345nkhjk3dfgfh556776dfdghjkluiutyrtym&v=4">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/2024-09-17-tarot-6.jpg"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p><strong>Добрый день!</strong></p>
+        <p>Ваша карта удачи уже ждет вас! Приглашаем вас на&nbsp;бесплатные курсы по&nbsp;Таро от&nbsp;ИнфоХит, где вы&nbsp;сможете начать знакомство с&nbsp;новым миром и&nbsp;открыть для себя невероятные возможности карт.</p>
+        <p><strong>Что ждет вас на&nbsp;курсах:</strong></p>
+        <ol>
+          <li class="mb-10"><strong>Доступные знания:</strong> познакомитесь с&nbsp;основами и&nbsp;уникальными техниками чтения карт. Это отличная возможность для начинающих узнать, что такое Таро и&nbsp;насколько это увлекательное занятие.</li>
+          <li class="mb-32"><strong>Развитие интуиции:</strong> занятия способствуют развитию интуитивных способностей. Вы&nbsp;научитесь слушать себя и&nbsp;свои внутренние ощущения, что полезно не&nbsp;только в&nbsp;работе с&nbsp;картами, но&nbsp;и&nbsp;в&nbsp;повседневной жизни.</li>
+          <li class="mb-10"><strong>Сообщество единомышленников:</strong> будете общаться с&nbsp;людьми, которые разделяют ваши интересы и&nbsp;понимают вас. Сможете обмениваться опытом, задавать вопросы и&nbsp;находить поддержку у&nbsp;тех, кто также начинает свой путь в&nbsp;мире Таро.</li>
+          <li class="mb-10"><strong>Практическое применение:</strong> примете участие в&nbsp;практических занятиях, где сможете попробовать себя в&nbsp;чтении карт и&nbsp;будете разрабатывать свои навыки в&nbsp;реальном времени. Это поможет вам быстрее понять материал и&nbsp;применить его в&nbsp;жизни.</li>
+          <li class="mb-10"><strong>Отсутствие обязательств:</strong> вы&nbsp;сможете оценить свой интерес и&nbsp;подход к&nbsp;Таро без лишнего стресса и&nbsp;давления, познакомиться с&nbsp;преподавателем и&nbsp;его манерой обучения, а&nbsp;потом решить, хотите&nbsp;ли вы&nbsp;продолжать обучение на&nbsp;платных курсах в&nbsp;будущем.</li>
+        </ol>
+        <p class="mt-24 mb-32">Удача уже на&nbsp;вашей стороне&nbsp;— осталось выбрать курс!</p>
+          <each loop="item in response.slice(0, 1)">
+            <component src="src/components/course.html" locals='{
+              "author" : "{{ item.RIGHTHOLDER }}",
+              "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+              "subtitle" : "{{ item.DESC }}",
+              "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+              "link" : "{{ item.URL }}"
+              }'>
+            </component>
+          </each>
+          <each loop="item in response.slice(1, 2)">
+            <component src="src/components/course.html" locals='{
+              "author" : "{{ item.RIGHTHOLDER }}",
+              "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+              "subtitle" : "{{ item.DESC }}",
+              "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+              "link" : "{{ item.URL }}"
+              }'>
+            </component>
+          </each>
+          <each loop="item in response.slice(2, 3)">
+            <component src="src/components/course.html" locals='{
+              "author" : "{{ item.RIGHTHOLDER }}",
+              "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+              "subtitle" : "{{ item.DESC }}",
+              "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+              "link" : "{{ item.URL }}"
+              }'>
+            </component>
+          </each>
+            <each loop="item in response.slice(3, 4)">
+              <component src="src/components/course.html" locals='{
+                "author" : "{{ item.RIGHTHOLDER }}",
+                "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+                "subtitle" : "{{ item.DESC }}",
+                "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+                "link" : "{{ item.URL }}"
+                }'>
+              </component>
+            </each>
+          </each>
+            <each loop="item in response.slice(4, 5)">
+              <component src="src/components/course.html" locals='{
+                "author" : "{{ item.RIGHTHOLDER }}",
+                "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+                "subtitle" : "{{ item.DESC }}",
+                "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+                "link" : "{{ item.URL }}"
+                }'>
+              </component>
+            </each>
+          </each>
+            <component src="src/components/gray-line.html"></component>
+          <p class="text-base mb-36">Ваш проводник в мир онлайн-образования,<br>ИнфоХит!</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="h-32 sm:h-24"></td>
+      </tr>
+      <component src="src/components/footer.html"></component>
+    </fetch>
+  </block>
+  </extends>
