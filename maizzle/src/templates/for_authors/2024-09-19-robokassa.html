@@ -1,0 +1,44 @@
+---
+title: "Спецпредложение: прием платежей за уроки со скидкой"
+preheader: "Скидка 33% на комиссию за прием платежей"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/2024-09-19-robokassa-2.jpg"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+        <p class="text-base bg-blue-100 py-16 px-24">Наш партнер, платежный сервис Robokassa, предлагает специальные условия при подключении онлайн-платежей. Комиссия по&nbsp;банковским картам для всех клиентов ИнфоХит снижена на&nbsp;33%.</p>
+        <p><strong>С&nbsp;Robokassa вы&nbsp;сможете:</strong></p>
+        <ul>
+          <li class="mb-10"><strong>подключить все доступные способы оплаты:</strong> карты&nbsp;РФ и&nbsp;иностранные, СБП, pay-методы, ЮMoney и&nbsp;другие;</li>
+          <li class="mb-10"><strong>продавать там, где удобно ученикам:</strong> через Taplink, соцсети, мессенджеры, сайт. Сервис уже встроен в&nbsp;130+ популярных платформ для продажи уроков и&nbsp;курсов;</li>
+          <li class="mb-10"><strong>увеличить средний чек:</strong> продавать в&nbsp;рассрочку, кредит или по&nbsp;частям через «Подели»;</li>
+          <li class="mb-10"><strong>сэкономить на&nbsp;кассе:</strong> сервис бесплатно пробьет и&nbsp;отправит чеки за&nbsp;вас;</li>
+          <li class="mb-10"><strong>автоматизировать продажи:</strong> отправлять доступ к&nbsp;урокам автоматически после оплаты;</li>
+          <li class="mb-10"><strong>оформлять подписку на&nbsp;обучение:</strong> подключить рекуррентные платежи.</li>
+        </ul>
+        <p>Сервис работает с&nbsp;юрлицами, ИП&nbsp;и&nbsp;самозанятыми. Пользуйтесь, экономьте и&nbsp;продавайте больше</p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://partner.robokassa.ru/Reg/Register?PromoCode=Infohit&culture=ru",
+          "text" : "Подключиться со скидкой",
+          "color" : "bg-blue-500",
+          "hover_color" : "bg-blue-600"
+          }'></component>
+        <p><i>*Реклама</i></p>
+        <component src="src/components/gray-line.html"></component>
+        <component src="src/components/telegram-for-authors-autologin.html"></component>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">Ваш надежный партнер,<br>ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
