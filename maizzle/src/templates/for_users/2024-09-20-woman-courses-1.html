@@ -1,0 +1,89 @@
+---
+title: "Поговорим об отношениях. Чего не хватает вам?"
+preheader: "Лучшие курсы по отношениям между мужчиной и женщиной на ИнфоХит"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <fetch url="https://info-hit.ru/include/tools/courses-json/?coursesArr=282807,319113,123041&token=u4JTEnMNt4gdsfdfsdf345nkhjk3dfgfh556776dfdghjkluiutyrtym&v=4">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/2024-09-20-womans-1.jpg"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p><strong>Добрый день!</strong></p>
+        <p>Работа над отношениями&nbsp;— это сложно? Вовсе нет, если вы&nbsp;действуете по&nbsp;проверенным методикам специалистов в&nbsp;этой сфере.</p>
+        <p><strong>Топ-курсы об&nbsp;отношениях для вас, если вы&nbsp;хотите:</strong></p>
+        <ul>
+          <li class="mb-10">привлечь или вернуть внимание мужчины;</li>
+          <li class="mb-10">стать желанной женщиной, за&nbsp;которой хотят ухаживать;</li>
+          <li class="mb-10">добавить в&nbsp;отношения романтики и&nbsp;заново пережить конфетно-букетный период даже через десять лет брака;</li>
+          <li class="mb-10">разнообразить сексуальную жизнь в&nbsp;вашей паре и&nbsp;раскрыть новые грани удовольствия для двоих.</li>
+        </ul>
+        <p class="mt-24 mb-0"><strong>После программы Светланы Ермаковой:</strong></p>
+        <ol>
+          <li class="mb-10">Вы&nbsp;научитесь говорить с&nbsp;избранником так, чтобы он&nbsp;прислушивался. Отношения станут крепкими, гармоничными и&nbsp;счастливыми.</li>
+          <li class="mb-10">Мужчины будут тянуться к&nbsp;вам.</li>
+          <li class="mb-32">Уважение и&nbsp;забота придут на&nbsp;смену ссорам и&nbsp;расставаниям.</li>
+        </ol>
+          <each loop="item in response.slice(0, 1)">
+            <component src="src/components/course.html" locals='{
+              "author" : "{{ item.RIGHTHOLDER }}",
+              "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+              "subtitle" : "{{ item.DESC }}",
+              "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+              "link" : "{{ item.URL }}"
+              }'>
+            </component>
+          </each>
+          <p class="mt-0 mb-0"><strong>С&nbsp;курсом от&nbsp;Оксаны Бачинской:</strong></p>
+          <ul>
+            <li class="mb-10">забудете о&nbsp;комплексах и&nbsp;станете неподражаемой в&nbsp;постели;</li>
+            <li class="mb-10">научитесь флиртовать и&nbsp;заигрывать со&nbsp;своим мужчиной;</li>
+            <li class="mb-32">укрепите эмоциональную связь в&nbsp;паре, добавите глубины и&nbsp;трепета в&nbsp;отношения через идеальный секс.</li>
+          </ul>
+          <each loop="item in response.slice(1, 2)">
+            <component src="src/components/course.html" locals='{
+              "author" : "{{ item.RIGHTHOLDER }}",
+              "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+              "subtitle" : "{{ item.DESC }}",
+              "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+              "link" : "{{ item.URL }}"
+              }'>
+            </component>
+          </each>
+          <p class="mt-0 mb-0"><strong>Тренинг от&nbsp;Вячеслава Юнева поможет вам:</strong></p>
+          <ul>
+            <li class="mb-10">изучить мужскую психологию,</li>
+            <li class="mb-10">научиться выбирать подходящего партнера и&nbsp;привлекать его внимание,</li>
+            <li class="mb-32">добиться целей в&nbsp;построении долгих отношений на&nbsp;ваших условиях.</li>
+          </ul>
+          <each loop="item in response.slice(2, 3)">
+            <component src="src/components/course.html" locals='{
+              "author" : "{{ item.RIGHTHOLDER }}",
+              "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+              "subtitle" : "{{ item.DESC }}",
+              "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+              "link" : "{{ item.URL }}"
+              }'>
+            </component>
+          </each>
+          <p>Или выбирайте курс по&nbsp;душе из&nbsp;<a href="https://info-hit.ru/catalog/women-flirt/" target="_blank">подборки</a>.</p>
+          <component src="src/components/button.html" locals='{
+            "link" : "https://info-hit.ru/catalog/women-flirt/",
+            "text" : "Выбрать курс",
+            "color" : "bg-purple-500",
+            "hover_color" : "bg-purple-600"
+            }'></component>
+            <component src="src/components/gray-line.html"></component>
+          <p class="text-base mb-36">Ваш проводник в мир онлайн-образования,<br>ИнфоХит!</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="h-32 sm:h-24"></td>
+      </tr>
+      <component src="src/components/footer.html"></component>
+    </fetch>
+  </block>
+  </extends>

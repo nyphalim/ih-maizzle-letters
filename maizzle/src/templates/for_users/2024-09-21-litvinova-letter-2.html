@@ -1,0 +1,45 @@
+---
+title: "Бесплатный марафон «Сам себе астролог»"
+preheader: "Разберите свою натальную карту и узнайте, как улучшить любую из 12 сфер жизни"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/2024-09-10-litvinova.jpg"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+        <p>Приглашаем на&nbsp;бесплатный марафон <a href="https://info-hit.ru/away.php?to=link&id=1314" target="_blank">«Сам себе астролог»</a>, который поможет познакомиться ближе с&nbsp;собой с&nbsp;помощью натальной карты. Сделайте шаг к&nbsp;гармонии, пониманию себя и&nbsp;самопознанию!</p>
+        <p><strong>Спикер:</strong> профессиональный ведический астролог, нумеролог, хиромант Елена Литвинова.</p>
+        <p>На&nbsp;марафоне проанализируете 12&nbsp;сфер жизни. Будете выполнять домашние задания и&nbsp;получать обратную связь от&nbsp;астролога.</p>
+        <p><strong>Приходите, если хотите:</strong></p>
+        <ul>
+          <li class="mb-10">найти свое предназначение и&nbsp;место в&nbsp;жизни;</li>
+          <li class="mb-10">понять причины проблем с&nbsp;финансами;</li>
+          <li class="mb-10">разобраться в&nbsp;себе и&nbsp;своих желаниях;</li>
+          <li class="mb-10">получать удовольствие от&nbsp;работы;</li>
+          <li class="mb-10">наладить отношения с&nbsp;близкими.</li>
+        </ul>
+        <p>В&nbsp;натальной карте есть ответы на&nbsp;все вопросы. Не&nbsp;упустите возможность научиться их&nbsp;читать.</p>
+        <p>Осталось всего 4&nbsp;места!</p>
+        <p>Регистрация по&nbsp;ссылке ниже:</p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://info-hit.ru/away.php?to=link&id=1314",
+          "text" : "Принять участие",
+          "color" : "bg-purple-500",
+          "hover_color" : "bg-purple-600"
+          }'></component>
+          <p><i>*Реклама</i></p>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">С уважением,<br>ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
