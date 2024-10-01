@@ -1,0 +1,64 @@
+---
+title: "Согревайтесь знаниями вместе с ИнфоХит"
+preheader: "Подборка статей для уютной осени"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <fetch url="https://info-hit.ru/include/tools/blog-json/?arElements=323627,323584,323225&token=u4JTEnMNt4gdsfdfsdf345nkhjk3dfgfh556776dfdghjkluiutyrtym&v=4">
+      <component src="src/components/img-block-without-link.html" locals='{
+        "src" : "https://info-hit.ru/include/images/letter/2024-10-01-blog.jpg"
+        }'></component>
+        <tr>
+          <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+          <p><strong>Добрый день!</strong></p>
+          <p>От&nbsp;осенней хандры не&nbsp;спрятаться, не&nbsp;скрыться. На&nbsp;улице становится холоднее, а&nbsp;день заканчивается быстрее. Если выходить из&nbsp;дома совсем не&nbsp;хочется&nbsp;— почитайте новые статьи и&nbsp;обзоры в&nbsp;блоге ИнфоХит. Это скрасит пасмурные дни и&nbsp;поднимет рейтинг осени выше.</p>
+          <p>Посмотрите, что у&nbsp;нас вышло в&nbsp;сентябре:</p>
+          <each loop="item in response.slice(0, 1)">
+            <component src="src/components/blog.html" locals='{
+            "URL" : "{{ item.URL }}",
+            "PICTURE" : "{{ item.PICTURE }}",
+            "NAME" : "{{ item.NAME }}",
+            "DESC" : "{{ item.DESC }}",
+            "COLOR" : "yellow"
+            }'></component>
+          </each>
+          <p></p>
+          <each loop="item in response.slice(1, 2)">
+            <component src="src/components/blog.html" locals='{
+            "URL" : "{{ item.URL }}",
+            "PICTURE" : "{{ item.PICTURE }}",
+            "NAME" : "{{ item.NAME }}",
+            "DESC" : "{{ item.DESC }}",
+            "COLOR" : "yellow"
+            }'></component>
+          </each>
+          <p></p>
+          <each loop="item in response.slice(2, 3)">
+            <component src="src/components/blog.html" locals='{
+            "URL" : "{{ item.URL }}",
+            "PICTURE" : "{{ item.PICTURE }}",
+            "NAME" : "{{ item.NAME }}",
+            "DESC" : "{{ item.DESC }}",
+            "COLOR" : "yellow"
+            }'></component>
+          </each>
+          <p class="mt-24">На&nbsp;этом все!</p>
+          <p class="mb-24">Еще больше интересных статей ищите в&nbsp;блоге ИнфоХит.</p>
+          <component src="src/components/button.html" locals='{
+            "link" : "https://info-hit.ru/blog/",
+            "text" : "Больше статей",
+            "color" : "bg-green-500",
+            "hover_color" : "bg-green-600"
+            }'></component>
+            <component src="src/components/gray-line.html"></component>
+            <p class="text-base mb-36">С уважением,<br>ИнфоХит!</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="h-32 sm:h-24"></td>
+        </tr>
+        <component src="src/components/footer.html"></component>
+      </block>
+    </extends>
