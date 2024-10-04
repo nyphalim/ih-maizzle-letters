@@ -1,0 +1,53 @@
+---
+title: "Вам точно понравится"
+preheader: "Подборка новых офферов для партнеров ИнфоХит"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/2024-10-04-new-programms.jpg"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+        <p>Каталог ИнфоХит регулярно пополняется новыми партнерскими программами с&nbsp;выгодными условиями для веб-мастеров. В&nbsp;этой подборке вы&nbsp;точно найдете&nbsp;то, что нужно! Собрали офферы по&nbsp;самым популярным направлениям.</p>
+        <h3>Карьера и&nbsp;работа</h3>
+        <ul>
+          <li class="mb-10"><a href="https://info-hit.ru/programs/partnerskaya-programma-onlayn-instituta-dizayna-vill/" target="_blank">Онлайн-институт дизайна Vill</a></li>
+          <li class="mb-10"><a href="https://info-hit.ru/programs/partnerskaya-programma-yulii-gorskoy/" target="_blank">Юлия Горская</a></li>
+          <li class="mb-10"><a href="https://info-hit.ru/programs/partnerskaya-programma-akademii-psikhologii-i-psikhoterapii/" target="_blank">«Академия психологии и&nbsp;психотерапии»</a></li>
+          <li class="mb-10"><a href="https://info-hit.ru/programs/partneskaya-programma-akademii-influence-marketinga/" target="_blank">Академия influence-маркетинга</a></li>
+        </ul>
+        <h3>Личностный рост</h3>
+        <ul>
+          <li class="mb-10"><a href="https://info-hit.ru/programs/partnerskaya-programma-shkoly-niny-rubshteyn/" target="_blank">Нина Рубштейн</a></li>
+          <li class="mb-10"><a href="https://info-hit.ru/programs/partnerskaya-programma-assotsiatsii-nepreryvnoe-obrazovanie/" target="_blank">Ассоциация «Непрерывное образование»</a></li>
+        </ul>
+        <h3>Здоровье</h3>
+        <ul>
+          <li class="mb-10"><a href="https://info-hit.ru/programs/partnerskaya-programma-akademii-sovremennogo-massazha-galiny-makarovoy/" target="_blank">«Академия современного массажа» Галины Макаровой</a></li>
+          <li class="mb-10"><a href="https://info-hit.ru/programs/partnerskaya-programma-onlayn-masterskoy-bez-granits-i-natali-lopatinoy/" target="_blank">Онлайн-мастерская «Без Границ» и&nbsp;Наталья Лопатина</a></li>
+        </ul>
+        <h3>Духовные практики</h3>
+        <ul>
+          <li class="mb-10"><a href="https://info-hit.ru/programs/partnerskaya-programma-shkoly-dukhovnogo-razvitiya-svet-v-tebe-i-iriny-lamber/" target="_blank">Школа духовного развития «Свет в&nbsp;тебе» и&nbsp;Ирина Ламбер</a></li>
+        </ul>
+        <p class="mt-24 mb-24">Еще больше интересных и прибыльных партнерок найдете в&nbsp;каталоге ИнфоХит.</p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://info-hit.ru/programs/?sort=created&order=desc",
+          "text" : "Перейти в каталог",
+          "color" : "bg-blue-500",
+          "hover_color" : "bg-blue-600"
+          }'></component>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">С уважением,<br>команда ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
