@@ -1,0 +1,40 @@
+---
+title: "«Горячий» марафон на ИнфоХит"
+preheader: "То, что нужно знать каждой женщине"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/2024-10-05-womans-courses-6.jpg"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p><strong>Добрый день!</strong></p>
+        <p>Считаете&nbsp;ли вы&nbsp;себя соблазнительной? Или может быть чувствуете,что накал страсти в&nbsp;вашей спальне уже не&nbsp;тот? Хватает&nbsp;ли вам яркости ощущений и&nbsp;свободы выражения себя в&nbsp;постели? Или вы&nbsp;стесняетесь своего тела и&nbsp;откровенных разговоров с&nbsp;партнером?</p>
+        <p>Ответы на&nbsp;вопросы о&nbsp;том, как разнообразить и&nbsp;улучшить интимную жизнь вы найдете на&nbsp;марафоне сексолога Оксаны Бачинской <a href="https://info-hit.ru/away.php?to=course&cb=41&id=319182" target="_blank">«Как&nbsp;вернуть в&nbsp;постель страсть и&nbsp;умопомрачительные оргазмы»</a>.</p>
+        <p><strong>На&nbsp;бесплатном марафоне&nbsp;вы:</strong></p>
+        <ul>
+          <li class="mb-10">поверите, что можете быть самой желанной и&nbsp;сексуальной;</li>
+          <li class="mb-10">узнаете все о&nbsp;позах, секс-гаджетах и&nbsp;косметике для ярких ощущений;</li>
+          <li class="mb-10">научитесь «заводить» себя и&nbsp;партнера;</li>
+          <li class="mb-10">освоите минет и&nbsp;другие техники управления мужским возбуждением.</li>
+        </ul>
+        <p>Не&nbsp;ограничивайте себя в&nbsp;удовольствии. Регистрируйтесь на&nbsp;марафон прямо сейчас. Он&nbsp;обязательно оценит!</p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://info-hit.ru/away.php?to=course&cb=41&id=319182",
+          "text" : "Зарегистрироваться на марафон",
+          "color" : "bg-purple-500",
+          "hover_color" : "bg-purple-600"
+          }'></component>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">С уважением,<br>команда ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
