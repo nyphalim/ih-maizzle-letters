@@ -1,0 +1,57 @@
+---
+title: "Бесплатная конференция по привлечению клиентов"
+preheader: "EDPORTAL — старт 24 октября в 16:00 мск"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/Edportal.jpg"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+        <p>Станьте участником одной из&nbsp;самых крупных конференций по&nbsp;привлечению клиентов&nbsp;— EDPORTAL.</p>
+        <p><strong>Получите:</strong></p>
+        <ol>
+          <li class="mb-10">Кейсы актуальных воронок, дающие большие финансовые результаты в&nbsp;кратчайшие сроки.</li>
+          <li class="mb-10">Методы построения системных продаж.</li>
+          <li class="mb-10">Тренды развития блогов в&nbsp;2024&nbsp;году.</li>
+          <li class="mb-10">Инструменты привлечения и&nbsp;продаж для премиум-клиентов.</li>
+          <li class="mb-10">Разбор стратегий, ограничивающих финансовый рост.</li>
+          <li class="mb-10">Окружение людей, реально заинтересованных в&nbsp;ваших результатах.</li>
+        </ol>
+        <p><strong>Вас ждут:</strong></p>
+        <ol>
+          <li class="mb-10">Выступления 40&nbsp;сильных спикеров-практиков с&nbsp;фундаментальными результатами.
+            <ul><li class="mt-12">Хедлайнеры конференции&nbsp;— Михаил Христосенко, Мария Азаренок, Надежда Грушина, Кристина Таспин, Настасья Белочкина.</li>
+            </ul>
+          </li>
+          <li class="mb-10">Активный нетворкинг, который поможет даже самым застенчивым участникам найти ценные знакомства.</li>
+          <li class="mb-10">Бонусы от&nbsp;спикеров и&nbsp;партнеров.</li>
+          <li class="mb-10">Розыгрыш призового фонда на&nbsp;продвижение и&nbsp;развитие.</li>
+        </ol>
+        <p><strong>4&nbsp;дня конференции для самого мясного контента по&nbsp;привлечению клиентов:</strong></p>
+        <ul> 
+          <li class="mb-10">24-25-26 октября онлайн с&nbsp;16:00 до&nbsp;21:00 мск</li>
+          <li class="mb-10">27&nbsp;октября&nbsp;— VIP-день оффлайн в&nbsp;Москве</li>
+        </ul>
+        <p class="mb-24">Регистрируйтесь на&nbsp;событие по&nbsp;кнопке ниже.</p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://edportal.community/online",
+          "text" : "Получить бесплатный билет",
+          "color" : "bg-blue-500",
+          "hover_color" : "bg-blue-600"
+          }'></component>
+        <p><i>*Реклама</i></p>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">С уважением,<br>ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
