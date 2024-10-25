@@ -1,0 +1,55 @@
+---
+title: "По секрету только вам"
+preheader: "Рассказываем о новинках в каталоге партнерок"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/2024-10-25-partners-new.jpg"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+        <p>Ловите подборку с&nbsp;новыми и&nbsp;выгодными партнерским программами, которые мы&nbsp;добавили в&nbsp;каталог в&nbsp;октябре. Выбирайте тему, кликайте по&nbsp;кнопке и&nbsp;изучайте условия. А&nbsp;дальше все просто: берите в&nbsp;работу и&nbsp;начинайте лить трафик, чтобы заработать больше.</p>
+        <h3>Карьера и&nbsp;работа</h3>
+        <ul>
+          <li class="mb-10"><a href="https://info-hit.ru/programs/partnerskaya-programma-instituta-psikhologii-psycholesson/" target="_blank">Psycholesson</a></li>
+          <li class="mb-10"><a href="https://info-hit.ru/programs/partnerskaya-programma-mariny-volf/" target="_blank">Марина Вольф</a></li>
+        </ul>
+        <h3>Здоровье и&nbsp;спорт</h3>
+        <ul>
+          <li class="mb-10"><a href="https://info-hit.ru/programs/partnerskaya-programma-alekseya-chernova/" target="_blank">Алексей Чернов</a></li>
+        </ul>
+        <h3>Саморазвитие</h3>
+        <ul>
+          <li class="mb-10"><a href="https://info-hit.ru/programs/partnerskaya-programma-onlayn-shkoly-focuslife-i-reginy-plyatsevoy/" target="_blank">FocusLife и&nbsp;Регина Пляцевая</a></li>
+          <li class="mb-10"><a href="https://info-hit.ru/programs/partnerskaya-programma-onlayn-shkoly-neuroboost/" target="_blank">NeuroBoost</a></li>
+        </ul>
+        <h3>Дети</h3>
+        <ul>
+          <li class="mb-10"><a href="https://info-hit.ru/programs/partnerskaya-programma-onlayn-shkoly-angliyskogo-yazyka-dlya-detey-letters/" target="_blank">Онлайн-школа английского языка для детей «Леттерс»</a></li>
+          <li class="mb-10"><a href="https://info-hit.ru/programs/partnerskaya-programma-mezhdunarodnoy-shkoly-abakus/" target="_blank">Международная школа Abakus</a></li>
+        </ul>
+        <h3>Духовные практики</h3>
+        <ul>
+          <li class="mb-10"><a href="https://info-hit.ru/programs/partnerskaya-programma-ramany-om/" target="_blank">Ом&nbsp;Рамана</a></li>
+        </ul>
+        <p class="mt-24 mb-24">Еще больше интересных и прибыльных партнерок найдете в&nbsp;каталоге ИнфоХит.</p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://info-hit.ru/programs/?sort=created&order=desc",
+          "text" : "Перейти в каталог",
+          "color" : "bg-purple-500",
+          "hover_color" : "bg-purple-600"
+          }'></component>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">С уважением,<br>команда ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
