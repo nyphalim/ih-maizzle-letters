@@ -1,0 +1,37 @@
+---
+title: "Ваш счастливый билет к здоровью и успеху"
+preheader: "«Медитация безусловной любви» Ом Рамана"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/2024-11-06-ramana.jpg"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+        <p>Если хотите, чтобы ваша жизнь изменилась кардинально, то&nbsp;начните действовать уже сейчас!</p>
+        <p>Ом&nbsp;Рамана приглашает на&nbsp;бесплатный урок, посвященный медитации безусловной любви. Медитация раскрывает сердце, очищает карму и&nbsp;позволяет достичь состояния гармонии и&nbsp;умиротворения.</p>
+        <p class="text-base bg-yellow-200 py-16 px-24">Курсы Ом&nbsp;Рамана&nbsp;— ваш счастливый билет к&nbsp;здоровью и&nbsp;успеху!</p>
+        <p>Секреты древних практик, преобразующих жизнь. Отношения, финансы, самореализация&nbsp;— все под контролем!</p>
+        <p>Не&nbsp;упустите возможность стать хозяином тела, ума и&nbsp;своей судьбы!</p>
+        <p class="mt-24 mb-24">Примите вызов и&nbsp;начните трансформировать свою жизнь прямо сейчас!</p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://info-hit.ru/course-meditatsiya-bezuslovnoy-lyubvi/",
+          "text" : "Получить медитацию",
+          "color" : "bg-gray-500",
+          "hover_color" : "bg-gray-600"
+          }'></component>
+        <p><i>*Реклама</i></p>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">С уважением,<br>ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
