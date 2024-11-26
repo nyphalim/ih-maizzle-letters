@@ -1,0 +1,77 @@
+---
+title: "Знания, которые превращаются в деньги"
+preheader: "Лучшие курсы по управлению финансами на ИнфоХит"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <fetch url="https://info-hit.ru/include/tools/courses-json/?coursesArr=287791,265179,306543&token=u4JTEnMNt4gdsfdfsdf345nkhjk3dfgfh556776dfdghjkluiutyrtym&v=4">
+      <component src="src/components//img-block-without-link.html" locals='{
+      "src" : "https://info-hit.ru/include/images/letter/2024-11-26-finance-1.jpg"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+        <p class="text-base bg-blue-200 py-16 px-24">Умение управлять финансами&nbsp;— это ключ к&nbsp;финансовой свободе. Получить доступ к&nbsp;нему может каждый. Как достичь своих целей быстро и&nbsp;эффективно с&nbsp;минимальными вложениями, вы&nbsp;узнаете на&nbsp;курсах по&nbsp;финансам на&nbsp;ИнфоХит.</p>
+        <p>Подобрали для вас лучшие программы с&nbsp;доступом «навсегда» и&nbsp;бесплатными ознакомительными уроками.</p>
+        <p>Курсы созданы экспертами в&nbsp;области финансов и&nbsp;инвестиций для тех, кто хочет научиться грамотно распоряжаться своими средствами. Они идеально подойдут для вас, если:</p>
+        <ol>
+          <li class="mb-10"><strong>Вы&nbsp;цените качество образования.</strong> Только актуальная информация, которая соответствует тенденциям в&nbsp;мире финансов.</li>
+          <li class="mb-10"><strong>Экономите свое время и&nbsp;деньги.</strong> Удобный формат онлайн-обучения позволяет заниматься в&nbsp;любое удобное время.</li>
+          <li class="mb-10"><strong>Хотите получить реальные навыки, а&nbsp;не&nbsp;только теоретические знания.</strong> Уроки сопровождаются практическими заданиями, которые помогут закрепить полученные знания.</li>
+        </ol>
+        <p class="mt-24"><strong>На&nbsp;курсе Владимира Медведева:</strong></p>
+        <ul>
+          <li class="mb-10">повысите свой уровень финансовой грамотности;</li>
+          <li class="mb-10">поймете, как контролировать свои деньги, чтобы жить без долгов и&nbsp;кредитов, но&nbsp;не&nbsp;отказывать себе в&nbsp;желаемом;</li>
+          <li class="mb-32">узнаете, как улучшить благосостояние своей семьи и&nbsp;создать собственный капитал.</li>
+        </ul>
+        <each loop="item in response.slice(0, 1)">
+          <component src="src/components/course.html" locals='{
+            "author" : "{{ item.RIGHTHOLDER }}",
+            "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+            "subtitle" : "{{ item.DESC }}",
+            "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+            "link" : "{{ item.URL }}"
+            }'>
+          </component>
+        </each>
+        <p><strong>Курс для тех, кто делает первые шаги в&nbsp;инвестировании. Узнаете:</strong></p>
+        <ul>
+          <li class="mb-10">как начать инвестировать,</li>
+          <li class="mb-10">составить структуру портфеля и&nbsp;выбрать акции,</li>
+          <li class="mb-32">определить прибыльную стратегию.</li>
+        </ul>
+        <each loop="item in response.slice(1, 2)">
+          <component src="src/components/course.html" locals='{
+            "author" : "{{ item.RIGHTHOLDER }}",
+            "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+            "subtitle" : "{{ item.DESC }}",
+            "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+            "link" : "{{ item.URL }}"
+            }'>
+          </component>
+        </each>
+        <p class="mb-24">Курс ниже о&nbsp;том, как управлять личными финансами, составлять бюджет и&nbsp;грамотно инвестировать, чтобы получать пассивный доход и&nbsp;приумножать свои сбережения.</p>
+        <each loop="item in response.slice(2, 3)">
+          <component src="src/components/course.html" locals='{
+            "author" : "{{ item.RIGHTHOLDER }}",
+            "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+            "subtitle" : "{{ item.DESC }}",
+            "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+            "link" : "{{ item.URL }}"
+            }'>
+          </component>
+        </each>
+        <p>Регистрируйтесь и&nbsp;сделайте первый шаг к&nbsp;своему успешному и&nbsp;независимому будущему.</p>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">С уважением,<br>команда ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
