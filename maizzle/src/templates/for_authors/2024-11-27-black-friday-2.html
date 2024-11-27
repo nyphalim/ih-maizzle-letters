@@ -1,0 +1,43 @@
+---
+title: "Сотрудничать с ИнфоХит в «черную пятницу» особенно выгодно"
+preheader: "Подробности акции на рекламу внутри"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/2024-11-27-black-friday-2.jpg"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+        <p>«Черная Пятница» 2024&nbsp;на ИнфоХит набирает обороты. Вы&nbsp;радуете учеников скидками и&nbsp;промокодами, а&nbsp;ИнфоХит приготовил спецпредложение для авторов и&nbsp;онлайн-школ.</p>
+        <p>Не&nbsp;упустите возможность разместить свою рекламу на&nbsp;ИнфоХит со&nbsp;скидкой.</p>
+        <p><strong>Слайд на&nbsp;главной ИнфоХит</strong></p>
+        <p>12&nbsp;000&nbsp;₽ вместо <s>15&nbsp;000&nbsp;₽</s></p>
+        <p><strong>Баннер в&nbsp;блоге ИнфоХит</strong></p>
+        <p>8000&nbsp;₽ вместо <s>10&nbsp;000&nbsp;₽</s></p>
+        <p><strong>Баннер в&nbsp;разделе каталога ИнфоХит</strong></p>
+        <p>12&nbsp;000&nbsp;₽ вместо <s>15&nbsp;000&nbsp;₽</s></p>
+        <p><strong>А&nbsp;еще скидка на&nbsp;самый популярный пакет рекламных услуг&nbsp;— HIT!</strong></p>
+        <p>40&nbsp;000&nbsp;₽ вместо <s>48&nbsp;000&nbsp;₽</s></p>
+        <p class="mb-24">Условия акции уточните у&nbsp;менеджера в&nbsp;телеграм-чате <a target="_blank" href="https://t.me/ih_school_support_bot" target="_blank"> <strong>@ih_school_support_bot</strong></a> или <a href="mailto:b2b@info-hit.ru"><strong>b2b@info-hit.ru</strong>.</p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://t.me/ih_school_support_bot",
+          "text" : "Хочу рекламу со скидкой",
+          "color" : "bg-green-500",
+          "hover_color" : "bg-green-600"
+          }'></component>
+          <component src="src/components/gray-line.html"></component>
+          <component src="src/components/telegram-for-authors-autologin.html"></component>
+          <component src="src/components/gray-line.html"></component>
+          <p class="text-base mb-36">Ваш надежный партнер,<br>ИнфоХит!</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="h-32 sm:h-24"></td>
+      </tr>
+      <component src="src/components/footer.html"></component>
+    </block>
+  </extends>
