@@ -1,0 +1,84 @@
+---
+title: "Готовы продолжить изучение темы финансов с ИнфоХит?"
+preheader: "Подборка лучших курсов для быстрого погружения внутри"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <fetch url="https://info-hit.ru/include/tools/courses-json/?coursesArr=319336,315455,65097,246878&token=u4JTEnMNt4gdsfdfsdf345nkhjk3dfgfh556776dfdghjkluiutyrtym&v=4">
+      <component src="src/components//img-block-without-link.html" locals='{
+      "src" : "https://info-hit.ru/include/images/letter/2024-11-30-finance-3.jpg"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+        <p>Как продвигается ваше финансовое образование? Возможно, вы&nbsp;уже освоили азы управления личными финансами, но&nbsp;всегда есть куда расти! В&nbsp;мире инвестиций так много возможностей, которые делают жизнь комфортнее и&nbsp;стабильнее.</p>
+        <p>Предлагаем углубить свои знания и&nbsp;повысить финансовую грамотность на&nbsp;онлайн-курсах от&nbsp;ИнфоХит.</p>
+        <p><strong>Сейчас вы&nbsp;можете сделать это выгодно:</strong>></p>
+        <ul>
+          <li class="mb-10">воспользуйтесь беспроцентной рассрочкой,</li>
+          <li class="mb-10">получите кешбэк до&nbsp;10% бонусами или на&nbsp;карту,</li>
+          <li class="mb-10">оформите налоговый вычет и&nbsp;верните&nbsp;13% стоимости.</li>
+        </ul>
+        <p class="mb-24 mt-32">Тренинг от&nbsp;«Школы практического инвестирования» Федора Сидорова поможет <strong>на&nbsp;практике разобраться в&nbsp;особенностях современного фондового рынка в&nbsp;России</strong>. Этого вы&nbsp;не&nbsp;найдете в&nbsp;классической теории.</p>
+        <each loop="item in response.slice(0, 1)">
+          <component src="src/components/course.html" locals='{
+            "author" : "{{ item.RIGHTHOLDER }}",
+            "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+            "subtitle" : "{{ item.DESC }}",
+            "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+            "link" : "{{ item.URL }}"
+            }'>
+          </component>
+        </each>
+        <p class="mb-24 mt-10">Курс от&nbsp;онлайн-школы инвестиций и&nbsp;финансов «Инвестология» и&nbsp;Анастасии Чирович <strong>совмещает в&nbsp;себе практические аспекты инвестирования и&nbsp;финансового планирования</strong>, а&nbsp;еще проработку психологических установок на&nbsp;тему денег. Под руководством наставника вы&nbsp;пройдете три ступени финансовой независимости.</p>
+        <each loop="item in response.slice(1, 2)">
+          <component src="src/components/course.html" locals='{
+            "author" : "{{ item.RIGHTHOLDER }}",
+            "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+            "subtitle" : "{{ item.DESC }}",
+            "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+            "link" : "{{ item.URL }}"
+            }'>
+          </component>
+        </each>
+        <p class="mb-24 mt-10">На&nbsp;авторском интенсиве от&nbsp;Максима Темченко узнаете <strong>пошаговый алгоритм эффективного управления финансами</strong>: анализ, стратегии роста, психология богатого мышления.</p>
+        <each loop="item in response.slice(2, 3)">
+          <component src="src/components/course.html" locals='{
+            "author" : "{{ item.RIGHTHOLDER }}",
+            "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+            "subtitle" : "{{ item.DESC }}",
+            "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+            "link" : "{{ item.URL }}"
+            }'>
+          </component>
+        </each>
+        <p class="mb-24 mt-10">Курс от&nbsp;одного из&nbsp;лучших трейдеров современности Артёма Звёздина подойдет для тех, кто хочет сразу <strong>успешно торговать на&nbsp;бирже по&nbsp;проверенным методикам</strong>, а&nbsp;не&nbsp;терять время и&nbsp;деньги на&nbsp;пробы и&nbsp;ошибки.</p>
+        <p><strong><p>Материалы на&nbsp;курсах:</p></strong></p>
+        <ul>
+          <li class="mb-0">представлены доступным языком,</li>
+          <li class="mb-0">основаны на&nbsp;практических примерах и&nbsp;разборах кейсов,</li>
+          <li class="mb-0">подходят для старта в&nbsp;профессии.</li>
+        </ul>
+        <each loop="item in response.slice(3, 4)">
+          <component src="src/components/course.html" locals='{
+            "author" : "{{ item.RIGHTHOLDER }}",
+            "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+            "subtitle" : "{{ item.DESC }}",
+            "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+            "link" : "{{ item.URL }}"
+            }'>
+          </component>
+        </each>
+        <p>Инвестиции в&nbsp;себя&nbsp;— самые выгодные. Начните создавать свою «подушку безопасности» уже сегодня!</p>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">С уважением,<br>команда ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
