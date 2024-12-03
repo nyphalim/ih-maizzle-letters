@@ -1,0 +1,95 @@
+---
+title: "Настроение: чтение за чашечкой горячего чая"
+preheader: "Тут и подборка с новыми статьями ИнфоХит готова"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <fetch url="https://info-hit.ru/include/tools/blog-json/?arElements=324188,324276,324510,324667,324766&token=u4JTEnMNt4gdsfdfsdf345nkhjk3dfgfh556776dfdghjkluiutyrtym&v=4">
+      <component src="src/components/img-block-without-link.html" locals='{
+        "src" : "https://info-hit.ru/include/images/letter/2024-12-03-blog-items.jpg"
+      }'></component>
+        
+      <component src="src/components/round-block-mt.html">
+        <p><strong>Добрый день!</strong></p>
+          <p>Предлагаем провести вечер с&nbsp;пользой: налить чашечку горячего чая или кофе и&nbsp;почитать статьи на&nbsp;ИнфоХит. Напиток с&nbsp;вас, а&nbsp;с&nbsp;нас&nbsp;— подборка новинок блога. Рассказываем о&nbsp;трейдинге, токсичных отношениях, самых необычных профессиях и&nbsp;не&nbsp;только. Все самое интересное дальше.</p>
+        </component>
+
+        <tr>
+          <td class="h-24 sm:h-16"></td>
+        </tr>
+        <tr>
+          <td class="bg-white text-gray-800 text-base text-left px-48 py-24 sm:p-14 leading-24 rounded-2xl">
+          <h4 class="mt-10 mb-10">Сохраните свой капитал</h4>
+          <p class="mt-0 mb-16">Каждый мечтает о&nbsp;финансовой независимости, но&nbsp;не&nbsp;у&nbsp;всех есть стартовый капитал, чтобы начать свой бизнес. Неплохой вариант пассивного дохода&nbsp;— трейдинг.</p>
+          <each loop="item in response.slice(0, 1)">
+            <component src="src/components/blog.html" locals='{
+            "URL" : "{{ item.URL }}",
+            "PICTURE" : "{{ item.PICTURE }}",
+            "NAME" : "{{ item.NAME }}",
+            "DESC" : "{{ item.DESC }}",
+            "COLOR" : "green"
+            }'></component>
+          </each>
+          <h4 class="mt-44 mb-10">Без IT&nbsp;никуда</h4>
+          <p class="mt-0 mb-16">Многие думают, что IT&nbsp;— для «избранных», а&nbsp;без технического образования и&nbsp;хорошего английского в&nbsp;этой сфере нечего делать. Но&nbsp;это не&nbsp;так. Научиться всему можно на&nbsp;онлайн-курсах.</p>
+          <each loop="item in response.slice(1, 2)">
+            <component src="src/components/blog.html" locals='{
+            "URL" : "{{ item.URL }}",
+            "PICTURE" : "{{ item.PICTURE }}",
+            "NAME" : "{{ item.NAME }}",
+            "DESC" : "{{ item.DESC }}",
+            "COLOR" : "green"
+            }'></component>
+          </each>
+          <h4 class="mt-44 mb-10">Отношения ≠ страх</h4>
+          <p class="mt-0 mb-16">Токсичные отношения похожи на&nbsp;радиацию, которая отравляет все вокруг, разрушает психическое и&nbsp;физическое здоровье. И&nbsp;чем раньше вы&nbsp;сбежите от&nbsp;«фонящего реактора», тем меньше неприятных последствий унесете с&nbsp;собой. Но&nbsp;легко сказать, сделать&nbsp;же&nbsp;— совсем не&nbsp;просто. Читайте статью и&nbsp;узнаете, почему выбирали токсичных партнеров и&nbsp;как сделать так, чтобы личная жизнь стала счастливой.</p>
+          <each loop="item in response.slice(2, 3)">
+            <component src="src/components/blog.html" locals='{
+            "URL" : "{{ item.URL }}",
+            "PICTURE" : "{{ item.PICTURE }}",
+            "NAME" : "{{ item.NAME }}",
+            "DESC" : "{{ item.DESC }}",
+            "COLOR" : "green"
+            }'></component>
+          </each>
+          <h4 class="mt-44 mb-10">Не&nbsp;хочу быть как все</h4>
+          <p class="mt-0 mb-16">Тысячи людей каждый день ходят на&nbsp;работу, которую не&nbsp;любят. Мечтают о&nbsp;пятнице, отпуске или даже новой специальности. Но&nbsp;работа нужна не&nbsp;только для того, чтобы зарабатывать. Гораздо важнее найти такую, которая будет интересна и&nbsp;перспективна. Есть много оригинальных вариантов&nbsp;— выбирайте и&nbsp;развивайтесь в&nbsp;том, что другим непонятно, а&nbsp;вам нравится.</p>
+          <each loop="item in response.slice(3, 4)">
+            <component src="src/components/blog.html" locals='{
+            "URL" : "{{ item.URL }}",
+            "PICTURE" : "{{ item.PICTURE }}",
+            "NAME" : "{{ item.NAME }}",
+            "DESC" : "{{ item.DESC }}",
+            "COLOR" : "green"
+            }'></component>
+          </each>
+          <h4 class="mt-44 mb-10">Записаться к&nbsp;психологу или обучиться самому?</h4>
+          <p class="mt-0 mb-16">Все больше людей начинает заботиться о&nbsp;ментальном здоровье и&nbsp;обращаться за&nbsp;помощью. Поэтому растет потребность в&nbsp;сильных психологах, которые помогут решить жизненные трудности. Именно таких специалистов готовят в&nbsp;онлайн-институте Smart. О&nbsp;том, какие преимущества ждут студентов, рассказала Дарья Гребенюк, академический директор по&nbsp;обучению института Smart, автор-разработчик ФГОС.</p>
+          <each loop="item in response.slice(4, 5)">
+            <component src="src/components/blog.html" locals='{
+            "URL" : "{{ item.URL }}",
+            "PICTURE" : "{{ item.PICTURE }}",
+            "NAME" : "{{ item.NAME }}",
+            "DESC" : "{{ item.DESC }}",
+            "COLOR" : "green"
+            }'></component>
+          </each> 
+          <p class="mt-24 mb-24">Еще больше интересных статей ищите в&nbsp;блоге ИнфоХит.</p>
+          <component src="src/components/button.html" locals='{
+            "link" : "https://info-hit.ru/blog/",
+            "text" : "Больше статей",
+            "color" : "bg-green-500",
+            "hover_color" : "bg-green-600"
+            }'></component>
+            <component src="src/components/gray-line.html"></component>
+            <p class="text-base mb-36">С уважением,<br>ИнфоХит!</p>
+          </td>
+        </tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </fetch>
+</block>
+</extends>

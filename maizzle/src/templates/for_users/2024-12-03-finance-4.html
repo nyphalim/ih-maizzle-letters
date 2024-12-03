@@ -1,0 +1,45 @@
+---
+title: "Пока вы сомневаетесь, другие зарабатывают"
+preheader: "Отзывы учеников на топ-курсы по финансам от ИнфоХит"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/2024-12-03-finance-4.jpg"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+        <p>Инвестиции&nbsp;— не&nbsp;просто покупка и&nbsp;продажа инструментов фондового рынка. Это искусство принятия решений. Представьте себе: каждый день рынок предлагает новые возможности для заработка. Но&nbsp;чтобы ими воспользоваться, нужно знать правила игры.</p>
+        <p>Сотни людей уже освоили принципы эффективного инвестирования на&nbsp;курсах ИнфоХит и&nbsp;делятся своими впечатлениями о&nbsp;«Школе практического инвестирования» Федора Сидорова и&nbsp;<a href="https://info-hit.ru/away.php?to=course&cb=41&id=319336" target="_blank">тренинге «Разумный трейдер»</a>:</p>
+        <ol>
+          <li class="mb-12"><strong>Уроки в&nbsp;виде пошаговых инструкций.</strong> От&nbsp;базовых понятий до&nbsp;анализа рынка&nbsp;— узнаете обо всем, что нужно начинающему трейдеру.
+            <p><img style="border: 2px solid rgb(255, 255, 255)" src="https://info-hit.ru/include/images/letter/2024-12-03-example-1.jpg" alt=""></p>
+          </li>
+          <li class="mb-12"><strong>Реальные примеры.</strong> Теория хороша, но&nbsp;практика лучше. На&nbsp;курсах вы&nbsp;увидите, как работают стратегии в&nbsp;живой торговле.
+            <p><img style="border: 2px solid rgb(255, 255, 255)" src="https://info-hit.ru/include/images/letter/2024-12-03-example-2.jpg" alt=""></p>
+          </li>
+          <li class="mb-12"><strong>Обратная связь.</strong> Эксперты будут помогать на&nbsp;каждом этапе, отвечая на&nbsp;вопросы и&nbsp;давая советы.
+            <p><img style="border: 2px solid rgb(255, 255, 255)" src="https://info-hit.ru/include/images/letter/2024-12-03-example-3.jpg" alt=""></p>
+          </li> 
+        </ol>
+        <p class="mt-24">Вы&nbsp;тоже можете стать успешным трейдером и&nbsp;заработать первые деньги!</p>
+        <p class="mb-24">Переходите <a href="https://info-hit.ru/author-sidorov-fyedor/courses/" target="_blank">в&nbsp;раздел курсов</a>, чтобы начать обучение.</p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://info-hit.ru/author-sidorov-fyedor/courses/",
+          "text" : "Выбрать курс",
+          "color" : "bg-purple-500",
+          "hover_color" : "bg-purple-600"
+          }'></component>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">С уважением,<br>команда ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
