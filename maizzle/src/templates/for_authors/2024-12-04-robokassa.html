@@ -1,0 +1,50 @@
+---
+title: "Спецпредложение: скидка 33% на комиссию за прием платежей"
+preheader: "Продавайте с выгодой в преддверии новогодних праздников!"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/2024-12-04-robokassa-3.jpg"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+        <p class="text-base bg-blue-200 py-16 px-24">Предновогодние распродажи&nbsp;— действенный способ привлечь новых учеников. Сэкономить в&nbsp;этот период поможет сниженная комиссия за&nbsp;прием платежей&nbsp;— 33% при подключении к&nbsp;Robokassa.</p>
+        <p>Независимо от&nbsp;формы регистрации бизнеса, вы&nbsp;получите бесплатные автоматические чеки. Они доступны:</p>
+        <ul>
+          <li class="mb-10">юрлицам,</li>
+          <li class="mb-10">ИП,</li>
+          <li class="mb-10">самозанятым,</li>
+          <li class="mb-10">ИП&nbsp;на&nbsp;НПД,</li>
+          <li class="mb-10">ИП&nbsp;на&nbsp;АУСН.</li>
+        </ul>
+        <p><strong>С&nbsp;Robokassa вы&nbsp;сможете:</strong></p>
+        <ul>
+          <li class="mb-10"><strong>подключить все доступные способы оплаты одним&nbsp;договором</strong>&nbsp;— банковские карты, СБП, pay-методы, ЮMoney, карты рассрочки;</li>
+          <li class="mb-10"><strong>принимать оплату с&nbsp;иностранных карт</strong>&nbsp;— если ваши ученики есть и&nbsp;за&nbsp;рубежом;</li>
+          <li class="mb-10"><strong>ускорять продажи</strong>&nbsp;— автоматически отправлять ссылки на&nbsp;урок после оплаты;</li>
+          <li class="mb-10"><strong>использовать рассрочку, кредит или «Подели»</strong>&nbsp;— если стоимость обучения высокая;</li>
+          <li class="mb-10"><strong>продавать там, где удобно ученикам</strong>&nbsp;— через Taplink, соцсети, мессенджеры, сайт;</li>
+          <li class="mb-10"><strong>оформлять подписку на&nbsp;обучение:</strong> подключить рекуррентные платежи.</li>
+        </ul>
+        <p class="mt-24 mb-24">Не&nbsp;упускайте выгоду и&nbsp;экономьте на&nbsp;комиссии!</p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://partner.robokassa.ru/Reg/Register?PromoCode=Infohit&culture=ru",
+          "text" : "Подключить платежи со скидкой",
+          "color" : "bg-pink-500",
+          "hover_color" : "bg-pink-600"
+          }'></component>
+          <p><i>*Реклама</i></p>
+          <component src="src/components/gray-line.html"></component>
+          <p class="text-base mb-36">С уважением,<br>ИнфоХит!</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="h-32 sm:h-24"></td>
+      </tr>
+      <component src="src/components/footer.html"></component>
+    </block>
+  </extends>
