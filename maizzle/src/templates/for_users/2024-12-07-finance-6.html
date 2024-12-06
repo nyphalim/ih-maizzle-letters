@@ -1,0 +1,76 @@
+---
+title: "Маленький капитал — большие перспективы"
+preheader: "Узнайте, как превратить небольшие вложения в большие доходы, на ИнфоХит"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <fetch url="https://info-hit.ru/include/tools/courses-json/?coursesArr=37393,288507,322407,313070&token=u4JTEnMNt4gdsfdfsdf345nkhjk3dfgfh556776dfdghjkluiutyrtym&v=4">
+      <component src="src/components//img-block-without-link.html" locals='{
+      "src" : "https://info-hit.ru/include/images/letter/2024-12-07-finance.jpg"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+        <p class="text-base bg-blue-200 py-16 px-24">Мечтаете о&nbsp;пассивном доходе, но&nbsp;считаете, что для этого нужны огромные суммы? Это миф! Ученики ИнфоХит знают, как превратить небольшой начальный капитал в&nbsp;реальную прибыль.</p>
+        <p>Для тех, кто хочет сделать первый шаг к&nbsp;финансовой независимости, но&nbsp;пока не&nbsp;готов к&nbsp;большим вложениям, ИнфоХит предлагает бесплатные курсы, тренинги и&nbsp;мастер-классы.</p>
+        <p><strong>Ваши затраты&nbsp;— свободное время. Ваша «выручка»:</strong></p>
+        <ol>
+          <li class="mb-10">Знания о&nbsp;трейдинге, инвестициях и&nbsp;управлении личными финансами. Простые и&nbsp;понятные материалы. Сложные вещи объясняются доступным языком.</li>
+          <li class="mb-10">Практические задания, которые помогут закрепить полученные знания.</li>
+          <li class="mb-10">Реальные примеры и&nbsp;разборы кейсов. Представление о&nbsp;профессии и&nbsp;оценка ее&nbsp;для себя.</li>
+          <li class="mb-10">Поддержка экспертов, которые всегда готовы ответить на&nbsp;вопросы и&nbsp;дать ценные советы.</li>
+          <li class="mb-10">Общение с&nbsp;единомышленниками.</li>
+          <li class="mb-32">Тест-драйв онлайн-школ и&nbsp;подходов. Выберете&nbsp;то, что по&nbsp;душе, прежде чем брать платный курс.</li>
+        </ol>
+        <each loop="item in response.slice(0, 1)">
+          <component src="src/components/course.html" locals='{
+            "author" : "{{ item.RIGHTHOLDER }}",
+            "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+            "subtitle" : "{{ item.DESC }}",
+            "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+            "link" : "{{ item.URL }}"
+            }'>
+          </component>
+        </each>
+        <each loop="item in response.slice(1, 2)">
+          <component src="src/components/course.html" locals='{
+            "author" : "{{ item.RIGHTHOLDER }}",
+            "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+            "subtitle" : "{{ item.DESC }}",
+            "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+            "link" : "{{ item.URL }}"
+            }'>
+          </component>
+        </each>
+        <each loop="item in response.slice(2, 3)">
+          <component src="src/components/course.html" locals='{
+            "author" : "{{ item.RIGHTHOLDER }}",
+            "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+            "subtitle" : "{{ item.DESC }}",
+            "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+            "link" : "{{ item.URL }}"
+            }'>
+          </component>
+        </each>
+        <each loop="item in response.slice(3, 4)">
+          <component src="src/components/course.html" locals='{
+            "author" : "{{ item.RIGHTHOLDER }}",
+            "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+            "subtitle" : "{{ item.DESC }}",
+            "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+            "link" : "{{ item.URL }}"
+            }'>
+          </component>
+        </each>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">С уважением,<br>команда ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
