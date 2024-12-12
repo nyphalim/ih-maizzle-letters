@@ -1,0 +1,116 @@
+---
+title: "Вперед к вашим целям"
+preheader: "С бесплатными курсами на ИнфоХит"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <fetch url="https://info-hit.ru/include/tools/courses-json/?coursesArr=318417,321971,316809,320995,312596&token=u4JTEnMNt4gdsfdfsdf345nkhjk3dfgfh556776dfdghjkluiutyrtym&v=4">
+      <component src="src/components/img-block-without-link-round.html" locals='{
+      "src" : "https://info-hit.ru/include/images/letter/2024-12-12-free-courses.jpg"
+      }'></component>
+        
+      <component src="src/components/round-block-mt.html">
+        <p><strong>Добрый день!</strong></p>
+        <p>С&nbsp;нетерпением считаете дни до&nbsp;Нового года, чтобы поставить новые цели на&nbsp;будущий год?</p>
+        <p class="mb-24">Не&nbsp;тратьте драгоценное время на&nbsp;ожидание. Начните сегодня! Запишитесь на&nbsp;бесплатный курс на&nbsp;ИнфоХит и&nbsp;погрузитесь в&nbsp;интересующее направление. Возможно, эти <nobr>3–5</nobr> дней круто перевернут ваше будущее.</p>
+        <p>Выбирайте ↓</p>
+        </component>
+
+      <tr>
+        <td class="h-24 sm:h-16"></td>
+      </tr>
+      <tr>
+        <td class="bg-white text-gray-800 text-base text-left px-48 py-24 sm:p-14 leading-24 rounded-2xl">
+          <h3 class="mt-24 sm:mt-24">Что вас ждет в&nbsp;подборке</h3>
+          <p class="mb-32">Все, что нужно для продуктивного обучения: полезная теория от&nbsp;ведущих экспертов, плодотворная практика и&nbsp;классные бонусы. А&nbsp;еще новые впечатления, которые подарят заряд положительных эмоций на&nbsp;каждый день.</p>
+          <each loop="item in response.slice(0, 1)">
+          <component src="src/components/course.html" locals='{
+            "author" : "{{ item.RIGHTHOLDER }}",
+            "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+            "subtitle" : "{{ item.DESC }}",
+            "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+            "link" : "{{ item.URL }}"
+            }'>
+          </component>
+        </each>
+        <each loop="item in response.slice(1, 2)">
+          <component src="src/components/course.html" locals='{
+            "author" : "{{ item.RIGHTHOLDER }}",
+            "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+            "subtitle" : "{{ item.DESC }}",
+            "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+            "link" : "{{ item.URL }}"
+            }'>
+          </component>
+        </each>
+        <each loop="item in response.slice(2, 3)">
+          <component src="src/components/course.html" locals='{
+            "author" : "{{ item.RIGHTHOLDER }}",
+            "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+            "subtitle" : "{{ item.DESC }}",
+            "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+            "link" : "{{ item.URL }}"
+            }'>
+          </component>
+        </each>
+        <each loop="item in response.slice(3, 4)">
+          <component src="src/components/course.html" locals='{
+            "author" : "{{ item.RIGHTHOLDER }}",
+            "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+            "subtitle" : "{{ item.DESC }}",
+            "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+            "link" : "{{ item.URL }}"
+            }'>
+          </component>
+        </each>
+        <each loop="item in response.slice(4, 5)">
+          <component src="src/components/course.html" locals='{
+            "author" : "{{ item.RIGHTHOLDER }}",
+            "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+            "subtitle" : "{{ item.DESC }}",
+            "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+            "link" : "{{ item.URL }}"
+            }'>
+          </component>
+        </each>
+        <p>Еще больше бесплатных курсов найдете в&nbsp;каталоге ИнфоХит. Переходите по&nbsp;кнопке ниже и&nbsp;выбирайте&nbsp;то, что вам по&nbsp;душе.</p>
+            <component src="src/components/button.html" locals='{
+              "link" : "https://info-hit.ru/catalog/filter/free-y/",
+              "text" : "Все бесплатные курсы",
+              "color" : "bg-green-500",
+              "hover_color" : "bg-green-600"
+              }'></component>
+            </td>
+          </tr>
+          <tr>
+        <td class="h-24 sm:h-16"></td>
+      </tr>
+
+      <tr>
+        <td class="bg-white text-gray-800 text-base text-left px-48 py-24 sm:p-14 leading-24 rounded-2xl">
+        <h3 class="mt-24 sm:mt-24">Научитесь читать карты Таро за&nbsp;один вебинар</h3>
+        <p class="mb-24">Хотите узнать способ, чтобы начать гадать на&nbsp;Таро сразу? Без долгой и&nbsp;нудной теории. Без мучительного заучивания значений карт.</p>
+        <p>Приглашаем на&nbsp;вебинар таролога с&nbsp;восемнадцатилетним опытом Елизаветы Левиной <a href="https://info-hit.ru/away.php?to=course&cb=41&id=303176" target="_blank">«Предсказания на&nbsp;каждый день»</a>.</p>
+        <p><strong>На&nbsp;бесплатном вебинаре:</strong></p>
+        <ol class="mt-0 mb-24">
+          <li class="mb-10">Научитесь понимать значение карт с&nbsp;подсказками и&nbsp;без. По&nbsp;любой колоде!</li>
+          <li class="mb-10">Если своей колоды нет, за&nbsp;регистрацию получите авторскую методичку, карточки из&nbsp;которой можно использовать как колоду.</li>
+          <li class="mb-10">Изучите универсальный расклад, подходящий практически под любой запрос: любит/не любит, где мое богатство, в&nbsp;чем подвох, как пройдет свидание, стоит&nbsp;ли идти сейчас в&nbsp;отпуск и&nbsp;другие.</li>
+        </ol>
+        <p>Переходите по&nbsp;кнопке и&nbsp;регистрируйтесь.</p>
+            <component src="src/components/button.html" locals='{
+              "link" : "https://info-hit.ru/away.php?to=course&cb=41&id=303176",
+              "text" : "Зарегистрироваться",
+              "color" : "bg-purple-500",
+              "hover_color" : "bg-purple-600"
+              }'></component>
+            </td>
+          </tr>
+        <td class="h-32 sm:h-24"></td>
+      </tr>
+      <component src="src/components/footer.html"></component>
+    </fetch>
+  </block>
+</extends>
