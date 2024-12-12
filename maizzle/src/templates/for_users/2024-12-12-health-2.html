@@ -1,0 +1,40 @@
+---
+title: "Составьте свой маршрут к идеальной форме"
+preheader: "Бесплатный гайд по похудению от ИнфоХит внутри"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/2024-12-12-health-2.jpg"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+        <p>Знаем, как для женщины важно найти способ обрести желаемую форму и&nbsp;уверенность в&nbsp;себе. ИнфоХит подготовил подарок&nbsp;— бесплатный гайд по&nbsp;эффективному похудению, где собраны только работающие рекомендации.</p>
+        <p><strong>Что внутри гайда:</strong></p>
+        <ul> 
+	        <li class="mb-10">способы сохранить мотивацию и&nbsp;достичь цель;</li>
+	        <li class="mb-10">простые шаги для начала процесса похудения;</li>
+          <li class="mb-10">принципы построения системы питания;</li>
+          <li class="mb-10">советы, где искать информацию и&nbsp;тех, кто может помочь.</li>
+        </ul>
+        <p class="mt-24 mb-24">Чтобы скачать бесплатный гайд, просто переходите по&nbsp;кнопке ниже.</p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://info-hit.ru/include/pdf/HudeiteZdorovo.pdf",
+          "text" : "Скачать гайд",
+          "color" : "bg-green-500",
+          "hover_color" : "bg-green-600"
+          }'></component>
+        <p class="mt-24">Начните свой путь к&nbsp;новой, здоровой и&nbsp;счастливой версии себя уже сегодня!</p>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">С уважением,<br>ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
