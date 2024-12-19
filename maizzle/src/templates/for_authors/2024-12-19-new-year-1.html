@@ -1,0 +1,44 @@
+---
+title: "Поздравляем с наступающим Новым Годом!"
+preheader: "Ваш подарок — реклама на ИнфоХит"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/2024-12-19-new-year-1.jpg"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Поздравляем вас с&nbsp;наступающим 2025&nbsp;годом!</strong></p>
+        <p>Вспомните трудности, которые преодолели в&nbsp;уходящем году. Заберите с&nbsp;собой все ценное, победы и&nbsp;удачи. Смело и&nbsp;оптимистично шагните в&nbsp;новый год!</p>
+        <p>Ваши уникальные образовательные программы и&nbsp;платформа ИнфоХит помогли тысячам людей сделать уверенный шаг вперед в&nbsp;их&nbsp;развитии. Спасибо за&nbsp;ваше творчество, трудолюбие и&nbsp;готовность идти навстречу новым вызовам.</p>
+        <p>Желаем вам в&nbsp;2025 году еще больше идей, вдохновения, успешных проектов и&nbsp;процветания! Пусть каждый новый курс становится для ваших учеников настоящим открытием.</p>
+        <p>А&nbsp;еще дарим подарки! Начните год эффективно&nbsp;— разместите рекламу на&nbsp;ИнфоХит со&nbsp;скидками:</p>
+        <p><strong>Баннер в&nbsp;блоге ИнфоХит</strong></p>
+        <p><i>8000&nbsp;₽ вместо <s>10&nbsp;000&nbsp;₽</s></i></p>
+        <p><strong>Баннер в&nbsp;разделе каталога ИнфоХит</strong></p>
+        <p><i>12&nbsp;000&nbsp;₽ вместо <s>15&nbsp;000&nbsp;₽</s></i></p>
+        <p>И&nbsp;главное:<strong> скидка на&nbsp;самый популярный пакет рекламных услуг&nbsp;— HIT!</strong></p>
+        <p><i>40&nbsp;000&nbsp;₽ вместо <s>48&nbsp;000&nbsp;₽</s></i></p>
+        <p class="mt-24 mb-24">Чтобы приобрести рекламу на&nbsp;февраль по&nbsp;специальной цене&nbsp;— запросите промокод у&nbsp;менеджера в&nbsp;чате <a target="_blank" href="https://t.me/ih_school_support_bot" target="_blank"> <strong>@ih_school_support_bot</strong></a> или напишите на&nbsp;почту <a href="mailto:b2b@info-hit.ru"><strong>b2b@info-hit.ru</strong>.</p>
+        <p class="mb-24">Не&nbsp;упустите шанс запустить рекламу в&nbsp;феврале! Конкуренты только раскачиваются после каникул, а&nbsp;ученики в&nbsp;два раза активнее. Доказано статистикой посещений, кликов и&nbsp;заказов.</p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://t.me/ih_school_support_bot",
+          "text" : "Хочу рекламу со скидкой",
+          "color" : "bg-purple-500",
+          "hover_color" : "bg-purple-600"
+        }'></component>
+        <component src="src/components/gray-line.html"></component>
+        <component src="src/components/telegram-for-authors-autologin.html"></component>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">Ваш надежный партнер,<br>ИнфоХит!</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="h-32 sm:h-24"></td>
+      </tr>
+      <component src="src/components/footer.html"></component>
+    </block>
+  </extends>
