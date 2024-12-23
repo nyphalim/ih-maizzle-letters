@@ -1,0 +1,44 @@
+---
+title: "Как увеличить продажи?"
+preheader: "Ответ в письме"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/2024-12-23-alians-bk.png"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+        <p>Мы&nbsp;знаем, какой вопрос возникает у&nbsp;вас чаще всего:<br><i>«Как увеличить продажи?»</i></p>
+        <p>И&nbsp;у&nbsp;нас есть ответ!</p>
+        <p>Увеличить продажи можно с&nbsp;помощью оплаты ваших курсов в&nbsp;рассрочку.</p>
+        <p>Существует простая формула, которая поможет вашему бизнесу привлечь больше клиентов:</p>
+        <p class="text-base bg-red-500 py-16 px-24">Вы + Альянс БК = рост продаж</p>
+        <p><a href="https://abc-cred.ru/referalnaya-ssylka-infoxit/" target="_blank">Альянс Брокерская Компания</a> предлагает сотрудничество в&nbsp;сфере потребительского кредитования с&nbsp;лучшими условиями на&nbsp;рынке.</p>
+        <p><strong>Преимущества POS-кредитования в&nbsp;Альянс БК:</strong></p>
+        <ul>
+          <li class="mb-10">быстрое оформление: от&nbsp;клиента требуется минимум документов, а&nbsp;заявка рассматривается всего за&nbsp;несколько минут;</li>
+          <li class="mb-10">не&nbsp;нужно подтверждать официальное трудоустройство;</li>
+          <li class="mb-10">рассрочки выдают без залога и&nbsp;поручителей.</li>
+        </ul>
+        <p class="mb-24 mt-24">Присоединяйтесь и&nbsp;увеличьте свои продажи!</p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://abc-cred.ru/referalnaya-ssylka-infoxit/",
+          "text" : "Стать партнером",
+          "color" : "bg-gray-500",
+          "hover_color" : "bg-gray-600"
+          }'></component>
+        <p class="mt-32"><i>*Реклама</i></p>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">С уважением,<br>ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
