@@ -1,0 +1,42 @@
+---
+title: "Подарков много не бывает"
+preheader: "Огромный выбор на ИнфоХит"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/2024-12-24-new-year-2.jpg"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+        <p>До&nbsp;главного праздника в&nbsp;году остается все неделя!</p>
+        <p class="mb-16">Дарите беспроигрышные подарки друзьям и&nbsp;родным&nbsp;— курсы от&nbsp;ИнфоХит. А&nbsp;если не&nbsp;уверены, что им&nbsp;точно понравится&nbsp;— выбирайте <a href="https://info-hit.ru/about/lp/certificates/" target="_blank">подарочные сертификаты</a>.</p>
+        <p><img style="border: 2px solid rgb(255, 255, 255)" src="https://info-hit.ru/include/images/letter/2022-12-19-example-gift-card.jpg" alt=""></p>
+        <p class="mt-16 mb-12">Разные номиналы и&nbsp;удобство использования порадуют вас и&nbsp;получателя!</p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://info-hit.ru/about/lp/certificates/",
+          "text" : "Выбрать номинал",
+          "color" : "bg-green-500",
+          "hover_color" : "bg-green-600"
+          }'></component>
+        <p class="mt-32 mb-12">А&nbsp;еще не&nbsp;забудьте заглянуть в&nbsp;раздел каталога <a href="https://info-hit.ru/catalog/filter/discount-y/" target="_blank">«Новогодний SALE»</a>, чтобы выбрать для себя курс со&nbsp;скидкой до&nbsp;90%. Начните год с&nbsp;новых знаний, и&nbsp;скучать точно не&nbsp;придется.</p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://info-hit.ru/catalog/filter/discount-y/",
+          "text" : "Новогодний SALE",
+          "color" : "bg-blue-500",
+          "hover_color" : "bg-blue-600"
+          }'></component> 
+        <p class="mt-32"><i>С&nbsp;наступающим Новым годом!</i></p>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">С любовью,<br>команда ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
