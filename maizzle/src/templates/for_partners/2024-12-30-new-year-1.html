@@ -1,0 +1,29 @@
+---
+title: "С Новым годом!"
+preheader: "ИнфоХит спешит поздравить своих учеников"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/2024-12-30-new-year-1.jpg"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+        <p><strong>Поздравляем вас с&nbsp;наступающим 2025&nbsp;годом!</strong></p>
+        <p>Пусть этот волшебный праздник подарит радость, удачу и&nbsp;успех во&nbsp;всех начинаниях!</p>
+        <p><i>Ваши усилия и&nbsp;профессионализм сделали уходящий год насыщенным и&nbsp;продуктивным. Благодарим вас за&nbsp;поддержку, креативность и&nbsp;желание двигаться вперед вместе с&nbsp;ИнфоХит.</i></p>
+        <p>Пусть следующий год принесет еще больше возможностей для роста, счастья и&nbsp;благополучия. Мы&nbsp;гордимся нашим сотрудничеством и&nbsp;уверены, что сможем достичь большего! Обещаем находить для вас самые лучшие партнерки с&nbsp;большой комиссией. А&nbsp;еще делиться советами по&nbsp;их&nbsp;продвижению.</p>
+        <p>Пусть ваши идеи воплощаются в&nbsp;жизнь, а&nbsp;результаты превосходят все ожидания!</p>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">Ваш надежный партнер,<br>ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
