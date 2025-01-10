@@ -1,0 +1,102 @@
+---
+title: "Перезагрузка после каникул"
+preheader: "Назад в будни с дайджестом от ИнфоХит"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <fetch url="https://info-hit.ru/include/tools/blog-json/?arElements=313580,318915,321050,320942,320235,320905&token=u4JTEnMNt4gdsfdfsdf345nkhjk3dfgfh556776dfdghjkluiutyrtym&v=4">
+      <component src="src/components/img-block-without-link.html" locals='{
+        "src" : "https://info-hit.ru/include/images/letter/2025-01-10-blog-items.jpg"
+      }'></component>
+        
+      <component src="src/components/round-block-mt.html">
+        <p><strong>Добрый день!</strong></p>
+          <p>После праздников трудно вернуться к&nbsp;былой продуктивности. Хочется полежать, посмотреть сериалы, выпить чашечку кофе...</p>
+          <p>Не&nbsp;будьте слишком требовательны к&nbsp;себе или коллегам. Входите в&nbsp;рабочий ритм постепенно. И&nbsp;в&nbsp;этом поможет наш январский дайджест. Собрали самые популярные статьи блога ИнфоХит 2024&nbsp;года.</p>
+        </component>
+
+      <tr>
+        <td class="h-24 sm:h-16"></td>
+      </tr>
+      <tr>
+        <td class="bg-white text-gray-800 text-base text-left px-48 py-24 sm:p-14 leading-24 rounded-2xl">
+          <h3 class="mt-24 sm:mt-24">Выходим из&nbsp;майонезной «комы»</h3>
+          <p class="mb-32">Всего 10&nbsp;дней переедания и&nbsp;ленивого отдыха, а&nbsp;лишние килограммы уже тут как тут. Спокойствие, только спокойствие! От&nbsp;новогоднего «багажа» можно избавиться. В статье рассказали, какие психологические причины мешают добиться идеального веса, и&nbsp;как их&nbsp;устранить, чтобы прийти к&nbsp;нужным результатам.</p>
+          <each loop="item in response.slice(0, 1)">
+            <component src="src/components/blog.html" locals='{
+            "URL" : "{{ item.URL }}",
+            "PICTURE" : "{{ item.PICTURE }}",
+            "NAME" : "{{ item.NAME }}",
+            "DESC" : "{{ item.DESC }}",
+            "COLOR" : "blue"
+            }'></component>
+          </each>
+        <h3 class="mt-32 sm:mt-32">Время для себя</h3>
+        <each loop="item in response.slice(1, 2)">
+          <component src="src/components/blog.html" locals='{
+          "URL" : "{{ item.URL }}",
+          "PICTURE" : "{{ item.PICTURE }}",
+          "NAME" : "{{ item.NAME }}",
+          "DESC" : "{{ item.DESC }}",
+          "COLOR" : "green"
+          }'></component>
+        </each>
+        <p></p>
+        <each loop="item in response.slice(2, 3)">
+          <component src="src/components/blog.html" locals='{
+          "URL" : "{{ item.URL }}",
+          "PICTURE" : "{{ item.PICTURE }}",
+          "NAME" : "{{ item.NAME }}",
+          "DESC" : "{{ item.DESC }}",
+          "COLOR" : "green"
+          }'></component>
+        </each>
+        <h3 class="mt-32 sm:mt-32">Перезапуск карьеры</h3>
+        <p class="mb-32">В&nbsp;профессии, как и&nbsp;в&nbsp;любви, важна химия. Если на&nbsp;текущей работе вы&nbsp;часто стрессуете, нет возможности профессионального роста или не&nbsp;нравится уровень зарплаты, то&nbsp;пришло время ее&nbsp;поменять. В&nbsp;статьях ниже рассказали о&nbsp;перспективных направлениях.</p>
+        <each loop="item in response.slice(3, 4)">
+          <component src="src/components/blog.html" locals='{
+          "URL" : "{{ item.URL }}",
+          "PICTURE" : "{{ item.PICTURE }}",
+          "NAME" : "{{ item.NAME }}",
+          "DESC" : "{{ item.DESC }}",
+          "COLOR" : "purple"
+          }'></component>
+        </each>
+        <p></p>
+        <each loop="item in response.slice(4, 5)">
+          <component src="src/components/blog.html" locals='{
+          "URL" : "{{ item.URL }}",
+          "PICTURE" : "{{ item.PICTURE }}",
+          "NAME" : "{{ item.NAME }}",
+          "DESC" : "{{ item.DESC }}",
+          "COLOR" : "purple"
+          }'></component>
+        </each>
+        <p></p>
+        <each loop="item in response.slice(5, 6)">
+          <component src="src/components/blog.html" locals='{
+          "URL" : "{{ item.URL }}",
+          "PICTURE" : "{{ item.PICTURE }}",
+          "NAME" : "{{ item.NAME }}",
+          "DESC" : "{{ item.DESC }}",
+          "COLOR" : "purple"
+          }'></component>
+        </each>
+        <p class="mt-24 mt-24">Сохраняйте в&nbsp;закладки браузера ссылки, к&nbsp;которым хотите вернуться позже,&nbsp;— так ничего не&nbsp;потеряете. А&nbsp;мы&nbsp;совсем скоро придем к&nbsp;вам с&nbsp;новый дайджестом.</p>
+        <p>Еще больше интересных статей → в&nbsp;блоге ИнфоХит.</p>
+        <component src="src/components/button.html" locals='{
+              "link" : "https://info-hit.ru/blog/",
+              "text" : "Заглянуть в блог",
+              "color" : "bg-blue-500",
+              "hover_color" : "bg-blue-600"
+              }'></component>
+            </td>
+          </tr>
+        <td class="h-32 sm:h-24"></td>
+      </tr>
+      <component src="src/components/footer.html"></component>
+    </fetch>
+  </block>
+</extends>
