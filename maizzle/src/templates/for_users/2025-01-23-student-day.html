@@ -1,0 +1,46 @@
+---
+title: "Поздравляем с Днем студента!"
+preheader: "Всем причастным — подарки от ИнфоХит"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/2025-01-23-student-day.png"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+        <p>Говорят, что самое приятное для студента в&nbsp;учебе&nbsp;— это собираться домой. </p>
+        <p>А&nbsp;наши студенты всегда учатся с&nbsp;удовольствием, потому что они учатся из&nbsp;дома.</p>
+        <p>Пусть ваша учеба всегда будет наполнена яркими событиями, крутыми амбициями и&nbsp;новыми знаниями.</p>
+        <p class="text-base bg-blue-200 py-16 px-24">На&nbsp;ИнфоХит мы&nbsp;собрали для вас более 11&nbsp;000 онлайн-курсов по&nbsp;разным направлениям. Переходите на&nbsp;сайт, выбирайте курс, который давно хотели пройти, и&nbsp;начинайте обучение прямо сегодня!</p>
+        <p><strong>Чтобы начать учиться, нужно:</strong></p>
+        <ul>
+          <li class="mb-12">перейти в&nbsp;каталог курсов,</li>
+          <li class="mb-12">выбрать нужный раздел,</li>
+          <li class="mb-12">воспользоваться для удобства фильтрами каталога,</li>
+          <li class="mb-12">ознакомиться с&nbsp;детальной информацией на&nbsp;странице курса,</li>
+          <li class="mb-12">зарегистрироваться.</li>
+        </ul>
+        <p class="m-0 mb-24 text-base border-dashed border-2 border-yellow-400 rounded-2xl py-16 px-24">И&nbsp;не&nbsp;забудьте ввести ПРОМОКОД со&nbsp;скидкой, которую ИнфоХит дарит в&nbsp;честь Дня студента → <strong>ЗАЧЕТ25</strong></p>
+        <p>Он&nbsp;дает скидку&nbsp;10% на&nbsp;все курсы с&nbsp;меткой <a href="https://info-hit.ru/catalog/filter/sale-y/" target="_blank">«Обучение на&nbsp;ИнфоХит»</a>.</p>
+        <p>Просто примените его при оформлении заказа.</p>
+        <p class="mb-24">Промокод действует до&nbsp;26&nbsp;января.</p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://info-hit.ru/catalog/filter/sale-y/",
+          "text" : "Выбрать курс со скидкой",
+          "color" : "bg-blue-500",
+          "hover_color" : "bg-blue-600"
+          }'></component>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">С уважением,<br>команда ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
