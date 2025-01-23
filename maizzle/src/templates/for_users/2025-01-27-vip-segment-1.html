@@ -1,0 +1,36 @@
+---
+title: "Вы — VIP-клиент ИнфоХит по итогам 2024 года"
+preheader: "Поздравляем и дарим подарки!"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/vip-segments-letter-1.jpg"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+        <p class="text-base bg-blue-200 py-16 px-24">Вы&nbsp;— настоящий ценитель знаний и&nbsp;очень любите осваивать новое. В&nbsp;2024 году вы&nbsp;оплатили более 5&nbsp;курсов на&nbsp;ИнфоХит и&nbsp;попали в&nbsp;ТОП-100 учеников платформы!</p>
+        <p>Благодарим вас за&nbsp;то, что весь год выбирали ИнфоХит и&nbsp;пользовались его преимуществами, и&nbsp;дарим промокод на&nbsp;скидку 20%.</p>
+        <p class="m-0 mb-24 text-base border-dashed border-2 border-purple-600 rounded-2xl py-16 px-24"><strong>Промокод:</strong> ВИПКЛИЕНТ</p>
+        <p>Используйте его, чтобы получить скидку на&nbsp;любой курс из&nbsp;раздела <a href="https://info-hit.ru/catalog/filter/sale-y/" target="_blank">«Обучение на&nbsp;ИнфоХит»</a>.</p>
+        <p>Промокод действует до&nbsp;15&nbsp;февраля. Успейте порадовать себя полезным курсом по&nbsp;приятной цене.</p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://info-hit.ru/catalog/filter/sale-y/",
+          "text" : "Выбрать курс",
+          "color" : "bg-blue-500",
+          "hover_color" : "bg-blue-600"
+          }'></component>
+        <p>Надеемся, что в&nbsp;наступившем 2025 году вы&nbsp;продолжите совершенствоваться с&nbsp;курсами ИнфоХит!</p>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">С уважением,<br>команда ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
