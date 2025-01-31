@@ -1,0 +1,26 @@
+---
+title: "Ваша скидка сгорела — учитесь бесплатно!"
+preheader: "Подборка курсов для вас"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main-login.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день, ИМЯ!</strong></p>
+        <p>Вы&nbsp;не&nbsp;успели оплатить свою корзину со&nbsp;скидкой. Не&nbsp;беда!</p>
+        <p>На&nbsp;ИнфоХит можно учиться абсолютно бесплатно! Сотни лучших школ и&nbsp;экспертов готовы поделиться знаниями, вам осталось только выбрать:</p>
+        <p>[подборка из&nbsp;<nobr>4-5</nobr> курсов по&nbsp;теме, на&nbsp;которую ученик собирал корзину]</p>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">С уважением,<br>команда ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
