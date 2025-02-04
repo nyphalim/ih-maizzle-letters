@@ -4,7 +4,7 @@ preheader: "Дарим скидку 10% на все, что вы уже поло
 bodyClass: bg-gray-100
 ---
 
-<extends src="src/layouts/ih-main-login.html">
+<extends src="src/layouts/ih-main.html">
   <block name="template">
     <component src="src/components/img-block-without-link.html" locals='{
     }'></component>
@@ -12,17 +12,11 @@ bodyClass: bg-gray-100
       <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
         <p class="text-xl"><strong>Добрый день, ИМЯ!</strong></p>
         <p>Ваша покупка в&nbsp;каталоге курсов ИнфоХит ждет в&nbsp;корзине.</p>
-        <p>[курс]</p>
-        <p>[курс]</p>
         <p>Оплатите ее&nbsp;со&nbsp;скидкой 🤩</p>
         <p>Этот купон дает скидку&nbsp;10% на&nbsp;любой товар в&nbsp;вашей корзине, но&nbsp;действует только 24&nbsp;часа.</p>
         <p>Переходите по&nbsp;ссылке, активируйте купон и&nbsp;используйте скидку.</p>
-        <component src="src/components/button.html" locals='{
-          "link" : "",
-          "text" : "Активировать скидку",
-          "color" : "bg-green-500",
-          "hover_color" : "bg-green-600"
-          }'></component>
+        <p>[курс]</p>
+        <p>[курс]</p>
         <component src="src/components/gray-line.html"></component>
         <p class="text-base mb-36">С уважением,<br>команда ИнфоХит!</p>
       </td>
