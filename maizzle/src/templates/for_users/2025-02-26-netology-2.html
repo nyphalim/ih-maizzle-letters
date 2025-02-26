@@ -1,0 +1,45 @@
+---
+title: "Возможности Excel"
+preheader: "Бесплатный курс от Нетологии"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/2025-02-20-netology.png"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день</strong></p>
+        <p>Excel&nbsp;— это лучший инструмент для тех, кто не&nbsp;любит рутину! </p>
+        <p class="text-base bg-green-200 py-16 px-24">Приглашаем на&nbsp;бесплатный курс-симулятор от&nbsp;«Нетологии» <a href="https://info-hit.ru/away.php?to=link&id=1363" target="_blank"> «Excel: простые шаги для оптимизации работы с&nbsp;данными»</a>.</p>
+        <p>Узнайте, как автоматизировать повторяющиеся задачи и&nbsp;прокачать навыки с&nbsp;помощью проверенного инструмента.</p>
+        <p><strong>На&nbsp;основе реальных задач из&nbsp;повседневной жизни&nbsp;вы:</strong></p>
+        <ul>
+          <li class="mb-10">познакомитесь с&nbsp;горячими клавишами;</li>
+          <li class="mb-10">подготовите панель быстрого доступа;</li>
+          <li class="mb-10">изучите базовые комбинации;</li>
+          <li class="mb-10">освоите ключевые функции Excel для автоматизации расчетов;</li>
+          <li class="mb-10">создадите отчеты с&nbsp;помощью сводных таблиц.</li>
+        </ul>
+        <p>Курс будет полезен менеджерам, бухгалтерам, программистам, дизайнерам, маркетологам и&nbsp;всем, кто хочет научиться решать сложные задачи за&nbsp;пару кликов.</p>
+        <p>Доступ к&nbsp;лекциям и&nbsp;учебным материалам неограниченное время. А&nbsp;еще поддержка и&nbsp;общение в&nbsp;комьюнити студентов и&nbsp;экспертов.</p>
+        <p class="mb-24">Автоматизируйте рутинную работу и&nbsp;освободите время для более интересных задач!</p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://info-hit.ru/away.php?to=link&id=1363",
+          "text" : "Записаться на курс",
+          "color" : "bg-gray-500",
+          "hover_color" : "bg-gray-600"
+          }'></component>
+        <p class="mt-24"><i>*Реклама</i></p> 
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">С уважением,<br>команда ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
