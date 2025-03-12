@@ -1,0 +1,55 @@
+---
+title: "Конференция «Digital Learning 2025»"
+preheader: "Ежегодная практико-ориентированная конференция о новых технологиях и подходах в обучении"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/2025-03-12-digital-learning.png"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+        <p class="text-base bg-pink-300 py-16 px-24">Приглашаем на&nbsp;конференцию «Digital Learning 2025»! Все о&nbsp;трендах, новых технологиях, эффективности и&nbsp;лучших практиках в&nbsp;гибридном и&nbsp;онлайн-обучении!</p>
+        <p><strong>Главные темы:</strong></p>
+        <ol>
+          <li class="mb-10">Лучшие кейсы и&nbsp;практики (все победители Премии Digital Learning).</li>
+          <li class="mb-10">Тренды в&nbsp;обучении.</li>
+          <li class="mb-10">Оценка эффективности обучения.</li>
+          <li class="mb-10">Мотивация в&nbsp;обучении.</li>
+          <li class="mb-10">Секреты и&nbsp;лайфхаки разработки курсов.</li>
+          <li class="mb-10">Тренды в&nbsp;сфере разработки образовательных решений.</li>
+          <li class="mb-10">Мастер-классы по&nbsp;работе с&nbsp;инструментами и&nbsp;сервисами.</li>
+        </ol>
+        <p>Только реальная практика!</p>
+        <p><strong>Вас ждет яркая и&nbsp;незабываемая конференция-встреча от&nbsp;сообщества Digital Learning:</strong></p>
+        <ul>
+          <li class="mb-10">400+ участников;</li>
+          <li class="mb-10">40+&nbsp;спикеров;</li>
+          <li class="mb-10">3&nbsp;секции;</li>
+          <li class="mb-10">2&nbsp;дня.</li>
+        </ul>
+        <p>Присоединяйтесь!</p>
+        <p><strong>Когда:</strong> <nobr>16–17</nobr> апреля 2025 года</p>
+        <p><strong>Где:</strong> Москва, гостиница «Аэростар»</p>
+        <p class="mb-24">Программа и&nbsp;регистрация ↓</p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://dlmeeting.online/",
+          "text" : "Участвовать",
+          "color" : "bg-purple-500",
+          "hover_color" : "bg-purple-600"
+          }'></component>
+        <p class="mb-24 mt-24">До&nbsp;встречи на&nbsp;конференции!</p>
+        <p class="mt-32"><i>*Реклама</i></p>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">С уважением,<br>ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
