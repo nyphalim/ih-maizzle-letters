@@ -1,0 +1,45 @@
+---
+title: "Добро пожаловать в ИнфоХит!"
+preheader: "Ваша заявка проходит модерацию"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/trigger-author-lid-1.jpg"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p><strong>Добрый день!</strong></p>
+        <p>Мы&nbsp;получили вашу заявку на&nbsp;размещение в&nbsp;каталоге онлайн-курсов ИнфоХит.</p>
+        <p>Ваш профиль займет достойное место среди 2000 экспертов и&nbsp;школ на&nbsp;ИнфоХит.</p>
+        <p>Модерация занимает не&nbsp;более двух рабочих дней. Менеджер ИнфоХит по&nbsp;работе с&nbsp;онлайн-школами свяжется с&nbsp;вами, как только закончит проверку. А&nbsp;пока, давайте знакомиться.</p>
+        <h3 class="mt-24">ИнфоХит&nbsp;— проект об&nbsp;онлайн-обучении, которому&nbsp;доверяют</h3>
+        <p>Каждый месяц страницы сайта посещают более 220&nbsp;000 уникальных пользователей.</p>
+        <p><strong>Зачем люди приходят на&nbsp;ИнфоХит?</strong></p>
+        <ul>
+          <li class="mb-10">получить больше информации об&nbsp;авторе/онлайн-школе, чтобы решиться на&nbsp;покупку курса;</li>
+          <li class="mb-10">выбрать курс под свои цели и&nbsp;нужды;</li>
+          <li class="mb-10">поделиться своим опытом обучения, оставить отзыв о&nbsp;работе автора или школы, оценить качество курса;</li>
+          <li class="mb-10">узнать больше о&nbsp;возможностях онлайн-обучения и&nbsp;саморазвития в&nbsp;блоге.</li>
+        </ul>
+        <p class="text-base bg-green-200 py-16 px-24">Пользователи ИнфоХит&nbsp;— ваши потенциальные ученики. Они знают, что при помощи курсов можно научиться новому и&nbsp;изменить свою жизнь.</p>
+        <p><strong>Для вас ИнфоХит&nbsp;— это:</strong></p>
+        <ul>
+          <li class="mb-10">эффективное продвижение своих продуктов на&nbsp;рынке;</li>
+          <li class="mb-10">расширение целевой аудитории;</li>
+          <li class="mb-24">рост продаж.</li>
+        </ul>
+        <p>Желаем успехов в&nbsp;вашем бизнесе. А&nbsp;мы&nbsp;поможем!</p>
+        <p>Остались вопросы&nbsp;— напишите в&nbsp;<a href="https://t.me/ih_school_support_bot" target="_blank">чат техподдержки авторов</a>.</p>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">Ваш надежный партнер,<br>ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>

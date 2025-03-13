@@ -1,0 +1,43 @@
+---
+title: "Здесь — тысячи ваших новых клиентов"
+preheader: "Откройте еще один канал трафика!"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/trigger-author-lid-3.jpg"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p><strong>Добрый день!</strong></p>
+        <p>Меня зовут [ИМЯ], я&nbsp;представляю <a href="https://info-hit.ru/" target="_blank">ИнфоХит</a>&nbsp;— маркетплейс онлайн-курсов. Это площадка, на&nbsp;которой онлайн-школы и&nbsp;ученики находят друг друга.</p>
+        <p>Ваши курсы заинтересуют 220&nbsp;000 пользователей ИнфоХит!</p>
+        <p><strong>А&nbsp;еще вы&nbsp;получите:</strong></p>
+        <ul>
+          <li class="mb-10">SEO-оптимизацию, чтобы ваши страницы были в&nbsp;топе поисковой выдачи;</li>
+          <li class="mb-10">доступ к&nbsp;пользователям ИнфоХит&nbsp;— 185&nbsp;000+;</li>
+          <li class="mb-10">партнерскую программу с&nbsp;менеджерами арбитражного трафика 40&nbsp;000+.</li>
+        </ul>
+        <p>Вот так выглядит <strong><a href="https://info-hit.ru/author-sidorov-fyedor/" target="_blank">профиль автора на&nbsp;ИнфоХит →</a></strong></p>
+        <p>У&nbsp;каждого курса&nbsp;— <strong><a href="https://info-hit.ru/course-kak-zarabatyvat-ot-1000-v-mesyats-na-investitsiyakh/" target="_blank">детальная страница</a></strong> с&nbsp;подробным описанием.</p>
+        <p>А&nbsp;еще <strong><a href="https://info-hit.ru/author-sidorov-fyedor/reviews/" target="_blank">отзывы</a></strong>. Много отзывов, которые модерирует ИнфоХит. </p>
+        <p class="mb-24">Начните зарабатывать с&nbsp;ИнфоХит!</p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://t.me/ih_school_support_bot",
+          "text" : "Хочу зарабатывать",
+          "color" : "bg-green-500",
+          "hover_color" : "bg-green-600"
+          }'></component>
+        <p class="mt-24">Расскажу подробнее о&nbsp;вариантах размещения ваших продуктов на&nbsp;маркетплейсе онлайн-курсов ИнфоХит&nbsp;— задайте ваш вопрос в&nbsp;ответном письме или пишите в&nbsp;Телеграм [ДАТЬ&nbsp;ТГ].</p>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">Ваш надежный партнер,<br>ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
