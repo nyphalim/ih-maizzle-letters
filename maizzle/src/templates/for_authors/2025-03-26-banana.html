@@ -1,0 +1,43 @@
+---
+title: "Контакты — самая важная вещь, которая тащит бизнес сегодня"
+preheader: "Приходите за ними на Banana Camp 2.0"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+      "src" : "https://info-hit.ru/include/images/letter/2025-03-26-banana-camp.png"
+      }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+        <p>Хотите встретиться с&nbsp;топами онлайн-образования?</p>
+        <p class="text-base bg-yellow-200 py-16 px-24"><nobr>17–20</nobr> апреля пройдет Banana Camp&nbsp;2.0 от&nbsp;«Хайлайтов»&nbsp;— это самый недушный выезд владельцев онлайн-школ, собственников бизнеса, экспертов, специалистов и&nbsp;маркетологов 2025&nbsp;года.</p>
+        <p><strong>Фишки этого выезда:</strong></p>
+        <ul>
+          <li class="mb-10">примете участие в&nbsp;специальных тематических вечеринках с&nbsp;едой и&nbsp;групповыми активностями, чтобы плотно познакомиться;</li>
+          <li class="mb-10">разработаете индивидуальную стратегию&nbsp;— задайте любые вопросы по&nbsp;своей нише и узнаете, что сработало у&nbsp;лидеров;</li>
+          <li class="mb-16">войдете в&nbsp;закулисье инфобизнеса&nbsp;— лично пообщаетесь с&nbsp;лидерами о&nbsp;том, что не&nbsp;рассказывают в&nbsp;блогах и&nbsp;на&nbsp;курсах.</li>
+        </ul>
+        <p>Это не&nbsp;просто встреча или очередной выезд. А&nbsp;лагерь единомышленников со&nbsp;своей образовательной программой, играми и&nbsp;прокачкой энергии. Место для знакомств и&nbsp;коллабов.</p>
+        <p><strong>Где:</strong> 20&nbsp;минут от&nbsp;Москвы</p>
+        <p><strong>Когда:</strong> <nobr>17–20</nobr> апреля</p>
+        <p class="mb-24">Информация по&nbsp;подготовке и&nbsp;внутрянке ждет вас по&nbsp;кнопке ниже.</p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://t.me/banana_camp_pred_bot?start=bc_chto_eto",
+          "text" : "Хочу подробностей",
+          "color" : "bg-red-500",
+          "hover_color" : "bg-red-600"
+          }'></component>
+        <p class="mt-32"><i>*Реклама</i></p>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">С уважением,<br>ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
