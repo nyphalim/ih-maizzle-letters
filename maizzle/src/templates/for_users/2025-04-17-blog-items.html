@@ -1,0 +1,94 @@
+---
+title: "Не упустите полезные знания"
+preheader: "Они — в письме"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <fetch url="https://info-hit.ru/include/tools/blog-json/?arElements=326876,326548,326496,327078,326579&token=u4JTEnMNt4gdsfdfsdf345nkhjk3dfgfh556776dfdghjkluiutyrtym&v=4">
+      <component src="src/components/img-block-without-link.html" locals='{
+        "src" : "https://info-hit.ru/include/images/letter/2025-04-17-blog-items.jpg"
+      }'></component>
+      <tr>
+        <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+          <p class="text-xl"><strong>Добрый день</strong></p>
+          <p>У&nbsp;вас есть все, чтобы изменить жизнь в&nbsp;лучшую сторону. А&nbsp;у&nbsp;нас&nbsp;— все, чтобы перемены были мягкими и&nbsp;приятными.</p>
+          <p>Принесли вам самые интересные и&nbsp;полезные материалы блога за&nbsp;март. Каждая статья&nbsp;— это:</p>
+          <ul>
+            <li class="mb-10">практическое руководство к&nbsp;действию;</li>
+            <li class="mb-10">проверенные методики и&nbsp;техники;</li>
+            <li class="mb-10">реальные инструменты для изменений.</li>
+          </ul>
+          <h3 class="mt-24 mb-16">Логопед без педобразования&nbsp;— миф или реальность?</h3>
+          <p class="mt-0 mb-16">Работа с&nbsp;нарушениями речи требует от&nbsp;специалиста немалых усилий, самоотдачи, любви к&nbsp;делу и&nbsp;людям, которым приходится помогать. Востребованность профессии с&nbsp;каждым годом растет&nbsp;— увеличивается количество детей с&nbsp;теми или иными отклонениями. Но&nbsp;что, если вы&nbsp;не&nbsp;хотите тратить <nobr>5–6</nobr> лет на&nbsp;вузовскую подготовку? Узнали у&nbsp;практикующих экспертов, как стать логопедом без образования.</p>
+          <each loop="item in response.slice(0, 1)">
+            <component src="src/components/blog.html" locals='{
+            "URL" : "{{ item.URL }}",
+            "PICTURE" : "{{ item.PICTURE }}",
+            "NAME" : "{{ item.NAME }}",
+            "DESC" : "{{ item.DESC }}",
+            "COLOR" : "blue"
+            }'></component>
+          </each>
+          <h3 class="mt-32 mb-16">Игры разума: сила подсознания в&nbsp;действии</h3>
+          <p class="mt-0 mb-16">Хотим пить&nbsp;— наливаем себе воды. Болит голова&nbsp;— достаем таблетки. Стало душно&nbsp;— открываем окно. Эти полуавтоматические действия&nbsp;— результат работы подсознания. Разбирались с&nbsp;нейропсихологом Владимиром Вейдом, в&nbsp;чем реальная сила подсознания и&nbsp;как ею&nbsp;управлять, чтобы улучшить жизнь.</p>
+          <each loop="item in response.slice(1, 2)">
+            <component src="src/components/blog.html" locals='{
+            "URL" : "{{ item.URL }}",
+            "PICTURE" : "{{ item.PICTURE }}",
+            "NAME" : "{{ item.NAME }}",
+            "DESC" : "{{ item.DESC }}",
+            "COLOR" : "blue"
+            }'></component>
+          </each>
+          <h3 class="mt-32 mb-16">Так звезды сошлись</h3>
+          <p class="mt-0 mb-16">В&nbsp;поисках ответов на&nbsp;важные вопросы многие обращаются не&nbsp;только к&nbsp;Google или друзьям, но&nbsp;и&nbsp;к&nbsp;астрологам, принимающим клиентов не&nbsp;за&nbsp;столом с&nbsp;картами Таро, а&nbsp;в&nbsp;мессенджерах. Ирина Кош, основатель и&nbsp;преподаватель Московской школы астропсихологии «АстроКош», рассказала, почему астролог&nbsp;— профессия, которая не&nbsp;потеряет актуальности, и&nbsp;где получать качественные знания.</p>
+          <each loop="item in response.slice(2, 3)">
+            <component src="src/components/blog.html" locals='{
+            "URL" : "{{ item.URL }}",
+            "PICTURE" : "{{ item.PICTURE }}",
+            "NAME" : "{{ item.NAME }}",
+            "DESC" : "{{ item.DESC }}",
+            "COLOR" : "blue"
+            }'></component>
+          </each>
+          <h3 class="mt-32 mb-16">Знакомимся с&nbsp;новичками на&nbsp;ИнфоХит</h3>
+          <p class="mt-0 mb-16">Каталог курсов «ИнфоХит» постоянно пополняется, чтобы вы&nbsp;находили подходящие программы и&nbsp;осваивали новое в&nbsp;удобном формате. Обучайтесь тому, что важно и&nbsp;интересно для вас сейчас. В&nbsp;статье лучшие предложения этой зимы.</p>
+          <each loop="item in response.slice(3, 4)">
+            <component src="src/components/blog.html" locals='{
+            "URL" : "{{ item.URL }}",
+            "PICTURE" : "{{ item.PICTURE }}",
+            "NAME" : "{{ item.NAME }}",
+            "DESC" : "{{ item.DESC }}",
+            "COLOR" : "blue"
+            }'></component>
+          </each>
+          <h3 class="mt-32 mb-16">Лучшая версия самого себя</h3>
+          <p class="mt-0 mb-16">Мы&nbsp;жалуемся на&nbsp;судьбу, не&nbsp;понимая, почему она приносит так много испытаний и&nbsp;сложных задач, решать которые вовсе не&nbsp;хочется. Те, кто узнал о&nbsp;Матрице судьбы, быстрее и&nbsp;проще находят выход из&nbsp;сложных ситуаций. Рассказываем, как правильно самостоятельно рассчитать Матрицу Судьбы и&nbsp;расшифровать значения.</p>
+          <each loop="item in response.slice(4, 5)">
+            <component src="src/components/blog.html" locals='{
+            "URL" : "{{ item.URL }}",
+            "PICTURE" : "{{ item.PICTURE }}",
+            "NAME" : "{{ item.NAME }}",
+            "DESC" : "{{ item.DESC }}",
+            "COLOR" : "blue"
+            }'></component>
+          </each>
+          <p class="mt-24 mb-24">Еще больше интересных статей ищите в&nbsp;блоге ИнфоХит.</p>
+          <component src="src/components/button.html" locals='{
+            "link" : "https://info-hit.ru/blog/",
+            "text" : "Больше статей",
+            "color" : "bg-purple-500",
+            "hover_color" : "bg-purple-600"
+            }'></component>
+            <component src="src/components/gray-line.html"></component>
+            <p class="text-base mb-36">С уважением,<br>ИнфоХит!</p>
+          </td>
+        </tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </fetch>
+</block>
+</extends>
