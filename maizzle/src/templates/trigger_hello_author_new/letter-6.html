@@ -1,0 +1,57 @@
+---
+title: "Еще одна возможность привлечь трафик"
+preheader: "Уникальное предложение от ИнфоХит"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/trigger-hello-author/trigger-hello-author-6.1.jpg"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p><strong>Добрый день!</strong></p>
+        <p>Мы постоянно улучшаем сервис, чтобы сотрудничество с ИнфоХит было удобным для вас и приносило больший доход.</p>
+        <p>Если у вас есть промокод на скидку — сообщите нам. Он выводится в блоке регистрации!</p>
+        <p>Создайте промокоды на скидки для своих образовательных продуктов, если еще не сделали этого. Ведь это способ:</p>
+        <ul>
+          <li class="mb-16">
+            выделиться среди конкурентов;
+          </li>
+          <li class="mb-16">
+            привлечь дополнительное внимание учеников;
+          </li>
+          <li class="mb-16">
+            увеличить конверсию;
+          </li>
+          <li class="mb-16">
+            повысить доход;
+          </li>
+          <li class="mb-16">
+            получить активности от ИнфоХит.
+          </li>
+        </ul>
+        <p class="mt-24 mb-24"><img style="border: 2px solid rgb(255, 255, 255)" src="https://info-hit.ru/include/images/letter/promocode_example.png" alt=""></p>
+        <p>Авторы, которые делают скидки на курсы по промокоду получают дополнительные преимущества:</p>
+          <ul>
+            <li class="mb-16">рассылка подборки курсов с промокодом один раз в месяц по базе учеников ИнфоХит (97 000+).</li>
+          </ul>
+        <p>Не упустите возможность привлечь новых учеников!</p>
+        <p>Остались вопросы — напишите в <a target="_blank" href="https://t.me/ih_school_support_bot">чат техподдержки авторов</a>.</p>
+        <if condition="page.env === 'local'">
+          <component src="src/components/telegram-for-authors.html"></component>
+        </if>
+        <else>
+          #TELEGRAM_CHANNEL_FOR_AUTHORS#
+        </else>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">Ваш надежный партнер,<br>ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>

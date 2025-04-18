@@ -1,0 +1,69 @@
+---
+title: "Отзывы учеников — ключ к успеху"
+preheader: "Управляйте репутацией с ИнфоХит"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/trigger-hello-author/trigger-hello-author-5.jpg"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p><strong>Добрый день!</strong></p>
+        <p>Как вы&nbsp;управляете своей репутацией в&nbsp;интернете?</p>
+        <p><strong>Вот пять причин, почему стоит заботиться о&nbsp;сетевой репутации:</strong></p>
+        <ol>
+          <li class="mb-16">
+            Отзывы в&nbsp;интернете обладают огромной силой убеждения.
+          </li>
+          <li class="mb-16">
+            Более&nbsp;80% пользователей принимают решение о&nbsp;покупке, читая отзывы.
+          </li>
+          <li class="mb-16">
+            Один отрицательный отзыв «весит» больше 10&nbsp;положительных.
+          </li>
+          <li class="mb-16">
+            Доверие к&nbsp;отзывам на&nbsp;официальном сайте гораздо ниже, чем к&nbsp;отзывам на&nbsp;форумах, тематических сайтах и&nbsp;агрегаторах.
+          </li>
+          <li class="mb-16">
+            Количество положительных отзывов влияет на&nbsp;вашу позицию в&nbsp;каталоге ИнфоХит: чем их&nbsp;больше, тем она выше!
+          </li>
+        </ol>
+        <p><strong>Управлять репутацией с&nbsp;ИнфоХит просто!</strong></p>
+        <p>У&nbsp;вас есть <a target="_blank" href="https://info-hit.ru/account/author/comments/">страница отзывов</a>. Ученики и&nbsp;клиенты делятся своими впечатлениями и&nbsp;пожеланиями, которые остались после обучения.</p>
+        <p class="text-base bg-yellow-100 py-16 px-24 my-24">Люди редко оставляют положительные отзывы, зато охотно рассказывают о&nbsp;том, что им&nbsp;не&nbsp;понравилось. <strong>Рекомендуйте своим клиентам и&nbsp;подписчикам оставлять свои комментарии о&nbsp;вас на&nbsp;сайте ИнфоХит.</strong> Ведь почти все наши страницы отзывов попадают в&nbsp;топ-5 выдачи «Яндекса». </p>
+        <p class="mt-36"><strong>Как привлечь учеников к&nbsp;написанию отзывов:</strong></p>
+        <ol>
+          <li class="mb-16">
+            Попросите их&nbsp;об&nbsp;этом в&nbsp;своем блоге или на&nbsp;сайте.
+          </li>
+          <li class="mb-16">
+            Сделайте рассылку с&nbsp;просьбой рассказать на&nbsp;ИнфоХит о&nbsp;своих успехах после обучения.
+          </li>
+          <li class="mb-16">
+            Опубликуйте пост об&nbsp;этом в&nbsp;своих соцсетях.
+          </li>
+          <li class="mb-16">
+            Общайтесь с&nbsp;клиентами&nbsp;— отвечайте на&nbsp;их&nbsp;отзывы, давайте обратную связь.
+          </li>
+        </ol>
+        <p>Еще больше о&nbsp;работе с&nbsp;обратной связью и&nbsp;построении репутации читайте в&nbsp;<a target="_blank" href="https://info-hit.ru/blog/vidzhet-otzyvov-infokhit/">большом обзор об&nbsp;отзывах, которые продают</a>.</p>
+        <p>Остались вопросы — напишите в <a target="_blank" href="https://t.me/ih_school_support_bot">чат техподдержки авторов</a>.</p>
+        <if condition="page.env === 'local'">
+          <component src="src/components/telegram-for-authors.html"></component>
+        </if>
+        <else>
+          #TELEGRAM_CHANNEL_FOR_AUTHORS#
+        </else>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">Ваш надежный партнер,<br>ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>

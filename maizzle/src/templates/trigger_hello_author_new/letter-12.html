@@ -1,0 +1,47 @@
+---
+title: "Приводите друзей — получайте бонусы и комиссионные"
+preheader: "Реферальная программа для авторов от ИнфоХит"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/trigger-hello-author/trigger-hello-author-10new.jpg"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p><strong>Добрый день!</strong></p>
+
+        <p>В ИнфоХит действует реферальная программа для авторов. Вы можете привести к нам своего друга или коллегу и получать процент с продажи его курсов.</p>
+
+        <h3 class="mt-16">Вот как это работает:</h3>
+        <ol>
+          <li class="mb-16">
+            В Личном кабинете автора в разделе «Ваши ссылки» найдите ссылку для привлечения новых авторов и школ.
+          </li>
+          <li class="mb-16">
+            Отправьте ее своему коллеге или другу, который развивает бизнес в сфере онлайн-образования. Предложите разместить профиль на ИнфоХит.
+          </li>
+          <li class="mb-16">
+            Если новый автор успешно пройдет модерацию и&nbsp;активирует профиль, вы&nbsp;получите&nbsp;20% с&nbsp;оплаты размещения и&nbsp;будете получать&nbsp;5% со&nbsp;всех его продаж.
+          </li>
+        </ol>
+          <p class="mt-24 mb-24"><img style="border: 2px solid rgb(255, 255, 255)" src="https://info-hit.ru/include/images/letter/ref_programms.png" alt=""></p>
+        <p>Остались вопросы — напишите в <a target="_blank" href="https://t.me/ih_school_support_bot">чат техподдержки авторов</a>.</p>
+        <if condition="page.env === 'local'">
+          <component src="src/components/telegram-for-authors.html"></component>
+        </if>
+        <else>
+          #TELEGRAM_CHANNEL_FOR_AUTHORS#
+        </else>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">Ваш надежный партнер,<br>ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>

@@ -1,0 +1,79 @@
+---
+title: "Самое время быть на вершине"
+preheader: "Выходите в ТОП с ИнфоХит и привлекайте больше трафика, подписчиков и партнеров"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/trigger-hello-author/trigger-author-new-2.jpg"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p><strong>Добрый день!</strong></p>
+        <p>На&nbsp;платформе ИнфоХит более 11000&nbsp;курсов. Каждую неделю мы&nbsp;добавляем несколько десятков новых.</p>
+        <p>В&nbsp;разделах каталога они выстраиваются по&nbsp;рейтингу эффективности. На&nbsp;него влияют количество кликов, просмотров, конверсий в&nbsp;продажу и&nbsp;другие показатели.</p>
+        <p>В&nbsp;каждой теме есть лидеры. Их&nbsp;курсы и&nbsp;профили представлены наверху выдачи. Вы&nbsp;можете стать одним из&nbsp;них. Посмотрите, как → </p>
+        <p><strong>Бесплатные способы выйти в&nbsp;ТОП</strong></p>
+        <ol>
+          <li class="mb-10">
+            <strong>Дополнить свой профиль.</strong> Сообщите нам информацию, которую нужно добавить или обновить.
+          </li>
+          <li class="mb-10">
+            <strong>Добавить на&nbsp;страницу новые курсы.</strong> Больше инфопродуктов&nbsp;— выше эффективность профиля.
+          </li>
+          <li class="mb-10">
+            <strong>Предоставить рекомендации по&nbsp;вашей партнерской программе.</strong> Например, какие воронки продаж вы&nbsp;используете и&nbsp;какая из&nbsp;них наиболее эффективна.
+          </li>
+          <li class="mb-10">
+            <strong>Внести страницу в&nbsp;каталог партнерок.</strong> Веб-мастера помогут привлечь трафик на&nbsp;ваши лендинги.
+          </li>
+          <li class="mb-10">
+            <strong>Попросить учеников оставить отзывы.</strong> Страницы с&nbsp;отзывами появляются в&nbsp;первых строках поисковых систем. Используйте это, чтобы управлять своей репутацией в&nbsp;интернете.
+          </li>
+          <li class="mb-10">
+            <strong>Отвечать на&nbsp;негативные отзывы.</strong> Они значительно ухудшают конверсию, поэтому оставлять их&nbsp;без комментария нельзя.
+          </li>
+        </ol>
+        <p><strong>Бесплатные способы выйти в&nbsp;ТОП</strong></p>
+        <ol>
+          <li class="mb-16">Использовать маркетинговые инструменты ИнфоХит.</li>
+              <component src="src/components/button.html" locals='{
+                "link" : "https://info-hit.ru/about/go-to-top/",
+                "text" : "Выбрать рекламный пакет",
+                "color" : "bg-purple-500",
+                "hover_color" : "bg-purple-600"
+                }'></component>
+          <li class="mt-16 mb-16">Заказать SEO-аудит вашего сайта и&nbsp;разработку стратегии продвижения ваших страниц в&nbsp;интернете. У&nbsp;ИнфоХит более 12&nbsp;лет опыта привлечения органического трафика, и&nbsp;мы&nbsp;готовы делиться экспертизой.</li>
+            <component src="src/components/button.html" locals='{
+              "link" : "https://info-hit.ru/lp/studio/",
+              "text" : "Заказать аудит",
+              "color" : "bg-purple-500",
+              "hover_color" : "bg-purple-600"
+              }'></component>
+          <li class="mt-16 mb-16">Начать свой блог на&nbsp;ИнфоХит, чтобы занимать первые строчки поиска не&nbsp;только по&nbsp;коммерческим, но&nbsp;и&nbsp;по&nbsp;информационным запросам.</li>
+            <component src="src/components/button.html" locals='{
+              "link" : "https://info-hit.ru/lp/blogs/",
+              "text" : "Писать в блог",
+              "color" : "bg-purple-500",
+              "hover_color" : "bg-purple-600"
+              }'></component>
+        </ol>
+        <p class="mt-24 mb-24">Остались вопросы — напишите в <a target="_blank" href="https://t.me/ih_school_support_bot">чат техподдержки авторов</a>.</p>
+        <if condition="page.env === 'local'">
+          <component src="src/components/telegram-for-authors.html"></component>
+        </if>
+        <else>
+          #TELEGRAM_CHANNEL_FOR_AUTHORS#
+        </else>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">Ваш надежный партнер,<br>ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>

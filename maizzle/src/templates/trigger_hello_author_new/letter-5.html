@@ -1,0 +1,42 @@
+---
+title: "Лучшее время купить рекламу — сейчас!"
+preheader: "Используйте все возможности ИнфоХит для продвижения"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/trigger-hello-author/trigger-hello-author-9.jpg"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p><strong>Добрый день!</strong></p>
+        <p>Хотите, чтобы вас заметили&nbsp;— используйте маркетинговые возможности ИнфоХит!</p>
+        <p><i>220&nbsp;000 посетителей сайта увидят ваши баннеры.</i></p>
+        <p><i>25&nbsp;000 посетителей блога прочитают ваши статьи.</i></p>
+        <p><i>96&nbsp;000 подписчиков рассылки прочитают ваши письма.</i></p>
+        <p class="mt-24 mb-24">Выбирайте готовые рекламные пакеты или соберите свой, куда войдут только необходимые вам услуги.</p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://info-hit.ru/about/go-to-top/",
+          "text" : "Хочу рекламу",
+          "color" : "bg-green-500",
+          "hover_color" : "bg-green-600"
+          }'></component>
+        <p class="mt-24 mb-24">Остались вопросы — напишите в <a target="_blank" href="https://t.me/ih_school_support_bot">чат техподдержки авторов</a>.</p>
+        <if condition="page.env === 'local'">
+          <component src="src/components/telegram-for-authors.html"></component>
+        </if>
+        <else>
+          #TELEGRAM_CHANNEL_FOR_AUTHORS#
+        </else>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">Ваш надежный партнер,<br>ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>

@@ -1,0 +1,62 @@
+---
+title: "Не теряйте учеников — используйте все возможности ИнфоХит!"
+preheader: "Инструкция: 7 простых шагов к успеху"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/trigger-hello-author/trigger-hello-author-8.jpg"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p><strong>Добрый день!</strong></p>
+        <p>Непростая ситуация на рынке — у нас есть простые решения. Чтобы сохранить и приумножить трафик, используйте свой профиль на маркетплейсе онлайн-образования ИнфоХит!</p>
+        <p class="mb-28">Ученики сегодня еще более придирчивы и осторожны. Они хотят развиваться и узнавать новое, но отдают предпочтение и деньги тому, кто убедит их своей надежности. Поэтому карточка вашей компании в каталоге ИнфоХит — важная точка входа.</p>
+        <p class="mb-16"><strong>Шаг 1. Обновите контакты.</strong></p>
+        <p>Оставьте все активные контакты: официальный сайт, соцсети, мессенджеры.</p>
+        <p>Мы убрали ссылки на Instagram и Facebook, но зато сделали новое поле для Telegram.
+        </p>
+        <p class="mt-24"><strong>Шаг 2. Добавьте качественные фото.</strong></p>
+        <p>Просто пришлите их своему персональному менеджеру в ИнфоХит. А еще можно записать видео-приветствие или короткий рассказ о себе!</p>
+        <p class="mt-24"><strong>Шаг 3. Проверьте наличие бесплатного материала.</strong></p>
+        <p>Убедитесь, что в профиле размещена ваша актуальная автоворонка.</p>
+        <p class="mt-24"><strong>Шаг 4. Разместите все курсы.</strong></p>
+        <p>Просмотрите свои материалы на площадке: удалите устаревшие и добавьте новые.</p>
+        <p class="mt-24"><strong>Шаг 5. Проверьте отзывы в профиле.</strong></p>
+        <p>Свежие положительные отзывы, говорят, что автор работает и его продукт пользуется спросом.А ваша готовность вести диалог покажет, что вы продолжаете дело, и цените мнение учеников.</p>
+        <p class="mt-24"><strong>Шаг 6. Заполните свой профиль.</strong></p>
+        <p>Если рейтинг заполнения менее&nbsp;85%, напишите своему менеджеру. Он&nbsp;поможет добавить информацию, которой не&nbsp;хватает. Уровень рейтинга отображается на&nbsp;вашей персональной странице.</p>
+        <p class="mb-5"><strong>Шаг 7. Проверьте ваш доступ к <a target="_blank" href="https://info-hit.ru/account/author/">Личному кабинету</a> на Инфохит.</strong><br>
+        <p>В Личном кабинете вы можете:</p>
+        <ul>
+          <li class="mb-10"><a target="_blank" href="https://info-hit.ru/account/author/traffic/">получать статистику</a> по трафику и конверсиям;</li>
+          <li class="mb-10">использовать наши виджеты;</li>
+          <li class="mb-10"><a target="_blank" href="https://info-hit.ru/account/author/balance/payment-commissions/">выплачивать комиссионные</a>;</li>
+          <li class="mb-24">заказывать рекламу на портале.</li>
+        </ul>
+        <p class="text-base bg-yellow-100 py-16 px-24">Чтобы получить доступ к личному кабинету, напишите своему персональному менеджеру в ИнфоХит!</p>
+        <p class="mt-24 mb-24">Для удобства мы сделали небольшую анкету, чтобы мы могли внести изменения на вашу страницу.</p>
+        <component src="src/components/button.html" locals='{
+        "link" : "https://docs.google.com/forms/d/1e7K70TuddIKw6wek-xrEei6zeXqQSjkrpsvV5yWX6gs/edit",
+        "text" : "Заполнить анкету",
+        "color" : "bg-yellow-500",
+        "hover_color" : "bg-yellow-600"
+        }'></component>
+        <if condition="page.env === 'local'">
+          <component src="src/components/telegram-for-authors.html"></component>
+        </if>
+        <else>
+          #TELEGRAM_CHANNEL_FOR_AUTHORS#
+        </else>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">Ваш надежный партнер,<br>ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
