@@ -1,0 +1,35 @@
+---
+title: "Картошка, грядки, СКИДКИ!"
+preheader: "На ИнфоХит стартует Весенний SALE"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+      "src" : "https://info-hit.ru/include/images/letter/2025-04-28-may-sale.jpg"
+      }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p><strong>Добрый день!</strong></p>
+        <p>Вы&nbsp;тоже уже в&nbsp;предвкушении длинных майских праздников? Запланировали копать грядки и&nbsp;жарить шашлыки?</p>
+        <p class="text-base bg-yellow-200 py-16 px-24">А&nbsp;ИнфоХит запланировал для вас большой Весенний SALE! Скидки до&nbsp;90% на&nbsp;лучшие курсы и&nbsp;вебинары по&nbsp;сотням популярных тем.</p>
+        <p>Активируем специальный раздел 1&nbsp;мая.</p>
+        <p>Поставьте напоминание, чтобы не&nbsp;пропустить старт распродажи.</p>
+        <p class="mb-24">Или выбирайте курс, который давно хотели купить и&nbsp;кладите в&nbsp;корзину. Возможно, именно он&nbsp;станет дешевле!</p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://info-hit.ru/catalog/",
+          "text" : "Выбрать курс",
+          "color" : "bg-purple-500",
+          "hover_color" : "bg-purple-600"
+        }'></component>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">С уважением,<br>команда «ИнфоХит»!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
