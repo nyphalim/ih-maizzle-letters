@@ -1,0 +1,106 @@
+---
+title: "Выгода витает в воздухе"
+preheader: "Ловите промокоды на скидку в письме"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <fetch url="https://info-hit.ru/include/tools/courses-json/?coursesArr=197322,292533,321430,303532,327579&token=u4JTEnMNt4gdsfdfsdf345nkhjk3dfgfh556776dfdghjkluiutyrtym&v=4">
+      <component src="src/components/img-block-without-link-round.html" locals='{
+      "src" : "https://info-hit.ru/include/images/letter/2025-04-29-courses-promocode.jpg"
+      }'></component>
+        
+      <component src="src/components/round-block-mt.html">
+        <p><strong>Добрый день!</strong></p>
+          <p>Знакомое чувство: добавили курс в&nbsp;«Корзину», но&nbsp;рука не&nbsp;поднимается нажать «Оплатить»? Вдруг завтра будет скидка? Так вот: завтра настало!</p>
+          <p>Делимся выгодными промокодами на&nbsp;самые интересные курсы от&nbsp;ведущих школ и&nbsp;экспертов ИнфоХит.</p>
+        </component>
+
+        <tr>
+          <td class="h-24 sm:h-16"></td>
+        </tr>
+        <tr>
+          <td class="bg-white text-gray-800 text-base text-left px-48 py-24 sm:p-14 leading-24 rounded-2xl">
+          <h3 class="mt-24 sm:mt-24">Выбираем мясо на&nbsp;майские</h3>
+          <p>Освойте авторский алгоритм готовки мясных блюд из&nbsp;говядины, баранины, мяса птицы и&nbsp;свинины. Узнайте все секреты выбора поварских инструментов: от&nbsp;кухонного ножа до&nbsp;коптильной камеры.</p>
+          <p class="mb-32">Промокод на&nbsp;скидку 25%: <span class="border-dashed border-2 border-green-400 rounded-lg text-lg px-8 py-3 inline-block"><b>ИНФОХИТ</b></span></p>
+          <each loop="item in response.slice(0, 1)">
+            <component src="src/components/course.html" locals='{
+              "author" : "{{ item.RIGHTHOLDER }}",
+              "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+              "subtitle" : "{{ item.DESC }}",
+              "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+              "link" : "{{ item.URL }}"
+              }'>
+            </component>
+          </each>
+          <h3 class="mt-24 sm:mt-24">Строим карьеру в&nbsp;дизайне</h3>
+          <p>Станьте успешным дизайнером интерьера за&nbsp;один год. Вас ждет подробная, как в&nbsp;университете, но&nbsp;компактная и&nbsp;нескучная программа обучения.</p>
+          <p class="mb-32">Промокод на&nbsp;скидку 5%: <span class="border-dashed border-2 border-green-400 rounded-lg text-lg px-8 py-3 inline-block"><b>infohi5</b></span></p>
+          <each loop="item in response.slice(1, 2)">
+            <component src="src/components/course.html" locals='{
+              "author" : "{{ item.RIGHTHOLDER }}",
+              "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+              "subtitle" : "{{ item.DESC }}",
+              "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+              "link" : "{{ item.URL }}"
+              }'>
+            </component>
+          </each>
+          <h3 class="mt-24 sm:mt-24">Учимся заботиться о&nbsp;хвостатых</h3>
+          <p>Собаки не&nbsp;расскажут нам о&nbsp;своих проблемах, но&nbsp;подадут сигналы. Понимая&nbsp;их, мы&nbsp;можем вовремя заметить недомогание и&nbsp;принять меры для сохранения здоровья питомца. Освойте базовые навыки по&nbsp;ветеринарии на&nbsp;курсе от&nbsp;НИИДПО.</p>
+          <p class="mb-32">Промокод на&nbsp;скидку 15%: <span class="border-dashed border-2 border-green-400 rounded-lg text-lg px-8 py-3 inline-block"><b>promo5</b></span></p>
+          <each loop="item in response.slice(2, 3)">
+            <component src="src/components/course.html" locals='{
+              "author" : "{{ item.RIGHTHOLDER }}",
+              "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+              "subtitle" : "{{ item.DESC }}",
+              "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+              "link" : "{{ item.URL }}"
+              }'>
+            </component>
+          </each>
+          <h3 class="mt-24 sm:mt-24">Переговорите меня, если сможете</h3>
+          <p>Научитесь отстаивать позиции и&nbsp;личные границы в&nbsp;спорах и&nbsp;конфликтных ситуациях. Избавьтесь от&nbsp;неуверенности и&nbsp;страха во&nbsp;время общения.</p>
+          <p class="mb-32">Промокод на&nbsp;скидку 45%: <span class="border-dashed border-2 border-green-400 rounded-lg text-lg px-8 py-3 inline-block"><b>gnds7t412:46</b></span></p>
+          <each loop="item in response.slice(3, 4)">
+            <component src="src/components/course.html" locals='{
+              "author" : "{{ item.RIGHTHOLDER }}",
+              "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+              "subtitle" : "{{ item.DESC }}",
+              "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+              "link" : "{{ item.URL }}"
+              }'>
+            </component>
+          </each>
+          <h3 class="mt-24 sm:mt-24">Питание под контролем</h3>
+          <p>Решите проблемы со&nbsp;здоровьем и&nbsp;получите востребованную профессию. Программа профессиональной переподготовки подходит для людей без медицинского образования.</p>
+          <p class="mb-32">Промокод на&nbsp;скидку 10%: <span class="border-dashed border-2 border-green-400 rounded-lg text-lg px-8 py-3 inline-block"><b>infohit</b></span></p>
+          <each loop="item in response.slice(4, 5)">
+            <component src="src/components/course.html" locals='{
+              "author" : "{{ item.RIGHTHOLDER }}",
+              "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+              "subtitle" : "{{ item.DESC }}",
+              "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+              "link" : "{{ item.URL }}"
+              }'>
+            </component>
+          </each>
+          <p>Выбирайте программу сейчас и&nbsp;получите дополнительную выгоду: кешбэк до&nbsp;10% бонусами или на&nbsp;карту.</p>
+          <p class="mb-24">Больше выгодных курсов&nbsp;— в&nbsp;каталоге ИнфоХит ↓</p>
+          <component src="src/components/button.html" locals='{
+            "link" : "https://info-hit.ru/catalog/filter/have_promocode-y/",
+            "text" : "Посмотреть еще курсы с промокодами",
+            "color" : "bg-green-500",
+            "hover_color" : "bg-green-600"
+            }'></component>
+          <component src="src/components/gray-line.html"></component>
+          <p class="text-base mb-36">С уважением,<br>команда ИнфоХит!</p>
+        </td>
+      </tr>
+    <td class="h-32 sm:h-24"></td>
+  </tr>
+  <component src="src/components/footer.html"></component>
+</block>
+</extends>
