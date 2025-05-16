@@ -1,0 +1,34 @@
+---
+title: "Узнавайте первыми"
+preheader: "Все новости, фишки и полезные советы в партнерском маркетинге"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/trigger-hello-partner/trigger-hello-partner-11-1.jpg"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p><strong>Добрый день!</strong></p>
+
+        <p class="mb-24">В&nbsp;блоге ИнфоХит есть целый раздел, который посвящен партнерскому маркетингу. Там наши авторы и&nbsp;эксперты делятся полезными советами и&nbsp;рекомендациями с&nbsp;начинающими веб-мастерами.</p>
+        <component src="src/components/button.html" locals='{
+        "link" : "https://info-hit.ru/blog/sect-partnerskiy-marketing/",
+        "text" : "Читать статьи",
+        "color" : "bg-purple-500",
+        "hover_color" : "bg-purple-600"
+        }'></component>
+        <p class="mt-24 mb-24">Если вы&nbsp;— новичок, хотите больше узнать о&nbsp;том, как зарабатывать на&nbsp;партнерках, вам пригодится <a href="https://info-hit.ru/blog/kak-zarabatyvat-na-partnerkakh-s-nulya/" target="_blank"><b>пошаговый алгоритм</b></a>, благодаря которому добьетесь успеха.</p>
+        <p>А&nbsp;еще подготовили <a href="https://info-hit.ru/blog/obzor-kataloga-partnerskikh-programm-infokhit/" target="_blank"><b>детальную инструкцию</b></a> по&nbsp;работе с&nbsp;каталогом партнерок на&nbsp;ИнфоХит: от&nbsp;регистрации до&nbsp;вывода комиссионных.</p>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">Ваш надежный партнер,<br>ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>

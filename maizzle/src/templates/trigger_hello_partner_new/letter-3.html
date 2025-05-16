@@ -1,0 +1,43 @@
+---
+title: "Начало работы с каталогом партнерок"
+preheader: "Ответы на все вопросы о партнерском маркетинге"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/trigger-hello-partner/trigger-hello-partner-2.jpg"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p>Чтобы наше партнерство было взаимовыгодным, подготовили ответы на&nbsp;часто задаваемые вопросы новичков партнерского маркетинга.</p>
+        <ol>
+          <li>
+            <p>Как пользоваться каталогом партнерок ИнфоХит?</p>
+          </li>
+          <li>
+            <p>Что такое реферальная программа и&nbsp;как она работает?</p>
+          </li>
+          <li>
+            <p>Как выбрать выгодную партнерскую программу?</p>
+          </li>
+          <li>
+            <p>Как подключиться к&nbsp;партнерке?</p>
+          </li>
+          <li>
+            <p>Какие страницы лучше продвигать?</p>
+          </li>
+        </ol>
+        <p>Заходите в&nbsp;<a target="_blank" href="https://info-hit.ru/help/partners/">раздел для партнеров</a>! </p>
+        <p class="text-base bg-yellow-100 py-16 px-24">Если у&nbsp;вас еще остались вопросы или появились предложения&nbsp;— смело отправляйте их&nbsp;на&nbsp;<a href="mailto:support@info-hit.ru">support@info-hit.ru</a> с&nbsp;пометкой «партнерка». Мы&nbsp;всегда рады обратной связи!</p>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">Ваш надежный партнер,<br>ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>

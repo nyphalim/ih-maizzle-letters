@@ -1,0 +1,41 @@
+---
+title: "Довольны сотрудничеством с ИнфоХит — оставьте отзыв"
+preheader: "Получите бонус 300 ₽"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main-login.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/2023-12-04-partnerkin.jpg"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+        <p>Мы&nbsp;постоянно улучшаем партнерский сервис, предлагаем вам самые выгодные реферальные программы в&nbsp;Edtech и&nbsp;благодарим за&nbsp;сотрудничество.</p>
+        <p>У&nbsp;ИнфоХит есть профиль на&nbsp;сервисе партнерских программ <a href="https://partnerkin.com/c/21/infohit" target="_blank">Партнеркин</a>. Оставьте свой отзыв об&nbsp;опыте сотрудничества, честно расскажите о&nbsp;том, почему выбираете ИнфоХит и&nbsp;получите <strong>300 бонусов</strong> на&nbsp;счет в&nbsp;Личном кабинете.</p>
+        <p><strong>Для этого:</strong></p>
+        <ul>
+          <li class="mb-12">оставьте отзыв о&nbsp;<a href="https://partnerkin.com/c/21/infohit" target="_blank">партнерской программе ИнфоХит</a></li>
+          <li class="mb-12">сделайте скриншот</li>
+          <li class="mb-12">пришлите его на&nbsp;почту <a href="mailto:support@info-hit.ru?subject=Бонус за отзыв">support@info-hit.ru</a> с&nbsp;темой «Бонус за&nbsp;отзыв»</li>
+          <li class="mb-12">получите 300 бонусов на&nbsp;счет в&nbsp;Личном кабинете</li>
+        </ul>
+        <p class="mb-24">Переходите по&nbsp;ссылке и&nbsp;делитесь мнением.</p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://partnerkin.com/c/21/infohit",
+          "text" : "Оставить отзыв",
+          "color" : "bg-blue-500",
+          "hover_color" : "bg-blue-600"
+          }'></component>
+        <p class="mt-24">А&nbsp;мы&nbsp;уже ищем для вас новые партнерки с&nbsp;высокой комиссией!</p>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">Ваш надежный партнер,<br>ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
