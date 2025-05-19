@@ -1,0 +1,40 @@
+---
+title: "Распродажа курсов в GOLANG NINIJA"
+preheader: "Овладейте популярным языком программирования Go"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+      "src" : "https://info-hit.ru/include/images/letter/2025-05-19-golang.png"
+      }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p><strong>Добрый день!</strong></p>
+        <p class="text-base bg-red-100 py-16 px-24">С&nbsp;20&nbsp;мая по&nbsp;2&nbsp;июня 2025 года в&nbsp;школе углубленного изучения Golang&nbsp;— <a href="https://info-hit.ru/away.php?to=link&id=1390" target="_blank">GOLANG NINIJA</a>&nbsp;— пройдет традиционная весенняя распродажа.</p>
+        <p>Скидки коснутся всех представленных на&nbsp;данный момент курсов:</p>
+        <ol>
+          <li class="mb-10"><b>Искусство безмолвной паники.</b> ~3&nbsp;недели на&nbsp;прохождение. Узнаете о&nbsp;лучших практиках и&nbsp;популярных мифах вокруг defer, panic и&nbsp;recover, а&nbsp;также разберетесь вплоть до&nbsp;кода рантайма и&nbsp;ассемблера.</li>
+          <li class="mb-10"><b>Искусство работы с&nbsp;ошибками.</b> ~6&nbsp;недель на&nbsp;прохождение. Грамотная обработка ошибок&nbsp;— это залог отказоустойчивости вашего приложения. Узнаете о&nbsp;стандартной библиотеке и&nbsp;не&nbsp;только, проследите эволюцию языка в&nbsp;этом холиварном вопросе.</li>
+          <li class="mb-10"><b>Искусство написания сервиса.</b> ~5&nbsp;месяцев на&nbsp;прохождение. Глобальная задача курса&nbsp;— написать с&nbsp;нуля бекенд для чата поддержки банка со&nbsp;всеми вытекающими. По&nbsp;завершении не&nbsp;останется непонятных моментов в&nbsp;том, как могут быть разработаны и&nbsp;устроены сервисы на&nbsp;Go.</li>
+        </ol>
+        <p>Ведущий автор&nbsp;— <a href="https://github.com/Antonboom" target="_blank">Антон Телышев</a>, архитектор решений, технический лидер, контрибьютор в&nbsp;непосредственно Golang и&nbsp;open source вокруг.</p>
+        <p class="mb-24">Не&nbsp;пропустите!</p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://info-hit.ru/away.php?to=link&id=1390",
+          "text" : "Выбрать курс со скидкой",
+          "color" : "bg-gray-500",
+          "hover_color" : "bg-gray-600"
+        }'></component>
+        <p class="mt-24"><i>*Реклама</i></p> 
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">С уважением,<br>команда «ИнфоХит»!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
