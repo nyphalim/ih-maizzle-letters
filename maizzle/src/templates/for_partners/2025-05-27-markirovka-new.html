@@ -1,0 +1,46 @@
+---
+title: "Маркировать рекламу с ИнфоХит легко!"
+preheader: "Добавили новые инструкции для веб-мастеров"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/2025-05-27-markirovka-new.jpg"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+        <p>ИнфоХит постоянно улучшает сервис для веб-мастеров, чтобы вам было интуитивно понятно и&nbsp;удобно работать с&nbsp;каталогом партнерских программ.</p>
+        <p>Знаем, как важны вопросы маркировки, поэтому делимся обновлениями, которые помогут во&nbsp;всем разобраться.</p>
+        <p>Добавили две новые инструкции в&nbsp;<a href="https://info-hit.ru/help/partners/" target="_blank"><b>базу знаний для партнеров</b></a>:</p>
+        <ul>
+          <li class="mb-10">маркировка рекламных креативов&nbsp;— рассказали, какие данные необходимо заполнить партнеру перед работой с&nbsp;партнерскими программами;</li>
+          <li class="mb-24">маркировка внутренних страниц сайта «ИнфоХит».</li>
+        </ul>
+        <p><img style="border: 2px solid rgb(185, 185, 185)" src="https://info-hit.ru/include/images/letter/2025-05-27-baza-for-partners.jpg" alt=""></p>
+        <p class="mt-24">Для <b>маркировки внутренних страниц сайта</b> добавили новый раздел в&nbsp;личном кабинете партнера. В&nbsp;нем вы&nbsp;сможете получить ссылку с&nbsp;маркером erid.</p>
+        <p>Для этого:</p>
+        <ul>
+          <li class="mb-10">перейдите в&nbsp;<a href="https://info-hit.ru/account/partner/" target="_blank">личный кабинет</a>;</li>
+          <li class="mb-10">найдите слева в&nbsp;меню новый раздел <b>«Партнерские креативы»</b>;</li>
+          <li class="mb-10">изучите <a href="https://info-hit.ru/account/partner/creatives/" target="_blank">инструкцию</a> по&nbsp;получению токена для внутренних страниц сайта «ИнфоХит».</li>
+        </ul>
+        <p class="mb-24">Статистику по&nbsp;продажам, комиссионные и&nbsp;другую информацию по-прежнему можно смотреть в&nbsp;личном кабинете.</p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://info-hit.ru/help/partners/",
+          "text" : "Перейти в базу знаний",
+          "color" : "bg-purple-500",
+          "hover_color" : "bg-purple-600"
+          }'></component>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">Ваш надежный партнер,<br>ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
