@@ -1,0 +1,45 @@
+---
+title: "Таро с нуля + подарки! Начните бесплатно"
+preheader: "Методички, расклады, инструкции — получите бонусы сразу после регистрации"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+      "src" : "https://info-hit.ru/include/images/letter/2025-05-29-nekipelova-4.png"
+      }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p><strong>Добрый день!</strong></p>
+        <p>Приготовили для вас не&nbsp;просто курс, а&nbsp;настоящее Таро-погружение&nbsp;— с&nbsp;практикой и&nbsp;щедрыми бонусами. И&nbsp;все это абсолютно бесплатно!</p>
+        <p class="mt-24"><b>На&nbsp;курсе «Путь к&nbsp;счастью: Таро с&nbsp;нуля» вы:</b></p>
+        <ul>
+          <li class="mb-10">разберете структуру колоды и&nbsp;Арканов;</li>
+          <li class="mb-10">научитесь задавать вопросы и&nbsp;читать карты;</li>
+          <li class="mb-10">откроете в&nbsp;Таро инструмент для самопознания.</li>
+        </ul>
+        <p class="mt-24"><b>Подарки каждому участнику:</b></p>
+        <ul>
+          <li class="mb-10">методичка по&nbsp;колоде Райдера Уэйта;</li>
+          <li class="mb-10">секретная шпаргалка вопросов;</li>
+          <li class="mb-10">записи уникальных раскладов.</li>
+        </ul>
+        <p class="mt-24 mb-24"><b>Откройте путь к&nbsp;себе с&nbsp;Таро.</b></p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://info-hit.ru/away.php?to=course&cb=41&id=327629",
+          "text" : "Получить подарки",
+          "color" : "bg-blue-500",
+          "hover_color" : "bg-blue-600"
+        }'></component>
+        <p class="mt-24"><i>*Реклама</i></p> 
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">С уважением,<br>команда «ИнфоХит»!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
