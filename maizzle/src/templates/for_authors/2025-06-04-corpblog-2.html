@@ -1,0 +1,53 @@
+---
+title: "Ваши коллеги уже в блоге ИнфоХит. Присоединяйтесь!"
+preheader: "Публикуйте экспертные статьи и расширяйте аудиторию"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/2025-06-04-corpblog-2.jpg"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+        <p class="text-base bg-purple-300 py-16 px-24">Корпоративный блог&nbsp;— эффективный инструмент для развития бренда школы или эксперта. Это не&nbsp;просто публикации, а&nbsp;целая система, которая работает на&nbsp;ваше имя, узнаваемость и&nbsp;доверие аудитории.</p>
+        <p>На&nbsp;ИнфоХит уже активно работают корпоративные блоги школ и&nbsp;экспертов.</p>
+        <p>Вот несколько примеров популярных статей:</p>
+        <ol>
+          <li class="mb-12">Эксперты <a href="https://info-hit.ru/blog/strakh-izmeneniy-cba642bd/">института психологии Smart</a> рассказали, почему мы&nbsp;боимся перемен и&nbsp;как начать новую жизнь.</li>
+          <li class="mb-12">Эксперты «АнтиТренингов» составили подборку ресурсов, где <a href="https://info-hit.ru/blog/20-resursov-pro-onlayn-obrazovanie-i-edtech-70f9aa08/">можно создавать онлайн-продукты</a> и&nbsp;повышать вовлеченность студентов.</li>
+          <li class="mb-12"><a href="https://info-hit.ru/blog/ne-razbogateete-poka-ne-stanete-boginey-izobiliya-92eec5af/">Алексей Никитин</a> рассказал, почему&nbsp;97% женщин мало зарабатывают и&nbsp;что с&nbsp;этим делать.</li>
+        </ol>
+        <p class="mb-24">Станьте следующим экспертом, чью статью увидят сотни потенциальных учеников.</p>
+         <component src="src/components/button.html" locals='{
+          "link" : "https://t.me/ihBlogsBot",
+          "text" : "Хочу развивать бренд школы бесплатно",
+          "color" : "bg-blue-500",
+          "hover_color" : "bg-blue-600"
+        }'></component>
+        <p class="mt-24">Присоединяйтесь, чтобы бесплатно:</p>
+        <ul>
+          <li class="mb-12">опубликовать 5&nbsp;статей;</li>
+          <li class="mb-12">добавить в&nbsp;них партнерские ссылки ИнфоХит;</li>
+          <li class="mb-12">получить органический трафик из&nbsp;Google и&nbsp;«Яндекс»;</li>
+          <li class="mb-12">начать формировать сильный и&nbsp;узнаваемый бренд.</li>
+        </ul>
+        <p class="mb-24">Контент работает вдолгую&nbsp;— статьи находят через поиск, читают спустя месяцы, а&nbsp;вы&nbsp;получаете новых клиентов без дополнительных вложений в&nbsp;рекламу.</p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://t.me/ihBlogsBot",
+          "text" : "Хочу развивать бренд в своем блоге",
+          "color" : "bg-blue-500",
+          "hover_color" : "bg-blue-600"
+        }'></component>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">Ваш надежный партнер,<br>ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
