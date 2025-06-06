@@ -1,0 +1,44 @@
+---
+title: "Вы уже на ИнфоХит? Новая услуга для размещенных школ"
+preheader: "Запустите эффективную рекламу в Яндекс Директ и увеличьте поток учеников!"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/2025-06-06-direkt-1.jpg"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+        <p>Вы&nbsp;уже размещены на&nbsp;ИнфоХит, а&nbsp;значит, ваша школа видна тысячам пользователей. Но&nbsp;охват&nbsp;— это только первый шаг.</p>
+        <p>Следующий шаг&nbsp;— <b>превращать внимание в&nbsp;заявки.</b></p>
+        <p class="text-base bg-red-100 py-16 px-24">Мы&nbsp;запустили новую услугу&nbsp;— Реклама в&nbsp;Яндекс Директ под&nbsp;ключ.</p>
+        <p><b>Что это значит для вас:</b></p>
+        <ol>
+          <li class="mb-12">Кампания на&nbsp;ваш курс или вебинар.</li>
+          <li class="mb-12">Грамотные ключи и&nbsp;объявления.</li>
+          <li class="mb-12">Подключение аналитики и&nbsp;целей.</li>
+          <li class="mb-12">Поддержка от&nbsp;команды, которая знает всю «кухню» онлайн-обучения изнутри.</li>
+        </ol>
+        <p><b>Дополнительные бонусы для размещенных школ:</b> Telegram, email-рассылки, ретаргетинг по&nbsp;вашей странице на&nbsp;ИнфоХит.</p>
+        <p>Не&nbsp;нужно вникать в&nbsp;Директ&nbsp;— мы&nbsp;все сделаем сами.</p>
+        <p><i>Заявки&nbsp;— с&nbsp;вас. Настройка&nbsp;— с&nbsp;нас.</i></p>
+        <p class="mb-24"><a href="https://docs.google.com/presentation/d/1xDNDYu8MdSbztBjf3mtn-NmcVE6x2wXp/edit?rtpof=true&sd=true" target="_blank">Посмотрете тарифы и&nbsp;примеры</a> или просто ответьте на&nbsp;это письмо&nbsp;— расскажем в&nbsp;деталях.</p>
+         <component src="src/components/button.html" locals='{
+          "link" : "https://docs.google.com/presentation/d/1xDNDYu8MdSbztBjf3mtn-NmcVE6x2wXp/edit?rtpof=true&sd=true",
+          "text" : "Посмотреть тарифы и примеры",
+          "color" : "bg-blue-500",
+          "hover_color" : "bg-blue-600"
+        }'></component>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36"> С уважением,<br>команда ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
