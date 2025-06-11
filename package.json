@@ -3,7 +3,9 @@
   "scripts": {
     "local": "maizzle build",
     "production": "maizzle build production",
-    "watch": "maizzle serve"
+    "watch": "maizzle serve",
+    "serve": "npm run watch",
+    "build": "npm run production"
   },
   "dependencies": {
     "@maizzle/cli": "^1.5.1",
