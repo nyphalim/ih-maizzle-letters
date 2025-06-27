@@ -1,0 +1,43 @@
+---
+title: "Бесплатный мастер-класс по астрологии"
+preheader: "Узнайте, почему именно так складывается ваша жизнь"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/2025-06-27-nekipelova-2.png"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+        <p class="text-base bg-yellow-400 py-16 px-24">3&nbsp;июля состоится первый открытый мастер-класс нового формата <a href="https://info-hit.ru/course-karta-sudby/" target="_blank">«Карта Судьбы»</a> в&nbsp;Академии Vita Virtus.</p>
+        <p>Это событие особенное, глубокое, живое и&nbsp;очень личное.</p>
+        <p>Все, что мы&nbsp;называем судьбой, уже зашифровано в&nbsp;нашей карте.</p>
+        <p><b>На&nbsp;мастер-классе получите ответы на&nbsp;самые болезненные «почему»:</b></p>
+        <ul>
+          <li class="mb-12">Почему я&nbsp;сталкиваюсь с&nbsp;финансовыми затыками?</li>
+          <li class="mb-12">Почему не&nbsp;получается построить близкие отношения?</li>
+          <li class="mb-12">Почему я&nbsp;будто&nbsp;бы ищу свое призвание в&nbsp;вечном круге?</li>
+        </ul>
+        <p>Звезды, планеты, астрологические дома&nbsp;— это инструмент, благодаря которому многое становится ясным.</p>
+        <p>На&nbsp;мастер-классе увидите, как астрология работает в&nbsp;судьбе: вашей и&nbsp;чужой.</p>
+        <p class="mb-24">Записывайтесь заранее, чтобы&nbsp;участвовать в&nbsp;розыгрыше курсов и&nbsp;личных консультаций ↓</p>
+         <component src="src/components/button.html" locals='{
+          "link" : "https://info-hit.ru/course-karta-sudby/",
+          "text" : "Зарегистрироваться",
+          "color" : "bg-gray-500",
+          "hover_color" : "bg-gray-600"
+        }'></component>
+        <p><i>*Реклама</i></p> 
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">С уважением,<br>команда ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
