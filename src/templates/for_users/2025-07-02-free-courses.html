@@ -1,0 +1,100 @@
+---
+title: "Бесплатные курсы по нейросетям"
+preheader: "для работы, подработки и быта"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <fetch url="https://info-hit.ru/include/tools/courses-json/?coursesArr=321545,325948,326634,323111,324988&token=u4JTEnMNt4gdsfdfsdf345nkhjk3dfgfh556776dfdghjkluiutyrtym&v=4">
+      <component src="src/components/img-block-without-link-round.html" locals='{
+      "src" : "https://info-hit.ru/include/images/letter/2025-07-02-free-courses.jpg"
+      }'></component>
+        
+      <component src="src/components/round-block-mt.html">
+        <p><strong>Добрый день!</strong></p>
+          <p>Нейросети&nbsp;— это не&nbsp;просто тренд, а&nbsp;инструмент, который меняет мир. ИИ&nbsp;используют в&nbsp;бизнесе, науке, искусстве и&nbsp;даже повседневной жизни.</p>
+          <p>Нейросетями должны уметь пользоваться все. И&nbsp;вы&nbsp;— тоже.</p>
+          <p>Собрали самые топовые бесплатные материалы, которые помогут вам:</p>
+          <ul>
+          <li class="mb-12">разобраться в&nbsp;основах нейросетей;</li>
+          <li class="mb-12">увидеть, как их&nbsp;применяют в&nbsp;реальных проектах;</li>
+          <li class="mb-12">автоматизировать рутину и&nbsp;упростить ежедневные задачи;</li>
+          <li class="mb-12">начать практиковаться и&nbsp;развиваться в&nbsp;этом направлении.</li>
+        </ul>
+        <p>А&nbsp;главное&nbsp;— поймете, как увеличить заработок и&nbsp;больше отдыхать.</p>
+        </component>
+
+        <tr>
+          <td class="h-24 sm:h-16"></td>
+        </tr>
+        <tr>
+          <td class="bg-white text-gray-800 text-base text-left px-48 py-24 sm:p-14 leading-24 rounded-2xl">
+          <h3 class="mt-24 sm:mt-24">Подружиться с&nbsp;ИИ несложно</h3>
+          <p class="mb-32">Если не&nbsp;знаете, с&nbsp;чего начать,&nbsp;— начните с&nbsp;бесплатных курсов. Узнаете, что умеют нейросети и&nbsp;точно&nbsp;ли они помогут в&nbsp;вашей жизни.</p>
+          <each loop="item in response.slice(0, 1)">
+            <component src="src/components/course.html" locals='{
+              "author" : "{{ item.RIGHTHOLDER }}",
+              "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+              "subtitle" : "{{ item.DESC }}",
+              "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+              "link" : "{{ item.URL }}"
+              }'>
+            </component>
+          </each>
+          <each loop="item in response.slice(1, 2)">
+            <component src="src/components/course.html" locals='{
+              "author" : "{{ item.RIGHTHOLDER }}",
+              "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+              "subtitle" : "{{ item.DESC }}",
+              "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+              "link" : "{{ item.URL }}"
+              }'>
+            </component>
+          </each>
+          <each loop="item in response.slice(2, 3)">
+            <component src="src/components/course.html" locals='{
+              "author" : "{{ item.RIGHTHOLDER }}",
+              "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+              "subtitle" : "{{ item.DESC }}",
+              "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+              "link" : "{{ item.URL }}"
+              }'>
+            </component>
+          </each>
+          <each loop="item in response.slice(3, 4)">
+            <component src="src/components/course.html" locals='{
+              "author" : "{{ item.RIGHTHOLDER }}",
+              "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+              "subtitle" : "{{ item.DESC }}",
+              "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+              "link" : "{{ item.URL }}"
+              }'>
+            </component>
+          </each>
+          <each loop="item in response.slice(4, 5)">
+            <component src="src/components/course.html" locals='{
+              "author" : "{{ item.RIGHTHOLDER }}",
+              "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+              "subtitle" : "{{ item.DESC }}",
+              "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+              "link" : "{{ item.URL }}"
+              }'>
+            </component>
+          </each>
+          <p class="mb-24">Тут должна была быть мотивирующая фраза, но&nbsp;мы&nbsp;ее&nbsp;не&nbsp;придумали. Поэтому просто клацните нопку ниже ↓</p>
+          <component src="src/components/button.html" locals='{
+            "link" : "https://info-hit.ru/blog/sect-neyroseti/",
+            "text" : "Больше интересного о нейросетях",
+            "color" : "bg-purple-500",
+            "hover_color" : "bg-purple-600"
+            }'></component>
+          <component src="src/components/gray-line.html"></component>
+          <p class="text-base mb-36">С уважением,<br>команда ИнфоХит!</p>
+        </td>
+      </tr>
+    <td class="h-32 sm:h-24"></td>
+  </tr>
+  <component src="src/components/footer.html"></component>
+</block>
+</extends>
