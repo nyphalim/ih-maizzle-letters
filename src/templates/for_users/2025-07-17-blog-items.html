@@ -1,0 +1,89 @@
+---
+title: "Хотите перемен? Начните с этого письма"
+preheader: "Статьи, которые помогут двигаться вперед"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <fetch url="https://info-hit.ru/include/tools/blog-json/?arElements=329019,329206,329110,329465,329727&token=u4JTEnMNt4gdsfdfsdf345nkhjk3dfgfh556776dfdghjkluiutyrtym&v=4">
+      <component src="src/components/img-block-without-link.html" locals='{
+        "src" : "https://info-hit.ru/include/images/letter/2025-07-17-blog-items.jpg"
+      }'></component>
+      <tr>
+        <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+          <p class="text-xl"><strong>Добрый день!</strong></p>
+          <p>Каждый день&nbsp;— это шанс научиться чему-то, что изменит вашу жизнь. Необязательно сразу записываться на&nbsp;курс. Иногда достаточно просто погрузиться в&nbsp;тему и&nbsp;понять, в&nbsp;каком направлении двигаться.</p>
+          <p>Все изменения начинаются с&nbsp;информации. Читайте новые статьи в&nbsp;блоге ИнфоХит, чтобы:</p>
+          <ul>
+            <li class="mb-12">разобраться в&nbsp;том, что действительно интересует;</li>
+            <li class="mb-12">увидеть пути для развития; </li>
+            <li class="mb-12">сделать первый шаг к&nbsp;переменам, даже если пока это кажется сложным.</li>
+          </ul>
+          <p class="mb-24">Возможно, уже сегодня вы&nbsp;найдете идею, которая перевернет ваше представление о&nbsp;будущем.</p>
+          <each loop="item in response.slice(0, 1)">
+            <component src="src/components/blog.html" locals='{
+            "URL" : "{{ item.URL }}",
+            "PICTURE" : "{{ item.PICTURE }}",
+            "NAME" : "{{ item.NAME }}",
+            "DESC" : "{{ item.DESC }}",
+            "COLOR" : "green"
+            }'></component>
+          </each>
+          <br>
+          <each loop="item in response.slice(1, 2)">
+            <component src="src/components/blog.html" locals='{
+            "URL" : "{{ item.URL }}",
+            "PICTURE" : "{{ item.PICTURE }}",
+            "NAME" : "{{ item.NAME }}",
+            "DESC" : "{{ item.DESC }}",
+            "COLOR" : "green"
+            }'></component>
+          </each>
+          <br>
+          <each loop="item in response.slice(2, 3)">
+            <component src="src/components/blog.html" locals='{
+            "URL" : "{{ item.URL }}",
+            "PICTURE" : "{{ item.PICTURE }}",
+            "NAME" : "{{ item.NAME }}",
+            "DESC" : "{{ item.DESC }}",
+            "COLOR" : "green"
+            }'></component>
+          </each>
+          <br>
+          <each loop="item in response.slice(3, 4)">
+            <component src="src/components/blog.html" locals='{
+            "URL" : "{{ item.URL }}",
+            "PICTURE" : "{{ item.PICTURE }}",
+            "NAME" : "{{ item.NAME }}",
+            "DESC" : "{{ item.DESC }}",
+            "COLOR" : "green"
+            }'></component>
+          </each>
+          <br>
+          <each loop="item in response.slice(4, 5)">
+            <component src="src/components/blog.html" locals='{
+            "URL" : "{{ item.URL }}",
+            "PICTURE" : "{{ item.PICTURE }}",
+            "NAME" : "{{ item.NAME }}",
+            "DESC" : "{{ item.DESC }}",
+            "COLOR" : "green"
+            }'></component>
+          </each>
+          <p class="mt-32 mb-24">Инвестируйте в&nbsp;себя&nbsp;— это всегда окупается. Если нашей подборки оказалось мало, переходите в&nbsp;блог ИнфоХит.</p>
+          <component src="src/components/button.html" locals='{
+            "link" : "https://info-hit.ru/blog/",
+            "text" : "Еще больше полезного и интересного",
+            "color" : "bg-blue-500",
+            "hover_color" : "bg-blue-600"
+            }'></component>
+            <component src="src/components/gray-line.html"></component>
+            <p class="text-base mb-36">С уважением,<br>ИнфоХит!</p>
+          </td>
+        </tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </fetch>
+</block>
+</extends>
