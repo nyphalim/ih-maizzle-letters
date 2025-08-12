@@ -1,0 +1,91 @@
+---
+title: "Учиться лень — что делать?"
+preheader: "Не осуждаем и знаем, как поступить"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <fetch url="https://info-hit.ru/include/tools/blog-json/?arElements=329727,330130,330535,330480,329922&token=u4JTEnMNt4gdsfdfsdf345nkhjk3dfgfh556776dfdghjkluiutyrtym&v=4">
+      <component src="src/components/img-block-without-link.html" locals='{
+        "src" : "https://info-hit.ru/include/images/letter/2025-08-12-blog-items.jpg"
+      }'></component>
+        
+      <component src="src/components/round-block-mt.html">
+          <p class="text-xl"><strong>Добрый день!</strong></p>
+          <p>Саморазвитие&nbsp;— это как подписка на&nbsp;спортзал: сначала кажется хорошей идеей, потом что-то идет не&nbsp;так. Но&nbsp;мы&nbsp;в&nbsp;вас верим, потому кладем в&nbsp;это письмо подборку статей.</p>
+          <p>А вдруг...</p>
+          </component>
+
+        <tr>
+          <td class="h-24 sm:h-16"></td>
+        </tr>
+        <tr>
+          <td class="bg-white text-gray-800 text-base text-left px-48 py-24 sm:p-14 leading-24 rounded-2xl">
+          <h3 class="mt-24 mb-32">Рекомендуем к&nbsp;чтению</h3>
+          <each loop="item in response.slice(0, 1)">
+            <component src="src/components/blog.html" locals='{
+            "URL" : "{{ item.URL }}",
+            "PICTURE" : "{{ item.PICTURE }}",
+            "NAME" : "{{ item.NAME }}",
+            "DESC" : "{{ item.DESC }}",
+            "COLOR" : "yellow"
+            }'></component>
+          </each>
+          <br>
+          <each loop="item in response.slice(1, 2)">
+            <component src="src/components/blog.html" locals='{
+            "URL" : "{{ item.URL }}",
+            "PICTURE" : "{{ item.PICTURE }}",
+            "NAME" : "{{ item.NAME }}",
+            "DESC" : "{{ item.DESC }}",
+            "COLOR" : "yellow"
+            }'></component>
+          </each>
+          <br>
+          <each loop="item in response.slice(2, 3)">
+            <component src="src/components/blog.html" locals='{
+            "URL" : "{{ item.URL }}",
+            "PICTURE" : "{{ item.PICTURE }}",
+            "NAME" : "{{ item.NAME }}",
+            "DESC" : "{{ item.DESC }}",
+            "COLOR" : "yellow"
+            }'></component>
+          </each>
+          <br>
+          <each loop="item in response.slice(3, 4)">
+            <component src="src/components/blog.html" locals='{
+            "URL" : "{{ item.URL }}",
+            "PICTURE" : "{{ item.PICTURE }}",
+            "NAME" : "{{ item.NAME }}",
+            "DESC" : "{{ item.DESC }}",
+            "COLOR" : "yellow"
+            }'></component>
+          </each>
+          <br>
+          <each loop="item in response.slice(4, 5)">
+            <component src="src/components/blog.html" locals='{
+            "URL" : "{{ item.URL }}",
+            "PICTURE" : "{{ item.PICTURE }}",
+            "NAME" : "{{ item.NAME }}",
+            "DESC" : "{{ item.DESC }}",
+            "COLOR" : "yellow"
+            }'></component>
+          </each>
+          <p class="mt-32 mb-24">Не&nbsp;корите себя за&nbsp;приступы лени. Начните медленно, но&nbsp;верно двигаться к&nbsp;целям.</p>
+          <component src="src/components/button.html" locals='{
+            "link" : "https://info-hit.ru/blog/sect-samorazvitie/",
+            "text" : "А тут — все о саморазвитии",
+            "color" : "bg-green-500",
+            "hover_color" : "bg-green-600"
+            }'></component>
+          <p>До&nbsp;встречи в&nbsp;следующем дайджесте!</p>
+           <component src="src/components/gray-line.html"></component>
+          <p class="text-base mb-36">С уважением,<br>команда ИнфоХит!</p>
+        </td>
+      </tr>
+    <td class="h-32 sm:h-24"></td>
+  </tr>
+  <component src="src/components/footer.html"></component>
+</block>
+</extends>
