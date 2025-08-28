@@ -1,0 +1,45 @@
+---
+title: "Бонус за кодовое слово"
+preheader: "Открывайте — он внутри"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/2025-08-28-botman-letter-1.png"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+        <p class="text-base bg-green-200 py-16 px-24">Код верный! Поздравляем! Вы&nbsp;получаете в&nbsp;подарок шаблон бота «бонус за&nbsp;кодовое слово»</p>
+        <p>А&nbsp;хотите, чтобы и&nbsp;ваши подписчики тоже получали подарки, если найдут или отгадают правильно слово?</p>
+        <p>Наши партнеры из&nbsp;<a href="https://botman.pro/?ref=aCkaTKLm" target="_blank">Botman</a> сделали для ИнфоХит удобный <b>шаблон Telegram-бота</b>, который автоматически выдает подарок, если введен правильный код.</p>
+        <p><b>Работает это так:</b></p>
+        <ul>
+          <li class="mb-12">Пользователь запускает бота&nbsp;— его приветствует сообщение с&nbsp;предложением ввести код.</li>
+          <li class="mb-12">Если код верный&nbsp;— получает бонус: чек-лист, гайд, PDF или любой файл.</li>
+          <li class="mb-12">Если нет&nbsp;— бот мягко предлагает ввести код повторно, а&nbsp;спустя день напомнит о&nbsp;подарке.</li>
+        </ul>
+        <p>Настройка займет 5&nbsp;минут. Вам не&nbsp;нужно знать программирование. Просто впишите ваше слово и&nbsp;загрузите файл.</p>
+        <p>Это отличный инструмент, чтобы вовлекать людей, раздавать полезности за&nbsp;активность и&nbsp;оживлять интерес к&nbsp;продукту.</p>
+        <p class="m-0 mb-24 text-base border-dashed border-2 border-yellow-500 rounded-2xl py-16 px-24">После получения/выдачи подарка вы&nbsp;можете запустить автоворонку по&nbsp;сценарию, дать ощущение реальной переписки и&nbsp;адаптировать шаблон под любые задачи.</p>
+        <p>Все просто&nbsp;— регистрация, 5&nbsp;минут, слово и&nbsp;подарок.</p>
+        <p class="mb-24">Забирайте шаблон и&nbsp;развлекайте подписчиков также, как и&nbsp;мы. Чтобы посмотреть шаблон, сначала зарегистрируйтесь на&nbsp;сайте.</p>
+         <component src="src/components/button.html" locals='{
+          "link" : "https://botman.pro/?ref=aCkaTKLm",
+          "text" : "Попробовать бесплатно",
+          "color" : "bg-green-500",
+          "hover_color" : "bg-green-600"
+        }'></component>
+        <p class="mt-32"><i>*Реклама</i></p>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">С уважением,<br>команда ИнфоХит</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
