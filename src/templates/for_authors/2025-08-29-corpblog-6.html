@@ -1,0 +1,45 @@
+---
+title: "В корпоративном блоге ИнфоХит вашу статью прочитают тысячи целевых посетителей"
+preheader: "Делимся статистикой"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/2025-08-29-corpblog-6.jpg"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+        <p>Вы&nbsp;хотели писать для корпоративного блога ИнфоХит, но&nbsp;откладывали? А&nbsp;авторы, которые публикуются, уже получают крутые результаты. Всего за&nbsp;5&nbsp;месяцев блоги набрали впечатляющую аудиторию:</p>
+        <ul>
+          <li class="mb-12">3147 посетителей&nbsp;— и&nbsp;это число растет каждый месяц;</li>
+          <li class="mb-12">3668 просмотров&nbsp;— экспертные тексты ждут потенциальные клиенты;</li>
+          <li class="mb-12">74&nbsp;перехода по&nbsp;ссылкам в&nbsp;статьях;</li>
+          <li class="mb-12">клиенты, которые оформили заказы.</li>
+        </ul>
+        <p><b>Присоединяйтесь, если:</b></p>
+        <ul>
+          <li class="mb-12">есть много полезной информации, которой вы&nbsp;готовы делиться;</li>
+          <li class="mb-12">хотите, чтобы ваш контент читали тысячи клиентов;</li>
+          <li class="mb-12">готовы развиваться вместе с&nbsp;нами.</li>
+        </ul>
+        <p class="m-0 mb-24 text-base border-dashed border-2 border-yellow-500 rounded-2xl py-16 px-24">До&nbsp;конца сентября&nbsp;— бесплатное размещение в&nbsp;корпоративном блоге для экспертов и&nbsp;школ, которые есть на&nbsp;ИнфоХит.</p>
+        <p class="mb-24">Успейте заявить о&nbsp;себе!</p>
+         <component src="src/components/button.html" locals='{
+          "link" : "https://t.me/ihBlogsBot",
+          "text" : "Узнать подробнее",
+          "color" : "bg-green-500",
+          "hover_color" : "bg-green-600"
+        }'></component>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">Ваш надежный партнер,<br>ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
