@@ -1,0 +1,38 @@
+---
+title: "Скидка 50% на аудит и план запуска!"
+preheader: "72 часа → готовый план или оптимизация кампаний за 990 ₽."
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/2025-10-22-audit-direkt-3.png"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+        <p class="text-base bg-yellow-200 py-16 px-24">Только до&nbsp;31&nbsp;октября 2025 ИнфоХит предлагает спецусловие: Аудит Директа или План запуска&nbsp;— всего за&nbsp;990&nbsp;₽ вместо <s>1990&nbsp;₽</s>.</p>
+        <p><b>Выбирайте свой сценарий:</b></p>
+        <ul>
+          <li class="mb-12">Если реклама уже идет&nbsp;— делаем аудит, показываем, где утекает бюджет, и&nbsp;даем готовые материалы для оптимизации.</li>
+          <li class="mb-12">Если никогда не&nbsp;запускали&nbsp;— готовим план запуска: медиаплан, структура кампаний, ключи и&nbsp;креативы.</li>
+        </ul>
+        <p class="mb-24">За&nbsp;72&nbsp;часа вы&nbsp;получаете на&nbsp;руки <b>набор инструментов</b>: прогноз CPL, структуру кампаний, <nobr>100–300 ключей,</nobr> минус-фразы, 3&nbsp;объявления, 2&nbsp;баннера и&nbsp;чек-лист интеграций.</p>
+         <component src="src/components/button.html" locals='{
+          "link" : "https://t.me/Babaev_s",
+          "text" : "Получить план запуска за 1990 ₽",
+          "color" : "bg-green-500",
+          "hover_color" : "bg-green-600"
+          }'></component>
+        <p class="mt-32"><i>P.S. Количество слотов ограничено производственной нагрузкой команды, берем до&nbsp;5&nbsp;аудитов&nbsp;— зафиксируйте цену заранее!</i></p>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">С уважением,<br>команда ИнфоХит</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
