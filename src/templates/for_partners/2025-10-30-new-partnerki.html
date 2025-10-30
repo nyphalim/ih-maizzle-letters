@@ -1,0 +1,53 @@
+---
+title: "А вы заметили эти новинки в каталоге?"
+preheader: "Открывайте письмо, чтобы не упустить интересные офферы"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/2025-10-30-new-partnerki.png"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+          <p>Иногда многие держатся за&nbsp;привычные офферы только потому, что они дают стабильные результаты. Связки&nbsp;— рабочие, материалы уже давно подготовлены. Доход&nbsp;— есть, и&nbsp;менять уже ничего не&nbsp;хочется.</p>
+          <p>Собрали подборку новых партнерок в&nbsp;востребованных направлениях: профобучение, нейросети, английский, психология. Новые курсы в&nbsp;этих тематиках уже пользуются популярностью на&nbsp;ИнфоХит. Вам остается изучить условия и&nbsp;выбрать подходящие под свою ЦА.</p>
+          <p>Попробовать стоит&nbsp;— вдруг найдете офферы, которые принесут вам больше прибыли.</p>
+          <p><b>Профессиональная переподготовка</b></p>
+          <ul>
+            <li class="mb-10"><a href="https://info-hit.ru/programs/partnerskaya-programma-instituta-professionalnykh-kvalifikatsiy/" target="_blank">Институт профессиональных квалификаций</a></li>
+            <li class="mb-10"><a href="https://info-hit.ru/programs/partnerskaya-programma-instituta-professionalnogo-obrazovaniya-aysef/" target="_blank">Институт профессионального образования «АйСэф»</a></li>
+          </ul>
+          <p><b>Нейросети</b></p>
+          <ul>
+            <li class="mb-10"><a href="https://info-hit.ru/programs/partnerskaya-programma-neyroinstituta/" target="_blank">«НейроИнститут»</a></li>
+            <li class="mb-10"><a href="https://info-hit.ru/programs/partnerskaya-programma-onlayn-shkoly-ai-ekspert/" target="_blank">Онлайн-школа «AI&nbsp;Эксперт»</a></li>
+          </ul>
+          <p><b>Английский для детей и&nbsp;взрослых</b></p>
+          <ul>
+            <li class="mb-10"><a href="https://info-hit.ru/programs/partnerskaya-programma-onlayn-shkoly-edlit/" target="_blank">Онлайн-школа Edlit</a></li>
+            <li class="mb-10"><a href="https://info-hit.ru/programs/partnerskaya-programma-tsentra-inostrannykh-yazykov-yes/" target="_blank">Центр иностранных языков YES</a></li>
+          </ul>
+          <p><b>Психология</b></p>
+          <ul>
+            <li class="mb-10"><a href="https://info-hit.ru/programs/partnerskaya-programma-akademii-sovremennoy-psikhologii/" target="_blank">Академия современной психологии</a></li>
+          </ul>
+        <p class="mt-24 mb-24">Выбирайте направление, партнерку и&nbsp;начинайте лить трафик. Еще больше выгодных офферов ищите в&nbsp;каталоге ИнфоХит.</p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://info-hit.ru/programs/",
+          "text" : "Посмотреть другие офферы",
+          "color" : "bg-blue-500",
+          "hover_color" : "bg-blue-600"
+          }'></component>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">Ваш надежный партнер,<br>ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
