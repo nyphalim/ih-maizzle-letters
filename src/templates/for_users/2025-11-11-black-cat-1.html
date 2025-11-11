@@ -1,0 +1,30 @@
+---
+title: "В этом году у нас не будет «Черной Пятницы»"
+preheader: "Мы придумали кое-что поинтересней!"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/2025-11-11-black-cat-letter-1.png"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+        <p>Пока все готовятся к&nbsp;Черной пятнице, мы&nbsp;отмечаем День Черной кошки!</p>
+        <p>Считается, что черные кошки приносят удачу. А&nbsp;скидки на&nbsp;ИнфоХит приносят знания! </p>
+        <p>Уже собираем для вас самые крутые курсы от&nbsp;лучших авторов со&nbsp;скидками и&nbsp;промокодами до&nbsp;90%!</p>
+        <p><b>Главная распродажа года на&nbsp;ИнфоХит начнется 17.11. ровно в&nbsp;00:00 по&nbsp;мск</b></p>
+        <p>Ставьте напоминание, заходите на&nbsp;ИнфоХит и&nbsp;ищите раздел «Черная кошка&nbsp;— лови удачу».</p>
+        <p>ТОПовые знания по&nbsp;цене, от&nbsp;которой шерсть дыбом! </p> 
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">С уважением,<br>команда ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
