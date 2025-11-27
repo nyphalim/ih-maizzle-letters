@@ -1,0 +1,52 @@
+---
+title: "Аудитория ждет эти курсы"
+preheader: "Новые офферы, заслуживающие внимания партнеров!"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/2025-11-27-new-partnerki.png"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+          <p>Каталог ИнфоХит регулярно пополняется новыми партнерскими программами с&nbsp;выгодными условиями для веб-мастеров. В&nbsp;этой подборке вы&nbsp;точно найдете&nbsp;то, что заинтересует вашу аудиторию!</p>
+          <p>Собрали офферы по&nbsp;самым популярным направлениям:</p>
+          <p><b>Психология</b></p>
+          <ul>
+            <li class="mb-10"><a href="https://info-hit.ru/programs/partnerskaya-programma-mezhdunarodnogo-instituta-professionalnoy-psikhologii-mipp/" target="_blank">Международный институт профессиональной психологии</a></li>
+            <li class="mb-10"><a href="https://info-hit.ru/programs/partnerskaya-programma-eleny-marakatkinoy/" target="_blank">Елена Маракаткина</a></li>
+          </ul>
+          <p><b>Маркетплейсы</b></p>
+          <ul>
+            <li class="mb-10"><a href="https://info-hit.ru/programs/partnerskaya-programma-aleksandry-kuryshevoy-i-shkoly-ai-skill/" target="_blank">Александра Курышева и&nbsp;школа AI&nbsp;SKILL</a></li>
+          </ul>
+          <p><b>Карьерный рост</b></p>
+          <ul>
+            <li class="mb-10"><a href="https://info-hit.ru/programs/partnerskaya-programma-anny-znamenskoy-i-shkoly-ultra/" target="_blank">Анна Знаменская и&nbsp;школа Ultra</a></li>
+            <li class="mb-10"><a href="https://info-hit.ru/programs/partnerskaya-programma-biznes-shkoly-assistentov-anny-sosnovoy-as/" target="_blank">Бизнес-школа ассистентов Анны Сосновой</a></li>
+          </ul>
+          <p><b>Дизайн</b></p>
+          <ul>
+            <li class="mb-24"><a href="https://info-hit.ru/programs/partnerskaya-programma-onlayn-shkoly-marii-svetlakovoy-room-art/" target="_blank">Онлайн-школа Room-Art</a></li>
+          </ul>
+          <p>Выбирайте тему, кликайте по&nbsp;ссылке и&nbsp;изучайте условия. А&nbsp;дальше все просто: берите в&nbsp;работу и&nbsp;начинайте лить трафик.</p>
+          <p class="mt-24 mb-24">Если подборки оказалось мало или вы&nbsp;пропустили новичков сентября-октября, переходите в&nbsp;каталог и&nbsp;находите еще больше интересных предложений с&nbsp;помощью сортировки <i>«По&nbsp;новизне»</i>.</p>
+          <component src="src/components/button.html" locals='{
+          "link" : "https://info-hit.ru/programs/",
+          "text" : "Посмотреть всех новичков осени",
+          "color" : "bg-purple-500",
+          "hover_color" : "bg-purple-600"
+          }'></component>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">Ваш надежный партнер,<br>ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
