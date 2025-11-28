@@ -1,0 +1,108 @@
+---
+title: "Как сделать будущее таким, каким вы хотите"
+preheader: "Ответ в письме."
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <fetch url="https://info-hit.ru/include/tools/blog-json/?arElements=331918,332065,331572,331688,331891,332341,331524&token=u4JTEnMNt4gdsfdfsdf345nkhjk3dfgfh556776dfdghjkluiutyrtym&v=4">
+      <component src="src/components/img-block-without-link.html" locals='{
+        "src" : "https://info-hit.ru/include/images/letter/2025-11-28-blog-items.png"
+      }'></component>
+      <tr>
+        <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+          <p class="text-xl"><strong>Добрый день</strong></p>
+          <p>Что такое будущее на&nbsp;самом деле?</p>
+          <p>Это не&nbsp;какое-то далекое измерение с&nbsp;телепортом вместо метро и&nbsp;полетами в&nbsp;космос на&nbsp;выходных.</p>
+          <p>Это&nbsp;то, что происходит с&nbsp;нами прямо сейчас, каждую секунду. А&nbsp;значит, создавать его тоже можно (и&nbsp;нужно) сейчас.</p>
+         <p>Для тех, кто устал откладывать жизнь на&nbsp;потом и&nbsp;готов менять ее&nbsp;к&nbsp;лучшему, мы&nbsp;подготовили классную подборку со&nbsp;статьями на&nbsp;самые разные темы, даже волнующие: от&nbsp;ИИ в&nbsp;работе, которого считают угрозой, до&nbsp;способов, как замедлить старение.</p>
+          <p class="mb-24">Ловите ТОП-7 статей от&nbsp;редакции ИнфоХит, опубликованных в&nbsp;блоге осенью 2025&nbsp;года.</p>
+          <each loop="item in response.slice(0, 1)">
+            <component src="src/components/blog.html" locals='{
+            "URL" : "{{ item.URL }}",
+            "PICTURE" : "{{ item.PICTURE }}",
+            "NAME" : "{{ item.NAME }}",
+            "DESC" : "{{ item.DESC }}",
+            "COLOR" : "blue"
+            }'></component>
+          </each>
+          <br>
+          <each loop="item in response.slice(1, 2)">
+            <component src="src/components/blog.html" locals='{
+            "URL" : "{{ item.URL }}",
+            "PICTURE" : "{{ item.PICTURE }}",
+            "NAME" : "{{ item.NAME }}",
+            "DESC" : "{{ item.DESC }}",
+            "COLOR" : "blue"
+            }'></component>
+          </each>
+          <br>
+          <each loop="item in response.slice(2, 3)">
+            <component src="src/components/blog.html" locals='{
+            "URL" : "{{ item.URL }}",
+            "PICTURE" : "{{ item.PICTURE }}",
+            "NAME" : "{{ item.NAME }}",
+            "DESC" : "{{ item.DESC }}",
+            "COLOR" : "blue"
+            }'></component>
+          </each>
+          <br>
+          <each loop="item in response.slice(3, 4)">
+            <component src="src/components/blog.html" locals='{
+            "URL" : "{{ item.URL }}",
+            "PICTURE" : "{{ item.PICTURE }}",
+            "NAME" : "{{ item.NAME }}",
+            "DESC" : "{{ item.DESC }}",
+            "COLOR" : "blue"
+            }'></component>
+          </each>
+          <br>
+          <each loop="item in response.slice(4, 5)">
+            <component src="src/components/blog.html" locals='{
+            "URL" : "{{ item.URL }}",
+            "PICTURE" : "{{ item.PICTURE }}",
+            "NAME" : "{{ item.NAME }}",
+            "DESC" : "{{ item.DESC }}",
+            "COLOR" : "blue"
+            }'></component>
+          </each>
+          <br>
+          <each loop="item in response.slice(5, 6)">
+            <component src="src/components/blog.html" locals='{
+            "URL" : "{{ item.URL }}",
+            "PICTURE" : "{{ item.PICTURE }}",
+            "NAME" : "{{ item.NAME }}",
+            "DESC" : "{{ item.DESC }}",
+            "COLOR" : "blue"
+            }'></component>
+          </each>
+          <br>
+          <each loop="item in response.slice(6, 7)">
+            <component src="src/components/blog.html" locals='{
+            "URL" : "{{ item.URL }}",
+            "PICTURE" : "{{ item.PICTURE }}",
+            "NAME" : "{{ item.NAME }}",
+            "DESC" : "{{ item.DESC }}",
+            "COLOR" : "blue"
+            }'></component>
+          </each>
+          <p class="mt-32">Если прочтения вы&nbsp;вдохновитесь на&nbsp;перемены, приходите на&nbsp;главную распродажу года на&nbsp;ИнфоХит.</p>
+          <p>Скидки&nbsp;90% и&nbsp;курсы от&nbsp;топовых школ и&nbsp;авторов помогут сделать еще один шаг к&nbsp;будущему мечты.</p>
+          <p class="mb-24">У&nbsp;вас все получится!</p>
+          <component src="src/components/button.html" locals='{
+            "link" : "https://info-hit.ru/black-cat/",
+            "text" : "За переменами",
+            "color" : "bg-purple-500",
+            "hover_color" : "bg-purple-600"
+            }'></component>
+            <component src="src/components/gray-line.html"></component>
+            <p class="text-base mb-36">С уважением,<br>ИнфоХит!</p>
+          </td>
+        </tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </fetch>
+</block>
+</extends>

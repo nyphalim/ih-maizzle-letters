@@ -1,0 +1,59 @@
+---
+title: "Первая платформа для онлайн-школ со встроенным ИИ-куратором"
+preheader: "Скидка 42% только до 5 декабря для авторов и школ ИнфоХит"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/2025-11-28-school-master.jpg"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+        <p>Пока индустрия только говорит об&nbsp;искусственном интеллекте, School-master уже внедрил его в&nbsp;работу онлайн-школ.</p>
+        <p><b>ИИ-возможности School-master:</b></p>
+        <ol>
+          <li class="mb-12"><b>ИИ-куратор.</b> Проверяет домашние работы по&nbsp;заданным вами критериям и&nbsp;дает развернутую обратную связь. Обучается на&nbsp;ваших материалах и&nbsp;освобождает время для работы со&nbsp;сложными случаями.</li>
+          <li class="mb-12"><b>Поддержка 24/7.</b> ИИ&nbsp;круглосуточно отвечает на&nbsp;вопросы студентов, знает содержание ваших курсов и&nbsp;говорит языком вашей школы.</li>
+          <li class="mb-12"><b>Персонализированные тренажеры.</b> ИИ&nbsp;создает упражнения на&nbsp;основе прогресса каждого студента и&nbsp;адаптирует обучение под индивидуальный темп.</b></li>
+        </ol>
+        <h3>Коробочное решение, а&nbsp;не&nbsp;подписка</h3>
+        <p>School-master&nbsp;— это не&nbsp;сервис с&nbsp;ежемесячными платежами. Вы&nbsp;покупаете платформу один раз и&nbsp;владеете ей&nbsp;навсегда.</p>
+        <p>Платформа устанавливается на&nbsp;ваш хостинг. Безлимит студентов. Полная приватность данных.</p>
+        <p>За&nbsp;ИИ&nbsp;оплачиваете только токены по&nbsp;факту использования.</p>
+        <p><b>Полный функционал для онлайн-школы:</b></p>
+        <ul>
+          <li class="mb-12">продажи с&nbsp;корзиной и&nbsp;рассрочками,</li>
+          <li class="mb-12">тренинги с&nbsp;проверкой заданий,</li>
+          <li class="mb-12">вебинары и&nbsp;автовебинары,</li>
+          <li class="mb-12">email-рассылки,</li>
+          <li class="mb-12">автоматизация процессов,</li>
+          <li class="mb-12">геймификация,</li>
+          <li class="mb-12">партнерская программа,</li>
+          <li class="mb-12">20+&nbsp;платежных систем,</li>
+          <li class="mb-12">интеграции с&nbsp;CRM и&nbsp;мессенджерами,</li>
+          <li class="mb-12">API для расширения возможностей.</li>
+        </ul>
+        <h3>Черная Пятница для авторов и&nbsp;школ ИнфоХит</h3>
+        <p>До&nbsp;5&nbsp;декабря School-master доступен со&nbsp;скидкой 42%.</p>
+        <p>Более 600 онлайн-школ уже работают на&nbsp;этой платформе&nbsp;— от&nbsp;авторских проектов до&nbsp;школ с&nbsp;оборотами 50&nbsp;миллионов рублей в&nbsp;месяц.</p>
+        <p class="mb-24">Технические знания не&nbsp;требуются.</p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://school-master.ru?utm_source=infohit",
+          "text" : "Узнать подробнее",
+          "color" : "bg-purple-500",
+          "hover_color" : "bg-purple-600"
+          }'></component>
+        <p><i>*Реклама</i></p>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">С уважением,<br>команда ИнфоХит</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
