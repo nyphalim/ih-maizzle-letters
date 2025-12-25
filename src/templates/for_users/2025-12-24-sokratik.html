@@ -1,0 +1,54 @@
+---
+title: "Презентации за минуту с ИИ"
+preheader: "Создавайте быстро и без лишний усилий с сервисом «Сократик»"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/2025-12-24-sokratik.png"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+        <p>ИнфоХит регулярно рассказывает вам о&nbsp;полезных онлайн-сервисах и&nbsp;образовательных инструментах, которые помогают учиться, работать и&nbsp;развиваться быстрее.</p>
+        <p>Сегодня хотим познакомить вас с&nbsp;сервисом, который может серьезно упростить подготовку презентаций для учебы, проектов и&nbsp;работы.</p>
+        <p class="text-base bg-blue-300 py-16 px-24">«Сократик»&nbsp;— это онлайн-платформа для создания презентаций с&nbsp;помощью искусственного интеллекта.</p>
+        <p>Вы&nbsp;вводите тему или вставляете текст&nbsp;— и&nbsp;сервис сам делает готовую презентацию. Остается только скачать ее&nbsp;в&nbsp;PPT или PDF и&nbsp;использовать.</p>
+        <p><b>Сервис будет полезен, если&nbsp;вы:</b></p>
+        <ul>
+          <li class="mb-10">учитесь в&nbsp;школе, колледже или университете;</li>
+          <li class="mb-10">преподаете в&nbsp;учебных заведениях;</li>
+          <li class="mb-10">работаете в&nbsp;маркетинге, бизнесе или онлайн-проектах.</li>
+        </ul>
+        <p><b>Что умеет «Сократик»:</b></p>
+         <ul>
+          <li class="mb-10">создает презентации по&nbsp;теме за&nbsp;минуту,</li>
+          <li class="mb-10">автоматически оформляет структуру слайдов,</li>
+          <li class="mb-10">подбирает изображения,</li>
+          <li class="mb-10">создает графики и&nbsp;таблицы,</li>
+          <li class="mb-10">сам ищет информацию.</li>
+        </ul>
+        <p>Работать можно полностью онлайн, без установки дополнительных программ&nbsp;— все в&nbsp;браузере.</p>
+        <p><b>Почему выбирают этот сервис</b></p>
+        <p>«Сократик» полезен именно тем, кому важна скорость и&nbsp;простота: презентация получается аккуратной, логичной и&nbsp;визуально привлекательной без сложной ручной работы.</p>
+        <p class="m-0 mb-24 text-base border-dashed border-2 border-yellow-400 rounded-2xl py-16 px-24">Это инструмент, который одинаково удобен для учебы и&nbsp;практических задач.</p>
+        <p class="mb-24">Если вы&nbsp;хотите попробовать создать презентацию быстро и&nbsp;без лишних усилий&nbsp;— начните прямо сейчас.</p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://sokratic.ru/ru?partner=INFOHIT",
+          "text" : "Перейти в сервис",
+          "color" : "bg-blue-400",
+          "hover_color" : "bg-blue-500"
+        }'></component>
+        <p class="mt-24"><i>*Реклама</i></p> 
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">С уважением,<br>команда ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>

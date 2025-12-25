@@ -1,0 +1,44 @@
+---
+title: "Сервис, который облегчит процесс создания презентаций"
+preheader: "Рекомендуйте «Сократик» и зарабатывайте 25% комиссионных с каждой оплаты"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/2025-12-24-sokratik.png"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+        <p>ИнфоХит регулярно делится с&nbsp;партнерами надежными сервисами для монетизации аудитории.</p>
+        <p class="text-base bg-blue-200 py-16 px-24">Сегодня хотим предложить вам сотрудничество с&nbsp;онлайн-платформой «Сократик»&nbsp;— сервисом для создания презентаций с&nbsp;помощью ИИ.</p>
+        <p>В&nbsp;рамках партнерства вы&nbsp;получаете&nbsp;<b>25% от&nbsp;каждой оплаты пользователя</b>, пришедшего по&nbsp;вашей рекомендации.</p>
+        <p><b>Подходит для любых каналов:</b> сайты, блоги, социальные сети, рассылки, личные рекомендации и&nbsp;интеграции в&nbsp;сервисы.</p>
+        <p><b>В&nbsp;партнерской программе есть:</b></p>
+        <ol>
+          <li class="mb-10">Партнерские ссылки и&nbsp;уникальные промокоды.</li>
+          <li class="mb-10">Возможность размещения ссылок в&nbsp;интерфейсе сервисов и&nbsp;на&nbsp;сайтах.</li>
+          <li class="mb-10">Персональный дашборд в&nbsp;Яндекс.DataLens для онлайн-отслеживания оплат.</li>
+          <li class="mb-10">Официальные выплаты по&nbsp;договору&nbsp;— работаем с&nbsp;самозанятыми, ИП&nbsp;и&nbsp;ООО.</li>
+          <li class="mb-10">Свободный формат продвижения.</li>
+        </ol>
+        <p class="mb-24">Если хотите присоединиться к&nbsp;партнерской программе и&nbsp;начать зарабатывать вместе с&nbsp;«Сократик»&nbsp;— напишите в&nbsp;Telegram, чтобы узнать все детали.</p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://t.me/sokratica",
+          "text" : "Стать партнером",
+          "color" : "bg-blue-600",
+          "hover_color" : "bg-blue-700"
+          }'></component>
+        <p class="mt-24"><i>*Реклама</i></p>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">Ваш надежный партнер,<br>ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
