@@ -1,0 +1,41 @@
+---
+title: "Праздники прошли, а подарки не закончились!"
+preheader: "В письме — скидка на программы Института современного образования"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/2026-02-02-iso-letter-2.png"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+        <p>Институт современного образования дарит подарки!</p>
+        <p class="text-base bg-yellow-200 py-16 px-24">Со&nbsp;2&nbsp;по&nbsp;28&nbsp;февраля по&nbsp;промокоду <b>«Инфоурок»</b> дополнительная скидка&nbsp;10% на&nbsp;все программы.</p>
+        <p><b>Почему выбирают «Институт современного образования»:</b></p>
+         <ol>
+          <li class="mb-10"><b>Актуальная информация.</b> Каждый курс включает нормативные документы (приказы, письма Минобрнауки), методические рекомендации, презентации, аудио и&nbsp;видеолекции. Материалы постоянно обновляются.</li>
+          <li class="mb-10"><b>Бессрочный доступ к&nbsp;материалам</b>&nbsp;— курса и&nbsp;электронной библиотеки. Еще возможность скачать информацию и&nbsp;применять в&nbsp;работе.</li>
+          <li class="mb-10"><b>Постоянная поддержка и&nbsp;сопровождение.</b> Методисты, специалисты техподдержки и&nbsp;персональный куратор, который закрепляется за&nbsp;каждым слушателем на&nbsp;все время обучения, всегда на&nbsp;связи по&nbsp;email, телефону, WhatsApp.</li>
+        </ol>
+        <p>Вы&nbsp;получите новые знания и&nbsp;профессиональные навыки, а&nbsp;еще расширите кругозор. Это замечательная возможность сделать первый шаг к&nbsp;своей мечте&nbsp;— сменить сферу деятельности или добиться карьерного роста.</p>
+        <p class="mb-24">Предложение распространяется на&nbsp;все программы!</p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://isoedu.ru/?utm_source=infohit&utm_medium=email&utm_campaign=promo",
+          "text" : "Выбрать курс",
+          "color" : "bg-purple-500",
+          "hover_color" : "bg-purple-600"
+        }'></component>
+        <p class="mt-24"><i>*Реклама</i></p> 
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">С уважением,<br>команда ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
