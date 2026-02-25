@@ -1,0 +1,41 @@
+---
+title: "Завалите отдел продаж заявками!"
+preheader: "Креатива мало. Нужно понимать клиента и уметь отрабатывать возражения. Научитесь этому на бесплатном курсе от Envybox!"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/2026-02-25-envybox.png"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+        <p>Для высоких продаж недостаточно иметь креативный подход. Нужно понимать потребителя, умело отрабатывать возражения, владеть <b>инструментами захвата внимания</b>.</p>
+        <p class="text-base bg-yellow-200 py-16 px-24">Завалите отдел продаж заявками с&nbsp;<a href="https://edc.envybox.io/start-course/?utm_source=infopartner&utm_medium=infohit&utm_campaing=email&utm_term=2213" target="_blank">бесплатным курсом</a> от&nbsp;Envybox.</p>
+        <p>Основатель компании, Алексей Молчанов, дает базу для специалистов любого уровня. Изучите и&nbsp;составьте личный план действий, чтобы по&nbsp;завершении курса:</p>
+        <ul>
+          <li class="mb-12">знать и&nbsp;применять 5&nbsp;рабочих инструмента для роста конверсии сайта;</li>
+          <li class="mb-12">лучше понимать клиента и&nbsp;точечно закрывать его потребность;</li>
+          <li class="mb-12">перенять опыт лучших практик и&nbsp;применить в&nbsp;своих проектах;</li>
+          <li class="mb-12">перевыполнять план продаж!</li>
+        </ul>
+        <p class="mb-24">Переходите от&nbsp;намерений к&nbsp;действию и&nbsp;внедряйте любой сервис Envybox бесплатно по&nbsp;кнопке ниже, чтобы получить рост заявок уже в&nbsp;пробном периоде!</p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://edc.envybox.io/start-course/?utm_source=infopartner&utm_medium=infohit&utm_campaing=email&utm_term=2213",
+          "text" : "Записаться на бесплатный курс",
+          "color" : "bg-red-500",
+          "hover_color" : "bg-red-600"
+          }'></component>
+        <p class="mt-24"><i>*Реклама</i></p>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">С уважением,<br>команда ИнфоХит</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
