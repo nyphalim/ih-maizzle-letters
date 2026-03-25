@@ -1,0 +1,92 @@
+---
+title: "Заберите подарок от ИнфоХит"
+preheader: "Новые знания со скидкой до 55%"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <fetch url="https://info-hit.ru/include/tools/courses-json/?coursesArr=287791,194254,325227,316256,148449&token=u4JTEnMNt4gdsfdfsdf345nkhjk3dfgfh556776dfdghjkluiutyrtym&v=4">
+      <component src="src/components/img-block-without-link.html" locals='{
+      "src" : "https://info-hit.ru/include/images/letter/2026-03-26-courses-infohit.png"
+      }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+          <p>Весна&nbsp;— время обновлений. Не&nbsp;только в&nbsp;делах и&nbsp;целях, но&nbsp;и&nbsp;в&nbsp;самочувствии, ритме жизни, привычках.</p>
+          <p>Чтобы этот период проходил мягче, собрали курсы, с&nbsp;помощью которых&nbsp;вы:</p>
+          <ul>
+            <li class="mb-10">не&nbsp;просто освоите нейросети, а&nbsp;сделаете их&nbsp;личным помощником для решения задач в&nbsp;различных направлениях;</li>
+            <li class="mb-10">гарантированно похудеете и&nbsp;зафиксируете нужный вес;</li>
+            <li class="mb-10">перестанете жить от&nbsp;зарплаты до&nbsp;зарплаты;</li>
+            <li class="mb-10">научитесь готовить полезные сладости и&nbsp;выпечку без вреда для здоровья;</li>
+            <li class="mb-10">заговорите на&nbsp;английском грамотно, осознанно и&nbsp;с&nbsp;уверенностью.</li>
+          </ul>
+          <p class="mb-32">В&nbsp;подборке&nbsp;— популярные программы, которые покупают на&nbsp;ИнфоХит. На&nbsp;прошлой неделе сотни учеников приобрели их&nbsp;и&nbsp;остались довольны покупкой. А&nbsp;еще на&nbsp;них сейчас действует скидка до&nbsp;55%!</p>
+          <each loop="item in response.slice(0, 1)">
+              <component src="src/components/course.html" locals='{
+              "author" : "{{ item.RIGHTHOLDER }}",
+              "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+              "subtitle" : "{{ item.DESC }}",
+              "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+              "link" : "{{ item.URL }}"
+              }'>
+              </component>
+            </each>
+          <each loop="item in response.slice(1, 2)">
+              <component src="src/components/course.html" locals='{
+              "author" : "{{ item.RIGHTHOLDER }}",
+              "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+              "subtitle" : "{{ item.DESC }}",
+              "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+              "link" : "{{ item.URL }}"
+              }'>
+              </component>
+            </each>
+          <each loop="item in response.slice(2, 3)">
+              <component src="src/components/course.html" locals='{
+              "author" : "{{ item.RIGHTHOLDER }}",
+              "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+              "subtitle" : "{{ item.DESC }}",
+              "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+              "link" : "{{ item.URL }}"
+              }'>
+              </component>
+            </each>
+          <each loop="item in response.slice(3, 4)">
+              <component src="src/components/course.html" locals='{
+              "author" : "{{ item.RIGHTHOLDER }}",
+              "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+              "subtitle" : "{{ item.DESC }}",
+              "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+              "link" : "{{ item.URL }}"
+              }'>
+              </component>
+            </each>
+          <each loop="item in response.slice(4, 5)">
+              <component src="src/components/course.html" locals='{
+              "author" : "{{ item.RIGHTHOLDER }}",
+              "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+              "subtitle" : "{{ item.DESC }}",
+              "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+              "link" : "{{ item.URL }}"
+              }'>
+              </component>
+            </each>
+          <p class="mt-10 mb-24">Но&nbsp;это еще не&nbsp;все! Больше выгодных курсов&nbsp;— в&nbsp;каталоге ИнфоХит ↓</p>
+          <component src="src/components/button.html" locals='{
+            "link" : "https://info-hit.ru/catalog/filter/sale-y/discount-y/",
+            "text" : "Учиться со скидкой",
+            "color" : "bg-green-500",
+            "hover_color" : "bg-green-600"
+            }'></component>
+          <component src="src/components/gray-line.html"></component>
+          <p class="text-base mb-36">С уважением,<br>команда ИнфоХит!</p>
+          </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
