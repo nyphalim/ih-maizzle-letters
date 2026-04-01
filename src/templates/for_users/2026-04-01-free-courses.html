@@ -1,0 +1,85 @@
+---
+title: "Увольняем всех экспертов с ИнфоХит!"
+preheader: "Нам больше не нужны платные курсы. Смотрите, почему."
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <fetch url="https://info-hit.ru/include/tools/courses-json/?coursesArr=333705,267386,316533,334233,331919&token=u4JTEnMNt4gdsfdfsdf345nkhjk3dfgfh556776dfdghjkluiutyrtym&v=4">
+      <component src="src/components/img-block-without-link.html" locals='{
+      "src" : "https://info-hit.ru/include/images/letter/2026-04-01-free-course.png"
+      }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+          <p>Сегодня у&nbsp;нас день радикальных перемен. Мы&nbsp;тут подсчитали и&nbsp;решили: зачем вам экспертные курсы, если можно... ладно, шутим. Эксперты остаются, а&nbsp;вот стереотип о&nbsp;том, что «за&nbsp;все хорошее нужно платить», сегодня решили официально «отправить в&nbsp;отставку».</p>
+          <p>Первое апреля&nbsp;— идеальный день, чтобы отпустить старые установки.</p>
+          <p class="mb-32">Подготовили для вас подборку с&nbsp;бесплатными курсами на&nbsp;ИнфоХит. Это не&nbsp;«курсы-пустышки», а&nbsp;полноценные программы, которые помогут освоить новый навык или сменить сферу деятельности. Те&nbsp;же крутые знания, та&nbsp;же проверенная экспертиза, но&nbsp;с&nbsp;одним приятным бонусом&nbsp;— нулем в&nbsp;чеке.</p>
+          <each loop="item in response.slice(0, 1)">
+            <component src="src/components/course.html" locals='{
+              "author" : "{{ item.RIGHTHOLDER }}",
+              "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+              "subtitle" : "{{ item.DESC }}",
+              "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+              "link" : "{{ item.URL }}"
+              }'>
+            </component>
+          </each>
+          <each loop="item in response.slice(1, 2)">
+            <component src="src/components/course.html" locals='{
+              "author" : "{{ item.RIGHTHOLDER }}",
+              "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+              "subtitle" : "{{ item.DESC }}",
+              "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+              "link" : "{{ item.URL }}"
+              }'>
+            </component>
+          </each>
+          <each loop="item in response.slice(2, 3)">
+            <component src="src/components/course.html" locals='{
+              "author" : "{{ item.RIGHTHOLDER }}",
+              "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+              "subtitle" : "{{ item.DESC }}",
+              "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+              "link" : "{{ item.URL }}"
+              }'>
+            </component>
+          </each>
+          <each loop="item in response.slice(3, 4)">
+            <component src="src/components/course.html" locals='{
+              "author" : "{{ item.RIGHTHOLDER }}",
+              "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+              "subtitle" : "{{ item.DESC }}",
+              "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+              "link" : "{{ item.URL }}"
+              }'>
+            </component>
+          </each>
+          <each loop="item in response.slice(4, 5)">
+            <component src="src/components/course.html" locals='{
+              "author" : "{{ item.RIGHTHOLDER }}",
+              "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+              "subtitle" : "{{ item.DESC }}",
+              "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+              "link" : "{{ item.URL }}"
+              }'>
+            </component>
+          </each>
+          <p class="mb-24">Попробуйте, протестируйте свои силы, влюбитесь в&nbsp;новую сферу деятельности. А&nbsp;если понравится&nbsp;— переходите в&nbsp;каталог с&nbsp;11&nbsp;000+ курсов и&nbsp;выбирайте&nbsp;то, что по&nbsp;душе!</p>
+          <component src="src/components/button.html" locals='{
+            "link" : "https://info-hit.ru/catalog/filter/free-y/",
+            "text" : "Забрать бесплатную мудрость",
+            "color" : "bg-blue-500",
+            "hover_color" : "bg-blue-600"
+            }'></component>
+          <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">С уважением,<br>команда ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
