@@ -1,0 +1,51 @@
+---
+title: "Меньше месяца до легендарной конференции по арбитражу трафика"
+preheader: "А вы купили билеты? Внутри — промокод на скидку"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/2026-02-26-broconf-7.png"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+        <p><b>BROCONF-7 ждет вас в&nbsp;солнечном Сочи!</b></p>
+        <p>До&nbsp;старта конференции&nbsp;— меньше месяца!</p>
+        <p><b>Когда:</b> <nobr>25–26</nobr> апреля</p>
+        <p><b>Где:</b> Red Arena &amp;&nbsp;Казино Сочи, г. Сочи, Красная поляна</p>
+        <p><i>Смените привычные декорации на&nbsp;горы, свежий воздух и&nbsp;атмосферу, где идеи приходят быстрее, а&nbsp;решения&nbsp;— смелее!</i></p>
+        <p><b>BROCONF-7</b> собирает тех, кто делает результат: команды, рекламодателей, сервисы и&nbsp;специалистов рынка.</p>
+        <p>Живые кейсы, рабочие связки и&nbsp;возможность задать прямые вопросы топам индустрии!</p>
+        <p>И&nbsp;все это&nbsp;— на&nbsp;фоне гор, солнца и&nbsp;южного настроения.</p>
+        <p>Времени осталось немного: пора выбирать формат участия, <a href="https://disk.yandex.ru/i/-YZ-Ko5ZixYUnA" target="_blank">бронировать отель</a> и&nbsp;покупать билеты в&nbsp;Сочи.</p>
+        <p><b>Что вас ждет?</b></p>
+        <ul>
+          <li class="mb-10">горы, воздух и&nbsp;ставки по-крупному;</li>
+          <li class="mb-10">спикеры, которые поделятся своим опытом;</li>
+          <li class="mb-10"><b>AFTERPARTY</b> со&nbsp;звездой;</li>
+          <li class="mb-10"><b>ULTRA All inclusive</b> для держателей <b>VIP</b>-билетов.</li>
+        </ul>
+        <p><b>Бонус:</b> скидка&nbsp;15% по&nbsp;промокоду <span class="border-dashed border-2 border-yellow-400 rounded-lg text-lg px-8 py-2 inline-block"><b>INFOHIT</b></span></p>
+        <p>Приезжайте пораньше&nbsp;— задержитесь подольше!</p>
+        <p>Трафик. Горы. Арбитраж.</p>
+        <p class="mb-24"><b>BROCONF-7 Sochi Edition</b></p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://mybroconf.ru/?utm_source=infohit",
+          "text" : "Купить билет со скидкой",
+          "color" : "bg-purple-600",
+          "hover_color" : "bg-purple-700"
+          }'></component>
+        <p class="mt-24"><i>*Реклама</i></p>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">Ваш надежный партнер,<br>ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
