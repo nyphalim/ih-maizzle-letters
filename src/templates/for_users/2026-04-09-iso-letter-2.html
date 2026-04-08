@@ -1,0 +1,48 @@
+---
+title: "Бесплатные вебинары для воспитателей, педагогов, психологов и логопедов"
+preheader: "Получайте актуальные знания на курсах, одобренных «Сколково»"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/2026-04-09-iso.jpeg"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+        <p>В&nbsp;Институте современного образования понимают, насколько важно специалисту постоянно развиваться, обмениваться опытом и&nbsp;получать актуальные знания, которые работают в&nbsp;практике.</p>
+        <p>Поэтому институт регулярно проводит бесплатные вебинары:</p>
+        <ul>
+          <li class="mb-10">для педагогов и&nbsp;воспитателей;</li>
+          <li class="mb-10">логопедов и&nbsp;дефектологов;</li>
+          <li class="mb-10">учителей начальной, средней и&nbsp;старшей школы;</li>
+          <li class="mb-10">психологов.</li>
+        </ul>
+        <p><b>Почему выбирают ИСО:</b></p>
+        <ol>
+          <li class="mb-10"><b>Практическая направленность</b>. Никакой «сухой теории»&nbsp;— только реальные кейсы, инструменты и&nbsp;методики, которые примените в&nbsp;работе уже на&nbsp;следующий день.</li>
+          <li class="mb-10"><b>Эксперты-практики</b>. Спикеры&nbsp;— действующие специалисты с&nbsp;опытом работы в&nbsp;образовании и&nbsp;адаптивной сфере.</li>
+          <li class="mb-10"><b>Актуальные темы</b>. Здесь говорят о&nbsp;том, что волнует педагогов сегодня: инклюзия, работа с&nbsp;ОВЗ, современные образовательные подходы, взаимодействие с&nbsp;родителями и&nbsp;другие важные вопросы.</li>
+          <li class="mb-10"><b>Доступность</b>. Участвовать можно из&nbsp;любого города&nbsp;— учеба проходит в&nbsp;онлайн-формате.</li>
+          <li class="mb-10"><b>Качество программ</b>. ИСО&nbsp;— институт со&nbsp;знаком инновационного подхода в&nbsp;образовании от&nbsp;«Сколково». Обладает наградой «Хорошее место», которую получают только компании с&nbsp;высоким рейтингом и&nbsp;реальными положительными отзывами.</li>
+        </ol>
+        <p class="mb-24">Присоединяйтесь к&nbsp;бесплатным вебинарам&nbsp;— это простой шаг к&nbsp;новым знаниям и&nbsp;профессиональному росту!</p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://ped.isoedu.ru/webinars/?utm_source=infohit&utm_medium=banner&utm_campaign=promo",
+          "text" : "Выбрать программу",
+          "color" : "bg-blue-600",
+          "hover_color" : "bg-blue-700"
+        }'></component>
+        <p class="mt-24"><i>*Реклама</i></p> 
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">С уважением,<br>команда ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
