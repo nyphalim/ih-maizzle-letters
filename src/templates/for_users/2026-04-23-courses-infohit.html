@@ -1,0 +1,91 @@
+---
+title: "Не верите, что сможете похудеть к лету?"
+preheader: "Тогда это письмо точно для вас!"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <fetch url="https://info-hit.ru/include/tools/courses-json/?coursesArr=240846,154537,133383,333640,85088&token=u4JTEnMNt4gdsfdfsdf345nkhjk3dfgfh556776dfdghjkluiutyrtym&v=4">
+      <component src="src/components/img-block-without-link.html" locals='{
+      "src" : "https://info-hit.ru/include/images/letter/2026-04-23-direct-courses.png"
+      }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+          <p>До&nbsp;лета осталось совсем немного времени. Через 6&nbsp;недель нас снова ждут футболки, шорты и&nbsp;пляжный сезон. Если вы&nbsp;переживаете о&nbsp;том, как будете выглядеть в&nbsp;этот период, то&nbsp;сейчас идеальный момент, чтобы изменить ситуацию.</p>
+          <p>У&nbsp;вас есть чуть меньше 2&nbsp;месяцев&nbsp;— этого достаточно, чтобы:</p>
+          <ul>
+            <li class="mb-10">сбросить <nobr>5–10 кг</nobr> без жестких диет;</li>
+            <li class="mb-10">подтянуть фигуру и&nbsp;чувствовать себя комфортно в&nbsp;любой одежде;</li>
+            <li class="mb-10">найти занятия, которые легко выполнять в&nbsp;любом месте.</li>
+          </ul>
+          <p class="mb-32">Смотрите нашу подборку с&nbsp;экспресс-курсами по&nbsp;похудению&nbsp;— это ТОП-5&nbsp;программ, которые уже помогли сотне учеников забыть о&nbsp;проблеме лишнего веса. Не&nbsp;откладывайте и&nbsp;вы&nbsp;свое преображение на&nbsp;потом.</p>
+          <each loop="item in response.slice(0, 1)">
+              <component src="src/components/course.html" locals='{
+              "author" : "{{ item.RIGHTHOLDER }}",
+              "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+              "subtitle" : "{{ item.DESC }}",
+              "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+              "link" : "{{ item.URL }}"
+              }'>
+              </component>
+            </each>
+          <each loop="item in response.slice(1, 2)">
+              <component src="src/components/course.html" locals='{
+              "author" : "{{ item.RIGHTHOLDER }}",
+              "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+              "subtitle" : "{{ item.DESC }}",
+              "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+              "link" : "{{ item.URL }}"
+              }'>
+              </component>
+            </each>
+          <each loop="item in response.slice(2, 3)">
+              <component src="src/components/course.html" locals='{
+              "author" : "{{ item.RIGHTHOLDER }}",
+              "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+              "subtitle" : "{{ item.DESC }}",
+              "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+              "link" : "{{ item.URL }}"
+              }'>
+              </component>
+            </each>
+          <each loop="item in response.slice(3, 4)">
+              <component src="src/components/course.html" locals='{
+              "author" : "{{ item.RIGHTHOLDER }}",
+              "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+              "subtitle" : "{{ item.DESC }}",
+              "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+              "link" : "{{ item.URL }}"
+              }'>
+              </component>
+            </each>
+          <each loop="item in response.slice(4, 5)">
+              <component src="src/components/course.html" locals='{
+              "author" : "{{ item.RIGHTHOLDER }}",
+              "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+              "subtitle" : "{{ item.DESC }}",
+              "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+              "link" : "{{ item.URL }}"
+              }'>
+              </component>
+            </each>
+          <p class="mt-10 mb-24">Еще мы&nbsp;знаем, что вдвойне приятнее начинать худеть, когда находишь качественную программу <i>со&nbsp;скидкой до&nbsp;70%</i>. Если это про вас&nbsp;— тогда переходите по&nbsp;кнопке ниже.</p>
+          <component src="src/components/button.html" locals='{
+            "link" : "https://info-hit.ru/catalog/dieta-pokhudenie/filter/discount-y/",
+            "text" : "Хочу худеть со скидкой",
+            "color" : "bg-green-500",
+            "hover_color" : "bg-green-600"
+            }'></component>
+          <p class="mt-24">Сделайте шаг навстречу новой, подтянутой фигуре уже сегодня. Чем раньше начнете, тем заметнее будет результат к&nbsp;июню!</p>
+          <component src="src/components/gray-line.html"></component>
+          <p class="text-base mb-36">С уважением,<br>команда ИнфоХит!</p>
+          </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
