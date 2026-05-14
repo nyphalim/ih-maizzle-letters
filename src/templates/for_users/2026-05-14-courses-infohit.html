@@ -1,0 +1,83 @@
+---
+title: "Непростые времена — даем простые решения!"
+preheader: "Они — в этом письме."
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <fetch url="https://info-hit.ru/include/tools/courses-json/?coursesArr=265179,320602,96151&token=u4JTEnMNt4gdsfdfsdf345nkhjk3dfgfh556776dfdghjkluiutyrtym&v=4">
+      <component src="src/components/img-block-without-link.html" locals='{
+      "src" : "https://info-hit.ru/include/images/letter/2026-05-14-courses-infohit.png"
+      }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+          <p>Жизнь&nbsp;— сценарий, который можно переписать под себя в&nbsp;любой момент. Невозможно предсказать будущее, но&nbsp;можно найти опору внутри себя, чтобы справляться с&nbsp;неприятными ситуациями.</p>
+          <p>Этому и&nbsp;не&nbsp;только можно научиться на&nbsp;курсах ИнфоХит.</p>
+          <h3>Инвестиции&nbsp;— когда, если не&nbsp;сейчас?</h3>
+          <p>Деньги не&nbsp;только поднимают мотивацию к&nbsp;работе, но&nbsp;и&nbsp;дают ощущение опоры: когда закрыты базовые потребности, проще планировать, выбирать и&nbsp;чувствовать себя спокойнее.</p>
+          <p><b>С&nbsp;курсом Рамины Исхаковой&nbsp;вы:</b></p>
+          <ul>
+            <li class="mb-10">разберетесь в&nbsp;типах акций и&nbsp;определите, какие подходят именно вам;</li>
+            <li class="mb-10">соберете инвестиционный портфель;</li>
+            <li class="mb-24">научитесь сохранять и&nbsp;приумножать доход.</li>
+          </ul>
+          <each loop="item in response.slice(0, 1)">
+              <component src="src/components/course.html" locals='{
+              "author" : "{{ item.RIGHTHOLDER }}",
+              "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+              "subtitle" : "{{ item.DESC }}",
+              "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+              "link" : "{{ item.URL }}"
+              }'>
+              </component>
+            </each>
+          <h3>БАДы: от&nbsp;или для здоровья?</h3>
+          <p>Споры о&nbsp;добавках не&nbsp;утихают. Одни утверждают, что БАДы вредят организму. Другие считают, что благодаря им&nbsp;можно улучшить здоровье. А&nbsp;третьи вообще не&nbsp;обращают внимания на&nbsp;биологические добавки, считая их&nbsp;бесполезными и&nbsp;ни&nbsp;на&nbsp;что не&nbsp;влияющими.</p>
+          <p class="mb-24">Так где&nbsp;же правда? Узнаете на&nbsp;курсе иммунодиетолога и&nbsp;провизора Алены Плетневой.</p>
+          <each loop="item in response.slice(1, 2)">
+              <component src="src/components/course.html" locals='{
+              "author" : "{{ item.RIGHTHOLDER }}",
+              "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+              "subtitle" : "{{ item.DESC }}",
+              "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+              "link" : "{{ item.URL }}"
+              }'>
+              </component>
+            </each>
+          <h3>Прошу повысить ЗП! Не&nbsp;хватает на&nbsp;корм коту :(</h3>
+          <p class="mb-24">В&nbsp;любой профессии хочется получать не&nbsp;только интересные задачи, но&nbsp;и&nbsp;достойное вознаграждение. Ведь квартира, продукты и&nbsp;покупки на&nbsp;маркетплейсах сами себя не&nbsp;оплатят. Этот курс поможет разобраться, когда пора просить о&nbsp;повышении зарплаты и&nbsp;как подойти к&nbsp;этому вопросу.</p>
+          <each loop="item in response.slice(2, 3)">
+              <component src="src/components/course.html" locals='{
+              "author" : "{{ item.RIGHTHOLDER }}",
+              "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+              "subtitle" : "{{ item.DESC }}",
+              "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+              "link" : "{{ item.URL }}"
+              }'>
+              </component>
+            </each>
+          <p class="mt-12">Обучение&nbsp;— отличный способ чувствовать себя увереннее в&nbsp;условиях неопределенности. Вы&nbsp;сможете:</p>
+          <ul>
+            <li class="mb-10">приобрести новые знания и&nbsp;навыки;</li>
+            <li class="mb-10">познакомиться с&nbsp;интересными людьми;</li>
+            <li class="mb-10">решить проблемы с&nbsp;поддержкой экспертов.</li>
+          </ul>
+          <p class="mt-10 mb-24">Переходите в&nbsp;каталог онлайн-курсов и&nbsp;найдите&nbsp;то, что подходит именно вам!</p>
+          <component src="src/components/button.html" locals='{
+            "link" : "https://info-hit.ru/catalog/filter/sale-y/",
+            "text" : "Найти другой курс",
+            "color" : "bg-blue-500",
+            "hover_color" : "bg-blue-600"
+            }'></component>
+          <component src="src/components/gray-line.html"></component>
+          <p class="text-base mb-36">С уважением,<br>команда ИнфоХит!</p>
+          </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
