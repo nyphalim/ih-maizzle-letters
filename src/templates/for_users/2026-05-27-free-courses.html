@@ -1,0 +1,107 @@
+---
+title: "Знаем, чем занять ребенка летом →"
+preheader: "Готовые идеи — в письме"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <fetch url="https://info-hit.ru/include/tools/courses-json/?coursesArr=321871,323113,285150,292661,330461,317551&token=u4JTEnMNt4gdsfdfsdf345nkhjk3dfgfh556776dfdghjkluiutyrtym&v=4">
+      <component src="src/components/img-block-without-link.html" locals='{
+      "src" : "https://info-hit.ru/include/images/letter/2026-05-27-free-courses.png"
+      }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+          <p>1&nbsp;июня&nbsp;— не&nbsp;только первый день долгожданного лета.</p>
+          <p>Это международный День защиты детей.</p>
+          <p>Позаботимся о&nbsp;подрастающем поколении вместе.</p>
+          <p>Этим летом ваш ребенок может столько всего сделать! Создать собственную компьютерную игру, попробовать себя в&nbsp;дизайне, развить память и&nbsp;логическое мышление, улучшить навыки чтения и&nbsp;освоить технику ментального счета.</p>
+          <p><b>Нужно:</b></p>
+          <ol>
+            <li class="mb-10">Хотеть попробовать что-то новое.</li>
+          </ol>
+          <p><b>Не&nbsp;нужно:</b></p>
+          <ol>
+            <li class="mb-10">Платить за&nbsp;это деньги.</li>
+            <li class="mb-10">Сомневаться в&nbsp;способностях ребенка.</li>
+          </ol>
+          <p>Как же не&nbsp;заскучать летом? Для детей и&nbsp;их&nbsp;родителей у&nbsp;нас есть ответ: узнавать новое вместе с&nbsp;ИнфоХит. В&nbsp;каталоге столько курсов, что каждый найдет&nbsp;то, что ему интересно!</p>
+          <p class="mb-32">Начните с&nbsp;бесплатных, чтобы познакомиться с&nbsp;направлением, методикой и&nbsp;подходом школы. А&nbsp;дальше решите&nbsp;— продолжать или нет.</p>
+          <each loop="item in response.slice(0, 1)">
+            <component src="src/components/course.html" locals='{
+              "author" : "{{ item.RIGHTHOLDER }}",
+              "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+              "subtitle" : "{{ item.DESC }}",
+              "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+              "link" : "{{ item.URL }}"
+              }'>
+            </component>
+          </each>
+          <each loop="item in response.slice(1, 2)">
+            <component src="src/components/course.html" locals='{
+              "author" : "{{ item.RIGHTHOLDER }}",
+              "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+              "subtitle" : "{{ item.DESC }}",
+              "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+              "link" : "{{ item.URL }}"
+              }'>
+            </component>
+          </each>
+          <each loop="item in response.slice(2, 3)">
+            <component src="src/components/course.html" locals='{
+              "author" : "{{ item.RIGHTHOLDER }}",
+              "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+              "subtitle" : "{{ item.DESC }}",
+              "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+              "link" : "{{ item.URL }}"
+              }'>
+            </component>
+          </each>
+          <each loop="item in response.slice(3, 4)">
+            <component src="src/components/course.html" locals='{
+              "author" : "{{ item.RIGHTHOLDER }}",
+              "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+              "subtitle" : "{{ item.DESC }}",
+              "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+              "link" : "{{ item.URL }}"
+              }'>
+            </component>
+          </each>
+          <each loop="item in response.slice(4, 5)">
+            <component src="src/components/course.html" locals='{
+              "author" : "{{ item.RIGHTHOLDER }}",
+              "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+              "subtitle" : "{{ item.DESC }}",
+              "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+              "link" : "{{ item.URL }}"
+              }'>
+            </component>
+          </each>
+          <each loop="item in response.slice(5, 6)">
+            <component src="src/components/course.html" locals='{
+              "author" : "{{ item.RIGHTHOLDER }}",
+              "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+              "subtitle" : "{{ item.DESC }}",
+              "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+              "link" : "{{ item.URL }}"
+              }'>
+            </component>
+          </each>
+          <p class="mb-24">Запишите ребенка на&nbsp;занятие и&nbsp;не&nbsp;волнуйтесь за&nbsp;летние каникулы&nbsp;— они пройдут с&nbsp;пользой!</p>
+          <component src="src/components/button.html" locals='{
+            "link" : "https://info-hit.ru/catalog/kursy-dlya-detey/",
+            "text" : "Выбрать курс для ребенка",
+            "color" : "bg-green-500",
+            "hover_color" : "bg-green-600"
+            }'></component>
+          <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">С уважением,<br>команда ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
