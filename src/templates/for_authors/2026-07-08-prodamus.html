@@ -1,0 +1,43 @@
+---
+title: "Переходите в МАХ?"
+preheader: "Пошаговый план, как не потерять клиентов и оплаты!"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/2026-07-08-prodamus-1.jpg"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+        <p>Для многих онлайн-школ и&nbsp;экспертов Telegram долгое время был «всем»: здесь грели аудиторию, принимали заявки, отправляли ссылки на&nbsp;оплату и&nbsp;вели учеников. Но&nbsp;реалии 2026 года показали: <b>завязывать весь бизнес на&nbsp;один мессенджер&nbsp;— огромный риск</b>. Ведь если коммуникация, база и&nbsp;прием денег на&nbsp;одной площадке, то&nbsp;при любом сбое вы&nbsp;теряете не&nbsp;просто канал связи, а&nbsp;всю выручку.</p>
+        <p>Сейчас образовательные проекты массово осваивают MAX. Как сделать этот переход безопасным?</p>
+        <p class="text-base bg-blue-300 py-16 px-24"><b>Главный принцип устойчивости:</b> мессенджер&nbsp;— всего лишь точка контакта. А&nbsp;вот критически важные процессы&nbsp;— оплата, база клиентов, выдача доступов&nbsp;— должны находиться отдельно и&nbsp;не&nbsp;зависеть от&nbsp;конкретной площадки.</p>
+        <p><b>3&nbsp;шага, которые можно сделать прямо сейчас:</b></p>
+        <ol>
+          <li class="mb-10">Сделайте больше точек оплаты и&nbsp;настройте независимый платежный сценарий, который работает везде: в&nbsp;MAX, на&nbsp;сайте или в&nbsp;email-рассылке.</li>
+          <li class="mb-10">Собирайте собственную базу. Подписчики в&nbsp;канале&nbsp;— это не&nbsp;ваша база. Сохраняйте контакты, телефоны и&nbsp;историю покупок отдельно, чтобы не&nbsp;потерять связь с&nbsp;людьми.</li>
+          <li class="mb-10">Дайте клиенту выбор. Оставьте несколько точек входа: платежная ссылка для продаж в&nbsp;личке, форма на&nbsp;сайте или автоматический бот.</li>
+        </ol>
+        <p><b>А&nbsp;чтобы ваши продажи не&nbsp;зависели от&nbsp;капризов площадок, используйте сервис «Prodamus»</b>. Он&nbsp;закрывает все сценарии оплат для онлайн-бизнеса «из&nbsp;одного окна»: от&nbsp;быстрых платежных ссылок для чатов до&nbsp;готовых форм на&nbsp;сайтах и&nbsp;интеграций с&nbsp;ботами.</p>
+        <p>Клиент может прийти к&nbsp;вам откуда угодно&nbsp;— из&nbsp;MAX, Telegram или VK,&nbsp;— но&nbsp;оплата всегда пройдет по&nbsp;надежному и&nbsp;понятному маршруту. Вы&nbsp;спокойно переносите продажи и&nbsp;автоматизируете процессы, а&nbsp;«Prodamus» обеспечит, что деньги с&nbsp;каждой продажи дойдут до&nbsp;вас</p>
+        <p class="m-0 mb-24 text-base border-dashed border-2 border-purple-600 rounded-2xl py-16 px-24"><b>Специальное предложение для устойчивости вашего бизнеса:</b> скидка 2000&nbsp;₽ на&nbsp;подключение к&nbsp;«Prodamus» по&nbsp;ссылке ниже.</p>
+        <p class="mb-24">Пусть ваши ученики платят так, как им&nbsp;удобно, а&nbsp;не&nbsp;уходят к&nbsp;конкурентам.</p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://anketa.prodamus.ru/customer?client_promocode=INFOHIT",
+          "text" : "Подключить со скидкой",
+          "color" : "bg-blue-500",
+          "hover_color" : "bg-blue-600"
+        }'></component>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">С уважением,<br>команда ИнфоХит</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
