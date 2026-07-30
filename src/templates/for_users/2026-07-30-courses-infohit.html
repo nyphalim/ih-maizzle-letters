@@ -1,0 +1,89 @@
+---
+title: "Не повторяйте советы из этого письма"
+preheader: "Хотя… решать вам"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <fetch url="https://info-hit.ru/include/tools/courses-json/?coursesArr=325227,320484,264463,139517&token=u4JTEnMNt4gdsfdfsdf345nkhjk3dfgfh556776dfdghjkluiutyrtym&v=4">
+      <component src="src/components/img-block-without-link.html" locals='{
+      "src" : "https://info-hit.ru/include/images/letter/2026-07-30-course-ih.png"
+      }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+          <p>Август&nbsp;— особенный месяц. Работать уже сложно, отдыхать&nbsp;— поздно. А&nbsp;отпуск почему-то закончился слишком быстро. Поэтому сегодня решили не&nbsp;давать полезные советы. Наоборот. Собрали ТОП-5&nbsp;вредных.</p>
+          <p><b>Вредный совет №1</b></p>
+          <p>Если начальник написал в&nbsp;пятницу в&nbsp;17:58, что есть небольшая задача, игнорируйте и просто выключите уведомления. Понедельник&nbsp;же все равно наступит.</p>
+          <p class="mb-24">Если хотите экономить время без таких радикальных методов, посмотрите курсы по&nbsp;нейросетям. Сегодня ИИ&nbsp;помогает быстрее писать письма, искать информацию, готовить документы и&nbsp;брать на&nbsp;себя часть рутины.</p>
+          <each loop="item in response.slice(0, 1)">
+              <component src="src/components/course.html" locals='{
+              "author" : "{{ item.RIGHTHOLDER }}",
+              "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+              "subtitle" : "{{ item.DESC }}",
+              "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+              "link" : "{{ item.URL }}"
+              }'>
+              </component>
+            </each>
+          <p class="mt-0"><b>Вредный совет №2</b></p>
+          <p>Любую задачу можно начать завтра. А&nbsp;завтра... снова завтра.</p>
+          <p class="mb-24">Если хотите перестать откладывать, загляните на&nbsp;курсы по&nbsp;борьбе с&nbsp;прокрастинацией. Научитесь расставлять приоритеты и&nbsp;успевать больше без бесконечных переработок.</p>
+          <each loop="item in response.slice(1, 2)">
+              <component src="src/components/course.html" locals='{
+              "author" : "{{ item.RIGHTHOLDER }}",
+              "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+              "subtitle" : "{{ item.DESC }}",
+              "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+              "link" : "{{ item.URL }}"
+              }'>
+              </component>
+            </each>
+          <p class="mt-0"><b>Вредный совет №3</b></p>
+          <p>Соглашайтесь на&nbsp;все: дополнительные задачи, созвоны, срочные проекты. Когда-нибудь свободное время обязательно появится само.</p>
+          <p class="mb-24">На&nbsp;практике полезен другой навык&nbsp;— умение договариваться, обсуждать сроки и&nbsp;спокойно говорить о&nbsp;своей загрузке. Начать можно с&nbsp;курсов по&nbsp;коммуникации и&nbsp;soft skills.</p>
+          <each loop="item in response.slice(2, 3)">
+              <component src="src/components/course.html" locals='{
+              "author" : "{{ item.RIGHTHOLDER }}",
+              "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+              "subtitle" : "{{ item.DESC }}",
+              "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+              "link" : "{{ item.URL }}"
+              }'>
+              </component>
+            </each>
+          <p class="mt-0"><b>Вредный совет №4</b></p>
+          <p>Если в&nbsp;календаре нет свободного времени, просто купите еще два и&nbsp;побольше.</p>
+          <p class="mb-24">Но&nbsp;есть способ эффективнее: курсы по&nbsp;тайм-менеджменту помогут разобраться, как управлять задачами, а&nbsp;не&nbsp;жить от&nbsp;дедлайна к&nbsp;дедлайну.</p>
+          <each loop="item in response.slice(3, 4)">
+              <component src="src/components/course.html" locals='{
+              "author" : "{{ item.RIGHTHOLDER }}",
+              "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+              "subtitle" : "{{ item.DESC }}",
+              "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+              "link" : "{{ item.URL }}"
+              }'>
+              </component>
+            </each>
+          <p class="mt-0"><b>Вредный совет №5</b></p>
+          <p>Если давно хотели попробовать что-то новое, подождите сентября. Потом января. Потом следующего понедельника.</p>
+          <p class="mb-24">А&nbsp;можно не&nbsp;ждать! Чтобы не&nbsp;откладывать снова, начните с&nbsp;бесплатного курса. Без долгих раздумий, больших вложений и&nbsp;страха ошибиться. Если тема увлечет&nbsp;— всегда успеете продолжить.</p>
+          <component src="src/components/button.html" locals='{
+            "link" : "https://info-hit.ru/catalog/filter/free-y/",
+            "text" : "Посмотреть бесплатные курсы",
+            "color" : "bg-green-500",
+            "hover_color" : "bg-green-600"
+            }'></component>
+          <p class="mt-24"><i>Пусть этим летом будет больше отдыха, чем дедлайнов!</i></p>
+          <component src="src/components/gray-line.html"></component>
+          <component src="src/components/max-channel.html"></component>
+          <p class="text-base mb-36">С уважением,<br>команда ИнфоХит!</p>
+          </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
