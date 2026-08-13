@@ -1,0 +1,102 @@
+---
+title: "Иногда новый навык начинается с любопытства"
+preheader: "Необычная подборка для тех, кто хочет узнать что-то новое."
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <fetch url="https://info-hit.ru/include/tools/courses-json/?coursesArr=300571,331920,319112,327644,311792&token=u4JTEnMNt4gdsfdfsdf345nkhjk3dfgfh556776dfdghjkluiutyrtym&v=4">
+      <component src="src/components/img-block-without-link.html" locals='{
+      "src" : "https://info-hit.ru/include/images/letter/2026-08-13-free-courses.png"
+      }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+          <p>Иногда новый навык начинается с&nbsp;одной неожиданной идеи.</p>
+          <p>Не&nbsp;обязательно учиться тому, что «положено» для карьеры. Новое занятие может дать отдушину, новая профессия&nbsp;— точку старта, а&nbsp;незнакомый способ заработка&nbsp;— дополнительный источник дохода.</p>
+          <p>Собрали 5&nbsp;вариантов, которые стоит попробовать хотя&nbsp;бы из&nbsp;любопытства.</p>
+          <p><b>Творчество, отдых и&nbsp;заработок в&nbsp;одном хобби</b></p>
+          <p>Плетение мебели из&nbsp;лозы&nbsp;— это не&nbsp;только про дачу и&nbsp;кресло-качалку. Это еще и&nbsp;способ отвлечься от&nbsp;рутины. Научитесь создавать красивые вещи для себя, своего дома или на&nbsp;продажу.</p>
+          <p class="mb-24">Для старта важно понять главное: какую лозу выбрать, где ее&nbsp;искать и&nbsp;какие инструменты понадобятся.</p>
+          <each loop="item in response.slice(0, 1)">
+              <component src="src/components/course.html" locals='{
+              "author" : "{{ item.RIGHTHOLDER }}",
+              "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+              "subtitle" : "{{ item.DESC }}",
+              "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+              "link" : "{{ item.URL }}"
+              }'>
+              </component>
+            </each>
+          <p class="mt-0"><b>Близость&nbsp;— тоже навык</b></p>
+          <p>В&nbsp;отношениях не&nbsp;всегда легко понять собственные желания и&nbsp;говорить о&nbsp;них с&nbsp;партнером.</p>
+          <p class="mb-24">На&nbsp;этом бесплатном курсе узнаете, как вернуть искру в&nbsp;отношения и&nbsp;получать больше удовольствия от&nbsp;близости.</p>
+          <each loop="item in response.slice(1, 2)">
+              <component src="src/components/course.html" locals='{
+              "author" : "{{ item.RIGHTHOLDER }}",
+              "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+              "subtitle" : "{{ item.DESC }}",
+              "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+              "link" : "{{ item.URL }}"
+              }'>
+              </component>
+            </each>
+          <p class="mt-0"><b>Понять ребенка&nbsp;— отдельная задача со звездочкой</b></p>
+          <p>Капризы, тревога, замкнутость, сложности в&nbsp;общении&nbsp;— за&nbsp;детским поведением может стоять множество причин.</p>
+          <p class="mb-24">Курс познакомит с&nbsp;работой детского психолога: узнаете, как помогать детям и&nbsp;реализоваться в&nbsp;профессии.</p>
+          <each loop="item in response.slice(2, 3)">
+              <component src="src/components/course.html" locals='{
+              "author" : "{{ item.RIGHTHOLDER }}",
+              "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+              "subtitle" : "{{ item.DESC }}",
+              "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+              "link" : "{{ item.URL }}"
+              }'>
+              </component>
+            </each>
+          <p class="mt-0"><b>Один источник дохода&nbsp;— не&nbsp;единственный вариант</b></p>
+          <p>В&nbsp;Интернете можно зарабатывать не&nbsp;только на&nbsp;своем продукте или работе по&nbsp;найму. Есть партнерская модель: вы&nbsp;продвигаете чужие продукты и&nbsp;получаете вознаграждение.</p>
+          <p class="mb-24">На&nbsp;этом экспресс-курсе получите готовую систему продвижения партнерских программ и&nbsp;пошаговый план применения.</p>
+          <each loop="item in response.slice(3, 4)">
+              <component src="src/components/course.html" locals='{
+              "author" : "{{ item.RIGHTHOLDER }}",
+              "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+              "subtitle" : "{{ item.DESC }}",
+              "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+              "link" : "{{ item.URL }}"
+              }'>
+              </component>
+            </each>
+          <p class="mt-0"><b>Путешествия могут быть не&nbsp;только расходами</b></p>
+          <p>На&nbsp;отдыхе можно сэкономить, если знать, где искать выгодные предложения. А&nbsp;интерес к&nbsp;путешествиям можно превратить в&nbsp;дополнительный заработок.</p>
+          <p class="mb-24">Узнаете, где искать выгодные предложения, как стать онлайн-турагентом и&nbsp;зарабатывать удаленно.</p>
+          <each loop="item in response.slice(4, 5)">
+              <component src="src/components/course.html" locals='{
+              "author" : "{{ item.RIGHTHOLDER }}",
+              "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+              "subtitle" : "{{ item.DESC }}",
+              "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+              "link" : "{{ item.URL }}"
+              }'>
+              </component>
+            </each>
+          <p class="mt-0">Пять совершенно разных идей. Какая-то может остаться просто любопытным экспериментом. Другая&nbsp;— неожиданно стать новым навыком, занятием или источником дохода.</p>
+          <p class="mb-24">Если хотите открыть бесплатно еще больше интересных направлений, переходите по&nbsp;кнопке ниже&nbsp;— прямо в&nbsp;каталог ИнфоХит.</p>
+          <component src="src/components/button.html" locals='{
+            "link" : "https://info-hit.ru/catalog/filter/free-y/",
+            "text" : "Любопытно узнать, что есть еще",
+            "color" : "bg-green-500",
+            "hover_color" : "bg-green-600"
+            }'></component>
+          <component src="src/components/gray-line.html"></component>
+          <component src="src/components/max-channel.html"></component>
+          <p class="text-base mb-36">С уважением,<br>команда ИнфоХит!</p>
+          </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
