@@ -1,0 +1,47 @@
+---
+title: "Бесплатная неделя обучения психологии"
+preheader: "Нашли для вас интересно-полезное"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/2026-08-19-kurpatov-2.png"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+        <p>Академия психологии и&nbsp;мышления&nbsp;— образовательная организация, которая готовит специалистов с&nbsp;нуля&nbsp;— проводит <a href="https://info-hit.ru/away.php?to=link&id=11" target="_blank">Неделю открытых дверей</a> для тех, кто хочет попробовать себя в&nbsp;психологии.</p>
+        <p class="text-base bg-blue-200 py-16 px-24">Короткие лекции психотерапевта Андрея Курпатова, тесты, практические задания. Материалов&nbsp;— примерно на&nbsp;час в&nbsp;день. Открываются постепенно, но&nbsp;смотреть можно в&nbsp;удобное время.</p>
+        <p><b>Все бесплатно.</b></p>
+        <p>В&nbsp;Неделе открытых дверей АПиМ один день посвящается одной теме.</p>
+        <ul>
+          <li class="mb-10"><b>День&nbsp;1.</b> Что такое психология, кто такой психолог и&nbsp;как им&nbsp;стать.</li>
+          <li class="mb-10"><b>День&nbsp;2.</b> Динамическая и&nbsp;гуманистическая психотерапия.</li>
+          <li class="mb-10"><b>День&nbsp;3.</b> Инструменты работы с&nbsp;невротическими состояниями.</li>
+          <li class="mb-10"><b>День&nbsp;4.</b> Технологии консультирования: что действительно работает.</li>
+          <li class="mb-10"><b>День&nbsp;5.</b> Специализации в&nbsp;практической психологии.</li>
+          <li class="mb-10"><b>День&nbsp;6.</b> Как устроена подготовка психолога.</li>
+          <li class="mb-10"><b>День&nbsp;7.</b> Профессиональное сообщество АПиМ.</li>
+        </ul>
+        <p>Есть бесплатный бонус восьмого дня!</p>
+        <p>Если интересно&nbsp;— <b>заходите бесплатно</b>. Академия выпустила уже немало психологов, которые практикуют системно-поведенческую психотерапию&nbsp;— интегративный подход нового времени.</p>
+        <p class="mb-24">Жмите на&nbsp;кнопку, регистрируйтесь и&nbsp;участвуйте.</p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://info-hit.ru/away.php?to=link&id=11",
+          "text" : "Участвовать бесплатно",
+          "color" : "bg-red-600",
+          "hover_color" : "bg-red-700"
+        }'></component>
+        <p class="mt-24"><i>*Реклама</i></p> 
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">С уважением,<br>команда ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
