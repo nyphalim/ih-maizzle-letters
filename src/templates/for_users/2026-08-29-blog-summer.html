@@ -1,0 +1,103 @@
+---
+title: "Последняя суббота августа. Самое время выдохнуть"
+preheader: "За чтением полезных статей ИнфоХит. Без дедлайнов, списков и спешки"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <fetch url="https://info-hit.ru/include/tools/blog-json/?arElements=336147,335556,336091,336138,335858,336064,336335&token=u4JTEnMNt4gdsfdfsdf345nkhjk3dfgfh556776dfdghjkluiutyrtym&v=4">
+      <component src="src/components/img-block-without-link.html" locals='{
+        "src" : "https://info-hit.ru/include/images/letter/2026-08-29-blog-summer.jpg"
+      }'></component>
+      <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p>До&nbsp;сентября осталось несколько дней. Сегодня не&nbsp;хотим торопить вас готовиться к&nbsp;нему. Лучше предложим полезные советы на&nbsp;будущее&nbsp;— чтобы в&nbsp;нужный момент не&nbsp;пришлось искать все с&nbsp;нуля.</p>
+        <p><b>На&nbsp;будущее: новая профессия</b></p>
+        <p class="mb-24">Если когда-нибудь появится мысль сменить направление, начните с&nbsp;этой статьи. Рассказываем, как оценивать варианты не&nbsp;только по&nbsp;спросу, но&nbsp;и&nbsp;с&nbsp;учетом перспектив.</p>
+        <each loop="item in response.slice(0, 1)">
+          <component src="src/components/blog.html" locals='{
+            "URL" : "{{ item.URL }}",
+            "PICTURE" : "{{ item.PICTURE }}",
+            "NAME" : "{{ item.NAME }}",
+            "DESC" : "{{ item.DESC }}",
+            "COLOR" : "blue"
+            }'></component>
+        </each>
+        <p class="mt-24"><b>На&nbsp;будущее: если хочется перемен</b></p>
+        <p class="mb-24">Не&nbsp;обязательно ждать идеального момента для обучения. В&nbsp;статье&nbsp;— новые платные и&nbsp;бесплатные курсы на&nbsp;ИнфоХит по&nbsp;разным направлениям.</p>
+        <each loop="item in response.slice(1, 2)">
+          <component src="src/components/blog.html" locals='{
+            "URL" : "{{ item.URL }}",
+            "PICTURE" : "{{ item.PICTURE }}",
+            "NAME" : "{{ item.NAME }}",
+            "DESC" : "{{ item.DESC }}",
+            "COLOR" : "blue"
+            }'></component>
+        </each>
+        <p class="mt-24"><b>На&nbsp;будущее: обновить квалификацию</b></p>
+        <p class="mb-24">Программы повышения квалификации помогают поддерживать профессиональные знания в&nbsp;актуальном состоянии. Но&nbsp;результат зависит и&nbsp;от&nbsp;того, где вы&nbsp;проходите обучение&nbsp;— поэтому выбор учебного центра стоит сделать осознанно.</p>
+        <each loop="item in response.slice(2, 3)">
+          <component src="src/components/blog.html" locals='{
+            "URL" : "{{ item.URL }}",
+            "PICTURE" : "{{ item.PICTURE }}",
+            "NAME" : "{{ item.NAME }}",
+            "DESC" : "{{ item.DESC }}",
+            "COLOR" : "blue"
+            }'></component>
+        </each>
+        <p class="mt-24"><b>На&nbsp;будущее: поступление ребенка</b></p>
+        <p class="mb-24">Для родителей будущих студентов есть отдельный чек-лист: что проверить в&nbsp;колледже до&nbsp;подачи документов.</p>
+        <each loop="item in response.slice(3, 4)">
+          <component src="src/components/blog.html" locals='{
+            "URL" : "{{ item.URL }}",
+            "PICTURE" : "{{ item.PICTURE }}",
+            "NAME" : "{{ item.NAME }}",
+            "DESC" : "{{ item.DESC }}",
+            "COLOR" : "blue"
+            }'></component>
+        </each>
+        <p class="mt-24"><b>На&nbsp;будущее: рабочие задачи</b></p>
+        <p class="mb-24">Программы для распознавания текста и&nbsp;конвертации видео могут пригодиться в&nbsp;самый обычный рабочий день. Разобрались, какие варианты заслуживают внимания.</p>
+        <each loop="item in response.slice(4, 5)">
+          <component src="src/components/blog.html" locals='{
+            "URL" : "{{ item.URL }}",
+            "PICTURE" : "{{ item.PICTURE }}",
+            "NAME" : "{{ item.NAME }}",
+            "DESC" : "{{ item.DESC }}",
+            "COLOR" : "blue"
+            }'></component>
+        </each>
+        <br>
+        <each loop="item in response.slice(5, 6)">
+          <component src="src/components/blog.html" locals='{
+            "URL" : "{{ item.URL }}",
+            "PICTURE" : "{{ item.PICTURE }}",
+            "NAME" : "{{ item.NAME }}",
+            "DESC" : "{{ item.DESC }}",
+            "COLOR" : "blue"
+            }'></component>
+        </each>
+        <p class="mt-24"><b>На&nbsp;будущее: забота о&nbsp;себе</b></p>
+        <p class="mb-24">Когда понадобится поддержка, не&nbsp;обязательно искать время на&nbsp;дорогу и&nbsp;подстраиваться под расписание. В&nbsp;статье рассказываем, как работает психологическая помощь онлайн, какие есть форматы и&nbsp;с&nbsp;чего начать.</p>
+        <each loop="item in response.slice(6, 7)">
+          <component src="src/components/blog.html" locals='{
+            "URL" : "{{ item.URL }}",
+            "PICTURE" : "{{ item.PICTURE }}",
+            "NAME" : "{{ item.NAME }}",
+            "DESC" : "{{ item.DESC }}",
+            "COLOR" : "blue"
+            }'></component>
+        </each>
+        <p class="mb-24 mt-24">Впереди еще много новых задач, решений и&nbsp;поводов чему-нибудь научиться. Пусть полезная информация будет рядом, когда она понадобится&nbsp;↓</p>
+        <component src="src/components/max-channel.html"></component>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">С уважением,<br>команда ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
