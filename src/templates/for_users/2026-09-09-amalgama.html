@@ -1,0 +1,44 @@
+---
+title: "Десять дверей в неизвестное — и каждая может открыться вам."
+preheader: "К знаниям не приходят случайно. Но иногда именно случай решает, кому вручить ключ."
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/2026-09-09-amalgama.png"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+        <p class="text-base bg-yellow-100 py-16 px-24">«Амальгама»&nbsp;— междисциплинарная школа западной оккультной традиции, психологии, мифологии и&nbsp;символизма&nbsp;— проводит большой розыгрыш в&nbsp;честь своего Дня рождения.</p>
+        <p>20&nbsp;сентября десять победителей получат десять призов. Среди них лучшие курсы и&nbsp;редкие книги, в&nbsp;том числе:</p>
+        <ul>
+          <li class="mb-10">курс рунной магии Runix от&nbsp;Фенрира;</li>
+          <li class="mb-10">место в&nbsp;группе Лидии Суриной «Юнгианская астропсихология»;</li>
+          <li class="mb-10">семинар Фенрира «Восемь растений, пять тысяч лет»;</li>
+          <li class="mb-10">лекция Лидии Суриной «Северные ландшафты души»;</li>
+          <li class="mb-10">книги Сергея Козуба и&nbsp;Роберта Мастерса.</li>
+        </ul>
+        <p>Чтобы принять участие, подпишитесь на&nbsp;пять telegram-каналов проекта. Каждый из&nbsp;них открывает свою область: от&nbsp;западной традиции и&nbsp;книг до&nbsp;авторских разборов и&nbsp;Таро.</p>
+        <p>Никаких покупок. Подписка на один аккаунт&nbsp;— одна заявка.</p>
+        <p>Итоги школа подведет 20&nbsp;сентября с&nbsp;помощью случайного выбора среди участников, выполнивших условия.</p>
+        <p class="mb-24">Возможно, одна из&nbsp;десяти дверей откроется именно вам!</p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://info-hit.ru/away.php?to=link&id=19",
+          "text" : "Принять участие",
+          "color" : "bg-red-600",
+          "hover_color" : "bg-red-700"
+        }'></component>
+        <p class="mt-24"><i>*Реклама</i></p> 
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">С уважением,<br>команда ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
