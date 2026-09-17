@@ -1,0 +1,88 @@
+---
+title: "Все куда-то развиваются. А вам обязательно?"
+preheader: "Есть способ понять, чего хочется именно вам"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <fetch url="https://info-hit.ru/include/tools/courses-json/?coursesArr=277152,333931,309659,244193,328405&token=u4JTEnMNt4gdsfdfsdf345nkhjk3dfgfh556776dfdghjkluiutyrtym&v=4">
+      <component src="src/components/img-block-without-link.html" locals='{
+      "src" : "https://info-hit.ru/include/images/letter/2026-09-17-free-courses.png"
+      }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+          <p>Лента подсказывает, какие профессии сейчас в&nbsp;тренде. Знакомые осваивают ИИ. Другие запускают свое дело, а&nbsp;кто-то учится по&nbsp;вечерам и&nbsp;уже меняет работу.</p>
+          <p>На&nbsp;этом фоне легко решить, что вы&nbsp;тоже срочно должны куда-то двигаться. Но&nbsp;развитие не&nbsp;обязано быть гонкой. Иногда достаточно попробовать что-то новое и&nbsp;посмотреть, хочется&nbsp;ли вам продолжения.</p>
+          <p>Начните с&nbsp;бесплатного курса&nbsp;— потратите немного времени, получите первое представление о&nbsp;теме и&nbsp;решите, стоит&nbsp;ли идти дальше.</p>
+          <p class="mb-24">Вот несколько вариантов, чтобы провести свой маленький эксперимент:</p>
+          <each loop="item in response.slice(0, 1)">
+              <component src="src/components/course.html" locals='{
+              "author" : "{{ item.RIGHTHOLDER }}",
+              "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+              "subtitle" : "{{ item.DESC }}",
+              "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+              "link" : "{{ item.URL }}"
+              }'>
+              </component>
+            </each>
+          <each loop="item in response.slice(1, 2)">
+              <component src="src/components/course.html" locals='{
+              "author" : "{{ item.RIGHTHOLDER }}",
+              "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+              "subtitle" : "{{ item.DESC }}",
+              "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+              "link" : "{{ item.URL }}"
+              }'>
+              </component>
+            </each>
+          <each loop="item in response.slice(2, 3)">
+              <component src="src/components/course.html" locals='{
+              "author" : "{{ item.RIGHTHOLDER }}",
+              "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+              "subtitle" : "{{ item.DESC }}",
+              "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+              "link" : "{{ item.URL }}"
+              }'>
+              </component>
+            </each>
+          <each loop="item in response.slice(3, 4)">
+              <component src="src/components/course.html" locals='{
+              "author" : "{{ item.RIGHTHOLDER }}",
+              "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+              "subtitle" : "{{ item.DESC }}",
+              "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+              "link" : "{{ item.URL }}"
+              }'>
+              </component>
+            </each>
+          <each loop="item in response.slice(4, 5)">
+              <component src="src/components/course.html" locals='{
+              "author" : "{{ item.RIGHTHOLDER }}",
+              "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+              "subtitle" : "{{ item.DESC }}",
+              "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+              "link" : "{{ item.URL }}"
+              }'>
+              </component>
+            </each>
+          <p class="mb-24">Если в&nbsp;этой подборке не&nbsp;нашли то&nbsp;самое&nbsp;— это тоже нормально. Возможно, просто нужно посмотреть шире и&nbsp;заглянуть в&nbsp;раздел с&nbsp;бесплатными курсами на&nbsp;ИнфоХит.</p>
+          <component src="src/components/button.html" locals='{
+            "link" : "https://info-hit.ru/catalog/filter/free-y/",
+            "text" : "Больше бесплатных курсов",
+            "color" : "bg-yellow-500",
+            "hover_color" : "bg-yellow-600"
+            }'></component>
+          <p class="mt-24"><i>Можно искать конкретный навык, а&nbsp;можно просто гулять по&nbsp;каталогу и&nbsp;сохранять&nbsp;то, что заинтересовало. Потому что иногда новое направление находится не&nbsp;тогда, когда его ищешь, а&nbsp;когда случайно на&nbsp;него натыкаешься.</i></p>
+          <component src="src/components/gray-line.html"></component>
+          <component src="src/components/max-channel.html"></component>
+          <p class="text-base mb-36">С уважением,<br>команда ИнфоХит!</p>
+          </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
