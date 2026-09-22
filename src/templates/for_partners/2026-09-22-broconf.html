@@ -1,0 +1,47 @@
+---
+title: "А вы идете на легендарную конференцию в сфере арбитража трафика?"
+preheader: "BROCONF-7½ — 7 октября 2026 года в Москве."
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/2026-09-22-broconf.png"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+        <p class="text-base bg-red-300 py-16 px-24">Следующая остановка... BROCONF-7½</p>
+        <p>Масштабная конференция в&nbsp;сфере <b>арбитража трафика</b> и&nbsp;партнерского маркетинга от&nbsp;карточного сервиса <b>MyBrocard</b> пройдет в&nbsp;<b>новом формате</b>: вместо привычных двух дней&nbsp;— <b>один</b>, но&nbsp;максимально продуктивный и&nbsp;насыщенный.</p>
+        <p><b>Когда:</b> 7&nbsp;октября 2026&nbsp;года, 10:00&nbsp;— 04:00.</p>
+        <p><b>Где:</b> онцертный зал «Атмосфера» (Москва, Шмитовский проезд 32А, стр.&nbsp;1).</p>
+        <p><b>Что вас ждет:</b></p>
+        <ul>
+          <li class="mb-10"><b>1500+</b>&nbsp;участников.</li>
+          <li class="mb-10"><b>16&nbsp;спикеров</b>, которые поделятся своим опытом.</li>
+          <li class="mb-10"><b>130+&nbsp;партнеров</b>, представленных на&nbsp;конференции.</li>
+          <li class="mb-10"><b>«Быстрые свидания»</b> для новых знакомств и&nbsp;полезных контактов.</li>
+          <li class="mb-10"><b>Подкаст-зона</b> с&nbsp;ведущими и&nbsp;гостями индустрии.</li>
+          <li class="mb-10"><b>ВИП</b>-зона.</li>
+          <li class="mb-10"><b>Игровая и&nbsp;чил-зона</b> для полного погружения в&nbsp;атмосферу конференции.</li>
+          <li class="mb-10"><b>Вечерняя неформальная вечеринка</b> со&nbsp;звездным выступлением.</li>
+        </ul>
+        <p><b>Бонус:</b> скидка&nbsp;15% по&nbsp;промокоду <span class="border-dashed border-2 border-yellow-400 rounded-lg text-lg px-8 py-2 inline-block"><b>INFOHIT</b></span></p>
+        <p class="mt-24 mb-24"><i>Новый формат. Новая точка маршрута. Все тот&nbsp;же BROCONF.</i></p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://mybroconf.ru/?utm_source=infohit",
+          "text" : "Купить билет",
+          "color" : "bg-red-600",
+          "hover_color" : "bg-red-700"
+          }'></component>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">Ваш надежный партнер,<br>ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
