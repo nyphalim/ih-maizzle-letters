@@ -1,0 +1,44 @@
+---
+title: "Доступ к курсу на ИнфоХит открыт!"
+preheader: "Ваш доступ к курсу уже активен — заходите и начинайте обучение."
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Ваш доступ к курсу открыт</strong></p>
+        <p>Здравствуйте, #NAME#!</p>
+        <p>Вам открыт доступ к курсу <strong>#COURSE_NAME#</strong> на платформе ИнфоХит.</p>
+
+        <p class="mb-16">Мы создали для вас личный кабинет. Вот ваши данные для входа:</p>
+        <table class="w-full mb-16">
+          <tr>
+            <td class="bg-gray-50 rounded p-16 text-base">
+              <p class="mb-8"><strong>Логин:</strong> #EMAIL#</p>
+              <p class="mb-0"><strong>Пароль:</strong> #PASSWORD#</p>
+            </td>
+          </tr>
+        </table>
+        <p class="text-sm text-gray-500 mb-16">Если у вас уже есть аккаунт на ИнфоХит, используйте свой существующий пароль. Рекомендуем сменить пароль после первого входа в личном кабинете.</p>
+
+        <component src="src/components/button.html" locals='{
+          "link" : "#COURSE_URL#",
+          "text" : "Перейти к курсу",
+          "color" : "bg-green-500",
+          "hover_color" : "bg-green-600"
+          }'></component>
+
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">Если у вас возникли вопросы, просто ответьте на это письмо.<br><br>
+          Ваш надежный партнер,
+          <br>ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
