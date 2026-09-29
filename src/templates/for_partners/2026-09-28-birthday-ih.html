@@ -1,0 +1,55 @@
+---
+title: "Нам 14 лет!"
+preheader: "Дарим доступ к каталогу и скидку 30% на обучение для веб-мастеров."
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/2026-09-28-birthday-ih-partners.png"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+        <p class="text-base bg-purple-300 py-16 px-24 align="center" style="text-align: center;"><b>«ИнфоХит» празднует День рождения!<br>Нам&nbsp;исполнилось&nbsp;14&nbsp;лет!</b></p>
+        <p>Все эти годы мы&nbsp;растем, меняемся, развиваемся&nbsp;и, конечно, не&nbsp;собираемся останавливаться на&nbsp;достигнутом.&nbsp;14&nbsp;лет&nbsp;— это большой опыт, отличное понимание рынка онлайн-образования и&nbsp;активное развитие нашего партнерского направления.</p>
+        <p>Мы&nbsp;регулярно пополняем каталог свежими офферами и&nbsp;совершенствуем фильтры, чтобы вы&nbsp;могли в&nbsp;два клика находить самые прибыльные партнерки, эффективно монетизировать трафик и&nbsp;стабильно увеличивать доход.</p>
+        <p>Мы&nbsp;искренне благодарны за&nbsp;ваше доверие&nbsp;— вы&nbsp;наш главный двигатель!</p>
+        <p>В&nbsp;честь праздника мы&nbsp;приготовили для вас полезные бонусы:</p>
+        <p><b>Бесплатный доступ к&nbsp;расширенному функционалу</b></p>
+        <p class="mb-24">Откройте продвинутые инструменты и&nbsp;скрытые фильтры нашего каталога партнерок абсолютно бесплатно! Для этого нужно лишь подписаться на&nbsp;наши каналы:</p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://t.me/+0yQTrqm9E6w4ZGQ6",
+          "text" : "Подписаться в Telegram",
+          "color" : "bg-blue-500",
+          "hover_color" : "bg-blue-600"
+          }'></component>
+        <div class="mt-16">
+          <component src="src/components/button.html" locals='{
+          "link" : "https://max.ru/join/bKS68k9-_fF6BW6QD54hasbshwO09VEQZk8gAwuxeDI",
+          "text" : "Подписаться в MAX",
+          "color" : "bg-purple-500",
+          "hover_color" : "bg-purple-600"
+          }'></component>
+        </div>
+        <p class="mt-32"><b>Скидка&nbsp;30% на&nbsp;обучение для веб-мастеров</b></p>
+        <p class="mb-24">Хотите прокачать навыки в&nbsp;арбитраже трафика, узнать новые связки и&nbsp;увеличить ROI? Забирайте ТОПовые профильные курсы со&nbsp;скидкой.</p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://info-hit.ru/catalog/filter/sale-y/",
+          "text" : "Выбрать курс со скидкой 30%",
+          "color" : "bg-green-600",
+          "hover_color" : "bg-green-700"
+          }'></component>
+        <p class="mt-32"><b>Внимание:</b> праздничная скидка на&nbsp;курсы действует только до&nbsp;5&nbsp;октября.</p>
+        <p><i>Спасибо, что выбираете «ИнфоХит»! Растем и&nbsp;зарабатываем вместе!</i></p>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">Ваш надежный партнер,<br>ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
