@@ -1,0 +1,94 @@
+---
+title: "Осторожно: после этого вы начнете замечать больше"
+preheader: "Иногда достаточно одного курса, чтобы смотреть на привычное по-новому"
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <fetch url="https://info-hit.ru/include/tools/courses-json/?coursesArr=282692,238829,312598,238174,265179&token=u4JTEnMNt4gdsfdfsdf345nkhjk3dfgfh556776dfdghjkluiutyrtym&v=4">
+      <component src="src/components/img-block-without-link.html" locals='{
+      "src" : "https://info-hit.ru/include/images/letter/2026-09-30-sale-courses.png"
+      }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+        <p>Есть побочный эффект от&nbsp;хорошего обучения. Вы&nbsp;начинаете замечать&nbsp;то, чего раньше не&nbsp;замечали.</p>
+        <p>После курса по&nbsp;инвестициям&nbsp;— понимаете, как могут работать ваши деньги.</p>
+        <p>После курса про запуск интернет-магазина&nbsp;— понимаете, почему в&nbsp;одном хочется купить, а&nbsp;из&nbsp;другого уйти.</p>
+        <p>После курса про YouTube*&nbsp;— замечаете заголовки, обложки и&nbsp;приемы, которые заставляют открыть ролик.</p>
+        <p>После курса про криптовалюту&nbsp;— видите в&nbsp;цифровых активах не&nbsp;загадочную тему, а&nbsp;источник дохода.</p>
+        <p>После курса про уход&nbsp;— знаете, какие косметические средства подходят именно вам.</p>
+        <p class="mb-24">Собрали пять курсов с&nbsp;таким эффектом:</p>
+        <each loop="item in response.slice(0, 1)">
+              <component src="src/components/course.html" locals='{
+              "author" : "{{ item.RIGHTHOLDER }}",
+              "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+              "subtitle" : "{{ item.DESC }}",
+              "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+              "link" : "{{ item.URL }}"
+              }'>
+              </component>
+            </each>
+          <each loop="item in response.slice(1, 2)">
+              <component src="src/components/course.html" locals='{
+              "author" : "{{ item.RIGHTHOLDER }}",
+              "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+              "subtitle" : "{{ item.DESC }}",
+              "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+              "link" : "{{ item.URL }}"
+              }'>
+              </component>
+            </each>
+          <each loop="item in response.slice(2, 3)">
+              <component src="src/components/course.html" locals='{
+              "author" : "{{ item.RIGHTHOLDER }}",
+              "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+              "subtitle" : "{{ item.DESC }}",
+              "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+              "link" : "{{ item.URL }}"
+              }'>
+              </component>
+            </each>
+          <each loop="item in response.slice(3, 4)">
+              <component src="src/components/course.html" locals='{
+              "author" : "{{ item.RIGHTHOLDER }}",
+              "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+              "subtitle" : "{{ item.DESC }}",
+              "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+              "link" : "{{ item.URL }}"
+              }'>
+              </component>
+            </each>
+          <each loop="item in response.slice(4, 5)">
+              <component src="src/components/course.html" locals='{
+              "author" : "{{ item.RIGHTHOLDER }}",
+              "title" : "{{ item.TYPE }} — {{ item.NAME }}",
+              "subtitle" : "{{ item.DESC }}",
+              "picture" : "https://info-hit.ru/{{ item.PICTURE }}",
+              "link" : "{{ item.URL }}"
+              }'>
+              </component>
+            </each>
+        <p class="mt-24">Есть еще одна причина посмотреть на&nbsp;них сейчас.</p>
+        <p>ИнфоХит празднует <nobr>14-летие</nobr> и&nbsp;дарит промокод <span class="border-dashed border-2 border-green-500 rounded-lg text-lg px-6 py-2 inline-block"><b>INFOHIT14</b></span> на&nbsp;скидку 14%.</p>
+        <p>Все пять курсов из&nbsp;этой подборки участвуют в&nbsp;акции ко&nbsp;Дню рождения ИнфоХит!</p>
+        <p class="mb-24">А&nbsp;что еще можно взять со&nbsp;скидкой? Загляните в&nbsp;праздничный раздел каталога&nbsp;— там собрали все программы, на&nbsp;которые распространяется скидка.</p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://info-hit.ru/catalog/filter/sale-y/",
+          "text" : "Выбрать курс со скидкой 14%",
+          "color" : "bg-green-500",
+          "hover_color" : "bg-green-600"
+        }'></component>
+        <p class="mt-24"><i>*В&nbsp;отношении американской компании Google и&nbsp;ее&nbsp;сервиса YouTube Роскомнадзором введены меры принудительного исполнения (ограничения).</i></p> 
+        <component src="src/components/gray-line.html"></component>
+        <component src="src/components/max-channel.html"></component>
+        <p class="text-base mb-36">С уважением,<br>команда ИнфоХит!</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
