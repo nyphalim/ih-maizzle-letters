@@ -1,19 +1,27 @@
 <table class="w-full">
   <tr>
-    <td class="w-full pb-24 sm:w-full sm:inline-block">
-      <a href="{{ link.replace(/&amp;/g, '&') }}" target="_blank" class="text-base text-blue-500 hover:text-blue-400 no-underline">
-        <table class="w-full">
-          <tr>
-            <td class="w-3/12 align-top pr-5"><img src="{{ picture }}" alt=""></td>
-            <td class="p-12 pt-0 sm:p-0 sm:pl-12 rounded">
-              <h2 class="m-0 mb-10 text-black text-lg leading-24">{{ title }}</h2>
-              <p class="m-0 mb-10 text-sm text-gray-700 leading-20">{{ subtitle }}</p>
-              <p class="m-0 mb-10 text-sm text-gray-500">{{ author }}</p>
-              <p>Подробнее &rarr;</p>
-            </td>
-          </tr>
-        </table>
-      </a>
+    <td class="w-full pb-24">
+      <table class="w-full bg-white" style="border-collapse: separate; border: 1px solid #e5e7eb; border-radius: 16px;">
+        <tr>
+          <td class="sm:w-full sm:inline-block align-top p-0" width="38%" style="width: 38%;">
+            <a href="{{ link.replace(/&amp;/g, '&') }}" target="_blank"><img src="{{ picture }}" alt="" style="display: block; width: 100%; max-width: 100%; height: auto; border: 0; border-radius: 15px 0 0 15px;"></a>
+          </td>
+          <td class="sm:w-full sm:inline-block align-top p-14">
+            <p class="m-0 mb-6 font-bold uppercase text-gray-500" style="font-size: 11px; letter-spacing: 1px; line-height: 14px;">{{ type }}</p>
+            <h2 class="m-0 mb-6 font-bold text-gray-900" style="font-size: 17px; line-height: 22px; word-break: break-word;"><a href="{{ link.replace(/&amp;/g, '&') }}" target="_blank" class="text-gray-900 no-underline">{{ title }}</a>{{ rating }}</h2>
+            <p class="m-0 mb-8 text-gray-700" style="font-size: 13px; line-height: 18px;">{{ subtitle }}</p>
+            <p class="m-0 mb-10 text-gray-500" style="font-size: 12px; line-height: 16px;">{{ author }}</p>
+            <p class="m-0 mb-14">{{ price }}</p>
+            <table class="w-full">
+              <tr>
+                <td class="bg-gray-900 text-center" align="center" style="border-radius: 999px;">
+                  <a href="{{ link.replace(/&amp;/g, '&') }}" target="_blank" class="text-white no-underline font-semibold" style="display: block; padding: 12px 18px; font-size: 14px; line-height: 16px;">Далее &rarr;</a>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
     </td>
   </tr>
 </table>
