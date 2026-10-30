@@ -1,0 +1,38 @@
+---
+title: "Видите в тарифе только комиссию сервиса?"
+preheader: "За видимой комиссией идут конвертация, вывод и платежи, не дошедшие до зачисления."
+bodyClass: bg-gray-100
+---
+
+<extends src="src/layouts/ih-main.html">
+  <block name="template">
+    <component src="src/components/img-block-without-link.html" locals='{
+    "src" : "https://info-hit.ru/include/images/letter/2026-10-29-planta-pay-2.png"
+    }'></component>
+    <tr>
+      <td class="bg-white text-gray-800 text-base text-left px-48 pt-24 sm:p-24 pb-0 leading-24 rounded">
+        <p class="text-xl"><strong>Добрый день!</strong></p>
+        <p>Тариф на&nbsp;прием платежей обычно показывает один процент. Вы&nbsp;видите комиссию сервиса и&nbsp;сравниваете предложения по&nbsp;ней. Дальше есть&nbsp;то, что не&nbsp;видно сразу, и&nbsp;оно обычно дороже видимой части.</p>
+        <p>Если компания зарегистрирована за&nbsp;рубежом или вы&nbsp;ее&nbsp;открываете, прием оплаты складывается из&nbsp;четырех слоев: комиссия сервиса, конвертация, вывод и&nbsp;платежи, которые не&nbsp;доходят до&nbsp;зачисления. По&nbsp;опыту клиентов Planta Pay, конвертация через промежуточную валюту забирает еще <nobr>5–10%</nobr> сверх комиссии сервиса, а&nbsp;вывод и&nbsp;недошедшие платежи, которые в&nbsp;процент чаще всего не&nbsp;включают, стоят дороже всего.</p>
+        <p>Если компании за&nbsp;рубежом пока нет, вариант есть и&nbsp;для вас: в&nbsp;отдельных случаях Planta Pay подключает и&nbsp;без нее, а&nbsp;условия менеджер уточнит по&nbsp;вашей ситуации.</p>
+        <p class="text-base bg-green-100 py-16 px-24">Ставка Planta Pay <nobr>4-6%</nobr> включает все: комиссию, конвертацию и&nbsp;вывод, без дополнительных строк в&nbsp;выписке. Документы для подключения: учредительные бумаги компании и&nbsp;паспорт директора. Сам процесс занимает до&nbsp;3&nbsp;рабочих дней. На&nbsp;вопросы по&nbsp;ходу подключения отвечает персональный менеджер. </p>
+        <p>При обороте 300&nbsp;000&nbsp;₽ в&nbsp;месяц разница между комиссией сервиса вместе с&nbsp;конвертацией и&nbsp;единой ставкой Planta Pay составляет около <nobr>30–50</nobr> тысяч рублей в&nbsp;месяц.</p>
+        <p>Ирина, финансовый директор образовательной платформы: <i>«Рублевый счет на&nbsp;зарубежное юрлицо открыли легко, а&nbsp;дальше мучились, как вывести деньги: SWIFT возвращался, платежные агенты душили комиссиями, до&nbsp;нас доходило около 80%. С&nbsp;Planta стало проще»</i>.</p>
+        <p class="mb-24">Пришлите менеджеру оборот и&nbsp;текущий способ приема: вам посчитают, сколько теряется в&nbsp;каждом слое платежа, без обязательств.</p>
+        <component src="src/components/button.html" locals='{
+          "link" : "https://plantatech.ru/?ref=infohit",
+          "text" : "Получить расчет",
+          "color" : "bg-green-800",
+          "hover_color" : "bg-green-900"
+          }'></component>
+        <p class="mt-24"><i>*Реклама</i></p>
+        <component src="src/components/gray-line.html"></component>
+        <p class="text-base mb-36">С уважением,<br>команда ИнфоХит</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="h-32 sm:h-24"></td>
+    </tr>
+    <component src="src/components/footer.html"></component>
+  </block>
+</extends>
